@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Biosfär namn="Liv"> är allt som fortplantar sej
+<Rike namn="Växter"> kan inte förflytta sej
+<Division namn="Kryptogamer"> har inte synliga könsdelar
+<Klass namn="Ormbunkar"> har blad och kärl
+</Klass>
+<Klass namn="Alger"> är röda, gröna eller bruna
+</Klass>
+</Division>
+<Division namn="Fanerogamer"> har ståndare och pistiller
+<Klass namn="Enhjärtbladiga"> kallas monokotyledoner
+</Klass>
+<Klass namn="Tvåhjärtbladiga"> kallas dikotyledoner
+<Familj namn="Smörblomsväxter"> kallas ranunkler
+<Art namn="Smörblomma"> är gul som solen
+</Art>
+<Art namn="Vitsippa"> är Anemone nemorosa
+</Art>
+<Art namn="Blåsippa"> är Hepatica nobilis
+</Art>
+</Familj>
+<Familj namn="Korgblommiga"> kallas kompositer
+<Art namn="Maskros"> är ett besvärligt ogräs
+</Art>
+<Art namn="Tussilago"> kallas hästhov och hosthäv
+</Art>
+</Familj>
+</Klass>
+</Division>
+</Rike>
+<Rike namn="Djur"> kan förflytta sej
+<Division namn="Däggdjur"> föder levande ungar
+<Art namn="Schimpanserr"> är våra kusiner
+</Art>
+<Art namn="Människor"> är vi alla
+</Art>
+</Division>
+<Division namn="Fåglar"> lägger ägg och flyger
+<Art namn="Mås"> gillar Vaxholmsbåtar
+</Art>
+<Art namn="Mes"> är en feg fågel
+</Art>
+</Division>
+</Rike>
+<Rike namn="Svampar"> är varken djur eller växter
+<Ordning namn="Soppar"> har rör under hatten
+<Art namn="Karljohan"> är vår största matsvamp
+</Art>
+<Art namn="Smörsopp"> är den gulaste svampen
+</Art>
+</Ordning>
+<Släkte namn="Flugsvampar"> bör man inte äta
+<Art namn="Vit flugsvamp"> dör man av
+</Art>
+<Art namn="Röd flugsvamp"> får man magknip av
+</Art>
+</Släkte>
+</Rike>
+</Biosfär>

@@ -1,0 +1,8 @@
+This is Puffin (Lunnefågel)
+---------------------------
+
+Puffin is licensed under the GNU GPL Version 2.
+
+The current version of Puffin does not work with GNU Octave.
+However, our ambition is that future versions of Puffin should
+work with GNU Octave, and not necessarily with Matlab.

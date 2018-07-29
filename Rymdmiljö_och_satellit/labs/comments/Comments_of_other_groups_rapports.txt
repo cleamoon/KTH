@@ -1,0 +1,13 @@
+Comments on << Spacecraft Power System Design and Testing >> 
+* More explanation about error-checking
+* Why is Li-Ion battery charged and discharged in such a way
+* More explanation on what is wrong with the NiMH battery. Why don't we have a result there?
+* How did you get the alpha factor?
+* A little hard to follow of the eclipse time calculation part. 
+* More about method of designing. Trials?
+
+Comments on << Thermal experiment >>
+* Equation 1: missed definition of q. 
+* Don't really understand figure 2.
+* Figure 6: hard to find face 2 line. Is it overlapping with face 3 line?
+* In error estimation, be consistant with capital or not. 

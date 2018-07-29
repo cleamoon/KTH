@@ -1,0 +1,31 @@
+Laboration 2, extra laborationsuppgifter
+E2.2
+a) Koden finns i filen Lab2xu2a.m .
+   Felet minskar kvadratiskt. Det blå linjet på bilden som kommer upp visar hur felet minska med avseende på steglängd minska. Och den svarta är referens för kvadratisk minskning. 
+
+b) Koden finns i filen Lab2xu2b.m .
+   Felet minskar kvadratiskt. Det blå linjet på bilden som kommer upp visar hur felet minska med avseende på steglängd minska. Och den svarta är referens för kvadratisk minskning. 
+
+c) Vi har skrivit ut resultat i uppgifter a) och b). Vi räknade (fel_h-fel_h/2)/(fel_h/2-fel_h/4) och skrivit ut dem. Det visar att konvergensordning är andra.
+
+d) Koden finns i filen Lab2xu2b.m .
+För Monte Carlo metod.
+   * Vi sökte och kommer fram till att felet är ungefär 1/sqrt(N) är N är antalet av slumptal som vi ta. Så för att få fem korrekta decimaler måste vi ta N som är mer än 10^10.
+   * Två bilder kommer fram om man köra program. En av dem visar två linjer. Den svarta linjen är referens linje. Den blå är hur felet minska med ökningen av N. Den andra bilden visar hur felet minska utan referens. Enlig de bilderna stämmer teori ganska bra. 
+För trapetsregeln.
+   * Vi lyckas få tre korrekta siffror inom tre minuter på min dator.
+   * Om man vill räkna 5 korrekta siffror kommer det ta mycket längre tid. På många dimensioners fallet är trapetsregeln mycket långsammare och osäkrare än Monte Carlo metod.
+   * Enligt teori. Om vi ökar N med k gånger. Då blir fel i Monte Carlo ungefär sqrt(k) mindre. Och för trapetsregeln är det k^-10 mindre för att det är 10 dimensionellt och antalet funktionsevaluering måste spridas till alla dimensioner. Det är faktor k^5:s skillnad vilken är jätte stor.
+
+
+
+E2.3
+a) Koden finns i filen extra2_3a.m .
+
+b) Koden finns i filen extra2_3b.m .
+
+c) Koden finns i filen extra2_3c.m . Vi tog L som 500.
+
+d) Koden finns i filen extra2_3d.m .
+   * Enligt vår modell variera dollarkurs med ungefär 0.0044. I den modellen där man ska uppskatta L ger ändringen 0.0042. Och den linjära modellen ger ändring 0.0017 som är |c(2)|. Så oexakt variabler kommer inte leder till stora fel men fel modellen kommer ge en enorm skillnad.
+   * Linjära modellen har kvadratfel 0.168. När L är 500 har sinus modellen kvadratfel 0.060. När L är mer exakt har sinus modellen kvadratfel 0.059. Så linjära ger största fel och modellen räknades med Gauss-Newton ger minst fel. 

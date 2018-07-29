@@ -1,0 +1,6 @@
+SET(external_depends  )
+SET(internal_depends  )
+SET(include_dirs )
+SET(link_libs )
+SET(library_defs )
+CG_ADD_MODULE()

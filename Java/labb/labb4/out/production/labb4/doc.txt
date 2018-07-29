@@ -1,0 +1,123 @@
+labb 4:
+1. Model: den fysikaliska/matematiska modellen
+	- antalet partiklar
+	- ett objekt för varje partikel
+	- ramobjekt innehåller hela mängden av partikelobjekt : innehålla en metod som utför slumpflyttningen av samtliga partiklar
+2. View 
+	- rita upp partiklarna i aktuella positioner : ett objekt som är bilden av simuleringen
+3. Controller
+	* koll på tidens gång
+	* får Model att uppdatera tillståndet
+	* tillhandahåller användarkontroller
+	* ändrar modellens parametrar
+	* skickar den signaler till View när det är dags att uppdatera bilden
+4. MyFrame
+	* en körbar komponent som skapar de övriga delarna
+	
+E1: Model
+	- större mängd Particle-objekt
+	- tvådimensionellt koordinatsystem
+	- diskretiserad tid
+	- uppdatering av tillståndet medför att varje partikel förflyttar sig sträckan L i slumpvis utvald riktning
+	- x(t) = x(t-δ) + L*cos(θ)
+	- y(t) = y(t-δ) + L*sin(θ)
+	δ är tidsteget mellan två uppdateringa 
+	θ är en slumpvis utvald riktning
+	E1.1: 
+		- Definiera klassen Model
+		- innehålla alla partikelobjekten och konstanten L
+		- ha en konstruktor där man anger hur många partiklar
+		- en metod som uppdaterar positionen för samtliga partiklar
+		- en metod som returnerar positionerna på partiklarna
+		- metoder som sätter resp. läser värdet på L
+	E1.2: 
+		- Definiera klassen Particle
+		- innehålla partikelns position med god nogrannhet
+		- en metod som updaterar positionen
+		- använda värdet på L
+		- Particle kan med fördel vara en inre klass till Model
+		- ha en konstruktor som tar två koordinater som argument, och en utan argument som slumpar ut positionen
+E2: View
+	- en utökad JPanel
+	- en top-level container
+	E2.1: 
+		- Definiera klassen View
+		- ärva från JPanel
+		- ha en konstruktor där den tar ett Model-objekt som argument
+		- anropa setPreferredSize med lämpliga argument
+		- Några hundra pixlar på respektive ledd
+	E2.2: 
+		- Definiera metoden paint(graphics g)
+		- alla partiklar ritas upp i fönstret
+		- Partiklarna kan med fördel ritas som små ellipser
+E3: MyFrame
+	ett körbart program som skapar Model och View
+	? setVisible, add och pack där det behövs
+	? lämpliga färger
+	? lämpliga koordinater
+	? lämpliga avstånd från varandra
+	E3.1: 
+		- Definiera klassen MyFrame
+		- ärva från JFrame
+		- skapa ett Model-objekt och ett View-objekt
+E4: Controller
+	driver simuleringen framåt
+	JSlider-spakar
+	automatiskt genomföra regelbundna anrop
+	Timer
+	den tiden har förflutit så skickar den ett ActionEvent
+	E4.1:
+		- Definiera klassen Controller
+		- ärva från JPanel
+		- ha en konstruktor där den tar ett Model-objekt och ett View-objekt som argument
+		- skapa två stycken JSlider, ändra L, δ
+		- Controller implementera gränssnittet ChangeListener
+	E4.2: 
+		-  definierar en metod stateChanged(ChangeEvent e)
+		- getSource()
+		- ett JSlider-objekt som heter LSlider och ett som heter deltaSlider
+		- 
+		public	void stateChanged(ChangeEvent e){
+			if(e.getSource()==LSlider){
+				// skriv lämplig kod här
+			}
+			if(e.getSource()==deltaSlider){
+				// skriv annan lämplig kod här
+			}
+		}
+	E4.3: 
+		* Controller startar en Timer
+		* ett lämpligt värde på δ
+		* Controller måste alltså dessutom implementera gränssnittet ActionListener
+		* definiera en metod actionPerformed(ActionEvent e) där den uppdaterar Model och anropar repaint() i View
+E5: Exportera data
+	spara alla era partiklars banor till en CSV-fil
+	t, x1, y1, x2, y2, x3, y3, x4, y4, .... xn, yn,
+	E5.1: 
+		* Controller spara ner alla simuleringsdata till en fil
+		* StringBuilder och dess append 
+		* loggandet avslutas efter ett visst antal steg
+	E5.2: 
+		* Hur många partiklar kan man ha utan att det går markant långsammare
+	E5.3:
+		* Hur många partiklar kan ni hantera om ni använder StringBuilder
+	E5.4:
+		*
+	E5.5: 
+		* MatLab-program
+		* genom att loopa över radindexet spelar upp simuleringen i en plot
+		* anropa drawnow
+	E5.6:
+		* Största resp. minsta x- och y-värde i varje tidpunkt. Plotta resultatet som en funktion av t.
+		* Medelvärde och stadardavvikelse för x- resp. y-värde som en funktion av tiden. Plotta resultatet.
+C1: 
+	* partiklar som kommer fram till kanten av fönstret fastnar där och inte flyttas mer
+	* ska byta färg
+C2: 
+	* partikel som kommer tillräckligt nära (t.ex en pixel ifrån) en partikel som redan har fastnat fastnar
+C3: 
+	* Definiera något mer än bara ytterkanten som partiklarna kan "kondensera" mot
+C4: 
+	* Lägg till en start/stopp knapp för att skriva loggar
+	* 
+ 

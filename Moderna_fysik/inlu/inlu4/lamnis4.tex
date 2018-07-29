@@ -1,0 +1,246 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[swedish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{ae}
+\usepackage{units}
+\usepackage{icomma}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{bbm}
+\usepackage{upgreek}
+\usepackage{amsthm}
+\usepackage{fullpage}
+\usepackage{mathtools}
+\usepackage{psfrag}
+\usepackage{caption}
+\setlength{\parindent}{0cm}
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+
+\begin{document}
+
+\title{SH1012 Modern fysik \\
+Inlämningsuppgift 4}
+\author{Hannes Lindström 910624-1996 \\
+Alias 286190}
+\date{2013-03-19}
+\maketitle
+\thispagestyle{empty}
+
+\clearpage
+\thispagestyle{empty}
+\hfill
+\clearpage
+
+\newpage
+\setcounter{page}{1}
+
+\section*{Uppgift 1}
+
+Vi betraktar en partikel med energi $E$ bunden i en halvoändlig potentialbrunn
+
+\begin{equation*}
+U(x)=
+\begin{cases}
+\infty & x\le0 \\
+0 & 0<x<L \\
+U_0 & x\ge L
+\end{cases}
+\end{equation*}
+
+där $E<U_0$. Vi är givna att partikeln uppfyller vågfunktionen
+
+\begin{equation*}
+\psi(x)=
+\begin{cases}
+0 & x\le0 \\
+A\sin kx & 0<x<L \\
+De^{-\alpha x} & x\ge L
+\end{cases}
+\end{equation*}
+
+Under härledningen av denna funktion används två av fyra möjliga randvillkor: Kontinuitet i $x=0$ och släthet i $x=L$. Detta lämnar två villkor: Kontinuitet i $x=L$ samt normalisering. Dessa villkor lyder:
+
+\begin{gather*}
+\lim_{x\rightarrow L+}\psi(x)=\lim_{x\rightarrow L-}\psi(x) \\
+\int_{-\infty}^{\infty}|\psi(x)|^2dx=1
+\end{gather*}
+
+Det första villkoret ger:
+
+\begin{equation*}
+A\sin kL=De^{-\alpha L}
+\end{equation*}
+
+Det andra villkoret ger:
+
+\begin{gather*}
+1=\int_0^LA^2\sin^2kxdx+\int_L^\infty D^2e^{-2\alpha x}dx=\frac{A^2}{2}\int_0^L(1-\cos2kx)dx+D^2\int_L^\infty e^{-2\alpha x}dx=\\
+=\frac{A^2}{2}\left[x-\frac{\sin2kx}{2k}\right]^L_0+D^2\left[\frac{e^{-2\alpha x}}{-2\alpha}\right]_L^\infty=\frac{A^2}{2}L-\frac{A^2}{2}\frac{\sin2kL}{2k}+\frac{D^2e^{-2\alpha L}}{2\alpha}
+\end{gather*}
+
+Tillsammans följer av villkoren:
+
+\begin{gather*}
+D^2=\frac{A^2\sin^2kL}{e^{-2\alpha L}}=\frac{2\alpha}{e^{-2\alpha L}}\left(1-\frac{A^2}{2}L+\frac{A^2}{2}\frac{\sin2kL}{2k}\right) \\
+A^2\left(\sin^2kL+\alpha L-\frac{\alpha\sin2kL}{2k}\right)=2\alpha
+\end{gather*}
+
+Vi tar de positiva lösningarna:
+
+\begin{gather*}
+A=\sqrt{\frac{2}{L-\frac{\sin2kL}{2k}+\frac{\sin^2kL}{\alpha}}} \\
+D=\frac{\sin kL}{e^{-\alpha L}}\sqrt{\frac{2}{L-\frac{\sin2kL}{2k}+\frac{\sin^2kL}{\alpha}}}
+\end{gather*}
+
+\section*{Uppgift 2}
+
+Vi är givna att kvantiseringsvillkoret för partikeln ovan är givet av:
+
+\begin{equation*}
+\sqrt{E}\cot\left(\frac{\sqrt{2mE}}{\hbar}L\right)=-\sqrt{U_0-E}
+\end{equation*}
+
+där
+
+\begin{equation*}
+U_0=\frac{Nh^2}{2mL^2}=4\pi^2\frac{N\hbar^2}{2mL^2}
+\end{equation*}
+
+Låt 
+
+\begin{equation*}
+k=\frac{\sqrt{2mE}}{\hbar}
+\end{equation*}
+
+Då gäller att
+
+\begin{equation*}
+U_0=4\pi^2\frac{EN}{k^2L^2}
+\end{equation*}
+
+och därmed
+
+\begin{equation*}
+f(kL):=\cot(kL)+\sqrt{4\pi^2\frac{N}{k^2L^2}-1}=0
+\end{equation*}
+
+Rötterna till $f$ svarar mot bundna tillstånd. Vi finner dem grafiskt och numeriskt för $N$=1, 2 och 4:
+
+\begin{figure*}[h!]
+\centering
+\includegraphics[scale=0.75]{plotta1.eps}
+\caption*{$N=1$}
+\end{figure*}
+
+\newpage
+
+\begin{figure*}[h!]
+\centering
+\includegraphics[scale=0.75]{plotta2.eps}
+\caption*{$N=2$}
+\end{figure*}
+
+\begin{figure*}[h!]
+\centering
+\includegraphics[scale=0.75]{plotta4.eps}
+\caption*{$N=4$}
+\end{figure*}
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+N & Rot 1 & Rot 2 & Rot 3 & Rot 4 \\
+\hline
+1 & 2.67980 & 5.28408 & - & - \\
+2 & 2.81879 & 5.60118 & 8.23814 & - \\
+4 & 2.90806 & 5.80316 & 8.66403 & 11.4251 \\
+\hline
+\end{tabular}
+\end{center}
+
+Givet $m$ och $L$ kan dessa översättas till $E$ via sambandet
+
+\begin{equation*}
+E=\frac{k^2\hbar^2}{2m}
+\end{equation*}
+
+Med $m=m_e=9.10938188\cdot10^{-31}$ kg och $L=1$ Å blir resultatet av $E$ i eV följande:
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+N & Rot 1 & Rot 2 & Rot 3 & Rot 4 \\
+\hline
+1 & 27.3607 & 106.380 & - & - \\
+2 & 30.2724 & 119.531 & 252.571 & - \\
+4 & 32.2202 & 128.307 & 285.997 & 497.327 \\
+\hline
+\end{tabular}
+\end{center}
+
+Om vi låter $N\rightarrow\infty$ övergår kvantiseringsvillkoret i:
+
+\begin{equation*}
+\cot{kL}=-\infty
+\end{equation*}
+
+Detta har lösningarna $kL=\pi n$ där $n\in\mathbb{Z}$. Alltså är kvantiseringsvillkoret i oändligheten:
+
+\begin{equation*}
+\frac{\sqrt{2mE}}{\hbar}=\frac{\pi n}{L}
+\end{equation*}
+
+eller
+
+\begin{equation*}
+E=\frac{\pi^2n^2\hbar^2}{2mL}
+\end{equation*}
+
+\section*{Uppgift 3}
+
+Vi söker ett villkor för $U_0$ sådant att inget bundet tillstånd är tillåtet. Till att börja med försöker vi att finna ett villkor för $N$ sådant att detta är uppfyllt. På samma sätt som tidigare försöker vi finna rötterna till funktionen $f$ i $kL$. Om sådana rötter existerar, så existerar även bundna tillstånd. Genom att successivt pröva för mindre värden på $N$, visar det sig att $N=\frac{1}{16}$ är det största värdet på $N$ sådant att ingen rot existerar:
+
+\newpage
+
+\begin{figure*}[h!]
+\centering
+\includegraphics[scale=0.75]{plotta00625.eps}
+\caption*{$N=\frac{1}{16}$}
+\end{figure*}
+
+Vi ställer oss nu frågan var denna gräns kommer ifrån. För ett bundet tillstånd gäller att $E<U_0$. Betrakta Heisenbergs osäkerhetsprincip:
+
+\begin{equation*}
+\Delta p\Delta x\ge\frac{\hbar}{2}
+\end{equation*}
+
+där $p$ är partikelns moment och $x$ är partikelns position. Om vi förutsätter att partikeln är bunden, kan vi låta $\Delta x=L$ vara osäkerheten i position. Osäkerheten i moment blir då:
+
+\begin{equation*}
+\Delta p=\frac{\hbar}{2L}
+\end{equation*}
+
+Vi förutsätter vidare att partikelns massa $m$ är känd. En undre gräns för den tillhörande osäkerheten i energin ges av uttrycket för den minimala energin, som är kinetisk:
+
+\begin{equation*}
+\Delta E=\frac{\Delta p^2}{2m}=\frac{\hbar^2}{8mL^2}
+\end{equation*}
+
+Uppenbarligen kan nu ej gälla att $\Delta E>U_0$ om partikeln ska ha bundna tillstånd, så:
+
+\begin{equation*}
+U_0\ge\Delta E=\frac{\hbar^2}{8mL^2}=\frac{h^2}{32\pi^2mL^2}
+\end{equation*}
+
+Eftersom att $\frac{Nh^2}{2\pi^2mL^2}=U_0$ ser vi mycket riktigt att för bundna tillstånd krävs att:
+
+\begin{equation*}
+N\ge\frac{1}{16}
+\end{equation*}
+
+\end{document}

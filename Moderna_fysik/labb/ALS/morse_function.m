@@ -1,0 +1,10 @@
+d = 15700;
+a = 1.703;
+r = 2.061;
+x = [1.5:0.001:6];
+y = d*(1-exp(a*(r-x))).^2;
+plot(x,y);
+hold on;
+title('Morse potential');
+xlabel('r [?]');
+ylabel('V(r) [cm^{-1}]');

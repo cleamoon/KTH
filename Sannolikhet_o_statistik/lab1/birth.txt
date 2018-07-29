@@ -1,0 +1,66 @@
+Studiepopulationen är alla förstföderskor (994 st), boende i Malmö, 
+som besökte någonav fyra mödravårdscentraler (täcker ca 90%) under 
+tiden september 1991 till september 1992. 872 personer valde att 
+delta. Missfall (17 st) och tvillingfödslar (12 st) ströks. Kvar 
+blev 747 personer som besvarade en enkät på MVC och en på BB efter 
+förlossningen.
+
+Man är intresserad av hur psykosocial stress påverkar risken för
+att föda ett för litet (undernärt) barn.
+
+"För litet" (SGA = small for gestational age) ligger mer än 2 
+standardavvikelser under medelvikten för födelseveckan, olika för 
+pojkar och flickor. Man kan tyvärr inte skilja på barn som är små 
+pga undernäring och sådana som "skall" vara små, därför behöver man 
+korrigera för moderns längd: små mödrar borde få små barn.
+
+Psykosocial stress kan definieras som brist på instrumentellt stöd 
+("har du någon du kan få hjälp av med praktiska saker?"), 
+emotionellt stöd ("har du någon du kan prata med"), social 
+förankring ("har du bra kontakt med släkten?") och/eller socialt 
+deltagande ("hur ofta går du på bio?").
+
+Man vet också att rökning ökar risken och eventuellt också moderns 
+ålder (större risk i den högsta åldersgruppen). Dessutom kan man 
+kanske ta hänsyn till invandring, låg utbildning, alkoholkonsumtion,
+motionsvanor (tränar man mycket tar man all näring själv), om man 
+inte sammanbor med barnets far och om barnet är oplanerat.
+
+Man kan också behöva BMI = (vikt i kg)/(längd i m)^2 som mått på om 
+moderns är välnärd (längd och vikt korrelerar för mycket för att tas 
+med samtidigt).
+
+Filen  birth.dat  är en ascii-fil som innehåller 26 variabler, 747 
+individer. En punkt betyder saknat värde.
+
+Variabler:
+ 1. graviditetsdag
+ 2. kön                 1=pojke,        2=flicka
+ 3. barnets vikt i gram
+ 4. moderns ålder i år
+ 5. SGA                 0=normalviktig, 1=underviktig
+ 6. kompikationer       0=inga,         1=komplikationer
+ 7. nationalitet        0=svensk,       1=ej svensk
+   (ej svensk = man själv och båda föräldrarna födda utomlands)
+ 8. åldersgrupp         1=15-24 år, 2=25-29 år, 3=30-44 år
+ 9. instrumentellt stöd 0=ja,           1=nej (brist)
+10. emotionellt stöd    0=ja,           1=nej (brist)
+11. social förankring   0=ja,           1=nej (brist)
+12. socialt deltagande  0=ja,           1=nej (brist)
+13. barnets längd i cm
+14. barnets huvudomfång i cm
+15. moderns vikt i kg
+16. moderns längd i cm
+17. utbildning          1=>12 år, 2=10-12 år, 3=<9år
+18. sambo med fadern    1=ja,           2=nej
+19. planerat barn       1=ja,           2=nej
+20. rökvanor            1=icke-rökare, 2=slutat, 3=röker
+21. passiv rökning      0=nej,          1=ja
+22. kort moder          0=normal,       1=kort
+23. lätt moder          0=normal,       1=lätt
+24. rökexponering       1=ingen rök, 2=passiv rök, 3=egen rök
+25. motion              1=låg-medel,    2=hög
+26. alkohol             0=absolutist, 1=slutat pga gravid, 2=dricker
+
+
+Datamaterialet kommer ifrån Anna Lindgren, anna@maths.lth.se.

@@ -1,0 +1,192 @@
+\documentclass[11pt,a4paper,roman]{scrartcl}
+\usepackage{parskip}
+\usepackage[english]{babel}
+\usepackage{url}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[document]{ragged2e}
+\usepackage{bm}
+\usepackage[section]{placeins}
+\title{Computer exercise 6}
+\date{}
+\author{Carl Ridnert, 940325-0112, ridnert@kth.se \\
+Yue Jiao, 911024-7799, yj@kth.se}
+
+\begin{document}
+
+\maketitle
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.45\textwidth,center]{1}
+\end{figure}
+
+
+\newpage
+
+\section*{Problem 1}
+\subsection*{Analysis}
+In this problem the hyperbolic PDE problem is treated numerically. The PDE is the following: 
+\begin{equation}
+\frac{\partial u}{\partial t} + a\frac{\partial u}{\partial x} = 0
+\end{equation}
+with IC $u(x,0)=0, 0<x\leq 2$ and the following boundary condition:
+\begin{equation}
+u(0,t) = \begin{cases}
+1, \quad & n\frac{T}{2} < t \leq (n+1)\frac{T}{2},  \\
+-1, \quad & (n+1)\frac{T}{2} < t \leq (n+2)\frac{T}{2}, \\
+\end{cases} \quad n = 0,2,4,\dots
+\end{equation}
+
+The space is discretized into $N$ equidistant subintervals and define grid points $x_i = ih_x$ where $h_x = 2/N$ and the Courant number $\sigma$ to be used later is defined as $\sigma = ah_t/h_x$. 
+
+\subsection*{Solving with upwind method}
+With the upwind method the PDE is discretized into the following form:
+\begin{equation}
+u_{i,k+1} = (1-\sigma) u_{i,k} + \sigma u_{i-1,k}
+\end{equation}
+This method is stable when $0<\sigma \leq 1$ and thus it performs well when $\sigma = 1$. 
+
+\subsection*{Solving with Lax-Friedrich method}
+With the upwind method the PDE is discretized into the following form:
+\begin{equation}
+u_{i,k+1} = \frac{u_{i-1,k}+u_{i+1,k}}{2}- \frac{\sigma}{2}(u_{i+1,k}-u_{i-1,k})
+\end{equation}
+According to the theory, the method is stable when $-1\leq \sigma \leq 1$.
+
+\subsection*{Solving with Lax-Wendroff method}
+With the upwind method the PDE is discretized into the following form:
+\begin{equation}
+u_{i,k+1} = u_{i,k}-\frac{\sigma}{2}(u_{i+1,k}-u_{i-1,k})+\frac{\sigma^2}{2}(u_{i+1,k}-2u_{i,k}+u_{i-1,k})
+\end{equation}
+According to the theory, the method is stable when $-1\leq \sigma \leq 1$.
+\newpage
+The PDE was solved in Matlab using each of the three methods described above for sigma taking the values $\sigma\in\{0.8,1,1.1\}$ and the resulting plots of the solution is shown below.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1.2\textwidth,center]{Subplot1}
+\caption{Plots of solutions using different methods when $\sigma=0.8$}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1.2\textwidth,center]{Subplot2}
+\caption{Plots of solutions using different methods when $\sigma=1$}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1.2\textwidth,center]{Subplot3}
+\caption{Plots of solutions using different methods when $\sigma=1.1$}
+\end{figure}
+
+Notice that the solution becomes unstable when $\sigma$ is larger than one. This is in agreement with the theory presented above.
+
+\section*{Problem 2}
+\subsection*{Analysis}
+In this problem the following PDE is solved:
+\begin{equation}
+\frac{\partial T}{\partial t} + \nu\frac{\partial T}{\partial x}+a(T-T_{cool}) = 0, \quad 0<x<L, \quad t>0
+\end{equation}
+with the IC: 
+\begin{equation}
+T(x,0)=T_{cool}
+\end{equation}
+and the BC:
+\begin{equation}
+T(0,t) = 
+\begin{cases}
+T_{cool} + (T_{hot}-T_{cool})sin(\pi t) \quad & 0\leq t \leq 0.5 \\
+T_{hot}	\quad & 0.5 \leq t \leq 4 \\
+T_{hot} + T_{cool} sin(\pi(t-4)) \quad & t>4\\
+\end{cases}
+\end{equation}
+Here we have the parameters $L=3$, $a=0.1$, $\nu=1$, $T_{cool}=5$ and $T_{hot} = 100$.
+
+\subsection*{Solving with upwind method}
+To let the upwind method perform in the best way, we want to choose $h_x$ and $h_t$ so that $\sigma = \nu h_t/h_x=1$. We choose to divide the region into 30 equidistant subintervals so $h_x=L/30=0.1$ and then $h_t = \sigma h_x /\nu =0.1$
+
+Then the PDE can be discretized into the following form: 
+\begin{equation}
+\frac{T_{i,k+1}-T_{i,k}}{h_t}+\nu\frac{T_{i+1,k}-T_{i-1,k}}{2h_x} + a(T_{i,k}-T_{cool}) = 0
+\end{equation}
+With $i$ indexes the discretization of $x$-axis and $k$ indexes the discretization to the time-axis. This formula can be rewritten as the following: 
+\begin{equation}
+T_{i,k+1} = (1-ah_t)T_{i,k}-\frac{1}{2}(T_{i+1,k}-T_{i-1,k})+ah_tT_{cool}
+\end{equation}
+The IC shall become: 
+\begin{equation}
+T_{i,1} = T_{cool} 
+\end{equation}
+
+This was solved in Matlab and the results is presented below.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth,center]{surf1}
+\caption{Plots of solution using the Upwind method}
+\end{figure}
+
+\newpage
+\subsection*{Solving with The Lax–Wendroff Method}
+The Lax-Wendroff method is based on the Taylor expansion of the time derivative:
+\begin{equation}
+T(x_i,t_{k+1}) = T(x_i,t_k)+h_t\frac{\partial T}{\partial t}(x_i, t_k) + \frac{h_t^2}{2}\frac{\partial^2 T}{\partial t^2}(x_i, t_k) + O(h_t^3)
+\end{equation}
+According to the original PDE we have that: 
+\begin{equation}
+\frac{\partial T}{\partial t} = -\nu\frac{\partial T}{\partial x} - a T + a T_{cool} 
+\end{equation}
+This implies that: 
+\begin{equation}
+\begin{aligned}
+\frac{\partial^2 T}{\partial t^2} & = -\nu\frac{\partial^2 T}{\partial x \partial t} - a\frac{\partial T}{\partial t} \\
+& = -\nu \frac{\partial}{\partial x}(-\nu\frac{\partial T}{\partial x} - a T + a T_{cool} ) - a (-\nu\frac{\partial T}{\partial x} - a T + a T_{cool} ) \\
+& = \nu^2 \frac{\partial^2 T}{\partial x^2} + \nu a \frac{\partial T}{\partial x} + a \nu \frac{\partial T}{\partial x} + a^2 T -a^2 T_{cool} \\
+& = \nu^2 \frac{\partial^2 T}{\partial x^2} + 2  a \nu \frac{\partial T}{\partial x} + a^2 T -a^2 T_{cool} 
+\end{aligned}
+\end{equation}
+Insert these into the discretization form of the PDE we shall obtain the following: 
+\begin{equation}
+\begin{aligned}
+T(x_i,t_{k+1}) = & \; T(x_i,t_k)  + h_t\left(-\nu\frac{\partial T}{\partial x}(x_i, t_k) - a T(x_i, t_k) + a T_{cool}\right) \\
+& + \frac{h_t^2}{2}\left(\nu^2 \frac{\partial^2 T}{\partial x^2}(x_i, t_k) + 2  a \nu \frac{\partial T}{\partial x}(x_i, t_k) + a^2 T(x_i, t_k) -a^2 T_{cool} \right) + O(h_t^3) \\ 
+\end{aligned}
+\end{equation}
+\begin{equation*}
+\Downarrow
+\end{equation*}
+\begin{equation}
+\begin{aligned}
+T_{i,k+1} \approx & \;  T_{i,k} + h_t\left( -\frac{\nu}{2 h_x} (T_{i+1,k}-T_{i-1,k}) - a T_{i,k} + a T_{cool} \right) \\
+& + \frac{h_t^2}{2} \left(\frac{\nu^2}{h_x^2}\left(T_{i+1,k}-2T_{i,k}+T_{i-1,k}\right) + \frac{a \nu }{h_x} (T_{i+1,k}-T_{i-1,k}) + a^2 T_{i,k} -a^2 T_{cool}\right) \\
+= & \left(-\frac{\nu h_t}{2 h_x} + \frac{h_t^2\nu^2}{2 h_x^2} - \frac{a\nu h_t^2}{2 h_x} \right) T_{i-1,k} + \left(1-h_t a - \frac{h_t^2\nu^2}{h_x^2} + \frac{a^2h_t^2}{2} \right) T_{i,k} \\ 
+& \quad + \left(-\frac{h_t\nu}{2h_x} + \frac{h_t^2\nu^2}{2 h_x^2}+ \frac{a\nu h_t^2}{2 h_x} \right) T_{i+1, k} + \left(a h_t-\frac{a^2h_t^2}{2}\right)T_{cool}\\
+= & \left(\frac{\sigma}{2} + \frac{\sigma^2}{2} - \frac{a h_t \sigma}{2} \right) T_{i-1,k} + \left(1-h_t a - \sigma^2 + \frac{ a^2h_t^2}{2}\right) T_{i,k} \\ 
+& \quad + \left(-\frac{\sigma}{2} + \frac{\sigma^2}{2} + \frac{a h_t \sigma}{2} \right) T_{i+1, k} + \left(a h_t-\frac{a^2h_t^2}{2}\right)T_{cool}
+\end{aligned}
+\end{equation}
+
+To make the numerical calculation stable, we shall choose to have $\sigma  = \frac{\nu h_t}{h_x}= 1$. If we choose to discretize the range into 30 equidistant interval then we shall have $h_x = 3/30 = 0.1$ which corresponds to $h_t = 0.1$. Then we can calculate the PDE numerically.
+
+The solution is depicted below
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth,center]{surf2}
+\caption{Plots of solution using the Upwind method}
+\end{figure}
+
+This looks very much the same as the plot obtained for the Upwind method. 
+
+\end{document}
+
+
+surf(T)

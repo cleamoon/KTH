@@ -1,0 +1,33 @@
+Mars Reconnaissance Orbiter
+	Payload: 139kg
+	Propulsion:	1175L, 1187kg Hydrazine monopropellent
+							6 large thruster, each 170N
+							6 medium thruster, each 22N
+							8 small thruster, each 0.9N
+
+Mars Orbiter Mission
+	Payload: 13.4kg
+	Propulsion:	852kg totally
+							1 large thruster, 440N
+							8 medium thruster, 22N
+
+Mars express
+	Payload: 113kg
+	Propulsion:	267L, 595kg bipropellant
+							400N thruster
+
+ExoMars Trace Gas Orbiter
+	Payload: 113.8kg
+	Propulsion:	bipropellent
+							424N thruster
+
+Viking program
+	Payload: 91kg
+	Propulsion: monopropellent
+							32N thruster
+
+Monopropellent:
+
+Bipropellent: 
+
+

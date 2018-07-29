@@ -1,0 +1,75 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[top=1in,bottom=1in,left=1.25in,right=1.25in]{geometry}
+\usepackage[swedish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathtools}
+\usepackage{listings}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{framed}
+\usepackage{xcolor}
+\usepackage{url}
+\author{Yue Jiao \\ 911024-7799}
+\title{ {\Large \textbf{ Moderna fysik \\ Inlämningsuppgift 2} }}
+\date{}
+\begin{document}
+\maketitle
+Enligt relativt Dopplereffekt vet vi att:
+$$
+\frac{f_s}{f_o} = sqrt{\frac{1-\beta}{1+\beta}}
+$$
+Där $f_s$ är frekvensen av ljuset som kommer från källen. 
+Och $f_o$ är frekvensen av ljuset som observer se. 
+$\beta$ är den relativitiska faktor som ges av bilens hastighet. 
+Så vi kan anta att bilens hastighet är $v$. 
+Då är $\beta = \frac{v}{c}$, där $c$ är ljusets hastighet. 
+
+Nu kan vi kolla på tabellen av ljusets frekvenser av olika färger. 
+Enligt Georgia State Universitys hemsidan får vi följande tabellen. 
+\url{http://www.gsu.edu/} 
+{
+  \centering
+  \begin{tabular}[t]{ | c | c | }
+    \hline
+    Färg & Frekvens (THz) \\
+    \hline
+    Röd & 430 \\
+    Orange & 480 \\
+    Gul & 510 \\
+    Grön & 540 \\
+    Blå & 610 \\
+    Violet & 670 \\
+    \hline  
+  \end{tabular}
+}\\
+
+Så en röd lampa har frekvensen 430THz. 
+Och då kan vi räkna fram hastigheten det krävs för att få röda ljus se grön ut, dvs frekvensen vi får bli 540THz. 
+Vi vet: 
+$$
+\frac{f_s}{f_o} = \sqrt{\frac{1-\beta}{1+\beta}}
+$$
+Och vi stoppar in väder vi vet då blir det:
+$$
+\frac{430THz}{540THz} = \sqrt{\frac{1-\beta}{1+\beta}}
+$$
+Då får vi att 
+$$
+\beta = 22,4\%
+$$
+Så $\frac{v}{c} = 22,4\%$, dvs hastigheten av bilen måste vara omkring $22,4\%$ av ljusets hastighet. 
+
+Om lampa visar grönt färg, dvs om $f_s$ blir 540THz och $\beta$ håller lika. 
+Då kan vi räkna fram den nya $f_o$. 
+$$
+\frac{540THz}{f_o} = \sqrt{\frac{1-\beta}{1+\beta}} = \frac{430THz}{540THz}
+$$
+Då får vi att $f_o = 678THz$. Det är en violet ljus. 
+
+Vi antar att det finns en bil som har massa $m$ och bränsle har massa $M$. 
+Och vi kan antar att hela massenergi omvandlas till kinetiska energi. 
+\end{document} 

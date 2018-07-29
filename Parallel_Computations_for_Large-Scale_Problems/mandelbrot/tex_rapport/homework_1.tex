@@ -1,0 +1,90 @@
+\documentclass[a4paper]{article}
+\usepackage{titlesec}
+\usepackage{fullpage} % Package to use full page
+\usepackage{parskip} % Package to tweak paragraph skipping
+\usepackage{tikz} % Package for drawing
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries}   % The style of the section title
+  {}                             % a prefix
+  {0pt}                          % How much space exists between the prefix and the title
+  {Problem \thesection:\quad}    % How the section is represented
+
+ 
+\title{SF2568 Homework 1}
+\author{Yue Jiao}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{} % 1
+A processor is a physical hardware device that has the capability of accessing the memory and computing values.
+A process is a computational activity assigned to a processor that do the computation.
+
+\section{} % 2
+We assume that there is totally P floating operations to compute.
+According to the problem, $10\%P$ of operations shall be computed sequentially and $90\%P$ of operations shall be computed parallelly on 100 pressors.
+Then we assume that it will take a time $t$ to compute this.
+So, we will have the following relation:
+\[
+\frac{10\%P}{2\text{G flops}} + \frac{90\%P}{100\times2\text{G flops}} = t
+\]
+The average performance can be calculated by $\frac{P}{t}$. So:
+\[
+\frac{P}{t}=\frac{P}{\frac{10\%P}{2\text{G flops}} + \frac{90\%P}{100\times2\text{G flops}}} \approx 18.3\text{G flops}
+\]
+
+
+\section{} % 3
+The system efficiency $\eta_P$ is defined as the kvot of the systems parallel speedup $S_p$ and the amount of processors $P$, $\frac{S_p}{P}$.
+The theoretical maximum of parallel speedup $S_p$ is $P$ so the kvot has the theoretical maximum of $1$.
+So there is no way the system efficiency to be greater than $100\%$.
+
+\section{} % 4
+Since the computation part of the rank sort algorithm is completely independent from each number, we can let each processor compute the rank of $10$ numbers one after one. 
+So we first divide the set of number that need to be sorted in $P$ subset where all set contains 10 numbers and $P$ is the number of processors.
+Then we send the mark of each set of numbers to different processors so they know which numbers they need to compute on.
+Then each processor shall calculate ranks of their own 10 numbers one after one and send the results back.
+The complete result shall contain the ranks of all numbers.
+
+\section{} % 5
+\textbf{a)}
+Let's assume that the fraction of serial running time is $f$.
+So, after the parallelization, the time spended in the serial section shall be $64\text{s} \times f$.
+The time spended on the parallel section shall be $\frac{64\text{s} \times \left(1-f\right)}{8}$.
+Totally the parallel running time will be:
+\[
+64\text{s} \times f + \frac{64\text{s} \times \left(1-f\right)}{8} = 22\text{s} \Rightarrow f=25\%
+\]
+So $25\%$ of serial running time is spended in the serial section.
+\\
+
+\textbf{b)}
+The parallel speedup is simply
+\[
+S_p = \frac{64s}{22s} = 2.91
+\]
+
+\textbf{c)}
+Let's assume that the serial runnning time is $t$.
+So, the phases consume $20\%t$, $20\%t$ and $60\%t$ of time.
+Since we have $15$ processors, we can assume that each phase can run optimally.
+The time spended in the first phase is then $\frac{20\%t}{5}$. 
+The time spended in the second phase is then $\frac{20\%t}{10}$. 
+The time spended in the third phase is then $\frac{60\%t}{15}$.
+So, the total running parallel runnning time shall be:
+\[
+\frac{20\%t}{5} + \frac{20\%t}{10} + \frac{60\%t}{15} = \frac{t}{10}
+\]
+Thus, the system parallel speedup is then:
+\[
+S_P=\frac{t}{\frac{t}{10}} = 10
+\]
+
+\end{document}
+              

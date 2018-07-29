@@ -1,0 +1,64 @@
+Task 1:
+Rate Monotonic scheduling is the scheduling when all tasks always have the same fixed priorities. So the tasks with higher priorities always run before those with lower priorities.
+
+Task 2:
+Since the three tasks all have the execution time $C_i = 6 ms$ and they have sampling times $T_i = {20, 29, 35}ms$, the utilization factor $U$ can be calculated as following:
+\begin{equation}
+U = \sum_{i=1}^n \frac{C_i}{T_i} = \frac{6}{20} + \frac{6}{29} + \frac{6}{35} = 0.678 < 0.69
+\end{equation}
+So the tasks are schedulable. The tasks can be scheduled as the following. Let task 1 with sampling time $20ms$ runs first. Then the second with sampling time $29ms$ runs. At last the task with sampling time $35ms$ runs. The total running time is $18ms$ which is less than the shortest sampling time so this schedule can be used periodically.  
+
+Task 3:
+The pendulums are stabilized. The results are showed as below. As it showes in the plot, the first controller is fastest and the last controller is slowest as expected. It is logical since the first controller always activates first.
+
+%% PLOT theta06
+
+Task 4:
+The schedules are plotted as below. As it showes, it can be seen that the tasks get time to execute before all their sampling times are over. 
+
+%% PLOT schedule06
+
+Task 5:
+Now instead, the execution time of the tasks become $C_i = 10 ms$. The utilization factor becomes: 
+\begin{equation}
+U = \sum_{i=1}^n \frac{C_i}{T_i} = \frac{10}{20} + \frac{10}{29} + \frac{10}{35} = 1.13 > 0.69
+\end{equation}
+So the the tasks are not schedulable in the sense of rate monotonic scheduling. 
+
+As the plots showed below, it can be observed that the third angle $\theta_3$ is not stable. It is not easy to see but the pattern of the task 3 on the scheduling graph clearly showes that the task 3 does not get enough time the be performed. 
+
+%% PLOT theta10, schedule10
+
+Task 6:
+The Earliest Deadline First scheduling is a scheduling that let tasks have dynamic priorities. Their priorities are determined to be their deadlines. This means that the one task with shortest time to deadline shall be executed. The advantage of this scheduling algorithm over rate monotonic scheduling is that it can be applied on large range of utilization factor, i.e. it is schedulable on all situation when $U \leq 1$ when rate monotonic scheduling works only when $U < 0.69$. The disadvantage of Earliest Deadline First scheduling is that it is more difficult to be implemented than rate monotonic scheduling since deadlines of all tasks need to be tracked entire time. 
+
+Task 7:
+Since the utilization factor of the tasks when execution times are $6ms$ is $U = 0.678 < 1$, the tasks are schedulable in the sense of EDF scheduling. The first part of scheduling shall look like the following:
+
+\begin{equation*}
+\begin{aligned}
+D_1 = 20, D_2 = 29, D_3 = 35  \Rightarrow \textrm{Task 1 executed} \\ \Downarrow \\ 
+D_1 = 40, D_2 = 29, D_3 = 35  \Rightarrow \textrm{Task 2 executed} \\ \Downarrow \\ 
+D_1 = 40, D_2 = 58, D_3 = 35  \Rightarrow \textrm{Task 3 executed} \\ \Downarrow \\ 
+D_1 = 40, D_2 = 58, D_3 = 70  \Rightarrow \textrm{Task 1 executed} \\ \Downarrow \\ 
+D_1 = 60, D_2 = 58, D_3 = 70  \Rightarrow \textrm{Task 2 executed} \\ \Downarrow \\ 
+D_1 = 60, D_2 = 87, D_3 = 70  \Rightarrow \textrm{Task 1 executed} \\ \Downarrow \\ 
+D_1 = 80, D_2 = 87, D_3 = 70  \Rightarrow \textrm{Task 3 executed} \\ \Downarrow \\ 
+\vdot
+\end{aligned}
+\end{equation*}
+
+
+Task 8:
+The pendulums are stable as it is showed in the plots. Now it is easier to see that the first is clearly executed faster and the last task is executed slower. So the controller of pendulum 1 is more efficient in this case. 
+
+%% PLOT theta06_EDF
+
+Task 9:
+It can be seen from the plots of the scheduling that the tasks do get time to execute before its sampling periods are over. 
+
+%% PLOT schedule06_EDF
+
+Task 10:
+
+

@@ -1,0 +1,1 @@
+function res=FSpar_JF(par, X, Ux)C = par(1);nx = par(2);u_teo = C*(X).^nx;res = sum((u_teo-Ux).^2) ;

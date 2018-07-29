@@ -1,0 +1,1 @@
+function T = Tpoly(n,x)% T = Tpoly(n,x) returns a row vector (matrix) containing the first %   n+1 Chebyshev polynomials computed at x (vector)    for k = 1:length(x)        T(k,:) = cos( (0:n) * acos(x(k)) );    end	

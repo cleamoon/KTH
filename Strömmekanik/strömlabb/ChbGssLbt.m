@@ -1,0 +1,1 @@
+function x = ChbGssLbt(n)% x = ChbGssLbt(n) creates n+1 Chebyshev-Gauss-Lobatto collocation %   points in the domain [-1,1]    x  = -cos( pi * (0:n) / n );	

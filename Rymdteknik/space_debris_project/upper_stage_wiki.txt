@@ -1,0 +1,7 @@
+famous upper stages' empty mass and amount of successful launches/amount of launches
+Delta-K 950 kilograms 138  https://en.wikipedia.org/wiki/Delta-K
+Centaur 2,247 kg/2,462 kg 55/63+1/5 https://en.wikipedia.org/wiki/Centaur_(rocket_stage)
+Delta Cryogenic Second Stage 2,480 kg 18/21 https://en.wikipedia.org/wiki/Delta_Cryogenic_Second_Stage
+Fregat 930 kg/980 kg/1,050 kg/1,410 kg 22/18/7/3 https://en.wikipedia.org/wiki/Fregat
+Inertial Upper Stage 700 kg 14/24? https://en.wikipedia.org/wiki/Inertial_Upper_Stage
+Need to check where those stages end up

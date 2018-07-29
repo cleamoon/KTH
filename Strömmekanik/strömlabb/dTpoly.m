@@ -1,0 +1,1 @@
+function dT = dTpoly(T)% dT = dTpoly(T) returns a row vector (matrix) containing the %   derivative of the Tsebychev polynomial T of degree N+1    n  = size(T,2) - 1;    dT(:,1) = zeros(n+1,1);    dT(:,2) = T(:,1);    dT(:,3) = 4*T(:,2);    for k = 4:n+1        dT(:,k) = 2*(k-1).*T(:,k-1) + (k-1)/(k-3).*dT(:,k-2);    end	

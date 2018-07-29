@@ -1,0 +1,25 @@
+Thermal simulation commments
+	On nodal diagram, radiator couplings with the environment. (Sun and the Earth)
+	Temperature of the equipments are important. (We need the plots from the equipments.)
+	Cold case equipments should be above 0 degree.  (What if we don't get that?)
+	Re-optimize. (Smaller radiator possibly.)
+
+
+	0.6?? -> 0.577 
+	0.092 -> 0.092
+	?.??? -> 0.2
+	0.488 -> 0.462
+
+	Pd = Pc = C*(Teq - Trad)
+	150 W = 150W = C(Teq-293K)
+	Teq < 40  => 150/C = Teq - 293 => 150/C + 293 < 273+40 => C >= 7.5 (for each face)
+
+
+Radiation simulation comments
+	Increase the thickness of the walls.
+	Silicon on Solar panels.
+	<< How do get from the stopping power to the radiation curve >> should be in the rapport.
+	Describe the ray tracing algorithm. 
+	Tables containing the numbers.
+	Discussion.
+	Coordinate system. 
