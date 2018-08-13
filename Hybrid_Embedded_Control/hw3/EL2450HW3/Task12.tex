@@ -1,0 +1,39 @@
+According to the definition, $d_p$ can be expressed in the following way.
+\begin{equation}
+\begin{aligned}
+    d_p = & 
+    \begin{bmatrix}
+    \sin{\theta_g} & -\cos{\theta_g} \\
+    \end{bmatrix} \cdot  
+    \begin{bmatrix}
+    x(k) - x_0 + p \cdot \cos{\theta[k]} \\
+    y(k) - y_0 + p \cdot \sin{\theta[k]} 
+    \end{bmatrix} \\
+    = & (\sin{\theta_g}(x(k) - x_0) - \cos{\theta_g}(y(k) - y_0)) + p[\sin{\theta_g}\cos{\theta[k]} - \cos{\theta_g}\sin{\theta[k]}] \\
+    = & (\sin{\theta_g}(x(k) - x_0) - \cos{\theta_g}(y(k) - y_0)) + p \sin{(\theta_g-\theta[k])}
+\end{aligned}
+\end{equation}
+
+If the robot is on the line between $(x_0, y_0)$ and $(x_g, y_g)$, the position of the robot is orthogonal to $v_{g,\perp},$, so $(\sin{\theta_g}(x(k) - x_0) - \cos{\theta_g}(y(k) - y_0)) = 0.$ Also, if $\theta_g \approx \theta[k],$ then $p \sin{(\theta_g-\theta[k])} \approx p (\theta_g-\theta[k])$ (from the Taylor expansion of $\sin$). The scalar product can then be expressed as 
+\[
+d_p = p(\theta_g - \theta[k]).
+\]
+
+Inserting this expression for $d_p$ into the formula for the controller yields $\omega[k] \approx K_\psi p \frac{\pi}{180} (\theta_g - \theta[k]).$ Time shifting the expression for the approximation of $d_g$ gives $d_g[k+1] = p(\theta_g - \theta[k]).$ The angle $\theta[k+1] = \theta[k] + \frac{R}{L} \omega[k] \approx \theta[k] + \frac{R}{L}K_\psi p  \frac{\pi}{180}(\theta_g - \theta[k]).$Inserting this back into the equation for $d_p[k+1]$ results in
+\[
+    d_p[k+1] \approx p ( (1-K_\psi p  \frac{\pi}{180}\frac{R}{L}) \theta_g - (1 - K_\psi p  \frac{\pi}{180} \frac{R}{L}) \theta[k])
+\]
+which is zero when $K_\psi =  \frac{180}{\pi}\frac{L}{Rp}.$
+
+%When $\theta_g \approx \theta$, we have:
+%\begin{equation}
+%    \begin{aligned}
+%    \frac{\sin{\theta_g}}{\cos{\theta_g}} = \tan{\theta_g} \approx \tan{\theta[k]} = \frac{y(k)-y_0}{x(k)-x_0} \\ \Rightarrow \sin{\theta_g}(x(k) - x_0) - \cos{\theta_g}(y(k) - y_0) \approx 0 \\
+%    p \sin{\theta_g-\theta[k]} \approx p (\theta_g - \theta[k])
+%    \end{aligned}
+%\end{equation}
+%Then the following approximating formula can be deduced. 
+%\begin{equation}
+%    \omega[k] = K_\psi p (\theta_g - \theta[k])
+%\end{equation}
+%which is similar to the task 5 thus a similar result can be applied. 

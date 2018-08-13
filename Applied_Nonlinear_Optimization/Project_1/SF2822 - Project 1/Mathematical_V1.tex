@@ -1,0 +1,41 @@
+From the problem formulation above, the following variables can be exacted. 
+\begin{itemize}[noitemsep]
+\item The maximum capacity of each generator: $Cap_i, i = 1...6$ as listed above
+\item The cost of producing $1 pu$ power for $1 h$ by each generator: $Cost_i, i = 1...6$ as listed above
+\item The active power generated of each generator $Apg_i \in [0, Cap_i], i = 1...6$
+\item The reactive power generated of each generator $Rpg_i \in [-Cap_i, Cap_i], i = 1...6$
+\item The active power produced on node $k$: $Ap_k, k = 1...4$
+\item The reactive power produced on node $k$: $Rp_k, k = 1...4$
+\item The demand on each node: $D_k, k = 1...4$
+\item The voltage amplitudes: $U_k \in [0.9pu, 1.1pu], k=1...4$
+\item The voltage phase angles: $\theta_k \in [-\pi, \pi], k=1...4$
+\end{itemize}
+
+
+Several parameters are needed for the calculation. They are the following:
+\begin{itemize}[noitemsep]
+\item $g_km = g_mk$
+\item $b_km = b_mk$
+\end{itemize}
+
+
+The constraints are the following:
+\[
+Ap_1 = Apg_1 + Apg_2;\quad Ap_2 = Apg_3 + Apg_4 + Apg_5 + Apg_6;\quad Ap_3 = 0;\quad Ap_4 = 0
+\]
+\[
+Rp_1 = Rpg_1 + Rpg_2;\quad Rp_2 = Rpg_3 + Rpg_4 + Rpg_5 + Rpg_6;\quad Rp_3 = 0;\quad Rp_4 = 0
+\]
+
+\[
+\textrm{For each node } k, \sum_{m \neq k} P_{mk} - P_{km} + Ap_k \geq D_k
+\]
+\[
+\textrm{For each node } k, \sum_{m \neq k} Q_{mk} - Q_{km} + Rp_k = 0
+\]
+The two nonlinear equations above are also constraints. 
+
+The objective function which should be minimized is called as $z$ and it has the following form:
+\[
+z = \sum_{i=1}^{i=6} Apg_i \times Cost_i
+\]

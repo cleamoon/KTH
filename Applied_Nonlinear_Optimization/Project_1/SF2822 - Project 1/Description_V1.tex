@@ -1,0 +1,81 @@
+Problem description:
+\begin{itemize}
+    \item 4 nodes: 1, 2, 3, 4
+    \item 4 links: (1, 2), (1, 3), (2, 4), (3, 4)
+    \item 6 generators: G1, G2 at the node 1, G3, G4, G5 and G6 at the node 2
+\end{itemize}
+\\
+
+\begin{table}[!h]
+    \centering
+    \begin{tabular}{|c |c| c|}
+    \hline
+    Generator & Variable cost [$SEK/pu/h$] & Maximum capacity [$pu$] \\
+    \hline
+    G1 & 100 & 0.4 \\
+    G2 & 200 & 0.4 \\
+    G3 & 100 & 0.5 \\
+    G4 & 200 & 0.6 \\
+    G5 & 300 & 0.7 \\
+    G6 & 400 & 0.8 \\
+    \hline
+    \end{tabular}
+    \caption{Generator table}
+\end{table}
+
+\[
+pu = 100MVA
+\]
+
+\begin{table}[!h]
+    \centering
+    \begin{tabular}{|c |c|}
+    \hline
+    Node & Demand active power [$pu$] \\
+    \hline
+    1 & 0.78 \\
+    2 & 0.50 \\
+    3 & 0.14 \\
+    4 & 0.89 \\
+    \hline
+    \end{tabular}
+    \caption{Demand on nodes}
+\end{table}
+
+%\\
+%Active power transmission law: 
+%\[
+%P_{km} = U^2_{k} g_{km} − U_{k} U_{m} g_{km} \cos(\theta_k − \theta_m) − U_k U_m b_{km} \sin(\theta_k − \theta_m)
+%\]
+
+%Reactive power transmission law:
+%\[
+%Q_{km} = −U^2_k b_{km} + U_k U_m b_{km} \cos(\theta_k − \theta_m) − U_k U_m g_{km} \sin(\theta_k − \theta_m)
+%\]
+
+
+\begin{table}[!h]
+    \centering
+    \begin{tabular}{|c |c| c|}
+    \hline
+    Links & $g_{km}$ & $b_{km}$ \\
+    \hline
+    (1,2) & 2.65 & -20.67 \\
+    (1,3) & 3.04 & -23.53 \\
+    (2,4) & 1.46 & -11.37 \\
+    (3,4) & 3.25 & -25.29 \\
+    \hline
+    \end{tabular}
+    \caption{Parameters ($g_{km} = g_{mk}$, $b_{km} = b_{mk}$)}
+\end{table}
+
+
+
+
+%\\
+%Hiden information in the text:
+%\begin{itemize}
+%    \item Generator generates active power between 0 and its capacity. Generator generates reactive power between plus and minus its capacity.
+%    \item $U_k \in [0.9pu, 1.1pu]$ and $\theta_k \in [-\pi, \pi]$.
+%    \item $g_{km} = g_{mk}$, $b_{km} = b_{mk}$.
+%\end{itemize}

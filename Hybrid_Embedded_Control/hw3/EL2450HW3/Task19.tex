@@ -1,0 +1,5 @@
+There are two properties of the continuous controller that can affect the safety of the property of transitions. The first is how well the robot following the line and the second is how well it stays close to the goal point. 
+
+If the robot cannot stay in the line then the distance between the robot and the line can be large. This might leads to that the robot leave the transition regions. The problem is mainly caused by a oscillating angular controller. This can be avoid by reduce the error marginal in the direction coordinate so the robot shall move toward the target mostly. 
+
+The second problem comes up when the speed controller is oscillating or unstable. When this occurs to stay close to the target point will be difficult. The robot might move too far away from the target and thus leave the transition regions. This can also occur in the beginning of line-tracking as well. So the solution to this problem is to minimize the oscillation of the speed controller. 

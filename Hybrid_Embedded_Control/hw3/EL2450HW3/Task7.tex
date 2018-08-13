@@ -1,0 +1,16 @@
+
+Per definition
+\[
+d_0[k+1] = \Delta_0[k+1] \cdot v_c[k+1].
+\]
+Then, with the position $p[k]$, $\Delta_0[k+1] = \Delta_0[k] + p[k] - p[k+1].$ 
+The position in the next time step is given by $p[k+1] = p[k] + R\frac{\pi}{180}v[k] v_c[k].$ The $R\frac{\pi}{180}$ coefficient is necessary to change the unit of $v$ from degrees per second into meters per second. Substituting in the controller into this equation gives $p[k+1] = p[k] + KR\frac{\pi}{180}d_0[k] v_c[k].$
+Inserting this expression into the equation for $\Delta_0[k+1]$ we get $\Delta_0[k+1] = \Delta_0[k] - K_\omega R\frac{\pi}{180}d_0[k] v_c[k].$
+
+If we assume that $\theta$ is constant, then $v_c[k+1] = v_c[k],$
+so $d_0 [k+1] = (\Delta_0[k] - R\frac{\pi}{180}d_0[k] v_c[k])\cdot v_c[k].$ Since $\Delta_0[k] \cdot v_c[k] = d_0[k]$ and $v_c[k]\cdot v_c[k] = 1$ we finally get
+\begin{equation*}
+d_0 [k+1] = (1-K_\omega \frac{\pi}{180})d_0[k].
+\end{equation*}
+
+The eigenvalue of this system is given by $1-K_\omega \frac{\pi}{180}.$ If $K_\omega > 2\frac{180}{R \pi}$ the system will become unstable. $K_\omega = \frac{180}{R \pi} \approx 572$ gives a dead beat controller.

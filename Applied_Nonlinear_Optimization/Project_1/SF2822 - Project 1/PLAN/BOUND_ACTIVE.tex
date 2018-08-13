@@ -1,0 +1,37 @@
+\begin{figure}[!h]
+    \centering
+    
+\begin{tikzpicture}[
+roundnode/.style={circle, draw=green!60, fill=green!5, very thick, minimum size=7mm},
+squarednode/.style={rectangle, draw=red!60, fill=red!5, very thick, minimum size=5mm},
+]
+%Nodes
+\node[roundnode]    (node1)      at (0,0) {1};
+\node[roundnode]    (node2)      at (3,0) {2};
+\node[roundnode]    (node3)      at (0,-3) {3};
+\node[roundnode]    (node4)      at (3,-3) {4};
+\node[squarednode]  (gen1)       at (-1,2) {$G_1$};
+\node[squarednode]  (gen2)       at (0,2) {$G_2$};
+\node[squarednode]  (gen3)       at (2,2) {$G_3$};
+\node[squarednode]  (gen4)       at (3,2) {$G_4$};
+\node[squarednode]  (gen5)       at (4,2) {$G_5$};
+\node[squarednode]  (gen6)       at (5,2) {$G_6$};
+ 
+%Lines
+\draw[<-] (node1.east) -- node[above] {$1.048 \nearrow$} (node2.west);
+\draw[->] (node3.east) -- node[above] {$0.128 \searrow$} (node4.west);
+\draw[->] (node1.south) -- node[left] {$0.268 \searrow$} (node3.north);
+\draw[->] (node2.south) -- node[right] {$0.762 \nearrow$} (node4.north);
+%\draw[->] (gen1.south) -- node[left] {$0.4$} (node1.north);
+%\draw[->] (gen2.south) -- node[right] {$0.4$} (node1.north);
+\draw[->] (gen3.south) -- node[left] {$0.5$} (node2.north);
+\draw[->] (gen4.south) -- node {$0.6$} (node2.north);
+\draw[->] (gen5.south) -- node {$0.7$} (node2.north);
+\draw[->] (gen6.south) -- node[right] {$0.51$} (node2.north);
+%\draw[->] (gen6.south) -- (node2.north);
+%\draw[->] (node2.south) .. controls +(down:7mm) and +(right:7mm) .. (node3.east);
+\end{tikzpicture}    
+    
+    \caption{Active Power Transmission with bounds on the active power transmission in the links [pu]}
+    \label{fig:my_label}
+\end{figure}

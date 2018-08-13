@@ -1,0 +1,25 @@
+\def\batchfile{kthesis.ins}
+\input docstrip.tex
+\askforoverwritefalse
+\keepsilent
+\edef\bstpostamble{%
+  \MetaPrefix ^^J%
+  \MetaPrefix\space End of file `\outFileName'.}
+\generate{\usepostamble\bstpostamble
+  \file{kthplain.bst}{\from{kthesis.dtx}{bstfile,plain}}
+  \file{kthnat.bst}{\from{kthesis.dtx}{bstfile,nat}}
+}
+\generate{%
+  \file{kthspik.cls}{\from{kthesis.dtx}{classfile,drlic,spikblad}}
+  \file{kthesis.cls}{\from{kthesis.dtx}{classfile,drlic,avhandling}}
+  \file{kth-mag.cls}{\from{kthesis.dtx}{classfile,exjobb,avhandling}}
+  \file{kth-abs.tex}{\from{kthesis.dtx}{abstract}}
+  \file{kth-bibl.tex}{\from{kthesis.dtx}{biblio}}
+  \file{kth-demo.tex}{\from{kthesis.dtx}{demo}}
+  \file{kth-spik.tex}{\from{kthesis.dtx}{spik}}
+  \file{kth-ex1.tex}{\from{kthesis.dtx}{ex1}}
+  \file{kth-ex2.tex}{\from{kthesis.dtx}{ex2}}
+  \file{nada-ex.sty}{\from{kthesis.dtx}{layout}}
+  \file{kthesis.drv}{\from{kthesis.dtx}{driver}}
+}
+\endinput

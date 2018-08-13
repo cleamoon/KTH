@@ -1,0 +1,22 @@
+The hybrid controller is modeled as a three state system. Where $q_1$ is when the robot is at the initial position and rotates to the direction of the goal position. It enters the next state $q_2$ when the direction of the robot is sufficiently near the desired direction. In state $q_2$ the robot drives towards the goal destination. When the robot is sufficiently close the goal position the controller enters state 3, $q_3$, which is the final state where the robot has completed its mission. 
+
+\begin{align*}
+H &= (Q,X,Init,f,D,E,G,R)\\
+&\textrm{Where: }\\
+Q &= (q_1,q_2,q_3)\\
+X &= (x,y,\theta)\\
+Init &= (q_1,x_0,y_0,\theta_0)\\
+f(q_1, x, y, \theta) &= \left[0,\ 0,\ K_\psi(\theta-\theta^R))\right]^T \\
+f(q_2, x, y, \theta) &= \left[  K_\omega d_g cos(\theta),\ K_\omega d_g sin(\theta),\ K_\psi \frac{180}{\pi p} \right]^T \\
+f(q_3, x, y, \theta) &= \left[0, 0, 0\right]^T \\
+%D(q_1) &= [x,y,\theta]\in [\textrm{Constant } A \in \mathbb{R}, \textrm{Constant } B \in \mathbb{R},0\leq\theta\leq360^o    ]\\
+D(q_1) &= [x,y,\theta]\in [\textrm{Constant } A \in \mathbb{R},\ \textrm{Constant } B \in \mathbb{R}, \ -180^o\leq\theta\leq 180^o    ]\\
+%D(q_2) &= [x,y,\theta]\in [\mathbb{R}, \mathbb{R}, \textrm{Constant } \theta | \ -180^o\leq\theta\leq 180^o  ]\\
+D(q_2) &= [x,y,\theta]\in [\mathbb{R},\ \mathbb{R},\ -180^o\leq\theta\leq 180^o   ]\\
+D(q_3) &= [\textrm{Constant } A \in \mathbb{R},\ \textrm{Constant } B \in \mathbb{R},\ \mathbb{R}, \textrm{Constant } \theta | 0\leq\theta\leq360^o   ]    ]\\
+E&=\{(q_1, q_2), (q_2, q_3), (q_3, q_1) \}\\
+G(q_1, q_2) &= \{|\theta-\theta^R|<10^o \}\\
+G(q_2, q_3) &= \{|x_0-x_g|<3cm,|y_0-y_g|<3cm\}\\
+G(q_3, q_1) &= \textrm{When a new goal point is inputted} \\
+R(e)&= x \leftarrow x,\ y \leftarrow y,\ \theta \leftarrow \theta \ \forall e \in E
+\end{align*}  

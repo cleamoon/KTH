@@ -1,0 +1,505 @@
+\documentclass[a4paper,12pt,oneside,onecolumn]{article}
+
+\usepackage[left=1.0in, right=1.0in, top=1.0in, bottom=1.0in]{geometry}
+\usepackage{caption}
+\usepackage{placeins}
+\usepackage{tabulary}
+\usepackage{amsmath,amssymb}
+\usepackage[ansinew]{inputenc}
+\usepackage[english]{babel}
+\usepackage[square,numbers]{natbib}
+\bibliographystyle{plainnat}
+\usepackage{float}
+\usepackage[version-1-compatibility]{siunitx}
+\usepackage{tabulary}
+
+
+\ifx\pdfoutput\undefined
+   \usepackage[dvips]{graphicx}
+   \DeclareGraphicsExtensions{.eps}
+ \else
+   \usepackage[pdftex]{graphicx}
+   \DeclareGraphicsExtensions{.pdf,.jpg,.png,.mps}
+   \pdfcompresslevel=9
+\fi
+
+\newcommand{\image}[3][width=.6\columnwidth]{
+	\begin{figure}[h!]
+		\centering
+	    \includegraphics[#1]{#2}
+		\caption{#3}
+		\label{fig:#2}
+	\end{figure}
+}
+
+
+\setlength{\jot}{0.5em}
+
+\begin{document}           
+
+\title{Lab report EL2520}
+\author{
+  Dennis Guhl \\ 950824-T214 \\ guhl@kth.se 
+  \and 
+  Edvin Gu\'ery\\ 950628-5874 \\guery@kth.se
+  \and
+  Tobias Bolin \\ 870702-0098 \\ tbolin@kth.se
+  \and
+  Yue Jiao \\ 911024-7799 \\ yj@kth.se
+  }
+
+
+\maketitle 
+\section{Introduction}
+''The four-tank process'' is the extension of the ''two-tank process'' from the basic control course at KTH. The aim is to manifest the knowledge provided in lectures and exercises. We will get a first impression how control problems are solved in reality and problems may occur which we cannot foresee. This is not possible to cover by a simulation model in Matlab/Simulink but only in a real process.\\
+The whole lab is divided into two occasions. In the first one, we will determine critical system parameters. The theoretical basis is done in preparation task beforehand. The main focus is not on measuring techniques or parameter identification methods, but more on the experience how a coupled system behaves in reality and how difficult it can be to handle this coupling by manual control. Additionally, the difference between a minimum phase system and a non-minimum one will be investigated.\\
+The second occasion is there for applying automatic control. The necessary controllers shall be computed before using the parameter values from occasion one. The whole procedure was already exercised during the last computer exercise of the course. With properly working controllers, the differences between the robustified and non-robustified controller shall be investigated and also the differences between a minimal phase system and a non-minimal one. Several experiments will be performed therefore for both cases and the results will be compared afterwards.\\
+
+\section{Modeling}
+\subsection{Nonlinear Model}
+For each tank $i$ the following relation holds:
+\begin{equation}
+    dV_i = (q_{in,i} - q_{out,i})dt
+\end{equation}
+where $dV_i$ is the change in water volume in the tank during the time $dt$. $q_{in,i}$ and $q_{out,i}$ are the in- and outflow. The water volume is assumed to be $V_i=A_i h_i$ where $A_i$ is the cross section area of tank $i$ and $h_i$ is its water level. So we obtain
+\begin{equation}
+    A_i \frac{dh_i}{dt} = (q_{in,i} - q_{out,i})
+\end{equation}
+The outflow of the water in tank $i$ obeys the Bernoulli's law:
+\begin{equation}
+    q_{out,i} = a_i \sqrt{2gh_i}
+\end{equation}
+where $a_i$ is the cross section area of the outlet hole of tank $i$ and $g$ the gravitational constant. 
+The water pump $j$ generates a flow $q_j$ which is assumed to be proportional to the applied pump voltage $u_j$:
+\begin{equation}
+    q_j = k_j u_j
+\end{equation}
+Each flow of pumped water is divided into two parts according to the following relations:
+\begin{equation}
+    q_L_j = \gamma_j k_j u_j, \qquad q_U_j = (1-\gamma_j) k_j u_j, \qquad \gamma_j \in [0, 1]
+\end{equation}
+where $\gamma_j$ indicates the setting of the valve which is connect to the pump. $q_L$ is the pumped flow to the lower tank while $q_U$ is the pumped flow to the upper tank. \\
+The two upper tanks $3$ and $4$ will only receive pumped water and lose water by outflow. Then the total water flow of the upper tanks is given by: 
+\begin{equation}
+\begin{aligned}
+A_3\frac{dh_3}{dt} = (1- & \gamma_2) k_2 u_2 - a_3 \sqrt{2 g h_3} \\
+A_4\frac{dh_4}{dt} = (1- & \gamma_1) k_1 u_1 - a_4 \sqrt{2 g h_4} \\
+& \Downarrow
+\end{aligned}
+\end{equation}
+\begin{equation}
+\begin{aligned}
+\frac{dh_3}{dt} = -\frac{a_3}{A_3} \sqrt{2 g h_3} + \frac{(1-\gamma_2) k_2}{A_3} u_2 \\
+\frac{dh_4}{dt} = -\frac{a_4}{A_4} \sqrt{2 g h_4} + \frac{(1-\gamma_1) k_1}{A_4} u_1 \\
+\end{aligned}
+\end{equation}
+The lower tanks $1$ and $2$ receive water both from the pumps and from the upper tanks. With a similar analysis, the following equations can be derived. 
+\begin{equation}
+\begin{aligned}
+\frac{dh_1}{dt} = -\frac{a_1}{A_1} \sqrt{2 g h_1} + \frac{a_3}{A_1} \sqrt{2 g h_3}  + \frac{\gamma_1 k_1}{A_1} u_1 \\
+\frac{dh_2}{dt} = -\frac{a_2}{A_2} \sqrt{2 g h_2} + \frac{a_4}{A_2} \sqrt{2 g h_4}  + \frac{\gamma_2 k_2}{A_2} u_2 \\
+\end{aligned}
+\end{equation}
+The levels in the lower tanks are measured by sensors. We assume that the output voltage $y_i$ is proportional to the water level $h_i$, $y_i = k_c h_i$, where $k_c$ is a constant. 
+\subsection{Linearization}
+As the equations above indicate, the relations between the variables used to describe the system, are nonlinear. Nonlinear relations are in general difficult to analyze so a linearization is required. To linearize the equation, first the stationary points are needed. \\
+The stationary points are the points where the the derivatives of the variables are equal to zero. Thus the stationary points of the water levels $h_i^0, i = 1,...,4$ are given by the following equations:
+
+\begin{align} \label{eqn:systemEqn}
+\frac{dh_1^0}{dt} & = -\frac{a_1}{A_1} \sqrt{2 g h_1^0} + \frac{a_3}{A_1} \sqrt{2 g h_3^0}  + \frac{\gamma_1 k_1}{A_1} u_1^0 = 0\\
+\frac{dh_2^0}{dt} & = -\frac{a_2}{A_2} \sqrt{2 g h_2^0} + \frac{a_4}{A_2} \sqrt{2 g h_4^0}  + \frac{\gamma_2 k_2}{A_2} u_2^0 = 0\\
+\frac{dh_3^0}{dt} & = -\frac{a_3}{A_3} \sqrt{2 g h_3^0} + \frac{(1-\gamma_2) k_2}{A_3} u_2^0  = 0\\
+\frac{dh_4^0}{dt} & = -\frac{a_4}{A_4} \sqrt{2 g h_4^0} + \frac{(1-\gamma_1) k_1}{A_4} u_1^0  = 0\\
+y_1^0 &= k_c h_1^0\\
+y_2^0 &= k_c h_2^0
+\end{align} 
+Now, let the deviations from the stationary points be called as $\Delta u_i = u_i - u_i^0$, $\Delta h_i = h_i - h_i^0$ and $\Delta y_i = y_i - y_i^0$ and introduce the following vectors:
+\begin{equation}
+u = 
+\begin{bmatrix}
+\Delta u_1 \\ \Delta u_2\\
+\end{bmatrix} , \qquad 
+x = 
+\begin{bmatrix}
+\Delta h_1 \\ \Delta h_2\\ \Delta h_3 \\ \Delta h_4\\
+\end{bmatrix} , \qquad 
+y = 
+\begin{bmatrix}
+\Delta y_1 \\ \Delta y_2\\
+\end{bmatrix} 
+\end{equation}
+We can now apply the Taylor series expansion around the equilibrium point
+\begin{align}
+    \begin{split}
+    \frac{dh_1}{dt} &= \underbrace{-\frac{a_1}{A_1}\sqrt{2gh_1^0}+\frac{a_3}{A_1}\sqrt{2gh_3^0}+\frac{\gamma_1 k_1}{A_1}u_1^0}_{= 0}\\ 
+    &- \frac{a_1}{A_1}\frac{g}{\sqrt{2gh_1^0}}(h_1 - h_1^0) + \frac{a_3}{A_1}\frac{g}{\sqrt{2gh_3^0}} (h_3 - h_3^0) + \frac{\gamma_1 k_1}{A_1}(u_1 - u_1^0)
+     \end{split}\\
+     \frac{dh_2}{dt} &= - \frac{a_2}{A_2}\frac{g}{\sqrt{2gh_2^0}}(h_2 - h_2^0) + \frac{a_4}{A_2}\frac{g}{\sqrt{2gh_4^0}} (h_4 - h_4^0) + \frac{\gamma_2 k_2}{A_2}(u_2 - u_2^0)\\
+     \frac{dh_3}{dt} &= -\frac{a_3}{A_3}\frac{g}{\sqrt{2gh_3^0}} (h_3 - h_3^0) + \frac{(1-\gamma_2) k_2}{A_3}(u_2 - u_2^0)\\
+     \frac{dh_4}{dt} &= -\frac{a_4}{A_4}\frac{g}{\sqrt{2gh_4^0}} (h_4 - h_4^0) + \frac{(1 - \gamma_1) k_1}{A_4}(u_1 - u_1^0)
+\end{align}
+and use the fact that 
+\begin{align*}
+    \Dot{x}_i &= \frac{d\Delta h_i}{dt} = \frac{dh_i}{dt} \qquad i = 1,2,3,4
+\end{align*}
+to derive the state-space formulation
+\begin{align}
+\frac{dx}{dt} & = \underbrace{\begin{bmatrix}
+-\frac{1}{T_1}  & 0 & \frac{A_3}{A_1 T_3} & 0 \\
+0 & -\frac{1}{T_2} & 0 & \frac{A_4}{A_2 T_4} \\
+0 & 0 & -\frac{1}{T_3} &  0 \\
+0 & 0 & 0 & -\frac{1}{T_4} \\
+\end{bmatrix}}_A x 
++ \underbrace{\begin{bmatrix}
+\frac{\gamma_1 k_1}{A_1} & 0 \\
+0 & \frac{\gamma_2 k_2}{A_2} \\
+0 & \frac{(1-\gamma_2) k_2}{A_3}\\
+\frac{(1-\gamma_1) k_1}{A_4} & 0 \\
+\end{bmatrix}}_B u  \\
+y & = \underbrace{\begin{bmatrix}
+k_c & 0 & 0 & 0 \\
+0 & k_c & 0 & 0 \\
+\end{bmatrix}}_C x
+\end{align}
+where
+\begin{align}
+T_i = \frac{A_i}{a_i} \sqrt{\frac{2 h_i^0}{g}}.
+\end{align}
+\subsection{Transfer Function}
+To derive the transfer function we use the standard equation
+\begin{align}
+    G(s) &= C(sI-A)^{-1}B+D
+\end{align}
+where D is zero.\\
+The transfer function is calculated step-wise:
+\begin{align}
+    (sI-A)^{-1} &= \begin{bmatrix}
+    \frac{1}{s + 1/T_1} & 0 & \frac{A_3}{A_1 T_3} \frac{1}{(s+1/T_1)(s+1/T_3)} & 0\\
+    0 & \frac{1}{s + 1/T_2} & 0 & \frac{A_4}{A_2 T_4} \frac{1}{(s+1/T_2)(s+1/T_4)}\\
+    0 & 0 & \frac{1}{s+1/T_3} & 0\\
+    0 & 0 & 0 & \frac{1}{s+1/T_4}
+    \end{bmatrix}\\[1em]
+    C(sI-A)^{-1} &= \begin{bmatrix}
+        k_c \frac{1}{s + 1/T_1} & 0 & k_c\frac{A_3}{A_1 T_3} \frac{1}{(s+1/T_1)(s+1/T_3)} & 0 \\
+        0 & k_c \frac{1}{s + 1/T_2} & 0 & k_c\frac{A_4}{A_2 T_4} \frac{1}{(s+1/T_2)(s+1/T_4)}
+    \end{bmatrix}\\[1em]
+    G(s) &= \begin{bmatrix}
+        g_{11}(s) & g_{12}(s) \\
+        g_{21}(s) & g_{22}(s) \\
+        \end{bmatrix} = 
+        \begin{bmatrix}
+            \frac{\gamma_1 k_1 c_1}{1+s T_1} & \frac{(1-\gamma_2) k_2 c_1)}{(1+s T_3)(1+s T_1)} \\
+            \frac{(1-\gamma_1) k_1 c_2}{(1+s T_4)(1+s T_2)} & \frac{\gamma_2 k_2 c_2}{1+s T_2} \\
+        \end{bmatrix}
+\end{align}
+where $c_i = T_i k_c / A_i$. \\
+\subsection{Zeros of the Transfer Function}
+The zeros of the transfer function $G(s)$ are given by the zeros of its determinant. Thus, its zeros are given by:
+\begin{align}
+\textrm{det}( G(s)) = \frac{\gamma_1 \gamma_2 k_1 k_2 c_1 c_2}{\prod_{i=4}^4 (1+s T_i)} \left[(1+s T_3)(1+s T_4) - \frac{(1-\gamma_1)(1-\gamma_2)}{\gamma_1 \gamma_2}\right] = 0
+\end{align}
+\begin{align}
+(1+sT_3)(1+sT_4) - \frac{(1-\gamma_1)(1-\gamma_2)}{\gamma_1 \gamma_2} = 0\\
+s^2 + s \frac{T_3 - T_4}{T_3 T_4} + \frac{\gamma_1 + \gamma_2 - 1}{\gamma_1 \gamma_2 T_3 T_4} = 0
+\end{align}
+As a minimum phase system only has RHP zeros, we can use the Stodola condition as it is sufficient for polynomials of second order. All coefficients has to be greater than zero.
+\begin{align}
+    \gamma_1 + \gamma_2 - 1 > 0
+\end{align}
+As $\gamma_1, \gamma_2 \in [0,1]$ we can conclude that the model has minimum phase if 
+\begin{align*}
+    1 < \gamma_1 + \gamma_2 \leq 2
+\end{align*}
+and have non-minimum phase if
+\begin{align*}
+    0 < \gamma_1 + \gamma_2 \leq 1.
+\end{align*}
+\subsection{RGA}
+The relative gain array (RGA) of $G(0)$ is thus given by:
+\begin{footnotesize}
+\begin{align}
+RGA & = G(0)\times(G^{-1}(0))^T = 
+\begin{bmatrix}
+g_{11}(0) & g_{12}(0) \\
+g_{21}(0) & g_{22}(0) \\
+\end{bmatrix}
+\times
+\frac{1}{\textrm{det}(G(0))}
+\begin{bmatrix}
+g_{22}(0) & -g_{21}(0) \\
+-g_{12}(0) & g_{11}(0) \\
+\end{bmatrix} \\
+& = \begin{bmatrix}
+\gamma_1 k_1 c_1 & (1-\gamma_2) k_2 c_1) \\
+(1-\gamma_1) k_1 c_2 & \gamma_2 k_2 c_2 \\
+\end{bmatrix}
+\times
+\frac{1}{k_1 k_2 c_1 c_2 (\gamma_1 + \gamma_2 - 1)}
+\begin{bmatrix}
+\gamma_2 k_2 c_2 & -(1-\gamma_1) k_1 c_2 \\
+-(1-\gamma_2) k_2 c_1 & \gamma_1 k_1 c_1 \\
+\end{bmatrix}\\
+& = 
+\begin{bmatrix}
+\lambda & 1-\lambda \\
+1-\lambda & \lambda \\
+\end{bmatrix}
+\end{align}
+\end{footnotesize}
+where $\lambda = \gamma_1\gamma_2/(\gamma_1 + \gamma_2 - 1)$.\\
+For the minimum phase case we have $\gamma_1 = \gamma_2 = 0.625$ and for the non-mininum phase case $\gamma_1 = \gamma_2 = 0.375$. The RGA matrices for both cases are given by
+\begin{align}
+    RGA_\mathrm{min} &= \begin{bmatrix}
+    1.5625 & -0.5625\\
+    -0.5625 & 1.5625
+    \end{bmatrix} \\
+    RGA_\mathrm{non-min} &= \begin{bmatrix}
+    -0.5625 & 1.5625\\
+    1.5625 & -0.5625
+    \end{bmatrix}.
+\end{align}
+\subsection{Determining the Pump Constant}
+The values of the pump constants $k_1$ and $k_2$ were determined by measuring how fast the water rose in a tank when the hole was plugged. In order to eliminate any uncertainties from the given values of $\gamma_i,$ both tubes on each process were connected to the lower tank in the same process, effectively setting the value of $\gamma$ to 1. Both input signals were then set to 50\% and the time it took for the water level in each tank to rise from 10\% to 70\% of the maximum height was estimated from the graphs. 
+
+With $\gamma$ and the outlet-holes eliminated the differential equation for the lower tanks \eqref{eqn:systemEqn} can be written as
+\begin{equation}
+    \frac{dh_i}{dt}=\frac{k_i}{A_i}u_i, \quad i = 1,2.
+\end{equation} 
+
+which can be integrated with respect to time and then rearranged into 
+\begin{equation}
+    k_i = \frac{\alpha A_i (h_{i, 1} - h_{i, 0})}{u_i\Delta t}, \quad i = 1,2.
+\end{equation} 
+Where $\alpha = \frac{25 cm}{15 V}$ is a scaling constant, since both $u$ and $h$ is given as a percentage.
+
+Inserting the measured values into the equations gave the following values:
+\begin{center}
+\begin{tabular}{|l|l|}
+Variable & Value $[\frac{cm^3}{Vs}]$ \\
+\hline
+k_1 &  4.27\\
+k_2 & 3.95
+\end{tabular}
+\end{center}
+
+%The idea is to set $\gamma$ to 1 by putting both tubes from pump 1 into tank 1 and pump 2 into tank 2 as the value of gamma is otherwise unknown This way there is no further inflow from the upper tanks either. With a fix voltage of $u_1=u_2=50$\% (7.5V) and the bottom plugged in so there was no outlet flow the following equation (9?) can be taken out of the linearized system and put together into the following very simple equation,
+%\begin{equation}
+%    \frac{dh_1}{dt}=\frac{k_1}{A_1}u_1
+%\end{equation} 
+%where all but $k_1$ are known as the height and time can be used to derive an approximate %derivation of the height.
+
+\subsection{Determining the cross-section Area of the outlet Holes}
+The idea here is to set $\gamma$ to 1 using the same strategy as when determining the pump constant and then measure the water level at steady state with $u_1=u_2=50$\% (7.5V). When measuring the upper tanks, the $\gamma$ is set to 0 as both tubes are connected to the upper tanks.
+%And with a fix voltage of $u_1=u_2=50$\% (7.5V) the steady state height was then sought after to deduce the equation, 
+At steady state the system can be described by
+\begin{equation}
+    \frac{dh_i}{dt} =-\frac{a_i}{A_i}\sqrt{2gh_i}+\frac{k_i}{A_i}u_i=0, \quad i = 1,2
+\end{equation}
+where $k_i$ now a known constant. %and all but $a_1$ are known after measuring the steady-state height. 
+After measuring the water level at steady state $h^0$, the areas of the holes are then given by
+\begin{equation}
+    a_i = \frac{1}{\sqrt{2h^0_i g}}k_i u_i.
+\end{equation}
+The tanks were then tested one by one and the areas of the outlet holes determined, yielding the following values:
+
+\begin{center}
+    \begin{tabular}{|l|l|}
+    Hole & Area $[mm^2]$ \\
+    \hline
+    $a_1$ & 2.34\\
+    $a_2$ & 2.33\\
+    $a_3$ & 0.66\\
+    $a_4$ & 0.68\\
+    $a_{3n}$ & 1.51\\
+    $a_{4n}$ & 1.46\\
+    \end{tabular}
+\end{center}
+
+\section{Manual Control}
+\subsection{Steady-State}
+When just setting the pumps to 50\% (7.5V) and letting the system run without any control a steady-state equilibrium is then achieved. When comparing the results given in the real system and the one gotten by calculations via the hole areas and pump $k$ values, the following results were derived.
+
+For the minimum phase system:
+\begin{center}
+    \begin{tabular}{|l|r||r|}
+    Tank & Predicted $h^0 \; [cm]$ & Measured $h^0 \; [cm]$ \\
+    \hline
+    $1$ & 8.98 & 11.0\\
+    $2$ & 8.76 & 7.8\\
+    $3$ & 14.30 & 12.9\\
+    $4$ & 15.91 & 8.8\\
+    
+    \end{tabular}
+\end{center}
+
+For tank 1 and 4 the measured heights deviates significantly from the prediction. A higher than expected water level in tank 1 and  a lower level in tank 4 indicates that the given value of $\gamma_1$ might be to low for this process.
+
+Tank 2 and 3 both show water levels slightly below the predicted heights. This could mean that our calculated value of $k_2$ might be a little to high.  
+
+
+For the non minimum phase system:
+\begin{center}
+    \begin{tabular}{|l|r||r|}
+    Tank & Predicted $h^0 \; [cm]$ & Measured $h^0 \; [cm]$ \\
+    \hline
+    $1$ & 8.64 & 8\\
+    $2$ & 9.10 & 9.5\\
+    $3$ & 7.69 & 6\\
+    $4$ & 9.58 & 8\\
+    \end{tabular}
+\end{center}
+
+The non min-phase system does not show the same deviations as the minimum phase system. The water level in the lower tanks are correct within measurement error. The water level in the upper tanks are about $1.5 \;cm$ lower than predicted. This is a fairly small error, and could be the result of small errors of the measured areas, the $k$ values or the $\gamma$ values. Unlike in the minimum phase system, there are  no indication of any error large error in the values of $\gamma_1$ or $k_1.$
+
+\subsection{Step Response}
+To test the step responses and the coupling of the system both pump voltages were set to 30\% as initial states. One of the pumps had then its voltage increased to 80\% and the step response then analyzed. Both systems had a significant degree of coupling, as can be seen in \ref{Step-responses.eps}. As indicated by the RGA, the non minimum phase system shows a stronger coupling between $u_1$ and $y_2$ than from $u_1$ to $y_1.$ The same is true for $u_2.$ The cross couplings are however slower than the direct couplings. 
+
+\image{Step-responses.eps}{Step responses from 30\% to 80\% of maximum output signal for the minimum phase system (top) and the non minimum phase system (bottom).}
+
+
+\subsection{Attempt to Manual Control}
+When attempting to reach a steady-state output of 10cm on both $y_1$ and $y_2$, it took around 5 minutes to adjust back and fourth the two different pumps before the steady-state was reached. The minimum phase system was quite straight forward to control while the non-minimum phase system was harder due to the strong coupling. The transient for the manually controlled system was about 400 seconds, as can be seen in fig \ref{fig:transient-ctrl-nmf.eps}.
+\image{transient-ctrl-nmf.eps}{An attempt to manually set the level in both lower tanks to 10 cm in the non-minphase system.}
+ 
+ 
+\subsection{Differences of minimum/non-minimum phase}
+The big difference here, other than the size of the holes on the outlets of upper tanks 3 and 4, is the coupling which is strong cross-coupling on the non-minimum phase case compared to the minimum phase which had much weaker cross-coupling. This makes the non-minimum phase system much harder to control and work in unexpected ways.
+
+\section{Calculation of controllers}
+\subsection{Decoupling}
+Now, decentralized control is needed for the system that can be described in the following way.
+\begin{equation}
+y = \begin{bmatrix} y_1 \\ y_2 \\ \end{bmatrix}, \quad r = \begin{bmatrix} r_1 \\ r_2 \\ \end{bmatrix}, \quad u = \begin{bmatrix} u_1 \\ u_2 \\ \end{bmatrix}, \quad e = \begin{bmatrix} e_1 \\ e_2 \\ \end{bmatrix} = \begin{bmatrix} r_1 - y_1 \\ r_2 - y_2 \\ \end{bmatrix}
+\end{equation}
+Here $y$ is the output signal (water levels of the two lower tanks), $r$ the reference signal (set point reference), $u$ the control signal and $e$ is the reference error. The system can then be written in the following way
+\begin{equation}
+    G = \begin{bmatrix}
+    g_{11} & g_{12} \\
+    g_{21} & g_{22} \\
+    \end{bmatrix}.
+\end{equation}
+Based on the RGA, different input-output couplings shall be applied. The decentralization control can be done with a decoupling weight $W_1$ in the following form:
+\begin{equation}
+    W_1 = \begin{bmatrix}
+    w_{11} & w_{12} \\
+    w_{21} & w_{22} \\
+    \end{bmatrix}
+\end{equation}
+If $\overline{G} = G W_1$ shall be a $2\times2$ diagonal matrix, then we reach the conclusion that
+\begin{equation}
+\begin{aligned}
+0 & = g_{11}w_{12}+g_{12}w_{22} \\
+0 & = g_{21}w_{11}+g_{22}w_{21} \\
+\end{aligned}
+\end{equation}
+There are two equations and four variables so we have several degrees of freedom how to choose the elements in $W_1$. Experience tells us that if we want to pair inputs $u_1$ and $u_2$ with the outputs $y_1$ and $y_2$ respectively, it is a good idea to set the diagonal elements of $W_1$ equal to zero
+\begin{equation}
+    W_1 = \begin{bmatrix}
+    1 & w_{21} \\
+    w_{12} & 1 \\
+    \end{bmatrix}
+    = \begin{bmatrix}
+    1 & -\frac{g_{21}}{g_{22}} \\
+    -\frac{g_{12}}{g{11}} & 1 \\
+    \end{bmatrix} \Rightarrow \Tilde{G} = G W_1 \begin{bmatrix}
+    g_{11} - \frac{g_{12}g_{21}}{g_{22}} & 0 \\
+    0 & g_{22} - \frac{g_{12}g_{21}}{g_{11}} \\
+    \end{bmatrix}.
+\end{equation}
+Nevertheless, if we want to pair the inputs $u_1$ and $u_2$ with the outputs $y_2$ and $y_1$ respectively, we will be useful to set the off-diagonal elements to 1
+\begin{equation}
+    W_1 = \begin{bmatrix}
+    w_{11} & 1 \\
+    1 & w_{22} \\
+    \end{bmatrix}
+    = \begin{bmatrix}
+    -\frac{g_{22}}{g_{21}} & 1 \\
+    1 & -\frac{g_{11}}{g{12}} \\
+    \end{bmatrix} \Rightarrow \Tilde{G} = G W_1 \begin{bmatrix}
+    g_{12} - \frac{g_{11}g_{22}}{g_{21}} & 0 \\
+    0 & g_{21} - \frac{g_{11}g_{22}}{g_{12}} \\
+    \end{bmatrix}.
+\end{equation}
+Thus if a controller $\Tilde{F}$ is designed for the decoupled system $\Tilde{G}$ with the required specification, the controller $F$ is a controller for the original system where $F = W_1 \Tilde{F}$. This is due to the fact that we the decoupler is part of the controller and not part of the plant.\\
+However, this decoupling weight might not be proper or even negative. Then we can simply modify the decoupling weight to realize the decoupling up to 10 times the intended crossover frequency by letting 
+\begin{equation}
+    W_1(s) \rightarrow W_1(s) \frac{10 \omega_c}{s + 10 \omega_c} I.
+\end{equation}
+Where only infect the decoupling at around ten times of the cross-over frequency. This was necessary decoupling the non-minimum phase system.\\
+As one can see, we used the active decoupling just for the reason that the results compared to the decoupling at steady-state ($w=0$) were just better. We obtained faster settling times and less overshoot.\\
+It is now possible to design two simple SISO controllers for the system as we have decoupled it now and it looks as like two SISO transfer functions which ideally don't effect each other (this is of course not the case in reality but assumed in the calculations).
+\subsection{Controller designing}
+We choose to use a PI controller for the decoupled system $\Tilde{G}$ and a classical loop shaping algorithm is applied on the system $\Tilde{G} = \begin{bmatrix} \Tilde{G}_{1} & 0 \\ 0 & \Tilde{G}_{2} \end{bmatrix}$.\\
+Let 
+\begin{align}
+    \Tilde{F} = \begin{bmatrix} \Tilde{f}_1 & 0 \\ 0 & \Tilde{f}_2 \end{bmatrix}
+\end{align}
+and 
+\begin{align}
+    \Tilde{f}_i = K_i (1 + \frac{1}{sT_i}).
+\end{align} 
+Assuming the desired cross-over frequency is $\omega_c$ and the desired phase margin is $\varphi_m$ we can conclude
+\begin{equation}
+    T_i = \frac{1}{\omega_c} \tan{(\varphi-\frac{\pi}{2} - \phi_i)} 
+\end{equation}
+With this integral part, the closed loop system become $L_i = \Tilde{G}_i K_i (1 + \frac{1}{s T_i}) $. The proportional constant $K_i$ is then the inverse of the magnitude of the corresponding closed loop system at cross-over frequency
+\begin{align}
+    K_i = \frac{1}{|\Tilde{G}(j\omega_c)(1+\frac{1}{j\omega_c T_i})|}.
+\end{align}
+Then we shall receive the controller $\Tilde{F} = diag(K_i (1+\frac{1}{s T_i}))$ and the controller for the original system $F = W_1 \Tilde{F}$. 
+
+\subsection{Glover-McFarlane robust loop-shaping}
+The controller above is designed only to serve the required performance specification without consideration of the robustness. To increase the robustness of the system, Glover-McFarlane robust loop-shaping is performed. The loop shaping involve solving of state space equations and is done automatically with Matlab. The theory will not be repeated here as it will not gain any benefit. The result received from this loop shaping is an additional transfer matrix $F_r(s)$ so that the final controller becomes $F(s) = W_1 \Tilde{F} F_r $.
+
+\section{Automatic Control}
+
+\subsection{Step responses}
+For the step responses, the following rise times and overshoots were observed:
+\begin{center}
+    \begin{tabular}{|l|l|l||r|r|r}
+    System & Controller &  Ref. & Rise time $[s]$ & Overshoot $[\%]$ & Steady State err. $[\%]$\\
+    \hline
+    Minphase    & Standard      & $r_1$ & 11.5  & -9    & 1.07 \\
+    Minphase    & Standard      & $r_2$ & 16.5  & 17    & 0.61 \\
+    Minphase    & Robustified   & $r_1$ & 23.5  & 2     & 0.34 \\
+    Minphase    & Robustified   & $r_2$ & 22.0  & 0     & -0.36 \\
+    Non Minphase & Standard     & $r_1$ & 36.5  & 32    & 0.23\\
+    Non Minphase & Standard     & $r_2$ & 24.5  & 20    & 0.46\\
+    Non Minphase & Robustified  & $r_1$ & 63.0  & 14    & 1.14\\
+    Non Minphase & Robustified  & $r_2$ & 56.0  & -7.5  & 0.01\\
+    \end{tabular}
+\end{center}
+Some of the controller had a steady state error that was significant compared to the step sizes. The rise time was therefore calculated as the time between when the $y$ value reached 10\% of the size of the step in the reference signal above its average value during 10 measurements before the step in the reference, and the time when it had risen to 90\% above the same value. 
+
+Overall the minimum phase system was faster. For this system the robustified controller was slightly slower but gave a smaller steady state error and almost no overshoot. The non minimum phase system was slower and had a larger overshoot. The robustified controller lowered the undershoot significantly, but also doubled the rise time. 
+
+\subsection{Disturbance attenuation}
+
+The time that it took to eliminate a temporary disturbance was approximated from the graphs \ref{fig:mp_disturbance.eps}, \ref{fig:rmp_disturbance.eps}, \ref{fig:nmp_disturbance.eps} and \ref{fig:rnmp_disturbance.eps}. The non minimum phase system was much faster at attenuating  these disturbances. The robustified controllers were slower at compensating for the disturbances, and unlike for the step response it is not obvious if they provided any other benefit that compensates for this shortcoming. The disturbances were made by pouring water directly into tank 1 and 2 from a small cup of water, that is what is seen as big spikes in the graphs shown below. There was also a test with a constant disturbance when a tap form the upper tank 3 was opened resulting in a big loss of water which is not in the system model.
+\begin{center}
+    \begin{tabular}{|l|l||r|}
+    System & Controller & Elimination time $[s]$\\
+    \hline
+    Minphase    & Standard      &  40 \\
+    Minphase    & Robustified   &  60 \\
+    Non Minphase & Standard     &  100\\
+    Non Minphase & Robustified  & 150 \\
+    \end{tabular}
+\end{center}
+
+All controllers could handle a small steady disturbance in the form of opening one of the valves in the upper tanks. If the disturbance was increased the output signal would however become saturated.
+
+\image{mp_disturbance.eps}{The minphase system with a normal controller during disturbances.}
+
+\image{rmp_disturbance.eps}{The minphase system with a robustified controller during disturbances.}
+
+\image{nmp_disturbance.eps}{The non minphase system with a normal controller during disturbances.}
+
+\image{rnmp_disturbance.eps}{The non minphase system with a robustified controlled during disturbances.}
+
+\FloatBarrier
+\section{Conclusion}
+As the system was stable by itself, the manual control was possible and just setting the pumps to a set voltage would in the long run give the desired outcome. However this would not be the case if a constant disturbance was taking place as a new set voltage for the pumps then would be needed to get the same result. But as shown, the model was not a true presentation of the real world as the predicted values were not the same as the measured ones when setting steady-state at a fixed voltage value. This means that actual manual control can't be calculated but has to be done through trial and error. To avoid this and to at the same time make the system faster and attenuate for disturbances, adding a controller may be a smart move. The controller used in this report consists of a decoupler which basically splits the MIMO system into two different SISO systems which can be controlled by a simple PI-controller each. On top of this there is then a Glover-McFarlane controller added if extra robustness is needed, but this comes to the cost of a slower system. This results in a good and fast controller which makes the base system faster, easier to control (get a desired height in tank 1 \& 2) and which can attenuate for disturbances which were not foreseen.
+
+
+\end{document}

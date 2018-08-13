@@ -1,0 +1,19 @@
+This proof is very similar to the one in task 7. We start with time shifting the definition of $d_p$ one step forward to get $d_0[k+1] =  v_g \cdot \Delta_g[k+1].$ Since the angle $\theta_g$ is constant $v_g$ is not a function of $k$ here.  
+
+Just as in task 7, naming the position $p[k]$, we can express $\Delta_g[k+1]$ as
+\begin{equation*}
+\Delta_g[k+1] = \Delta_g[k] + p[k] - p[k+1].
+\end{equation*}
+
+The position in the next time step is given by $p[k+1] = p[k] + R\frac{\pi}{180}v[k] v_g.$ Putting the equation for the controller into the equation for the position results in $p[k+1] = p[k] + K_\omega R\frac{\pi}{180}d_g[k] v_g.$
+Inserting this expression into the equation for $\Delta_g[k+1]$ we get 
+\begin{equation*}
+\Delta_g[k+1] = \Delta_g[k] - K_\omega R\frac{\pi}{180}d_g[k] v_g. 
+\end{equation*}
+
+Inserting this into the definition of $d_g$ gives, $d_g [k+1] = (\Delta_g[k] - R\frac{\pi}{180}d_g[k] v_c)\cdot v_c.$ Since $\Delta_g[k] \cdot v_c = \d_g[k]$ and $v_g\cdot v_g = 1$ we finally get
+\begin{equation*}
+d_g [k+1] = (1-K_\omega \frac{\pi}{180})d_g[k].
+\end{equation*}
+
+The eigenvalue of this system is given by $1-K_\omega \frac{\pi}{180}.$ If $K_\omega > 2\frac{180}{R \pi}$ the system will become unstable. $K_\omega = \frac{180}{R \pi} \approx 572$ gives a dead beat controller.

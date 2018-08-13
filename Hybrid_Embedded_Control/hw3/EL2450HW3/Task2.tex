@@ -1,0 +1,59 @@
+The field was discretized in equally sized squares of $50 \times 50 cm$ for a total of $K=36$ states.  
+ 
+ \begin{figure}[H]
+ \centering
+  \includegraphics[width = 0.8\textwidth]{hw3_map.png}
+  \caption{The discretized field}
+  \end{figure}
+
+The regions are defined as: $R_i$ for $i\in \{1,..,36\}$
+
+
+ The transition system is a tuple in the form:
+$\mathcal{T}=(S,S_0,\sum,\rightarrow,\Pi,\mathcal{L})$\\
+The defined states $S=\{R_1,R_2,...R_{36}\}.$\\
+$\Pi=\{R,G,B,O\}$\\
+The corresponding labels:\\
+$\mathcal{L}(R_1)=\{R\}$\\
+$\mathcal{L}(R_2)=\{G\}$\\
+$\mathcal{L}(R_3)=\{O\}$\\
+$\mathcal{L}(R_4)=\{\}$\\
+$\mathcal{L}(R_5)=\{\}$\\
+$\mathcal{L}(R_6)=\{G\}$\\
+$\mathcal{L}(R_7)=\{B\}$\\
+$\mathcal{L}(R_8)=\{R,O\}$\\
+$\mathcal{L}(R_9)=\{G\}$\\
+$\mathcal{L}(R_{10})=\{O\}$\\
+$\mathcal{L}(R_{11})=\{R,O\}$\\
+$\mathcal{L}(R_{12})=\{\}$\\
+$\mathcal{L}(R_{13})=\{\}$\\
+$\mathcal{L}(R_{14})=\{\}$\\
+$\mathcal{L}(R_{15})=\{\}$\\
+$\mathcal{L}(R_{16})=\{\}$\\
+$\mathcal{L}(R_{17})=\{\}$\\
+$\mathcal{L}(R_{18})=\{\}$\\
+$\mathcal{L}(R_{19})=\{O\}$\\
+$\mathcal{L}(R_{20})=\{R\}$\\
+$\mathcal{L}(R_{21})=\{B\}$\\
+$\mathcal{L}(R_{22})=\{O\}$\\
+$\mathcal{L}(R_{23})=\{B\}$\\
+$\mathcal{L}(R_{24})=\{\}$\\
+$\mathcal{L}(R_{25})=\{\}$\\
+$\mathcal{L}(R_{26})=\{B,O\}$\\
+$\mathcal{L}(R_{27})=\{\}$\\
+$\mathcal{L}(R_{28})=\{\}$\\
+$\mathcal{L}(R_{29})=\{R,O\}$\\
+$\mathcal{L}(R_{30})=\{G\}$\\
+$\mathcal{L}(R_{31})=\{R,G\}$\\
+$\mathcal{L}(R_{32})=\{R\}$\\
+$\mathcal{L}(R_{33})=\{\}$\\
+$\mathcal{L}(R_{34})=\{\}$\\
+$\mathcal{L}(R_{35})=\{\}$\\
+$\mathcal{L}(R_{36})=\{B\}$\\
+
+The actions:
+$\sum=\{N,S,W,E\}$.\\
+The transitions can be seen in figure \ref{fig:INT}. 
+%a_N-North (up), a_S=south (down), a_W-west (left), a_E-east (right)
+%adds transition image
+\input{Transition.tex}

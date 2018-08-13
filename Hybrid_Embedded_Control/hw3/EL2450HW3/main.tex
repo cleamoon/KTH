@@ -1,0 +1,167 @@
+%\documentclass[a4paper,twocolumn]{article} % Document type
+
+\documentclass[a4paper,12pt,oneside,onecolumn]{article} % Document type
+
+\usepackage[left=1.0in, right=1.0in, top=1.0in, bottom=1.0in]{geometry}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usetikzlibrary{automata,positioning}
+	
+\usepackage{mathrsfs}
+
+\ifx\pdfoutput\undefined
+    %Use old Latex if PDFLatex does not work
+  \usepackage[dvips]{graphicx}% To get graphics working
+ \DeclareGraphicsExtensions{.eps} % Encapsulated PostScript
+ \else
+    %Use PDFLatex
+   \usepackage[pdftex]{graphicx}% To get graphics working
+   \DeclareGraphicsExtensions{.pdf,.jpg,.png,.mps,} % Portable Document Format, Joint Photographic Experts Group, Portable Network Graphics, MetaPost
+   \pdfcompresslevel=9
+\fi
+
+\usepackage{amsmath,amssymb}   % Contains mathematical symbols
+
+\usepackage[ansinew]{inputenc} % Input encoding, identical to Windows 1252
+\usepackage[english]{babel}    % Language
+\usepackage[square,numbers]{natbib}     %Nice numbered citations
+\bibliographystyle{plainnat}            %Sorted bibliography
+
+
+
+\begin{document}               % Begins the document
+
+\title{Homework 3 (Tasks 1-19) in EL2450 Hybrid and Embedded Control Systems}
+\author{
+  Sindhuja Balaji \\ 930831-0748 \\ sindhuja@kth.se
+  \and
+  Tobias Bolin \\ 870702-0098 \\ tbolin@kth.se
+  \and
+  Yue Jiao \\ 911024-7799 \\ yj@kth.se
+  \and
+ Ida Karlsson \\ 930705-6102 \\ ikarlss@kth.se
+  \and
+  }
+%\date{2010-10-10}             % If you want to set the date yourself.
+
+\maketitle                     % Generates the title
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Instructions regarding the report
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\section*{Task 1}
+
+\input{Task1.tex}
+
+\section*{Task 2}
+
+\input{Task2.tex}
+
+\section*{Task 3}
+
+\input{Task3.tex}
+
+\section*{Task 4}
+
+\input{Task4.tex}
+
+\section*{Task 5}
+
+\input{Task5.tex}
+
+\section*{Task 6}
+
+\input{Task6.tex}
+
+\section*{Task 7}
+
+\input{Task7.tex}
+
+\section*{Task 8}
+
+\input{Task8.tex}
+
+\section*{Task 9}
+
+\input{Task9.tex}
+
+\section*{Task 10}
+
+\input{Task10.tex}
+
+\section*{Task 11}
+
+\input{Task11.tex}
+
+\section*{Task 12}
+
+\input{Task12.tex}
+
+\section*{Task 13}
+
+\input{Task13.tex}
+
+\section*{Task 14}
+
+\input{Task14.tex}
+
+\section*{Task 15}
+
+\input{Task15.tex}
+
+\section*{Task 16}
+
+\input{Task16.tex}
+
+\section*{Task 17}
+
+\input{Task17.tex}
+
+\section*{Task 18}
+
+\input{Task18.tex}
+
+\section*{Task 19}
+
+\input{Task19.tex}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The bibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliography{Bibliography_template} %Read the bibliography from a separate file
+
+\begin{thebibliography}{99}
+\bibitem[Khalil(2002)]{Khalil:2002:Nonlinear-systems:vh}
+Hassan~K Khalil.
+\newblock \emph{Nonlinear systems}.
+\newblock Prentice Hall, Upper Saddle river, 3. edition, 2002.
+\newblock ISBN 0-13-067389-7.
+
+\bibitem[Oetiker et~al.(2008)Oetiker, Partl, Hyna, and
+  Schlegl]{Oetiker:2008:TheNotSoShortIntroductiontoLaTeXe}
+Tobias Oetiker, Hubert Partl, Irene Hyna, and Elisabeth Schlegl.
+\newblock \emph{The Not So Short Introduction to \LaTeXe}.
+\newblock Oetiker, OETIKER+PARTNER AG, Aarweg 15, 4600 Olten, Switzerland,
+  2008.
+\newblock http://www.ctan.org/info/lshort/.
+
+\bibitem[Sastry(1999)]{Sastry:1999:Nonlinear-systems:-analysis-stability-and-c%
+ontrol:xr}
+Shankar Sastry.
+\newblock \emph{Nonlinear systems: analysis, stability, and control},
+  volume~10.
+\newblock Springer, New York, N.Y., 1999.
+\newblock ISBN 0-387-98513-1.
+\end{thebibliography}
+
+
+\end{document}      % End of the document

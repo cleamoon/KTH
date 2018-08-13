@@ -1,0 +1,135 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+Virtual vechicle approach
+
+\begin{align}
+2 \pi  R\left[q_x-p_x,q_y-p_y\right],&\quad\text{for  } \left[p\leq Q_0\leq Sf\right],\    0,&\quad\text{for  } \left[p>Q_0\right].
+\end{align}
+
+
+\begin{equation}
+x_{d} = P(S) a \lq b
+\end{equation}
+\begin{equation}
+\Delta x = x_{d} - x 
+\end{equation}
+\begin{equation}
+\Delta y = y_{d} - y
+\end{equation}
+\begin{equation}
+\rho(t) = \sqrt[]{\Delta x^2 + \Delta y^2}
+\end{equation}
+\begin{equation}
+\Psi_{d} = atan(\frac{\Delta y}{\Delta x})
+\end{equation}
+\begin{equation}
+v = \sqrt{\dot{x}^2 + \dot{y}^2}
+\end{equation}
+\begin{equation}
+\dot{x}_{d} = \dot{P}(S) \cdot \dot{S}
+\end{equation}
+\begin{equation}
+\dot{y}_{d} = \dot{\delta}(S) \cdot \dot{S}
+\end{equation}
+\begin{equation}
+\dot{S} = \frac{\dot{P}(S)}{\dot{P}^2(S) + \dot{\delta}^2(S)} \cdot \dot{x} + \frac{\dot{\delta}(S)}{\dot{P}^2(S) + \dot{\delta}^2(S)} \cdot \dot{y} 
+\end{equation}
+\begin{equation}
+\dot{S} = \frac{v}{\sqrt{\dot{P}^2(S) + \dot{\delta}^2(S)}} = \frac{c \cdot e^{-\alpha \rho}\cdot v_{0}}{\dot{P}^2(S) + \dot{\delta}^2(S)}
+\end{equation}
+
+
+\begin{equation}
+\Psi_{d} = \frac{\Psi_{d}(-2\rho^3 + 3 \epsilon \rho^2)}{\epsilon^3}
+\end{equation}
+\begin{equation}
+\epsilon = d \rho
+\end{equation}
+\begin{equation}
+\Delta\Psi = \Psi_{d} - \Psi_{d}
+\end{equation}
+\begin{equation}
+\delta f = k\Delta\Psi + \Psi_{d}
+\end{equation}
+\begin{equation}
+v = \gamma(\Delta x \cdot cos(\Psi) + \Delta y \cdot sin(\Psi))
+\end{equation}
+\begin{equation}
+\dot{x} = v \cdot cos(\Psi)
+\end{equation}
+\begin{equation}
+\dot{y} = v \cdot sos(\Psi)
+\end{equation}
+\begin{equation}
+\dot{Psi} = \delta f
+\end{equation}
+
+In our case
+\begin{equation}
+\dot{x} = v \cdot cos(\Psi)
+\end{equation}
+\begin{equation}
+\dot{y} = v \cdot sin(\Psi)
+\end{equation}
+\begin{equation}
+x_{d} = x_{m} + R \cdot cos(\Phi_{d})
+\end{equation}
+\begin{equation}
+y_{d} = y_{m} + R \cdot sin(\Phi_{d})
+\end{equation}
+\begin{equation}
+\Delta x = x_{d} - x 
+\end{equation}
+\begin{equation}
+\Delta y = y_{d} - y
+\end{equation}
+\begin{equation}
+\rho = \sqrt{\Delta x^2 + \Delta y^2}
+\end{equation}
+\begin{equation}
+\Psi_{d} = atan(\frac{\Delta y}{\Delta x})
+\end{equation}
+\begin{equation}
+P(S) = R \cdot cos(S)
+\end{equation}
+\begin{equation}
+\delta(S) = R \cdot sin(S)
+\end{equation}
+\begin{equation}
+\dot{P}(S) = -R \cdot sin(S)
+\end{equation}
+\begin{equation}
+\dot{\delta}(S) = R \cdot cos(S)
+\end{equation}
+\begin{equation}
+\ddot{P}(S) = -  R \cdot cos(S)
+\end{equation}
+\begin{equation}
+\ddot{\delta}(S) = -  R \cdot sin(S)
+\end{equation}
+\begin{equation}
+\gamma = \frac{v_{0}}{\rho}
+\end{equation}
+\begin{equation}
+\dot{S} = \frac{e^{\alpha v_{0 \gamma - \alpha \rho}} \cdot v_{0}}{R}
+\end{equation}
+The desired velocity change
+\begin{equation}
+v_{d} = \gamma \cdot(\Delta x \cdot cos(\Psi) + \Delta y \cdot sin(\Psi)
+\end{equation}
+The possible velocity change
+\begin{equation}
+v_{d} = a \cdot dt
+\end{equation}
+\begin{equation}
+\omega_{d} = \delta f
+\end{equation}
+sign är den inbyggda matlab ekvationen som 
+\begin{equation}
+min(\delta f , \alpha \cdot dt) \cdot sign(\delta f)
+\end{equation}
+
+\end{document}

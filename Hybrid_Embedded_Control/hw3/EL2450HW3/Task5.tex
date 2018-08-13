@@ -1,0 +1,13 @@
+In order for a discrete time system to be stable the eigenvalues of the system must have a magnitude less then 1. 
+
+From the dynamics of the system we have that
+\begin{align*}
+%    \omega[k]&=K_\psi(\theta^R-\theta[k])\\
+%    &\Rightarrow\\
+    \theta[k+1]&=\theta[k]+ \frac{R}{L} K_\psi(\theta^R-\theta[k])\\
+    \theta[k+1]&=(1- \frac{R}{L} K_\psi)\theta[k]+K_\psi\theta^R
+\end{align*} The system's eigenvalue, $\lambda$ is given by $1 - \frac{R}{L} K_\psi$ and the system is asymptotically stable if $|\lambda| > 1.$ 
+If $1 - \frac{R}{L} K_\psi = 0$ the right hand side of the system is equal to $\theta^R$ and we have a deadbeat controller. So we chose
+\[
+K_\omega = \frac{L}{R} \approx 5.05.
+\]

@@ -1,0 +1,36 @@
+#!/bin/sh
+
+# This script prepares and creates a .tar.gz package of Puffin.
+
+# Get the version number
+VERSION=$1
+
+# Write a message
+echo Creating release $VERSION of Puffin
+
+# Create the directory
+DISTDIR=puffin-$VERSION
+echo "Creating directory $DISTDIR"
+mkdir $DISTDIR
+
+# Copy files
+FILES=`ls | grep -v $DISTDIR`
+cp -R $FILES $DISTDIR
+
+# Remove unecessary files
+REMOVE1=`find $DISTDIR | grep CVS`
+REMOVE2=`find $DISTDIR -name '*~'`
+REMOVE="$REMOVE1 $REMOVE2"
+rm -rf $REMOVE
+
+# Create the archive
+TARBALL="puffin-$VERSION.tar.gz"
+echo "Creating arhive: $TARBALL"
+tar zcf $TARBALL $DISTDIR
+
+# Remove the directory
+echo 'Removing temporary directory'
+rm -rf $DISTDIR
+
+# Copy archive to web page
+scp $TARBALL merlin.cs.uchicago.edu:www-fenics/pub/software/puffin/

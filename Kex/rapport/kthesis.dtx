@@ -1,0 +1,2948 @@
+%
+% \begin{abstract}
+%    This document describes \LaTeX\ document classes for KTH
+%    theses. More information about the graphical profile at
+%    KTH is available on the web:
+%    \url{http://www.kth.se/internt/projekt/grafiskprofil/}.
+% \end{abstract}
+%
+%
+%
+% \section{Introduction}
+%
+%    The KTH thesis document classes can be downloaded from
+%    \url{ftp://ftp.nada.kth.se/pub/tex/local/kthesis.tar.gz}.
+%    They are built on the highly customizable document class
+%    \class{memoir} written by Peter Wilson. Hence they require
+%    the \class{memoir} class to work; this class comes with most
+%    modern \LaTeX\ distributions and it can be
+%    downloaded from any CTAN mirror. It has been verified
+%    that the thesis classes work together with version
+%    1.3a (2002-11-22) of the \class{memoir} class with
+%    version 1.9 (2003-11-19) of the \class{memoir} patch file
+%    as well as together with  version
+%    1.6 (2004-01-31) of the \class{memoir} class with
+%    version 2.1a (2004-02-19) of the \class{memoir} patch file.
+%    The \class{kthesis} classes also require the KTH logo.
+%    This logo is available in a package
+%    suitable for use with \TeX\ and \LaTeX\ at
+%    \url{ftp://ftp.nada.kth.se/pub/tex/local/}.
+%
+%    Most modern \TeX\ distibrutions have a number of directories
+%    (aka folders) designated for local additions of document
+%    classes and other related files. The archives containing the
+%    document classes and the KTH logo should be unpacked in one
+%    of theses directories with the directory structure intact.
+%    With MiK\TeX, the directory for local additions is normally
+%    \class{C:\textbackslash localtexmf} -- with te\TeX\ it is probably
+%    easiest to unpack the archives in the folder \url{~/texmf}. Remember
+%    to update the file name database when the files have been
+%    installed -- in MiK\TeX\ this is done through the configuration
+%    program while te\TeX\ users have to run \command{texhash} from
+%    the shell prompt.
+%
+%
+%
+% \section{Producing Doctoral and Licentiate Theses}
+%
+%    This macro package contains two classes for
+%    documents related to Doctoral and Licentiate theses:
+%    \class{kthesis} and \class{kthspik}. The former is used to
+%    typeset the thesis itself. Specifically, it should be used
+%    to produce the \emph{insert}, i.e., all pages in the book but
+%    not the cover. The latter class can be used to typeset the
+%    announcement sheet that states when the defense takes place.
+%    Such a sheet is called \emph{spikblad} in Swedish and it is
+%    typically distributed to various departments and academic
+%    institutions.
+%
+%    As mentioned above, the document class is an add-on to the
+%    document class \class{memoir} and it hence accepts the same
+%    class options and behaves in the same way as that class with
+%    the following exceptions: 1)~The only paper size
+%    specifications recognized are \option{a4paper} and
+%    \option{g5paper}. 2)~The class redefines the
+%    \verb|\maketitle| command to produce a title page containing
+%    the KTH logo. 3)~It is possible to omit the standard text
+%    ``Akademisk avhandling\ldots'' with the class option
+%    \option{noblurb}. 4)~The additional class option
+%    \option{electronic} adapts the layout of the page on the
+%    stock to electronic publishing. 5)~It is possible to specify
+%    a subtitle, bibliographic information and data concerning
+%    the thesis defense.
+%
+%    A standard \LaTeX\ document class, such as the
+%    \class{article} class, supports the definition of the
+%    document title, author and date using the commands
+%    \verb|\title|, \verb|\author| \verb|\date|. The
+%    \class{kthesis} class supports those commands and many more:
+%    \begin{itemize}
+%    \item \verb|\title| -- the document title (mandatory). It
+%      appears at the top of page~1.
+%    \item \verb|\subtitle| -- the document subtitle (optional).
+%      It appears below the title on page~1.
+%    \item \verb|\author| -- the author of the thesis
+%      (mandatory). It appears below the subtitle on page~1.
+%    \item \verb|\date| -- the date of publication (mandatory).
+%      It appears in the copyright notice and may be written in
+%      either Swedish or English (the former is probably best
+%      since most text on page~2 is already in Swedish).
+%    \item \verb|\thesistype| -- the kind of thesis you are
+%      writing (mandatory). It should conform on the text
+%      specified at the bottom right corner of the cover, i.e.,
+%      it should be something like ``Doctoral Thesis'',
+%      ``Licentiate Thesis'', or ``Master of Science Thesis'',
+%      and it appears near the bottom of page~1.
+%    \item \verb|\imprint| -- where and when the thesis is
+%      published (mandatory). It should conform on the text
+%      specified at the bottom right corner of the cover, i.e.,
+%      it should be something like ``Stockholm, Sweden, 2004'',
+%      and it appears at the bottom of page 1.
+%    \item \verb|\examen| -- the kind of degree the thesis is
+%      associated with (mandatory unless you use the
+%      \option{noblurb} class option). This text must be in
+%      Swedish and it appears in the standard text beginning with
+%      ``Akademisk avhandling'' on page~2.
+%    \item \verb|\disputationsdatum| -- the date of the defense
+%      (mandatory unless you use the \option{noblurb} class
+%      option). This text must be in Swedish and it appears in
+%      the standard text beginning with ``Akademisk avhandling''
+%      on page~2.
+%    \item \verb|\disputationslokal| -- the place of the defense
+%      (mandatory unless you use the \option{noblurb} class
+%      option). This text must be in Swedish and it appears in
+%      the standard text beginning with ``Akademisk avhandling''
+%      on page~2.
+%    \item \verb|\publisher| -- the printing house (mandatory).
+%      If you use the KTH press, this text should be
+%      ``Universitetsservice US AB''.
+%    \item \verb|\address| -- the address to the department producing
+%      the thesis. If no address is specified, the KTH address is used.
+%      May be written in either Swedish or English (the former is
+%      probably best since most text on page~2 is already in Swedish).
+%    \item \verb|\isbn| -- the ISBN number of the thesis (optional).
+%    \item \verb|\isrn| -- the ISRN number of the thesis (optional).
+%    \item \verb|\issn| -- the ISSN number of the thesis (optional).
+%    \item \verb|\trita| -- the TRITA number of the thesis (optional).
+%    \item \verb|\kthlogo| -- the file used for the KTH logo (optional).
+%      If you want to use the KTH logo corresponding to your department,
+%      specify the file name with this command. Note that the thesis is
+%      only designed for the official KTH logo as defined by the KTH
+%      Presidential Decisions 2002-11-11 (nr 938, dnr 930-1409-02, dossier
+%      19) and 2003-03-03 (nr 181/03, dnr 930-2003-0437, dossier 19).
+%    \end{itemize}
+%
+%    Since \class{kthesis} is built on the highly configurable
+%    \class{memoir} class, it is possible to redefine the
+%    document appearance with a reasonable effort. Details
+%    regarding this is described in the excellent \class{memoir}
+%    class manual written by Peter Wilson (\emph{The memoir class
+%    for configurable typesetting}, fifth edition, August 2002).
+%    This manual also discusses typographic conventions and book
+%    production in general.
+%
+%
+%
+% \section{Producing Master's Theses}
+%
+%    This macro package contains one document class file for
+%    Master's theses: \class{kth-mag}. This
+%    class is used to typset the thesis itself, including a generic
+%    title page. The official title page is usually produced by the
+%    department responsible for the Master's project---consult your
+%    department for details. Nevertheless, the title page produced
+%    by the class file can be useful if you intend to put an electronic
+%    version of the thesis on the web.
+%
+%    As mentioned above, the document class is an add-on to the
+%    document class \class{memoir} and it hence accepts the same
+%    class options and behaves in the same way as that class with
+%    the following exceptions: 1)~The only paper size
+%    specifications recognized are \option{a4paper} and
+%    \option{g5paper}. 2)~The class redefines the
+%    \verb|\maketitle| command to produce a title page containing
+%    the KTH logo. 3)~The additional class option
+%    \option{electronic} adapts the layout of the page on the
+%    stock to electronic publishing. 4)~It is possible to specify
+%    a subtitle and certain information that should appear on the
+%    the title page.
+%
+%    A standard \LaTeX\ document class, such as the
+%    \class{article} class, supports the definition of the
+%    document title, author and date using the commands
+%    \verb|\title|, \verb|\author| \verb|\date|. The
+%    \class{kth-mag} class supports those commands and some more:
+%    \begin{itemize}
+%    \item \verb|\title| -- the document title (mandatory). It
+%      appears at the top of page~1.
+%    \item \verb|\subtitle| -- the document subtitle (optional).
+%      It appears below the title on page~1.
+%    \item \verb|\author| -- the author of the thesis
+%      (mandatory). It appears below the subtitle on page~1.
+%    \item \verb|\date| -- the date of publication (mandatory).
+%      It appears in the copyright notice and may be written in
+%      either Swedish or English (the former is probably best
+%      since most text on page~2 is already in Swedish).
+%    \item \verb|\blurb| -- the text that should appear near
+%      the bottom of the title page. This text could typically
+%      include the name of the thesis supervisor.
+%    \item \verb|\trita| -- the TRITA number of the thesis (optional).
+%    \item \verb|\kthlogo| -- the file used for the KTH logo (optional).
+%      If you want to use the KTH logo corresponding to your department,
+%      specify the file name with this command. Note that the thesis is
+%      only designed for the official KTH logo as defined by the KTH
+%      Presidential Decisions 2002-11-11 (nr 938, dnr 930-1409-02, dossier
+%      19) and 2003-03-03 (nr 181/03, dnr 930-2003-0437, dossier 19).
+%    \end{itemize}
+%
+%    Since \class{kth-mag} is built on the highly configurable
+%    \class{memoir} class, it is possible to redefine the
+%    document appearance with a reasonable effort. Details
+%    regarding this is described in the excellent \class{memoir}
+%    class manual written by Peter Wilson (\emph{The memoir class
+%    for configurable typesetting}, fifth edition, August 2002).
+%    This manual also discusses typographic conventions and book
+%    production in general.
+%
+%
+%
+% \section{References and \BibTeX\ support}
+%
+%    This package also includes two style files for the \BibTeX\
+%    program. The first one---\bst{kthplain}---is a small extension
+%    of the \BibTeX\ standard style file \bst{plain}. In addition to
+%    the fields supported by the \bst{plain} style file, \bst{kthplain}
+%    also supports the fields  ISBN, ISSN and URL. If the \style{url}
+%    package has been loaded, it is used to typset the URLs. Also, the
+%    \bst{kthplain} style does not use the now obsolete font changing
+%    commands that are not supported by the \class{memoir} class.
+%
+%    Many authors prefer to use so called ``author-year'' citation
+%    systems, i.e., references to entries in the bibliography are
+%    of the form (Smith, 2003). The by far best way to achieve this
+%    is to use the \style{natbib} package.
+%    The second bibliography style file---\bst{kthnat}---is a
+%    slightly modified version of the \bst{plainnat} style that comes
+%    with the \style{natbib} package. In particular, the \bst{kthnat}
+%    style does not use the now obsolete font changing commands that
+%    are not supported by the \class{memoir} class. The \bst{kthnat}
+%    style is used in exactly the same way as \bst{plainnat}, see the
+%    \style{natbib} manual for details.
+%
+%    The \bst{kthnat} bibliography style formats the actual bibliography
+%    as a numbered list, sorted by author. More elaborate bibliography
+%    styles can easily be constructed with the \style{custom-bib}
+%    package that comes with most modern \LaTeX\ distributions. It is
+%    an interactive program written in \LaTeX. As a user, one replies to
+%    a series of questions, thereby specifying how the bibliography
+%    should be formatted,
+%    the corresponding bibliography style file is then constructed
+%    automatically. The interactive program is started by executing
+%    \command{latex makebst} in a shell command window.
+%
+%
+%
+% \section{Printing your Thesis}
+%
+%    KTH Doctoral and Licentiate theses are normally produced in
+%    G5 format (169\,mm by 239\,mm). The \class{kthesis} class assumes
+%    that the document is printed on A4 paper and then trimmed to~G5.
+%    In other words, the stock size is A4 and the page size is~G5.
+%    The page is centered vertically and flushed towards the spine
+%    on the stock. Documents submitted for printing at the KTH press
+%    should be in PostScript format and they should not contain any
+%    trimming marks. However, it is advisable to also give the printing
+%    house a couple of printed pages---in addition to the entire thesis,
+%    submitted electronically without trimming marks---and indicate the
+%    final page dimensions on those printed sheets. The
+%    \class{kthesis} class can automatically show such trimming
+%    marks if it is given the class option \option{showtrims}.
+%    Once you receive a demo printout of your thesis from the
+%    printing house, check it carefully for errors in
+%    the positioning and size of the page.
+%
+%    As specified by the KTH graphical profile, the cover is
+%    designed and produce separately. The
+%    first page produced by the \class{kthesis} class
+%    is not identical to the cover; it is in fact the norm
+%    in book production that the cover and page~1 of the
+%    insert differ in printed books. Some departments require
+%    that also the first page of the insert is produced separately;
+%    check your local department regulations for details.
+%
+%    Remember that the title of your thesis will be entered in
+%    several library catalogues and, hopefully, cited in many
+%    articles and theses. You should therefore use only normal
+%    letters and digits in the title; avoid mathematical
+%    notation.
+%
+%    The ``spikblad'' is normally printed slightly smaller than
+%    G5 (160\,mm by 230\,mm) so that it can fit physically inside
+%    the bound thesis. The \class{kthspik} class assumes that the
+%    document is printed on A4 paper and then trimmed; the page
+%    is centered both vertically and horizontally on
+%    the stock. If you do not print and trim the announcement
+%    sheets yourself, tell the press the size of the trimmed
+%    pages and how the pages are laid out on the stock. Note that
+%    the typearea is the same, both for the \class{kthesis} class
+%    and the \class{kthspik} class. This ensures that the line
+%    breaks in, \textit{i.e.}, the abstract are independent of
+%    the document class.
+%
+%    Master's theses are usually ``printed'' locally on the
+%    department copier---consult your department for details.
+%
+%
+%
+% \section{Electronic Publishing}
+%
+%    As mentioned above, the class option \option{electronic}
+%    adapts the output to electronic publishing. This only has
+%    one effect: The page is cropped to its actual size.
+%    You should therefore
+%    not use the \option{showtrims} class option in conjunction
+%    with \option{electronic}.
+%
+%
+%
+% \section{Modifying the Layout}
+%
+%    Since the thesis classes are based on the highly configurable
+%    \class{memoir} class, it is reasonable simple to modify the
+%    layout as desired. A small example of such modifications is
+%    included below.
+%    \begin{macrocode}
+%<*layout>
+\ProvidesPackage{nada-ex}[2005/03/16]
+%% Example customizations of the KTH thesis classes.
+%% See the package documentation for more details.
+%    \end{macrocode}
+%    By default, the memoir class does not number subsections, nor are
+%    they included in the table of contents. The following four lines
+%    change this.
+%    \begin{macrocode}
+\maxsecnumdepth{subsection}
+\setsecnumdepth{subsection}
+\maxtocdepth{subsection}
+\settocdepth{subsection}
+%    \end{macrocode}
+%    Sans serif fonts in chapter and section headings can look nice.
+%    \begin{macrocode}
+\renewcommand{\partnamefont} {\usefont{T1}{lmss}{sbc}{n}\boldmath\huge}
+\renewcommand{\partnumfont}  {\usefont{T1}{lmss}{sbc}{n}\boldmath\huge}
+\renewcommand{\parttitlefont}{\usefont{T1}{lmss}{sbc}{n}\boldmath\Huge}
+\renewcommand{\chapnamefont} {\usefont{T1}{lmss}{sbc}{n}\boldmath\huge}
+\renewcommand{\chapnumfont}  {\usefont{T1}{lmss}{sbc}{n}\boldmath\huge}
+\renewcommand{\chaptitlefont}{\usefont{T1}{lmss}{sbc}{n}\boldmath\Huge}
+\setsecheadstyle   {\usefont{T1}{lmss}{bx}{n}\boldmath\Large\raggedright}
+\setsubsecheadstyle{\usefont{T1}{lmss}{bx}{n}\boldmath\large\raggedright}
+\setparaheadstyle   {\normalsize\bfseries\boldmath}
+\setsubparaheadstyle{\normalsize\bfseries\boldmath}
+%    \end{macrocode}
+%    Instead of slanted type in the page headers, use upright, slightly
+%    smaller, type.
+%    \begin{macrocode}
+\makeevenhead{headings}%
+  {\normalfont\small\thepage}{}{\normalfont\small\leftmark}
+\makeoddhead{headings}%
+  {\normalfont\small\rightmark}{}{\normalfont\small\thepage}
+%    \end{macrocode}
+%    We also modify the style of figure and table captions slightly.
+%    \begin{macrocode}
+\setlength{\@tempdima}{\textwidth}
+\addtolength{\@tempdima}{-2\leftmargini}
+\captionwidth{\@tempdima}
+\changecaptionwidth
+\captiondelim{. }
+\captionnamefont{\normalfont\footnotesize\bfseries}
+\captiontitlefont{\normalfont\footnotesize}
+%    \end{macrocode}
+%    For some reason, standard \LaTeX\ has glue with non-zero
+%    stretchability in |\parskip|. Not nice\ldots
+%    \begin{macrocode}
+\setlength{\parskip}{0pt}
+%    \end{macrocode}
+%    Finally, we use the KTH logo corresponding to the School
+%    of Computer Science and Communication instead of the
+%    generic one.
+%    \begin{macrocode}
+\kthlogo{kth_svv_comp_science_comm}
+%    \end{macrocode}
+%</layout>
+%
+%
+% \section{The Source Code}
+%
+%    This section contains the source code for the
+%    \class{kthesis} document class. The bibliography
+%    styles are omitted from this document but they
+%    are present in the file \file{kthesis.dtx}.
+%    \begin{macrocode}
+%<*classfile>
+\NeedsTeXFormat{LaTeX2e}[2001/01/01]
+%<spikblad>\ProvidesClass{kthspik}
+%<avhandling&drlic>\ProvidesClass{kthesis}
+%<avhandling&exjobb>\ProvidesClass{kth-mag}
+              [2004/12/14 v2.1 Document Class for KTH Theses]
+%    \end{macrocode}
+%    Now follows the content of the class files. First we define
+%    two new if statements that are needed to handle the new class
+%    options \option{noblurb} and \option{electronic}.
+%    \begin{macrocode}
+%<drlic>\newif\if@kthesis@blurb \@kthesis@blurbtrue
+%<drlic>\DeclareOption{noblurb}{\@kthesis@blurbfalse}
+\newif\if@kthesis@electronic \@kthesis@electronicfalse
+\DeclareOption{electronic}{\@kthesis@electronictrue}
+%    \end{macrocode}
+%    Then we define two macros that setup the stock size and the
+%    papersize. Depending on the page size selected with the class
+%    options (either \option{a4paper} or \option{g5paper}, the latter
+%    being the default), one of the two macros are called.
+%    \begin{macrocode}
+\def\@kthesis@setpapersize@afour{%
+  \setstocksize{297mm}{210mm}
+  \settrimmedsize{297mm}{210mm}{*}
+  \settypeblocksize{49pc}{33pc}{*}}
+\def\@kthesis@setpapersize@gfive{%
+  \if@kthesis@electronic
+%    \end{macrocode}
+%    If the class option \option{electronic} was specified, we set
+%    both the stock size and the paper size to the actual dimensions
+%    of the page ($169\mbox{\,mm} \times 239\mbox{\,mm}$ for the
+%    thesis and ($160\mbox{\,mm} \times 230\mbox{\,mm}$ for the
+%    announcement sheet. Unless we run pdf\LaTeX\ we also insert
+%    a special that specifies the page size for dvips.
+%    \begin{macrocode}
+%<*avhandling>
+    \setstocksize{239mm}{169mm}
+    \settrimmedsize{239mm}{169mm}{*}
+    \ifpdf
+    \else
+      \special{papersize=169mm,239mm}
+    \fi
+%</avhandling>
+%<*spikblad>
+    \setstocksize{230mm}{160mm}
+    \settrimmedsize{230mm}{160mm}{*}
+    \ifpdf
+    \else
+      \special{papersize=160mm,230mm}
+    \fi
+%</spikblad>
+%    \end{macrocode}
+%    If the class option \option{electronic} was not specified, the
+%    page layout should be such that the thesis can be printed and
+%    bound at the KTH press. For the insert, this means that the G5
+%    page should be centered vertically on the stock and flushed
+%    towards the spine horizontally. Since the announcement sheet
+%    is not bound, we center it on the stock. In this way, all four
+%    edges of the sheet can be trimmed.
+%
+%    If we run pdf\LaTeX\ we need to set the page size in the PDF file
+%    to the size of the stock. Since the graphics package resets the
+%    PDF page size when it is loaded, we need to reset the PDF page
+%    size in the ``begin document hook''.
+%    \begin{macrocode}
+  \else
+    \setstocksize{297mm}{210mm}
+%<avhandling>    \settrimmedsize{239mm}{169mm}{*}
+%<spikblad>    \settrimmedsize{230mm}{160mm}{*}
+    \setlength{\trimtop}{\stockheight}
+    \addtolength{\trimtop}{-\paperheight}
+    \setlength{\trimtop}{0.5\trimtop}
+    \setlength{\trimedge}{\stockwidth}
+    \addtolength{\trimedge}{-\paperwidth}
+%<spikblad>    \setlength{\trimedge}{0.5\trimedge}
+    \ifpdf
+      \AtBeginDocument{%
+        \setlength{\pdfpagewidth}{\stockwidth}
+        \setlength{\pdfpageheight}{\stockheight}}
+    \fi
+  \fi
+%    \end{macrocode}
+%    No matter what, the size of the type block is always the same.
+%    \begin{macrocode}
+  \settypeblocksize{43pc}{30pc}{*}}
+%    \end{macrocode}
+%    Next comes code to handle the remaining class options. Since we
+%    build the class on the existing class \class{memoir}, we just
+%    pass most options to that class. Exceptions to this are the
+%    options that select stock size---we don't support them and
+%    instead use the options \option{a4paper} and \option{g5paper}
+%    to define the page size.
+%    \begin{macrocode}
+\DeclareOption{g5paper}{\def\kthesis@trimmedsize{gfive}}
+\DeclareOption{a3paper}{\OptionNotUsed}
+\DeclareOption{a4paper}{\def\kthesis@trimmedsize{afour}}
+\DeclareOption{a6paper}{\OptionNotUsed}
+\DeclareOption{a5paper}{\OptionNotUsed}
+\DeclareOption{b3paper}{\OptionNotUsed}
+\DeclareOption{b4paper}{\OptionNotUsed}
+\DeclareOption{b5paper}{\OptionNotUsed}
+\DeclareOption{b6paper}{\OptionNotUsed}
+\DeclareOption{letterpaper}{\OptionNotUsed}
+\DeclareOption{legalpaper}{\OptionNotUsed}
+\DeclareOption{executivepaper}{\OptionNotUsed}
+\DeclareOption{ebook}{\OptionNotUsed}
+\DeclareOption{landscape}{\OptionNotUsed}
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{memoir}}
+\ExecuteOptions{g5paper}
+\ProcessOptions\relax
+%    \end{macrocode}
+%    We can now load the \class{memoir} class. Since we assume
+%    that the stock is A4~paper, we specify that.
+%    \begin{macrocode}
+\LoadClass[a4paper]{memoir}
+%    \end{macrocode}
+%    We now set the page size. The macros that set page size
+%    may add code to the ``begin document hook'' that resets the
+%    the lengths \verb|\pdfpagewidth| and \verb|\pdfpageheight|.
+%    Since it appears that the graphics package changes those
+%    lengths, we need to insert a hook that loads the graphics
+%    package before calling the page size macros.
+%    \begin{macrocode}
+\AtBeginDocument{\RequirePackage{graphics}}
+\@nameuse{@kthesis@setpapersize@\kthesis@trimmedsize}
+%    \end{macrocode}
+%    We then finalize the layout.
+%    \begin{macrocode}
+\setlrmargins{*}{*}{*}
+\setulmargins{*}{*}{*}
+\checkandfixthelayout
+%    \end{macrocode}
+%    The thesis classes support some additional document information;
+%    the following macros handle that.
+%    \begin{macrocode}
+\def\subtitle{\gdef\thesubtitle}
+%<*drlic>
+\def\thesistype{\gdef\thethesistype}
+\def\examen{\gdef\theexamen}
+\def\disputationsdatum{\gdef\thedisputationsdatum}
+\def\disputationslokal{\gdef\thedisputationslokal}
+\def\imprint{\gdef\theimprint}
+\def\isbn{\gdef\theisbn}
+\def\isrn{\gdef\theisrn}
+\def\issn{\gdef\theissn}
+\def\publisher{\gdef\thepublisher}
+\def\address{\gdef\theaddress}
+%</drlic>
+\def\trita{\gdef\thetrita}
+\def\kthlogo{\gdef\thekthlogo}
+%<exjobb>\def\blurb{\gdef\theblurb}
+%    \end{macrocode}
+%    Default values\ldots
+%    \begin{macrocode}
+\let\thesubtitle\relax
+%<*drlic>
+\def\thethesistype{\ClassError{kthesis}%
+  {\protect\thesistype\space not given}%
+  {Please Read The Fine Manual.}}
+\def\theexamen{\ClassError{kthesis}%
+  {\protect\examen\space not given}%
+  {Please Read The Fine Manual.}}
+\def\thedisputationsdatum{\ClassError{kthesis}
+  {\protect\thedisputationsdatum\space not given}%
+  {Please Read The Fine Manual.}}
+\def\thedisputationslokal{\ClassError{kthesis}
+  {\protect\thedisputationslokal\space not given}%
+  {Please Read The Fine Manual.}}
+\def\theimprint{\ClassError{kthesis}%
+  {\protect\theimprint\space not given}%
+  {Please Read The Fine Manual.}}
+\def\thepublisher{\ClassError{kthesis}%
+  {\protect\thepublisher\space not given}%
+  {Please Read The Fine Manual.}}
+\def\theaddress{KTH\\SE-100 44 Stockholm\\SWEDEN}
+%</drlic>
+\def\thekthlogo{kth_svv}
+%<exjobb>\let\theblurb\relax
+%    \end{macrocode}
+%    Define a page style that puts bibliographic information at
+%    the bottom of every page. The style is used by default in
+%    the \class{kthsipk} class but it is available also in the
+%    \class{kthesis} class.
+%    \begin{macrocode}
+%<*drlic>
+\makepagestyle{kthabstract}
+\makeevenhead{kthabstract}{}{}{}
+\makeoddhead{kthabstract}{}{}{}
+\makeevenfoot{kthabstract}{}{\normalfont\scriptsize
+  \def\@maybebullet{\if@bullet\space\textbullet\space\fi}
+  \newif\if@bullet \@bulletfalse
+  \@ifundefined{thetrita}{}{\@maybebullet\thetrita\@bullettrue}%
+  \@ifundefined{theissn}{}{\@maybebullet\theissn\@bullettrue}%
+  \@ifundefined{theisrn}{}{\@maybebullet\theisrn\@bullettrue}%
+  \@ifundefined{theisbn}{}{\@maybebullet\theisbn\@bullettrue}%
+}{}
+\makeoddfoot{kthabstract}{}{\normalfont\scriptsize
+  \def\@maybebullet{\if@bullet\space\textbullet\space\fi}
+  \newif\if@bullet \@bulletfalse
+  \@ifundefined{thetrita}{}{\@maybebullet\thetrita\@bullettrue}%
+  \@ifundefined{theissn}{}{\@maybebullet\theissn\@bullettrue}%
+  \@ifundefined{theisrn}{}{\@maybebullet\theisrn\@bullettrue}%
+  \@ifundefined{theisbn}{}{\@maybebullet\theisbn\@bullettrue}%
+}{}
+%<spikblad>\pagestyle{kthabstract}
+%</drlic>
+%    \end{macrocode}
+%    Finally, we redefine the \verb|\maketitle| command. For the
+%    \class{kthesis} class, we get a different layout on the title
+%    page and bibliographic data on the back of the title page.
+%    For the \class{kthspik} class we get a different layout on the
+%    title page and bibliographic information in the page footer.
+%    The code that typesets the KTH logo assumes that the sides
+%    in the black square are 369 postscript points long. This seems
+%    to be the only way to reliably get a logo where black square is
+%    25\,mm by 25\,mm on the title page---since the text below the square
+%    is sometimes wider than the square, we cannot just set the width of
+%    the entire logo to 25\,mm.
+%    \begin{macrocode}
+%<*drlic>
+\newif\if@kthesis@babel \@kthesis@babelfalse
+\AtBeginDocument{%
+  \@ifpackagewith{babel}{swedish}%
+     {\@kthesis@babeltrue}{\@kthesis@babelfalse}}
+\def\maketitle{%
+  \begingroup
+  \sffamily
+%<*avhandling>
+  \pagestyle{empty}
+  \renewcommand*{\thepage}{title-\arabic{page}}
+  \noindent
+  \parbox[b][0.6\textheight]{\textwidth}{\centering\noindent
+%</avhandling>
+%<*spikblad>
+  {\centering\noindent
+%</spikblad>
+    \scalebox{0.192}{\includegraphics{\thekthlogo}}\par
+    \vskip1cm
+    \LARGE\bfseries\thetitle\par
+    \vfill
+    \normalsize\mdseries\thesubtitle\par
+    \vfill
+    \large\MakeUppercase{\theauthor}\par
+%<*avhandling>
+  }\par
+  \vfill\noindent
+  \parbox[b]{\textwidth}{\centering\noindent\large
+%</avhandling>
+%<spikblad>    \vfill
+    \thethesistype\par
+    \theimprint\par
+%<*avhandling>
+  }\par
+  \newpage
+  \hbox{}\vfill
+  \rmfamily
+  \noindent\begin{tabular}[b]{@{}l@{}}
+    \@ifundefined{thetrita}{}{\thetrita\\}%
+    \@ifundefined{theissn}{}{\theissn\\}%
+    \@ifundefined{theisrn}{}{\theisrn\\}%
+    \@ifundefined{theisbn}{}{\theisbn\\}%
+  \end{tabular}
+  \hfill
+  \noindent\begin{tabular}[b]{@{}r@{}}
+    \theaddress
+  \end{tabular}
+  \par\bigskip
+%</avhandling>
+%<*spikblad>
+  }
+  \vfill
+  \rmfamily
+%</spikblad>
+  \if@kthesis@blurb
+    \if@kthesis@babel
+      \begin{otherlanguage}{swedish}
+        \noindent Akademisk avhandling som med tillst\aa nd
+        av Kungl Tekniska h\"{o}gskolan framl\"{a}gges till
+        offentlig granskning f\"{o}r avl\"aggande av
+        \theexamen\space \thedisputationsdatum\space i
+        \thedisputationslokal.\par
+      \end{otherlanguage}
+    \else
+      \noindent Aka\-de\-misk av\-hand\-ling som med
+      till\-st\aa nd av Kungl Tek\-niska h\"{o}g\-skolan
+      fram\-l\"{a}g\-ges till of\-fent\-lig gransk\-ning
+      f\"{o}r av\-l\"ag\-gande av \theexamen\space
+      \thedisputationsdatum\space i \thedisputationslokal.\par
+    \fi
+    \bigskip
+  \fi
+%<*avhandling>
+  \noindent
+  \copyright \space \theauthor, \thedate
+  \par\bigskip\noindent
+  Tryck: \thepublisher\par
+  \cleardoublepage
+%</avhandling>
+%<spikblad>  \newpage
+  \endgroup
+}
+%</drlic>
+%<*exjobb>
+\def\maketitle{%
+  \begingroup
+  \sffamily
+  \pagestyle{empty}
+  \renewcommand*{\thepage}{title-\arabic{page}}
+  \noindent
+  \parbox[b][0.6\textheight]{\textwidth}{\centering\noindent
+    \scalebox{0.192}{\includegraphics{\thekthlogo}}\par
+    \vskip1cm
+    \LARGE\bfseries\thetitle\par
+    \vfill
+    \normalsize\mdseries\thesubtitle\par
+    \vfill
+    \large\MakeUppercase{\theauthor}\par
+  }\par
+  \vfill\noindent
+  \parbox[b]{\textwidth}{\centering\noindent
+    \theblurb\par
+  }
+  \vfill
+  \centerline{\thetrita}
+  \rmfamily
+  \cleardoublepage
+  \endgroup
+}
+%</exjobb>
+%</classfile>
+%    \end{macrocode}
+%
+%
+%
+% \section{Template Files}
+%    
+%    Included with the KTH thesis class are also several skeleton
+%    files. The first two, \path{kth-demo.tex} and \path{kth-spik.tex},
+%    use the classes \class{kthesis} and \class{kthspik}, respectively.
+%    The last two, \path{kth-ex1.tex} and \path{kth-ex2.tex} use the
+%    class \class{kth-mag}.
+%    Note that the imprint and bibliographic information used in
+%    those files may not be correct for your thesis.
+%    \begin{macrocode}
+%<demo>\documentclass[showtrims]{kthesis}
+%<spik>\documentclass[showtrims]{kthspik}
+%<ex1>\documentclass[a4paper,11pt]{kth-mag}
+%<ex2>\documentclass[showtrims]{kth-mag}
+%    \end{macrocode}
+%    The thesises classes work best if the babel package is loaded with
+%    both Swedish and English languages. Even if the thesis is written
+%    in English, there are some pices of text that must be in Swedish.
+%    \begin{macrocode}
+%<*demo|spik|ex1|ex2>
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{lmodern}
+\usepackage[latin1]{inputenc}
+\usepackage[swedish,english]{babel}
+%</demo|spik|ex1|ex2>
+%    \end{macrocode}
+%    It is reasonably simple to modify the layout of the thesis
+%    since the document class is based on the memoir class.
+%    \begin{macrocode}
+%<ex1>\usepackage{nada-ex}
+%    \end{macrocode}
+%    It is sometimes convenient to keep all bibliographic information in
+%    one file, this minimizes the risc that some item is corrupted.
+%    \begin{macrocode}
+%<*demo|spik>
+\input{kth-bibl}
+%</demo|spik>
+%<*biblio>
+\title{Lorem ipsum dolor sit amet, sed diam nonummy nibh eui
+       mod tincidunt ut laoreet dol}
+\subtitle{Duis autem vel eum iruire dolor in hendrerit in
+          vulputate velit esse molestie consequat, vel illum
+          dolore eu feugiat null}
+\author{Namn Namnet}
+\date{maj 2003}
+\thesistype{Doctoral Thesis}
+\imprint{Stockholm, Sweden 2003}
+\examen{teknologie doktorsexamen i datalogi}
+\disputationsdatum{torsdagen den 17 maj 2003 klockan 10.00}
+\disputationslokal{Kollegiesalen, Administrationsbyggnaden,
+  Kungl Tekniska h\"{o}gskolan, Valhallav\"{a}gen~79, Stockholm}
+\isbn{ISBN x-xxxx-xxx-x}
+\issn{ISSN xxxx-xxxx}
+\isrn{ISRN KTH/xxx/xx-{}-yy/nn-{}-SE}
+\trita{TRITA xxx yyyy-nn}
+\publisher{Universitetsservice US AB}
+\address{KTH School of Computer Science and Communication\\
+  SE-100 44 Stockholm\\
+  SWEDEN}
+\kthlogo{kth_svv_comp_science_comm}
+%</biblio>
+%<*ex1|ex2>
+\title{Lorem ipsum dolor sit amet, sed diam nonummy nibh eui
+       mod tincidunt ut laoreet dol}
+\subtitle{Duis autem vel eum iruire dolor in hendrerit in
+          vulputate velit esse molestie consequat, vel illum
+          dolore eu feugiat null}
+\author{Namn Namnet}
+\date{November 2003}
+\blurb{Master's Thesis at NADA\\Supervisor: Tjoho\\Examiner: Tjohej}
+\trita{TRITA xxx yyyy-nn}
+%</ex1|ex2>
+%    \end{macrocode}
+%    (You can of course use the charcters \aa\ \"{a} and \"{o} in
+%    your \LaTeX\ source file if you have specified the correct
+%    input encoding with the inputenc package.)
+%
+%    Having defined all bibliographic information, it is
+%    straightforward to typeset the start of the thesis.
+%    \begin{macrocode}
+%<*demo|ex1|ex2>
+\begin{document}
+\frontmatter
+\maketitle
+\input{kth-abs}
+\clearpage
+%</demo|ex1|ex2>
+%<*spik>
+\begin{document}
+\maketitle
+\input{kth-abs}
+\end{document}
+%</spik>
+%    \end{macrocode}
+%    Again, it is convenient to have the abstract in a separate
+%    file so that it can be used both in the thesis itself and
+%    on the announcement sheets.
+%    \begin{macrocode}
+%<*abstract>
+\begin{abstract}
+  This is a skeleton for KTH theses. More documentation
+  regarding the KTH thesis class file can be found in
+  the package documentation.
+\end{abstract}
+%</abstract>
+%    \end{macrocode}
+%    It is recommended that every book published in Sweden
+%    contains a summary in Swedish.
+%    \begin{macrocode}
+%<*demo|ex1|ex2>
+\selectlanguage{swedish}
+\begin{abstract}
+  Denna fil ger ett avhandlingsskelett.
+  Mer information om \LaTeX-mallen finns i
+  dokumentationen till paketet.
+\end{abstract}
+\selectlanguage{english}
+\clearpage
+%    \end{macrocode}
+%    The remainder of the document is entered exactly as it
+%    would be with the \class{memoir} class.
+%    \begin{macrocode}
+\tableofcontents
+\mainmatter
+%    \end{macrocode}
+%    Now follows lots of nonsense text. We omit it in the manual\ldots
+%
+% \StopEventually
+%
+%    \begin{macrocode}
+\chapter{Introduction}
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris
+purus. Fusce tempor. Nulla facilisi. Sed at turpis. Phasellus eu
+ipsum. Nam porttitor laoreet nulla. Phasellus massa massa, auctor
+rutrum, vehicula ut, porttitor a, massa. Pellentesque fringilla. Duis
+nibh risus, venenatis ac, tempor sed, vestibulum at, tellus. Class
+aptent taciti sociosqu ad litora torquent per conubia nostra, per
+inceptos hymenaeos. Aliquam ligula lectus, volutpat in, rutrum sit
+amet, ultrices at, elit. Aenean consequat facilisis sapien. Nulla
+auctor, wisi vel semper ornare, augue augue facilisis turpis, a
+laoreet quam libero quis erat. Vestibulum sagittis. Duis blandit
+laoreet tortor. Nulla mattis. Morbi eget turpis. Praesent mi. Nunc
+enim leo, blandit ut, sagittis at, pharetra sit amet, dui. Praesent
+porta tortor a ligula rutrum dapibus.
+
+Integer pellentesque, orci consequat suscipit pharetra, sem eros
+tempor orci, non ultricies massa justo vitae nunc. Nunc sagittis.
+Vestibulum egestas quam at eros. Curabitur consectetuer, magna vel
+gravida varius, tortor augue congue tellus, quis gravida nulla risus
+nec diam. Aliquam commodo dapibus risus. Vestibulum lacinia lectus sed
+nisl. Sed libero purus, tincidunt non, sagittis nec, sodales quis,
+nulla. Sed tortor tortor, viverra et, hendrerit eu, accumsan
+sollicitudin, mi. Suspendisse potenti. Maecenas non wisi sed urna
+mollis dignissim. Aenean at ligula. Vestibulum porta. Donec mauris.
+Donec scelerisque rutrum elit. Aenean ultrices, eros vel sollicitudin
+semper, dui lacus hendrerit metus, id ultricies arcu arcu id mi. In
+eget sapien sed lorem cursus eleifend.
+
+\part{Important Results}
+
+\chapter{First One}
+
+Aliquam et ante. Vivamus ultricies, neque eget iaculis interdum, lacus
+quam hendrerit sapien, vel posuere justo nulla vitae arcu. Morbi
+magna. Aliquam erat volutpat. Aenean mattis consequat nibh. Donec
+lobortis sapien a enim. Cras mattis ultricies mi. Quisque venenatis.
+Phasellus risus justo, vulputate non, tristique in, tristique vel,
+neque. Phasellus pretium, dui nec dapibus laoreet, ligula enim laoreet
+eros, tempus interdum massa turpis quis dolor. Etiam ultricies
+condimentum neque. Maecenas pellentesque. Duis tortor. Aliquam ac
+dolor. Vestibulum nisl. Nunc facilisis tincidunt mi. Morbi feugiat
+velit vitae velit. Suspendisse potenti. Maecenas eget ante. Maecenas
+blandit, urna at varius lacinia, lorem purus ullamcorper risus, non
+pretium arcu libero at odio.
+
+\section{Preliminaries}
+
+Vestibulum dolor dolor, interdum eu, iaculis scelerisque, auctor at,
+mi. Nullam ut erat quis sem bibendum dignissim. Vestibulum volutpat
+nisl in tortor. Etiam pretium nulla et elit. Integer tortor. Ut metus
+ligula, egestas non, ornare vel, bibendum eu, urna. Pellentesque
+rutrum dui vel orci. Aliquam lacus lacus, varius a, sodales vitae,
+egestas a, purus. Integer varius venenatis odio. Pellentesque dui
+mauris, lacinia in, placerat lobortis, tempor ac, lectus.
+
+\subsection{Remarks}
+
+Sed lobortis neque non mauris. Maecenas rhoncus tempor justo. Nunc vel
+diam at dolor luctus tincidunt. Ut egestas. Aliquam eu turpis eu nisl
+ultricies sollicitudin. Donec erat odio, fermentum id, malesuada id,
+viverra vitae, lorem. Morbi scelerisque sagittis enim. Donec non ante
+sed neque dictum consectetuer. Etiam bibendum odio quis est. Quisque
+mollis magna et odio. Nunc nulla. Suspendisse magna felis, tincidunt
+in, blandit non, tempus vel, orci.
+
+\subsection{Definitions}
+
+Sed laoreet tellus in massa. Fusce egestas dapibus wisi. Pellentesque
+sit amet nulla. Donec dignissim rutrum urna. Integer et mi at urna
+viverra vestibulum. Nullam justo tortor, vulputate nec, porta non,
+consequat ac, lectus. Sed ligula. Nullam tristique. Nullam pulvinar.
+Morbi at elit et lacus tristique nonummy. Vivamus nunc ante, imperdiet
+at, luctus non, aliquam a, neque. In interdum sapien et wisi.
+Curabitur ipsum justo, consequat eget, viverra eu, porta vel, lacus.
+Suspendisse potenti. Proin wisi. In tristique neque at ipsum.
+Phasellus ac justo eu nibh faucibus lobortis. Vestibulum lorem.
+
+Duis blandit est id diam. Sed aliquet semper arcu. Curabitur sed eros
+ut neque eleifend sagittis. Cras lacinia, nisl a sagittis scelerisque,
+nibh risus varius pede, ac interdum lacus lorem quis quam. Mauris sit
+amet orci a ligula porttitor nonummy. Aliquam malesuada turpis at diam
+semper vestibulum. Phasellus ullamcorper. Aenean ultrices lacus a diam
+lobortis posuere. Duis porttitor euismod turpis. Ut sem nulla, porta
+vel, lacinia eget, rutrum non, justo. Phasellus risus sem, placerat
+at, sodales ac, viverra vitae, magna. Fusce non magna. Mauris varius
+vestibulum eros. Nullam nec quam in tortor ultrices varius. Nulla
+tempus lectus ut tortor.
+
+Ut vestibulum diam in lacus. Aenean vestibulum bibendum dolor.
+Praesent in wisi. Aenean ornare faucibus orci. Donec mattis magna et
+dui. Nullam vestibulum lobortis nibh. Etiam ultrices lorem nec est.
+Duis ut nisl. Vivamus risus. Pellentesque habitant morbi tristique
+senectus et netus et malesuada fames ac turpis egestas. Suspendisse
+sagittis, dolor eget ullamcorper elementum, sem erat sagittis dolor,
+sit amet tincidunt quam neque consectetuer quam. Maecenas at quam.
+Etiam gravida. Sed nec enim. Fusce pulvinar. In pede metus, lobortis
+a, ullamcorper quis, commodo vitae, turpis. Maecenas sed mi sit amet
+odio suscipit ornare. Phasellus pede arcu, elementum sed, elementum
+eu, viverra et, ligula. Aliquam metus nisl, convallis et, ultrices
+vel, consequat quis, felis. Aenean gravida euismod urna.
+
+\section{The Main Theorem}
+
+Aliquam quis nibh quis justo elementum viverra. Vestibulum ipsum.
+Integer sit amet urna id lorem condimentum pretium. Nam adipiscing
+lobortis purus. Donec at libero id augue interdum vulputate. Curabitur
+imperdiet suscipit metus. Curabitur ac quam sed lacus accumsan
+posuere. Quisque pharetra mi sit amet enim. Curabitur quis elit. Lorem
+ipsum dolor sit amet, consectetuer adipiscing elit. Sed ultricies
+aliquet lorem. Proin posuere tincidunt diam. Donec quis orci non leo
+elementum nonummy. Donec urna lectus, fringilla at, tempus id, auctor
+a, wisi. Pellentesque habitant morbi tristique senectus et netus et
+malesuada fames ac turpis egestas. Suspendisse blandit. Nam wisi.
+Phasellus egestas lacus ut lorem. Suspendisse sapien. Fusce non dolor
+ac odio tempus placerat.
+
+\subsection{Problem Statement}
+
+Suspendisse id mauris a justo venenatis feugiat. Quisque volutpat,
+ligula et fermentum volutpat, lectus magna tincidunt urna, a dignissim
+augue sem eu ipsum. Aliquam vitae pede. Sed ullamcorper faucibus erat.
+Aenean vehicula augue at dui. Donec adipiscing aliquet ligula. Sed sed
+libero at enim ornare molestie. Suspendisse tristique sodales wisi. In
+sit amet orci. In hac habitasse platea dictumst. Cras pede. Ut elit.
+
+Morbi eu augue. Praesent in dui. Pellentesque habitant morbi tristique
+senectus et netus et malesuada fames ac turpis egestas. Phasellus
+felis. Morbi eleifend sagittis quam. Mauris imperdiet purus vel arcu.
+Proin quis risus. Cum sociis natoque penatibus et magnis dis
+parturient montes, nascetur ridiculus mus. Mauris massa justo, iaculis
+nec, commodo suscipit, faucibus at, nunc. Phasellus libero risus,
+ultrices eu, congue eu, sollicitudin et, tortor. Integer ante turpis,
+malesuada vel, sagittis nec, porta ut, dolor. Integer ultricies
+blandit odio. Praesent et leo sit amet ipsum nonummy sodales.
+
+\subsection{The Proof}
+
+Suspendisse aliquam fringilla tortor. Nullam lacinia rutrum orci. Cras
+pellentesque iaculis ligula. Fusce elit enim, nonummy ut, fermentum
+sed, nonummy a, nunc. Suspendisse potenti. Nunc tortor dolor, eleifend
+non, aliquam sit amet, vestibulum id, erat. Curabitur imperdiet.
+Quisque in velit. Etiam a urna sed turpis scelerisque tempor. Praesent
+in dolor eget massa congue aliquet. Praesent magna lacus, dictum a,
+accumsan a, sollicitudin vel, nibh. Phasellus accumsan porta tortor.
+Curabitur mauris. Quisque ut wisi. Sed aliquet molestie mi. Quisque ut
+magna. Vivamus rhoncus urna in libero.
+
+Nullam tristique tempus neque. Nunc ac tortor lobortis felis nonummy
+lacinia. Pellentesque vestibulum facilisis quam. Aliquam aliquam,
+lorem eget elementum euismod, urna dui rutrum libero, a imperdiet erat
+augue ut ipsum. Morbi gravida turpis ut sapien. Aliquam ante sapien,
+ultricies at, vulputate non, ullamcorper quis, dolor. Quisque velit
+turpis, consectetuer vitae, facilisis feugiat, volutpat eget, nunc.
+Quisque quis ipsum in diam elementum vulputate. Donec convallis sapien
+ut tellus. Cras dictum turpis nec sem. Nunc augue. Aliquam nunc
+tortor, semper vel, aliquam at, tempus ut, risus. Mauris feugiat nunc
+id justo. Nunc ullamcorper magna vel urna. Morbi rutrum massa non
+sapien. Fusce purus. Cras magna. In condimentum augue ac libero. Nulla
+lacinia vulputate leo. Mauris lobortis molestie turpis.
+
+Pellentesque neque odio, ornare a, hendrerit ac, vestibulum sit amet,
+tortor. Vestibulum ante ipsum primis in faucibus orci luctus et
+ultrices posuere cubilia Curae; Phasellus malesuada porta sem. Nunc
+wisi neque, lobortis at, consequat sit amet, pulvinar eget, mauris.
+Aliquam egestas, arcu ut tristique tempus, urna lorem pulvinar nisl,
+at auctor lectus sem ut felis. Duis hendrerit, mi et varius venenatis,
+nibh libero blandit mauris, bibendum pellentesque sapien dolor quis
+velit. Vivamus nec augue ut velit eleifend accumsan. Fusce euismod.
+Phasellus volutpat. Donec sollicitudin. Donec non mi eu lorem suscipit
+tincidunt. Suspendisse vehicula. Integer iaculis diam ac quam.
+Pellentesque velit mi, pulvinar eget, suscipit sed, rhoncus ut,
+tortor. Etiam ultricies, wisi non ornare rutrum, ipsum nunc posuere
+leo, vitae blandit est enim eu massa. Nulla sed felis vel nunc
+eleifend venenatis. Sed non purus. Aliquam enim. Nulla neque massa,
+elementum sit amet, rhoncus vel, rhoncus in, leo.
+
+In convallis pellentesque quam. Fusce venenatis neque id justo.
+Aliquam felis. Nullam vitae eros. Sed sit amet lorem. Vestibulum
+elementum purus in nunc. Phasellus nec libero non ipsum ultrices
+porttitor. Vestibulum ante ipsum primis in faucibus orci luctus et
+ultrices posuere cubilia Curae; Praesent quis elit sed eros bibendum
+tempor. Suspendisse tempor congue nisl. Nam a est. Aliquam erat
+volutpat. Quisque tincidunt. Donec egestas dapibus diam. Aenean ante
+mi, vulputate vitae, adipiscing in, fermentum luctus, wisi. In nibh
+mauris, ultricies a, fermentum eget, faucibus pharetra, neque. Cras
+consectetuer congue ipsum. Nulla eu metus. Sed at turpis.
+
+\chapter{Second One}
+
+Vestibulum sollicitudin magna quis ipsum. Phasellus nec dolor. Quisque
+laoreet, mi et porttitor tincidunt, leo mauris ultrices purus, eget
+tempus orci neque vel sapien. Pellentesque tempus pulvinar diam. Ut
+eleifend posuere lectus. Maecenas at justo vel lorem auctor
+pellentesque. Cras mattis laoreet ante. Mauris vitae sem et tellus
+gravida ornare. Donec a risus. Pellentesque ac nunc at leo tempus
+sagittis. Morbi enim. Sed nibh quam, fermentum id, hendrerit id,
+semper et, metus. Nullam congue enim id eros. Phasellus facilisis
+mollis mi. Nam laoreet cursus justo. Curabitur placerat varius lectus.
+
+\section{Preliminaries}
+
+Donec viverra, velit non dapibus consectetuer, est tellus porta orci,
+vel convallis elit tortor sed massa. Aliquam erat volutpat. Nullam et
+nibh. Nunc posuere. Nullam vulputate convallis ligula. Integer lorem
+wisi, porta eget, placerat quis, sollicitudin vitae, diam. Maecenas
+non tellus in tellus mollis placerat. Aenean eget ligula. Suspendisse
+bibendum eros non orci. Vestibulum ante ipsum primis in faucibus orci
+luctus et ultrices posuere cubilia Curae; Quisque id tellus ac est
+suscipit sodales. Curabitur placerat, odio ut cursus accumsan, libero
+lectus consectetuer risus, at lobortis ligula nibh quis odio.
+Phasellus ac nibh. Vivamus a lectus ut pede scelerisque aliquam. Sed
+vestibulum erat vitae nunc. Quisque non neque.
+
+Aliquam augue. Mauris ipsum wisi, luctus et, volutpat non, tincidunt
+ac, augue. Morbi posuere diam nec arcu. In ut mi sit amet turpis
+fermentum posuere. Maecenas in lorem. Maecenas tincidunt accumsan
+odio. Nulla mauris. Cras ac elit eget tortor vulputate venenatis. Nam
+quam urna, consequat nec, dictum sed, mollis nec, justo. Ut velit.
+Nunc nibh arcu, consequat at, venenatis eu, ultrices cursus, lectus.
+Sed blandit blandit ante. Praesent in nisl. Nullam nibh erat, ornare
+quis, iaculis in, imperdiet id, ligula. Nullam odio velit, semper ac,
+lobortis sed, rhoncus vitae, dolor. Duis ultricies libero sed velit.
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+ridiculus mus. Morbi vestibulum magna a purus.
+
+\subsection{Remarks}
+
+In hac habitasse platea dictumst. Suspendisse sit amet dolor a wisi
+auctor interdum. Duis ut diam ut arcu sodales pulvinar. Etiam a
+ligula. Proin arcu. Fusce pulvinar porta felis. Vestibulum vulputate.
+Nullam posuere, nunc ac rhoncus auctor, dolor risus vestibulum nibh,
+non fringilla nunc nibh quis lacus. Suspendisse scelerisque
+pellentesque felis. Suspendisse nisl nibh, viverra sit amet, lobortis
+in, commodo ac, arcu. Aenean blandit erat nec magna. Praesent
+fermentum.
+
+\subsection{Definitions}
+
+Sed consectetuer vestibulum risus. Fusce eget ligula. Maecenas felis
+dui, posuere a, accumsan quis, fringilla ac, est. Morbi vestibulum,
+orci vel luctus cursus, lectus dui interdum wisi, nec posuere metus
+nibh vitae sapien. Praesent quis mi at libero volutpat vehicula. Nulla
+facilisi. Vivamus dapibus venenatis eros. Integer tristique lacinia
+mauris. Ut vulputate faucibus mi. Morbi pretium pellentesque mi.
+Aliquam in sapien sed sapien ultricies feugiat. Sed et est a velit
+lacinia convallis. Etiam velit nisl, vehicula nec, sagittis et, porta
+sed, sapien. In dignissim. Sed ligula mauris, lobortis eget,
+scelerisque id, vestibulum et, lorem. Mauris consequat metus nec
+risus. Nulla auctor nulla id dolor.
+
+In hac habitasse platea dictumst. Proin aliquam tincidunt risus.
+Mauris ipsum. Suspendisse lectus. Quisque at augue. Praesent
+adipiscing tortor vel dolor. Pellentesque habitant morbi tristique
+senectus et netus et malesuada fames ac turpis egestas. Nulla neque.
+Sed at orci. Fusce vestibulum aliquam libero. Nam adipiscing, metus
+sit amet aliquam pulvinar, magna nunc tristique pede, pellentesque
+porta erat eros eget odio. Aenean turpis tortor, porta vel, vestibulum
+a, imperdiet eget, wisi. Curabitur massa risus, consectetuer at,
+hendrerit eu, convallis non, libero. Etiam nulla tortor, pharetra ut,
+bibendum et, molestie nec, sapien. Nullam sollicitudin. Fusce sit amet
+nunc nec ipsum vehicula bibendum. Maecenas eu lacus. Nulla interdum,
+neque sit amet pharetra interdum, erat pede eleifend lectus, ac
+consectetuer purus urna quis wisi. Integer pretium nunc ut dui.
+
+\section{The Main Theorem}
+
+Donec ultricies. Proin odio. Ut ac turpis at justo tempus luctus.
+Quisque mi. Integer eu velit. Proin pharetra, wisi non dignissim
+tristique, dui felis pharetra metus, in luctus leo nulla nec libero.
+Duis porttitor. Praesent pellentesque vulputate metus. Duis auctor
+sagittis velit. Pellentesque mollis, dui et convallis sagittis, lectus
+felis pulvinar arcu, at lacinia erat lacus in tortor. Pellentesque
+wisi neque, consequat in, dignissim quis, pretium quis, massa.
+
+Donec bibendum vestibulum wisi. Nam facilisis. Phasellus dignissim
+tempor quam. Vestibulum placerat venenatis erat. Sed wisi felis,
+interdum eget, porttitor varius, auctor ac, felis. Sed at sem. Ut eget
+nisl. Aliquam eu arcu eget nunc hendrerit vulputate. Vivamus eu
+tortor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Vivamus id lacus. In tempus velit. Vestibulum ante ipsum primis in
+faucibus orci luctus et ultrices posuere cubilia Curae; Aenean wisi
+lacus, eleifend id, vehicula et, malesuada vitae, wisi. Phasellus
+tristique enim eget tellus. Cras mauris libero, consequat et, dictum
+non, lobortis id, urna. Maecenas venenatis. Etiam rutrum, purus nec
+posuere facilisis, erat libero condimentum magna, nec congue leo pede
+sit amet ante. Quisque dictum, nunc ut dignissim convallis, neque
+metus luctus mi, vel euismod leo metus a augue. Sed felis. In laoreet,
+pede sit amet vestibulum nonummy, nibh lacus lacinia dolor, et
+placerat sem erat vitae metus. Donec pellentesque placerat nisl.
+Vestibulum eget nunc. Cras congue dolor sed ante. Donec nisl velit,
+commodo quis, porta sed, vestibulum in, ante. Donec ante. Morbi
+fermentum, eros non mattis fermentum, ipsum mi tempor tellus, eu
+imperdiet odio ante id mauris. Integer tempus, sem vitae mollis
+tempor, ante nulla condimentum leo, vitae mattis lectus purus vitae
+risus. Suspendisse potenti.
+
+\subsection{Problem Statement}
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+posuere cubilia Curae; Nunc vel sem in diam fringilla commodo. Cum
+sociis natoque penatibus et magnis dis parturient montes, nascetur
+ridiculus mus. Vivamus sed mi. Praesent enim augue, vulputate ac,
+interdum id, feugiat eget, justo. Quisque elit. Pellentesque habitant
+morbi tristique senectus et netus et malesuada fames ac turpis
+egestas. Nam et purus. Etiam non orci vel nibh euismod viverra.
+Pellentesque eu velit. Fusce vestibulum, ipsum non fringilla
+consectetuer, turpis dui adipiscing lorem, sed adipiscing tortor eros
+in libero. Sed congue sem et wisi.
+
+Proin mattis, enim vel condimentum sollicitudin, justo nunc porttitor
+felis, in mattis wisi odio id ipsum. Vivamus lectus. Etiam blandit
+elementum wisi. Quisque sit amet est convallis leo faucibus tincidunt.
+Morbi lorem arcu, nonummy in, ultrices vel, vulputate nec, urna. Nulla
+facilisi. Suspendisse vitae purus. Maecenas imperdiet, eros sit amet
+volutpat dapibus, nisl eros bibendum libero, vel laoreet massa ipsum
+eu enim. Aliquam in elit. Cum sociis natoque penatibus et magnis dis
+parturient montes, nascetur ridiculus mus. Donec eu elit. Vestibulum
+sit amet lacus quis nulla laoreet aliquam. In pharetra lectus eu dui.
+
+\subsection{The Proof}
+
+Curabitur molestie, arcu vitae varius rhoncus, nunc erat feugiat
+tellus, ut volutpat massa ipsum sed quam. Nullam mauris massa, mattis
+eget, sagittis at, tincidunt a, leo. Donec placerat. Proin lorem mi,
+semper at, imperdiet vel, fermentum et, eros. Curabitur dui velit,
+blandit fringilla, consequat quis, sagittis ut, lectus. Fusce non
+risus eget sem fermentum feugiat. Nullam justo nunc, faucibus et,
+pharetra nec, pellentesque sit amet, tellus. Cras fringilla lectus vel
+augue. Donec sapien. Aliquam malesuada, ligula vel venenatis cursus,
+ante metus interdum quam, in tristique risus pede non turpis. Sed
+dignissim. Aliquam erat volutpat. Aenean porttitor wisi a ante. Nulla
+leo nibh, bibendum malesuada, suscipit nec, consequat ut, justo.
+
+Morbi sit amet nunc et neque faucibus adipiscing. Donec lacinia purus
+ut metus. Maecenas sodales justo quis wisi. Aliquam id lacus ac nisl
+rutrum porttitor. Fusce ac neque. Nulla facilisi. Vestibulum dignissim
+iaculis lorem. Vivamus scelerisque ante ac nibh. Sed non sapien. Donec
+egestas pharetra sem. Suspendisse tellus lorem, gravida eu, pulvinar
+a, ornare vitae, urna. Curabitur justo. Fusce ante enim, fermentum
+eget, bibendum eu, pulvinar id, felis. Vestibulum ante ipsum primis in
+faucibus orci luctus et ultrices posuere cubilia Curae; Ut vestibulum
+lacus nec libero. Sed tortor.
+
+Aenean vel risus quis tortor vehicula dictum. Aliquam nec sapien.
+Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+per inceptos hymenaeos. Quisque sagittis suscipit mauris. Proin
+vestibulum leo id purus. Mauris lobortis. Proin eleifend. Aliquam eros
+dolor, semper nec, sagittis vel, sollicitudin at, felis. Quisque
+blandit mattis ante. Maecenas leo. Praesent libero. Donec orci ipsum,
+commodo vitae, sagittis quis, vehicula vel, nulla. Praesent non arcu a
+mauris porta euismod. Pellentesque in sem.
+
+Aliquam ut urna. Nulla in libero quis libero fermentum semper. Lorem
+ipsum dolor sit amet, consectetuer adipiscing elit. Aenean ac quam a
+odio tristique lacinia. Lorem ipsum dolor sit amet, consectetuer
+adipiscing elit. Vivamus quis sem. Donec risus risus, viverra vitae,
+ornare et, accumsan id, dolor. Sed wisi tortor, viverra non, ultricies
+in, pulvinar vel, elit. Class aptent taciti sociosqu ad litora
+torquent per conubia nostra, per inceptos hymenaeos. Vivamus ultrices
+accumsan purus. In in risus. Praesent condimentum, pede a egestas
+placerat, nulla leo mollis wisi, in mattis elit orci quis justo.
+Aliquam erat volutpat. Nunc augue. Morbi suscipit posuere dolor.
+Vivamus aliquet lorem sed enim. Fusce a est ac pede congue pharetra.
+
+Cras odio orci, consectetuer a, porttitor eu, scelerisque eu, quam.
+Vivamus imperdiet tellus. Aenean sed leo. Aenean molestie vestibulum
+pede. Aenean eleifend dolor vitae magna. Maecenas malesuada, nunc
+iaculis ornare tempus, lacus velit pharetra sem, id fringilla eros dui
+eget arcu. Integer eget arcu. Morbi porta. Nam justo turpis,
+adipiscing sed, euismod sed, auctor non, nulla. Duis velit massa,
+congue sit amet, sagittis at, consequat id, risus. Nulla purus diam,
+nonummy ut, euismod ac, pretium et, leo. In at est. Phasellus
+malesuada libero sed tellus. Integer mattis urna ut orci viverra
+ultrices. Etiam varius, sapien vel mattis malesuada, felis est blandit
+odio, sed lobortis sapien erat non ipsum. Nunc malesuada, felis quis
+faucibus imperdiet, enim purus posuere quam, nec lobortis lacus mauris
+vitae lacus. Aliquam erat volutpat. Sed eleifend convallis neque.
+Curabitur in mauris et magna varius lobortis.
+
+Fusce vel nunc. Mauris sagittis ornare wisi. Suspendisse urna. Nunc
+euismod purus et risus. Praesent at quam ut ante dignissim dapibus.
+Mauris id leo. Pellentesque nec quam. Donec eget eros. Donec elit
+erat, placerat in, luctus nec, varius ac, felis. Donec sollicitudin
+mauris eget lacus. Cras odio lacus, pharetra at, vestibulum non,
+aliquet sed, augue. Morbi mollis diam sed quam. Nam nec arcu in turpis
+ultricies venenatis.
+
+\part{Less Important Results}
+
+\chapter{Last One}
+
+Ut iaculis fermentum augue. Maecenas vel pede. Nunc enim odio, commodo
+vitae, faucibus vel, ultricies vitae, mauris. Duis vitae nibh a nunc
+consequat bibendum. Nam tincidunt libero sodales dolor. Aliquam
+tempus, mi vitae ultrices facilisis, nibh lacus cursus wisi, at
+tristique mi odio eget nulla. Donec lectus risus, mollis bibendum,
+suscipit nec, aliquam quis, eros. Donec tortor. Duis blandit
+condimentum orci. Quisque in ante vitae risus rutrum feugiat. Nulla
+sapien. Proin ipsum nibh, condimentum at, ullamcorper vel, bibendum
+et, elit. Etiam malesuada eros sit amet pede. Duis arcu. Fusce a mi.
+
+Donec in elit. Integer leo. Curabitur ornare volutpat erat. Vestibulum
+lacinia, eros sit amet dictum consectetuer, neque eros auctor elit, et
+mollis felis metus a ligula. In lacinia sapien sed dolor. Maecenas non
+magna id wisi dapibus dignissim. Suspendisse fringilla diam at lacus.
+Praesent sit amet lorem. Vivamus fermentum, felis at vehicula semper,
+leo elit pulvinar neque, quis posuere ipsum elit eu odio. Donec et dui
+non quam sodales interdum.
+
+\section{Definitions}
+
+Aenean posuere velit eget magna. Sed neque tellus, tempor eget, mollis
+eget, pulvinar sed, elit. Phasellus feugiat mattis tortor. Nulla sed
+massa quis lacus tincidunt hendrerit. Praesent aliquet tristique arcu.
+Vestibulum sed est at odio blandit porttitor. Quisque a justo. Nunc a
+libero. Curabitur ut libero quis orci tempor interdum. Quisque luctus
+pede vel mauris. Donec velit. Vestibulum placerat pulvinar elit.
+Aliquam erat volutpat.
+
+Fusce tristique enim eget est. Donec vulputate, tortor vel dapibus
+pretium, pede ante sagittis ligula, eu tempus lorem eros sit amet
+elit. Pellentesque pede pede, sodales id, nonummy eget, condimentum
+ut, urna. Quisque sed metus nec lorem imperdiet eleifend. Phasellus
+non massa vel leo pretium tristique. Ut feugiat accumsan magna. Nulla
+lectus risus, ultricies id, suscipit ac, commodo sed, nulla. Donec
+neque eros, sollicitudin sit amet, mollis sit amet, bibendum ac, sem.
+Aliquam sed nisl id diam vestibulum accumsan. Integer purus quam,
+commodo id, placerat ut, malesuada id, magna. Suspendisse elit turpis,
+vehicula eu, imperdiet et, aliquet ac, risus. Nulla mollis nibh sit
+amet magna. Nullam dui pede, volutpat in, tempus eu, rhoncus eget,
+orci. Pellentesque in neque. Nunc eu pede ut sem tempus dictum. Donec
+vel mauris placerat lorem consectetuer sollicitudin. Praesent ultrices
+lobortis sapien. Mauris vel nisl vitae elit ullamcorper dapibus.
+
+\section{The Main Theorem}
+
+Sed tincidunt erat quis leo. Integer vestibulum massa a tellus.
+Pellentesque eu lacus in quam euismod volutpat. Donec ut nulla. Morbi
+mi diam, posuere ac, consectetuer in, iaculis quis, ante. Ut eleifend.
+Morbi sagittis, diam et rutrum molestie, orci magna tempus lectus, non
+euismod nunc quam nec velit. Donec leo. Cum sociis natoque penatibus
+et magnis dis parturient montes, nascetur ridiculus mus. Quisque
+hendrerit. Morbi mattis. Vivamus vulputate dolor in ante. Curabitur
+accumsan adipiscing leo. In quis ante. Morbi arcu. Curabitur varius
+rutrum sem.
+
+
+Donec facilisis, lacus sollicitudin malesuada pharetra, eros massa
+elementum massa, eget consequat felis leo et libero. Vivamus id diam
+quis ligula vehicula varius. Nunc tempus massa vel orci. Fusce
+laoreet. Praesent et risus. Vestibulum ante ipsum primis in faucibus
+orci luctus et ultrices posuere cubilia Curae; Fusce metus elit,
+fringilla nec, facilisis id, sollicitudin in, tortor. Curabitur tellus
+ante, lacinia eget, gravida nec, sollicitudin quis, quam. Integer
+vitae felis. Nullam tellus purus, feugiat vitae, ultricies ut, feugiat
+eu, turpis. Praesent urna orci, aliquet a, fringilla vitae, molestie
+ac, pede. Vivamus quam orci, luctus nec, aliquet eu, consectetuer ut,
+magna.
+
+\subsection{The Proof}
+
+Sed venenatis feugiat arcu. Nullam neque. Aliquam erat volutpat.
+Praesent euismod, nibh ut interdum tincidunt, leo metus facilisis
+ligula, ut sagittis est elit non elit. Nulla vitae augue. Cras id
+diam. Maecenas vel tortor ac dolor porttitor cursus. Phasellus metus
+ipsum, condimentum a, mollis eget, dapibus ac, lorem. Nullam sodales
+vulputate sapien. Praesent rutrum blandit augue. Etiam in pede in
+neque luctus hendrerit. Vivamus eget ante. Mauris turpis ipsum,
+egestas in, commodo eget, dapibus et, dui. Donec scelerisque. Sed a
+neque. Integer at quam eu augue imperdiet vehicula. Aliquam orci eros,
+pellentesque eget, adipiscing eu, tristique ut, tellus.
+
+Aenean quis justo at mi vestibulum bibendum. Sed at pede eu lacus
+euismod condimentum. Cras in lacus. Nulla facilisi. Donec eu arcu quis
+wisi fringilla venenatis. Pellentesque habitant morbi tristique
+senectus et netus et malesuada fames ac turpis egestas. Quisque neque.
+Sed scelerisque rhoncus est. Maecenas a dolor. Aliquam non justo.
+Pellentesque habitant morbi tristique senectus et netus et malesuada
+fames ac turpis egestas.
+
+\end{document}
+%</demo|ex1|ex2>
+%    \end{macrocode}
+%
+% \section{The Bibliography Styles}
+%
+%    \begin{macrocode}
+%<*bstfile>
+ENTRY
+  { address
+    author
+    booktitle
+    chapter
+    edition
+    editor
+    howpublished
+    institution
+    isbn
+    issn
+    journal
+    key
+    month
+    note
+    number
+    organization
+    pages
+    publisher
+    school
+    series
+    title
+    type
+    url
+    volume
+    year
+  }
+  {}
+%<nat>  { label extra.label sort.label short.list }
+%<plain>  { label }
+
+INTEGERS { output.state before.all mid.sentence after.sentence after.block }
+
+FUNCTION {init.state.consts}
+{ #0 'before.all :=
+  #1 'mid.sentence :=
+  #2 'after.sentence :=
+  #3 'after.block :=
+}
+
+STRINGS { s t }
+
+FUNCTION {output.nonnull}
+{ 's :=
+  output.state mid.sentence =
+    { ", " * write$ }
+    { output.state after.block =
+        { add.period$ write$
+          newline$
+          "\newblock " write$
+        }
+        { output.state before.all =
+            'write$
+            { add.period$ " " * write$ }
+          if$
+        }
+      if$
+      mid.sentence 'output.state :=
+    }
+  if$
+  s
+}
+
+FUNCTION {output}
+{ duplicate$ empty$
+    'pop$
+    'output.nonnull
+  if$
+}
+
+FUNCTION {output.check}
+{ 't :=
+  duplicate$ empty$
+    { pop$ "empty " t * " in " * cite$ * warning$ }
+    'output.nonnull
+  if$
+}
+
+FUNCTION {fin.entry}
+{ add.period$
+  write$
+  newline$
+}
+
+FUNCTION {new.block}
+{ output.state before.all =
+    'skip$
+    { after.block 'output.state := }
+  if$
+}
+
+FUNCTION {new.sentence}
+{ output.state after.block =
+    'skip$
+    { output.state before.all =
+        'skip$
+        { after.sentence 'output.state := }
+      if$
+    }
+  if$
+}
+
+FUNCTION {not}
+{   { #0 }
+    { #1 }
+  if$
+}
+
+FUNCTION {and}
+{   'skip$
+    { pop$ #0 }
+  if$
+}
+
+FUNCTION {or}
+{   { pop$ #1 }
+    'skip$
+  if$
+}
+
+FUNCTION {new.block.checka}
+{ empty$
+    'skip$
+    'new.block
+  if$
+}
+
+FUNCTION {new.block.checkb}
+{ empty$
+  swap$ empty$
+  and
+    'skip$
+    'new.block
+  if$
+}
+
+FUNCTION {new.sentence.checka}
+{ empty$
+    'skip$
+    'new.sentence
+  if$
+}
+
+FUNCTION {new.sentence.checkb}
+{ empty$
+  swap$ empty$
+  and
+    'skip$
+    'new.sentence
+  if$
+}
+
+FUNCTION {field.or.null}
+{ duplicate$ empty$
+    { pop$ "" }
+    'skip$
+  if$
+}
+
+FUNCTION {emphasize}
+{ duplicate$ empty$
+    { pop$ "" }
+    { "\emph{" swap$ * "}" * }
+  if$
+}
+
+FUNCTION {etal}
+{
+   " \textit{et al.}"
+}
+
+FUNCTION {et}
+{
+   " and "
+}
+
+INTEGERS { nameptr namesleft numnames }
+
+FUNCTION {format.names}
+{ 's :=
+  #1 'nameptr :=
+  s num.names$ 'numnames :=
+  numnames 'namesleft :=
+    { namesleft #0 > }
+    { s nameptr "{ff~}{vv~}{ll}{, jj}" format.name$ 't :=
+      nameptr #1 >
+        { namesleft #1 >
+            { ", " * t * }
+            { numnames #2 >
+                { "," * }
+                'skip$
+              if$
+              t "others" =
+                { etal * }
+                { et * t * }
+              if$
+            }
+          if$
+        }
+        't
+      if$
+      nameptr #1 + 'nameptr :=
+      namesleft #1 - 'namesleft :=
+    }
+  while$
+}
+
+FUNCTION {format.authors}
+{ author empty$
+    { "" }
+    { author format.names }
+  if$
+}
+
+FUNCTION {format.editors}
+{ editor empty$
+    { "" }
+    { editor format.names
+      editor num.names$ #1 >
+        { ", editors" * }
+        { ", editor" * }
+      if$
+    }
+  if$
+}
+
+FUNCTION {format.isbn}
+{ isbn empty$
+    { "" }
+    { new.block "ISBN " isbn * }
+  if$
+}
+
+FUNCTION {format.issn}
+{ issn empty$
+    { "" }
+    { new.block "ISSN " issn * }
+  if$
+}
+
+FUNCTION {format.url}
+{ url empty$
+    { "" }
+    { new.block "URL \url{" url * "}" * }
+  if$
+}
+
+FUNCTION {format.title}
+{ title empty$
+    { "" }
+    { title "t" change.case$ }
+  if$
+}
+
+%<*nat>
+FUNCTION {format.key}
+{ empty$
+    { key field.or.null }
+    { "" }
+  if$
+}
+
+FUNCTION {format.full.names}
+{'s :=
+  #1 'nameptr :=
+  s num.names$ 'numnames :=
+  numnames 'namesleft :=
+    { namesleft #0 > }
+    { s nameptr
+      "{vv~}{ll}" format.name$ 't :=
+      nameptr #1 >
+        {
+          namesleft #1 >
+            { ", " * t * }
+            {
+              numnames #2 >
+                { "," * }
+                'skip$
+              if$
+              t "others" =
+                { etal * }
+                { et * t * }
+              if$
+            }
+          if$
+        }
+        't
+      if$
+      nameptr #1 + 'nameptr :=
+      namesleft #1 - 'namesleft :=
+    }
+  while$
+}
+
+FUNCTION {author.editor.full}
+{ author empty$
+    { editor empty$
+        { "" }
+        { editor format.full.names }
+      if$
+    }
+    { author format.full.names }
+  if$
+}
+
+FUNCTION {author.full}
+{ author empty$
+    { "" }
+    { author format.full.names }
+  if$
+}
+
+FUNCTION {editor.full}
+{ editor empty$
+    { "" }
+    { editor format.full.names }
+  if$
+}
+
+FUNCTION {make.full.names}
+{ type$ "book" =
+  type$ "inbook" =
+  or
+    'author.editor.full
+    { type$ "proceedings" =
+        'editor.full
+        'author.full
+      if$
+    }
+  if$
+}
+%</nat>
+
+FUNCTION {output.bibitem}
+{ newline$
+%<*nat>
+  "\bibitem[" write$
+  label write$
+  ")" make.full.names duplicate$ short.list =
+     { pop$ }
+     { * }
+   if$
+  "]{" * write$
+%</nat>
+%<*plain>
+  "\bibitem{" write$
+%</plain>
+  cite$ write$
+  "}" write$
+  newline$
+  ""
+  before.all 'output.state :=
+}
+
+FUNCTION {n.dashify}
+{ 't :=
+  ""
+    { t empty$ not }
+    { t #1 #1 substring$ "-" =
+        { t #1 #2 substring$ "--" = not
+            { "--" *
+              t #2 global.max$ substring$ 't :=
+            }
+            {   { t #1 #1 substring$ "-" = }
+                { "-" *
+                  t #2 global.max$ substring$ 't :=
+                }
+              while$
+            }
+          if$
+        }
+        { t #1 #1 substring$ *
+          t #2 global.max$ substring$ 't :=
+        }
+      if$
+    }
+  while$
+}
+
+%<*nat>
+FUNCTION {format.date}
+{
+  month empty$
+    { "" }
+    {
+      year empty$
+        { "" }
+        { year }
+      if$
+      month
+      " " * swap$ *
+    }
+  if$
+}
+
+FUNCTION {format.year}
+{ year duplicate$ empty$
+    { "empty year in " cite$ * warning$
+       pop$ "" }
+    'skip$
+  if$
+  extra.label *
+}
+%</nat>
+%<*plain>
+FUNCTION {format.date}
+{ year empty$
+    { month empty$
+        { "" }
+        { "there's a month but no year in " cite$ * warning$
+          month
+        }
+      if$
+    }
+    { month empty$
+        'year
+        { month " " * year * }
+      if$
+    }
+  if$
+}
+%</plain>
+
+FUNCTION {format.btitle}
+{ title emphasize
+}
+
+FUNCTION {tie.or.space.connect}
+{ duplicate$ text.length$ #3 <
+    { "~" }
+    { " " }
+  if$
+  swap$ * *
+}
+
+FUNCTION {either.or.check}
+{ empty$
+    'pop$
+    { "can't use both " swap$ * " fields in " * cite$ * warning$ }
+  if$
+}
+
+FUNCTION {format.bvolume}
+{ volume empty$
+    { "" }
+    { "volume" volume tie.or.space.connect
+      series empty$
+        'skip$
+        { " of " * series emphasize * }
+      if$
+      "volume and number" number either.or.check
+    }
+  if$
+}
+
+FUNCTION {format.number.series}
+{ volume empty$
+    { number empty$
+        { series field.or.null }
+        { output.state mid.sentence =
+            { "number" }
+            { "Number" }
+          if$
+          number tie.or.space.connect
+          series empty$
+            { "there's a number but no series in " cite$ * warning$ }
+            { " in " * series * }
+          if$
+        }
+      if$
+    }
+    { "" }
+  if$
+}
+
+FUNCTION {format.edition}
+{ edition empty$
+    { "" }
+    { output.state mid.sentence =
+        { edition "l" change.case$ " edition" * }
+        { edition "t" change.case$ " edition" * }
+      if$
+    }
+  if$
+}
+
+INTEGERS { multiresult }
+
+FUNCTION {multi.page.check}
+{ 't :=
+  #0 'multiresult :=
+    { multiresult not
+      t empty$ not
+      and
+    }
+    { t #1 #1 substring$
+      duplicate$ "-" =
+      swap$ duplicate$ "," =
+      swap$ "+" =
+      or or
+        { #1 'multiresult := }
+        { t #2 global.max$ substring$ 't := }
+      if$
+    }
+  while$
+  multiresult
+}
+
+FUNCTION {format.pages}
+{ pages empty$
+    { "" }
+    { pages multi.page.check
+        { "pages" pages n.dashify tie.or.space.connect }
+        { "page" pages tie.or.space.connect }
+      if$
+    }
+  if$
+}
+
+FUNCTION {format.vol.num.pages}
+{ volume field.or.null
+  number empty$
+    'skip$
+    { "\penalty0 (" number * ")" * *
+      volume empty$
+        { "there's a number but no volume in " cite$ * warning$ }
+        'skip$
+      if$
+    }
+  if$
+  pages empty$
+    'skip$
+    { duplicate$ empty$
+        { pop$ format.pages }
+        { ":\penalty0 " * pages n.dashify * }
+      if$
+    }
+  if$
+}
+
+FUNCTION {format.chapter.pages}
+{ chapter empty$
+    'format.pages
+    { type empty$
+        { "chapter" }
+        { type "l" change.case$ }
+      if$
+      chapter tie.or.space.connect
+      pages empty$
+        'skip$
+        { ", " * format.pages * }
+      if$
+    }
+  if$
+}
+
+FUNCTION {format.in.ed.booktitle}
+{ booktitle empty$
+    { "" }
+    { editor empty$
+        { "In " booktitle emphasize * }
+        { "In " format.editors * ", " * booktitle emphasize * }
+      if$
+    }
+  if$
+}
+
+FUNCTION {empty.misc.check}
+{ author empty$ title empty$ howpublished empty$
+  month empty$ year empty$ note empty$
+  and and and and and
+  key empty$ not and
+    { "all relevant fields are empty in " cite$ * warning$ }
+    'skip$
+  if$
+}
+
+FUNCTION {format.thesis.type}
+{ type empty$
+    'skip$
+    { pop$
+      type "t" change.case$
+    }
+  if$
+}
+
+FUNCTION {format.tr.number}
+{ type empty$
+    { "Technical Report" }
+    'type
+  if$
+  number empty$
+    { "t" change.case$ }
+    { number tie.or.space.connect }
+  if$
+}
+
+FUNCTION {format.article.crossref}
+{ key empty$
+    { journal empty$
+        { "need key or journal for " cite$ * " to crossref " * crossref *
+          warning$
+          ""
+        }
+        { "In " journal emphasize * }
+      if$
+    }
+    { "In " key * }
+  if$
+%<nat>  " \citep{" * crossref * "}" *
+%<plain>  " \cite{" * crossref * "}" *
+}
+
+%<*plain>
+FUNCTION {format.crossref.editor}
+{ editor #1 "{vv~}{ll}" format.name$
+  editor num.names$ duplicate$
+  #2 >
+    { pop$ etal * }
+    { #2 <
+        'skip$
+        { editor #2 "{ff }{vv }{ll}{ jj}" format.name$ "others" =
+            { etal * }
+            { et * editor #2 "{vv~}{ll}" format.name$ * }
+          if$
+        }
+      if$
+    }
+  if$
+}
+%</plain>
+
+FUNCTION {format.book.crossref}
+{ volume empty$
+    { "empty volume in " cite$ * "'s crossref of " * crossref * warning$
+      "In "
+    }
+    { "Volume" volume tie.or.space.connect
+      " of " *
+    }
+  if$
+  editor empty$
+  editor field.or.null author field.or.null =
+  or
+    { key empty$
+        { series empty$
+            { "need editor, key, or series for " cite$ * " to crossref " *
+              crossref * warning$
+              "" *
+            }
+            { series emphasize * }
+          if$
+        }
+        { key * }
+      if$
+    }
+%<nat>    'skip$
+%<plain>    { format.crossref.editor * }
+  if$
+%<nat>  ", \citet{" * crossref * "}" *
+%<plain>  " \cite{" * crossref * "}" *
+}
+
+FUNCTION {format.incoll.inproc.crossref}
+{ editor empty$
+  editor field.or.null author field.or.null =
+  or
+    { key empty$
+        { booktitle empty$
+            { "need editor, key, or booktitle for " cite$ * " to crossref " *
+              crossref * warning$
+              ""
+            }
+            { "In " booktitle emphasize * }
+          if$
+        }
+        { "In " key * }
+      if$
+    }
+%<nat>    { "In " }
+%<plain>    { "In " format.crossref.editor * }
+  if$
+%<nat>  " \citet{" * crossref * "}" *
+%<plain>  " \cite{" * crossref * "}" *
+}
+
+FUNCTION {article}
+{ output.bibitem
+  format.authors "author" output.check
+%<*nat>
+  author format.key output
+  new.sentence
+  format.year "year" output.check
+%</nat>
+  new.block
+  format.title "title" output.check
+  new.block
+  crossref missing$
+    { journal emphasize "journal" output.check
+      format.vol.num.pages output
+%<plain>      format.date "year" output.check
+    }
+    { format.article.crossref output.nonnull
+      format.pages output
+    }
+  if$
+  format.issn output
+  format.url output
+  new.block
+  note output
+  fin.entry
+}
+
+FUNCTION {book}
+{ output.bibitem
+  author empty$
+%<*nat>
+    { format.editors "author and editor" output.check
+      editor format.key output
+    }
+    { format.authors output.nonnull
+      crossref missing$
+        { "author and editor" editor either.or.check }
+        'skip$
+      if$
+    }
+%</nat>
+%<*plain>
+    { format.editors "author and editor" output.check }
+    { format.authors output.nonnull
+      crossref missing$
+        { "author and editor" editor either.or.check }
+        'skip$
+      if$
+    }
+%</plain>
+  if$
+%<*nat>
+  new.sentence
+  format.year "year" output.check
+%</nat>
+  new.block
+  format.btitle "title" output.check
+%<nat>  format.edition output
+  crossref missing$
+    { format.bvolume output
+      new.block
+      format.number.series output
+      new.sentence
+      publisher "publisher" output.check
+      address output
+    }
+    { new.block
+      format.book.crossref output.nonnull
+    }
+  if$
+%<plain>  format.edition output
+%<plain>  format.date "year" output.check
+  format.isbn output
+  format.url output
+  new.block
+  note output
+  fin.entry
+}
+
+FUNCTION {booklet}
+{ output.bibitem
+  format.authors output
+%<*nat>
+  author format.key output
+  new.sentence
+  format.year "year" output.check
+%</nat>
+  new.block
+  format.title "title" output.check
+  howpublished address new.block.checkb
+  howpublished output
+  address output
+%<plain>  format.date output
+  format.isbn output
+  format.url output
+  new.block
+  note output
+  fin.entry
+}
+
+FUNCTION {inbook}
+{ output.bibitem
+  author empty$
+    { format.editors "author and editor" output.check
+%<nat>      editor format.key output
+    }
+    { format.authors output.nonnull
+      crossref missing$
+        { "author and editor" editor either.or.check }
+        'skip$
+      if$
+    }
+  if$
+%<*nat>
+  new.sentence
+  format.year "year" output.check
+%</nat>
+  new.block
+  format.btitle "title" output.check
+%<nat>  format.edition output
+  crossref missing$
+    { format.bvolume output
+      format.chapter.pages "chapter and pages" output.check
+      new.block
+      format.number.series output
+      new.sentence
+      publisher "publisher" output.check
+      address output
+    }
+    { format.chapter.pages "chapter and pages" output.check
+      new.block
+      format.book.crossref output.nonnull
+    }
+  if$
+%<plain>  format.edition output
+%<plain>  format.date "year" output.check
+  format.isbn output
+  format.url output
+  new.block
+  note output
+  fin.entry
+}
+
+FUNCTION {incollection}
+{ output.bibitem
+  format.authors "author" output.check
+%<*nat>
+  author format.key output
+  new.sentence
+  format.year "year" output.check
+%</nat>
+  new.block
+  format.title "title" output.check
+  new.block
+  crossref missing$
+    { format.in.ed.booktitle "booktitle" output.check
+%<nat>      format.edition output
+      format.bvolume output
+      format.number.series output
+      format.chapter.pages output
+      new.sentence
+      publisher "publisher" output.check
+      address output
+%<plain>      format.edition output
+%<plain>      format.date "year" output.check
+    }
+    { format.incoll.inproc.crossref output.nonnull
+      format.chapter.pages output
+    }
+  if$
+  format.isbn output
+  format.url output
+  new.block
+  note output
+  fin.entry
+}
+
+FUNCTION {inproceedings}
+{ output.bibitem
+  format.authors "author" output.check
+%<*nat>
+  author format.key output
+  new.sentence
+  format.year "year" output.check
+%</nat>
+  new.block
+  format.title "title" output.check
+  new.block
+  crossref missing$
+    { format.in.ed.booktitle "booktitle" output.check
+      format.bvolume output
+      format.number.series output
+      format.pages output
+      address empty$
+        { organization publisher new.sentence.checkb
+          organization output
+          publisher output
+%<plain>          format.date "year" output.check
+        }
+        { address output.nonnull
+%<plain>          format.date "year" output.check
+%<nat>          format.date output
+          new.sentence
+          organization output
+          publisher output
+        }
+      if$
+    }
+    { format.incoll.inproc.crossref output.nonnull
+      format.pages output
+    }
+  if$
+  format.isbn output
+  format.url output
+  new.block
+  note output
+  fin.entry
+}
+
+FUNCTION {conference} { inproceedings }
+
+FUNCTION {manual}
+{ output.bibitem
+%<*nat>
+  format.authors output
+  author format.key output
+  new.sentence
+  format.year "year" output.check
+  new.block
+  format.btitle "title" output.check
+  format.edition output
+  organization address new.block.checkb
+  organization output
+  address output
+%</nat>
+%<*plain>
+  author empty$
+    { organization empty$
+        'skip$
+        { organization output.nonnull
+          address output
+        }
+      if$
+    }
+    { format.authors output.nonnull }
+  if$
+  new.block
+  format.btitle "title" output.check
+  author empty$
+    { organization empty$
+        { address new.block.checka
+          address output
+        }
+        'skip$
+      if$
+    }
+    { organization address new.block.checkb
+      organization output
+      address output
+    }
+  if$
+  format.edition output
+  format.date output
+%</plain>
+  format.url output
+  new.block
+  note output
+  fin.entry
+}
+
+FUNCTION {mastersthesis}
+{ output.bibitem
+  format.authors "author" output.check
+%<*nat>
+  author format.key output
+  new.sentence
+  format.year "year" output.check
+%</nat>
+  new.block
+  format.title "title" output.check
+  new.block
+  "Master's thesis" format.thesis.type output.nonnull
+  school "school" output.check
+  address output
+%<plain>  format.date "year" output.check
+  format.isbn output
+  format.issn output
+  format.url output
+  new.block
+  note output
+  fin.entry
+}
+
+FUNCTION {misc}
+{ output.bibitem
+  format.authors output
+%<*nat>
+  author format.key output
+  new.sentence
+  format.year "year" output.check
+%</nat>
+  title howpublished new.block.checkb
+  format.title output
+  howpublished new.block.checka
+  howpublished output
+%<plain>  format.date output
+  format.isbn output
+  format.issn output
+  format.url output
+  new.block
+  note output
+  fin.entry
+  empty.misc.check
+}
+
+FUNCTION {phdthesis}
+{ output.bibitem
+  format.authors "author" output.check
+%<*nat>
+  author format.key output
+  new.sentence
+  format.year "year" output.check
+%</nat>
+  new.block
+  format.btitle "title" output.check
+  new.block
+  "PhD thesis" format.thesis.type output.nonnull
+  school "school" output.check
+  address output
+%<plain>  format.date "year" output.check
+  format.isbn output
+  format.issn output
+  format.url output
+  new.block
+  note output
+  fin.entry
+}
+
+FUNCTION {proceedings}
+{ output.bibitem
+%<*nat>
+  format.editors output
+  editor format.key output
+  new.sentence
+  format.year "year" output.check
+  new.block
+  format.btitle "title" output.check
+  format.bvolume output
+  format.number.series output
+  address output
+  new.sentence
+  organization output
+  publisher output
+%</nat>
+%<*plain>
+  editor empty$
+    { organization output }
+    { format.editors output.nonnull }
+  if$
+  new.block
+  format.btitle "title" output.check
+  format.bvolume output
+  format.number.series output
+  address empty$
+    { editor empty$
+        { publisher new.sentence.checka }
+        { organization publisher new.sentence.checkb
+          organization output
+        }
+      if$
+      publisher output
+      format.date "year" output.check
+    }
+    { address output.nonnull
+      format.date "year" output.check
+      new.sentence
+      editor empty$
+        'skip$
+        { organization output }
+      if$
+      publisher output
+    }
+  if$
+%</plain>
+  format.isbn output
+  format.url output
+  new.block
+  note output
+  fin.entry
+}
+
+FUNCTION {techreport}
+{ output.bibitem
+  format.authors "author" output.check
+%<*nat>
+  author format.key output
+  new.sentence
+  format.year "year" output.check
+%</nat>
+  new.block
+  format.title "title" output.check
+  new.block
+  format.tr.number output.nonnull
+  institution "institution" output.check
+  address output
+%<plain>  format.date "year" output.check
+  format.issn output
+  format.url output
+  new.block
+  note output
+  fin.entry
+}
+
+FUNCTION {unpublished}
+{ output.bibitem
+  format.authors "author" output.check
+%<*nat>
+  author format.key output
+  new.sentence
+  format.year "year" output.check
+%</nat>
+  new.block
+  format.title "title" output.check
+  format.url output
+  new.block
+  note "note" output.check
+%<plain>  format.date output
+  fin.entry
+}
+
+FUNCTION {default.type} { misc }
+
+
+MACRO {jan} {"January"}
+
+MACRO {feb} {"February"}
+
+MACRO {mar} {"March"}
+
+MACRO {apr} {"April"}
+
+MACRO {may} {"May"}
+
+MACRO {jun} {"June"}
+
+MACRO {jul} {"July"}
+
+MACRO {aug} {"August"}
+
+MACRO {sep} {"September"}
+
+MACRO {oct} {"October"}
+
+MACRO {nov} {"November"}
+
+MACRO {dec} {"December"}
+
+MACRO {acmcs} {"ACM Computing Surveys"}
+
+MACRO {acta} {"Acta Informatica"}
+
+MACRO {cacm} {"Communications of the ACM"}
+
+MACRO {ibmjrd} {"IBM Journal of Research and Development"}
+
+MACRO {ibmsj} {"IBM Systems Journal"}
+
+MACRO {ieeese} {"IEEE Transactions on Software Engineering"}
+
+MACRO {ieeetc} {"IEEE Transactions on Computers"}
+
+MACRO {ieeetcad}
+ {"IEEE Transactions on Computer-Aided Design of Integrated Circuits"}
+
+MACRO {ipl} {"Information Processing Letters"}
+
+MACRO {jacm} {"Journal of the ACM"}
+
+MACRO {jcss} {"Journal of Computer and System Sciences"}
+
+MACRO {scp} {"Science of Computer Programming"}
+
+MACRO {sicomp} {"SIAM Journal on Computing"}
+
+MACRO {tocs} {"ACM Transactions on Computer Systems"}
+
+MACRO {tods} {"ACM Transactions on Database Systems"}
+
+MACRO {tog} {"ACM Transactions on Graphics"}
+
+MACRO {toms} {"ACM Transactions on Mathematical Software"}
+
+MACRO {toois} {"ACM Transactions on Office Information Systems"}
+
+MACRO {toplas} {"ACM Transactions on Programming Languages and Systems"}
+
+MACRO {tcs} {"Theoretical Computer Science"}
+
+READ
+
+FUNCTION {sortify}
+{ purify$
+  "l" change.case$
+}
+
+INTEGERS { len }
+
+FUNCTION {chop.word}
+{ 's :=
+  'len :=
+  s #1 len substring$ =
+    { s len #1 + global.max$ substring$ }
+    's
+  if$
+}
+
+%<*nat>
+FUNCTION {format.lab.names}
+{ 's :=
+  s #1 "{vv~}{ll}" format.name$
+  s num.names$ duplicate$
+  #2 >
+    { pop$ etal * }
+    { #2 <
+        'skip$
+        { s #2 "{ff }{vv }{ll}{ jj}" format.name$ "others" =
+            { etal * }
+            { et * s #2 "{vv~}{ll}" format.name$ * }
+          if$
+        }
+      if$
+    }
+  if$
+}
+
+FUNCTION {author.key.label}
+{ author empty$
+    { key empty$
+        { cite$ #1 #3 substring$ }
+        'key
+      if$
+    }
+    { author format.lab.names }
+  if$
+}
+
+FUNCTION {author.editor.key.label}
+{ author empty$
+    { editor empty$
+        { key empty$
+            { cite$ #1 #3 substring$ }
+            'key
+          if$
+        }
+        { editor format.lab.names }
+      if$
+    }
+    { author format.lab.names }
+  if$
+}
+
+FUNCTION {author.key.organization.label}
+{ author empty$
+    { key empty$
+        { organization empty$
+            { cite$ #1 #3 substring$ }
+            { "The " #4 organization chop.word #3 text.prefix$ }
+          if$
+        }
+        'key
+      if$
+    }
+    { author format.lab.names }
+  if$
+}
+
+FUNCTION {editor.key.organization.label}
+{ editor empty$
+    { key empty$
+        { organization empty$
+            { cite$ #1 #3 substring$ }
+            { "The " #4 organization chop.word #3 text.prefix$ }
+          if$
+        }
+        'key
+      if$
+    }
+    { editor format.lab.names }
+  if$
+}
+
+FUNCTION {calc.short.authors}
+{ type$ "book" =
+  type$ "inbook" =
+  or
+    'author.editor.key.label
+    { type$ "proceedings" =
+        'editor.key.organization.label
+        { type$ "manual" =
+            'author.key.organization.label
+            'author.key.label
+          if$
+        }
+      if$
+    }
+  if$
+  'short.list :=
+}
+
+FUNCTION {calc.label}
+{ calc.short.authors
+  short.list
+  "("
+  *
+  year duplicate$ empty$
+  short.list key field.or.null = or
+     { pop$ "" }
+     'skip$
+  if$
+  *
+  'label :=
+}
+%</nat>
+
+FUNCTION {sort.format.names}
+{ 's :=
+  #1 'nameptr :=
+  ""
+  s num.names$ 'numnames :=
+  numnames 'namesleft :=
+    { namesleft #0 > }
+    { nameptr #1 >
+        { "   " * }
+        'skip$
+      if$
+      s nameptr "{vv{ } }{ll{ }}{  ff{ }}{  jj{ }}" format.name$ 't :=
+      nameptr numnames = t "others" = and
+        { "et al" * }
+        { t sortify * }
+      if$
+      nameptr #1 + 'nameptr :=
+      namesleft #1 - 'namesleft :=
+    }
+  while$
+}
+
+FUNCTION {sort.format.title}
+{ 't :=
+  "A " #2
+    "An " #3
+      "The " #4 t chop.word
+    chop.word
+  chop.word
+  sortify
+  #1 global.max$ substring$
+}
+
+FUNCTION {author.sort}
+{ author empty$
+    { key empty$
+        { "to sort, need author or key in " cite$ * warning$
+          ""
+        }
+        { key sortify }
+      if$
+    }
+    { author sort.format.names }
+  if$
+}
+
+FUNCTION {author.editor.sort}
+{ author empty$
+    { editor empty$
+        { key empty$
+            { "to sort, need author, editor, or key in " cite$ * warning$
+              ""
+            }
+            { key sortify }
+          if$
+        }
+        { editor sort.format.names }
+      if$
+    }
+    { author sort.format.names }
+  if$
+}
+
+FUNCTION {author.organization.sort}
+{ author empty$
+    { organization empty$
+        { key empty$
+            { "to sort, need author, organization, or key in " cite$ * warning$
+              ""
+            }
+            { key sortify }
+          if$
+        }
+        { "The " #4 organization chop.word sortify }
+      if$
+    }
+    { author sort.format.names }
+  if$
+}
+
+FUNCTION {editor.organization.sort}
+{ editor empty$
+    { organization empty$
+        { key empty$
+            { "to sort, need editor, organization, or key in " cite$ * warning$
+              ""
+            }
+            { key sortify }
+          if$
+        }
+        { "The " #4 organization chop.word sortify }
+      if$
+    }
+    { editor sort.format.names }
+  if$
+}
+
+FUNCTION {presort}
+{
+%<*nat>
+  calc.label
+  label sortify
+  "    "
+  *
+%</nat>
+  type$ "book" =
+  type$ "inbook" =
+  or
+    'author.editor.sort
+    { type$ "proceedings" =
+        'editor.organization.sort
+        { type$ "manual" =
+            'author.organization.sort
+            'author.sort
+          if$
+        }
+      if$
+    }
+  if$
+  "    "
+  *
+  year field.or.null sortify
+  *
+  "    "
+  *
+  title field.or.null
+  sort.format.title
+  *
+  #1 entry.max$ substring$
+%<*nat>
+  'sort.label :=
+  sort.label *
+  #1 entry.max$ substring$
+%</nat>
+  'sort.key$ :=
+}
+
+ITERATE {presort}
+
+SORT
+
+%<*nat>
+STRINGS { longest.label last.label next.extra }
+
+INTEGERS { longest.label.width last.extra.num number.label }
+
+FUNCTION {initialize.longest.label}
+{ "" 'longest.label :=
+  #0 int.to.chr$ 'last.label :=
+  "" 'next.extra :=
+  #0 'longest.label.width :=
+  #0 'last.extra.num :=
+  #0 'number.label :=
+}
+
+FUNCTION {forward.pass}
+{ last.label label =
+    { last.extra.num #1 + 'last.extra.num :=
+      last.extra.num int.to.chr$ 'extra.label :=
+    }
+    { "a" chr.to.int$ 'last.extra.num :=
+      "" 'extra.label :=
+      label 'last.label :=
+    }
+  if$
+  number.label #1 + 'number.label :=
+}
+
+FUNCTION {reverse.pass}
+{ next.extra "b" =
+    { "a" 'extra.label := }
+    'skip$
+  if$
+  extra.label 'next.extra :=
+  extra.label
+  duplicate$ empty$
+    'skip$
+    { "{\natexlab{" swap$ * "}}" * }
+  if$
+  'extra.label :=
+  label extra.label * 'label :=
+}
+
+EXECUTE {initialize.longest.label}
+
+ITERATE {forward.pass}
+
+REVERSE {reverse.pass}
+
+FUNCTION {bib.sort.order}
+{ sort.label  'sort.key$ :=
+}
+
+ITERATE {bib.sort.order}
+
+SORT
+%</nat>
+%<*plain>
+STRINGS { longest.label }
+
+INTEGERS { number.label longest.label.width }
+
+FUNCTION {initialize.longest.label}
+{ "" 'longest.label :=
+  #1 'number.label :=
+  #0 'longest.label.width :=
+}
+
+FUNCTION {longest.label.pass}
+{ number.label int.to.str$ 'label :=
+  number.label #1 + 'number.label :=
+  label width$ longest.label.width >
+    { label 'longest.label :=
+      label width$ 'longest.label.width :=
+    }
+    'skip$
+  if$
+}
+
+EXECUTE {initialize.longest.label}
+
+ITERATE {longest.label.pass}
+%</plain>
+
+FUNCTION {begin.bib}
+{ preamble$ empty$
+    'skip$
+    { preamble$ write$ newline$ }
+  if$
+%<*nat>
+  "\begin{thebibliography}{" number.label int.to.str$ * "}" *
+  write$ newline$
+  "\expandafter\ifx\csname natexlab\endcsname\relax"
+  write$ newline$
+  "  \def\natexlab#1{#1}\fi" write$ newline$
+%</nat>
+%<*plain>
+  "\begin{thebibliography}{"  longest.label  * "}" *
+  write$ newline$
+%</plain>
+  "\expandafter\ifx\csname url\endcsname\relax"
+  write$ newline$
+  "  \def\url#1{\texttt{#1}}\fi" write$ newline$
+}
+
+EXECUTE {begin.bib}
+
+EXECUTE {init.state.consts}
+
+ITERATE {call.type$}
+
+FUNCTION {end.bib}
+{ newline$
+  "\end{thebibliography}" write$ newline$
+}
+
+EXECUTE {end.bib}
+%</bstfile>
+%    \end{macrocode}
+%
+%
+% \section{Documentation Driver}
+%
+%    \begin{macrocode}
+%<*driver>
+\documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{lmodern}
+\usepackage[latin1]{inputenc}
+\usepackage{doc}
+\usepackage{ifpdf}
+\ifpdf
+  \RequirePackage[a4paper,bookmarksopen=true,%
+                  pdfauthor={Lars Engebretsen},%
+                  pdftitle={LaTeX Classes for KTH Theses},%
+                  pdfpagemode=None,pdfstartview=FitH]{hyperref}%
+\else
+  \RequirePackage[T1]{url}
+\fi
+\def\UrlLeft{\mbox{«}}
+\def\UrlRight{\mbox{»}}
+\urlstyle{rm}
+\def\path{\begingroup\Url}
+\newcommand{\bst}[1]{\mbox{«#1»}}
+\newcommand{\class}[1]{\mbox{«#1»}}
+\newcommand{\command}[1]{\mbox{«#1»}}
+\newcommand{\file}[1]{\mbox{«#1»}}
+\newcommand{\option}[1]{\mbox{«#1»}}
+\newcommand{\style}[1]{\mbox{«#1»}}
+\AtBeginDocument{\MakeShortVerb{\|}}
+\setcounter{StandardModuleDepth}{1}
+\OnlyDescription
+\title{LaTeX Classes for KTH Theses}
+\date{2005-04-14}
+\author{Lars Engebretsen}
+\begin{document}
+\maketitle
+\DocInput{kthesis.dtx}
+\end{document}
+%</driver>
+%    \end{macrocode}
+%
