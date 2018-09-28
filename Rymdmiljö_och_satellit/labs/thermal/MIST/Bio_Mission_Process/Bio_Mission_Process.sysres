@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.7" CONTENTS="RESULT" SAVEDATE="1513347821" SYSTEMA_VERSION="4.8.0">
+    <RESULT NAME="Bio_Mission_Process">
+        <RESULT_SET FILE_TYPE="MISSION_SET" FILE_PATH="C:/Users/yj/Documents/MIST/Bio_Mission_Process/Bio_Mission.sysset" TYPE="FILE" FILE_NAME="Bio_Mission.sysset" FILE_FORMAT="sysset"/>
+        <RESULT_SET FILE_TYPE="MISSION_DATA" FILE_PATH="C:/Users/yj/Documents/MIST/Bio_Mission_Process/Bio_Mission.html" TYPE="FILE" FILE_NAME="Bio_Mission.html" FILE_FORMAT="html"/>
+        <RESULT_SET FILE_TYPE="HDF5" FILE_PATH="C:/Users/yj/Documents/MIST/Bio_Mission_Process/Process.map.h5" TYPE="FILE" FILE_NAME="Process.map.h5" FILE_FORMAT="h5"/>
+        <RESULT_SET FILE_TYPE="TXT" FILE_PATH="C:/Users/yj/Documents/MIST/Bio_Mission_Process/Process.map.log" TYPE="FILE" FILE_NAME="Process.map.log" FILE_FORMAT="LOG"/>
+    </RESULT>
+</SYSML>

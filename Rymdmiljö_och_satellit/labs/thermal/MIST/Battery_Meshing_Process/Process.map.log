@@ -1,0 +1,73 @@
+
+*------------------------------------*
+*                                    *
+*   SYSTEMA V4 APPLICATION LOG FILE  *
+*                                    *
+*------------------------------------*
+
+
+
+              **********
+
+      Mapping Computation
+
+
+Execution started on Fri Dec 15 15:34:58 2017
+
+
+
+ Number of active threads : 7 ( / 7 available)
+
+State  1 : Initialization                                                      Time :  Fri Dec 15 15:34:58 2017
+
+DUMP MAPPING PARAMS
+-------------------
+
+ - model name            : Battery_Meshing.sysset
+ - dose curve            : SSO_640.DOSE
+
+ - seed                  : 876743
+ - space divisions       : 0
+
+ - computation method    :
+    - solid sphere / slant
+    - shell sphere / norm
+
+ - number of rays / mesh : 10000
+
+MODEL INFO
+----------
+
+ - nb models       : 1
+ - nb surfaces     : 61
+ - nb mesh         : 2400
+ - nb volumes      : 0
+ - nb vmesh        : 0
+ Model names :
+   - 
+
+
+COMPUTING VIRTUAL NODES INFO
+----------------------------
+
+ - nb volumes         : 0
+ - nb honeycomb cores : 0
+
+No volume in the meshing
+
+
+
+No honeycomb cores in the meshing
+
+
+
+State  2 : DOSE ray-tracing                                                    Time :  Fri Dec 15 15:34:58 2017
+
+
+
+
+Execution completed on Fri Dec 15 15:35:26 2017
+
+
+
+

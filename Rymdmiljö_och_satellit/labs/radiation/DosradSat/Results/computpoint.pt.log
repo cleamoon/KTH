@@ -1,0 +1,80 @@
+
+*------------------------------------*
+*                                    *
+*   SYSTEMA V4 APPLICATION LOG FILE  *
+*                                    *
+*------------------------------------*
+
+
+
+              **********
+
+      Point Computation
+
+
+Execution started on Fri Mar 09 19:28:36 2012
+
+
+
+ Number of active threads : 1 ( / 1 available)
+
+State  1 : Initialization                                                      Time :  Fri Mar 09 19:28:36 2012
+
+DUMP COMPUT POINT PARAMS
+------------------------
+
+ - model name          : computpoint.sysset
+ - dose curve          : test.dose
+ - space number        : 99999999
+
+ - seed                : 876743
+ - space divisions     : 0
+
+ (user choice)
+ - solid sphere /slant : 1
+ - shell / norm        : 1
+ - solid wall / slant  : 0
+ - slab / norm         : 0
+
+ - number of rays      : 10000
+
+ (computation)
+ - solid sphere /slant : 1
+ - shell / norm        : 1
+ - solid wall / slant  : 0
+ - slab / norm         : 0
+
+MODEL INFO
+----------
+
+ - nb models       : 1
+ - nb surfaces     : 169
+ - nb meshes       : 0
+ Model names :
+   - 
+
+
+COMPUTING VIRTUAL NODES INFO
+----------------------------
+
+ - nb volumes         : 0
+ - nb honeycomb cores : 0
+
+No volume in the meshing
+
+
+
+No honeycomb cores in the meshing
+
+
+
+State  2 : DOSE ray-tracing                                                    Time :  Fri Mar 09 19:28:37 2012
+
+
+
+
+Execution completed on Fri Mar 09 19:28:38 2012
+
+
+
+

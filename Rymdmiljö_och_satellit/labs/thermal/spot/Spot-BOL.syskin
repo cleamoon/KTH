@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.7" CONTENTS="KINEMATICS" SAVEDATE="1512126244" SYSTEMA_VERSION="4.8.0">
+    <DATA_STRUCTURE NAME="Spot-BOL.syskin" REFSET_ID="{206f0188-fb2a-42fa-a9cc-bd31723cd7fc}">
+        <DATA_NODE TYPE="KINEMATICS" REFOBJ_ID="2" NAME="Kinematics">
+            <NODE_ATTRIBUTE TYPE="PHASES" NAME="PHASES">
+                <ELEM DEFAULT="Default phase" TYPE="PHASES">
+                    <ELEM TYPE="STRING" NAME="Default phase" STR="Default"/>
+                </ELEM>
+            </NODE_ATTRIBUTE>
+            <NODE_ATTRIBUTE TYPE="LAW_ATT" NAME="POINTING LAW_%P_Default">
+                <ELEM LAWTYPE="2 pointing vectors laws" TYPE="KINE_LAW_ELEM" NAME="Multiple laws">
+                    <ELEM LAWTYPE="Orbit planet reference" TYPE="KINE_LAW_ELEM" NAME="Orbit planet reference">
+                        <ELEM X="0" Y="0" Z="-1" TYPE="VECTOR" NAME="Pointing vector"/>
+                        <ELEM TYPE="STRING" NAME="OrbitCenter or anti-OrbitCenter" STR="Orbit planet reference"/>
+                    </ELEM>
+                    <ELEM LAWTYPE="Orbit velocity vector" TYPE="KINE_LAW_ELEM" NAME="Orbit velocity vector">
+                        <ELEM X="0" Y="-1" Z="0" TYPE="VECTOR" NAME="Pointing vector"/>
+                    </ELEM>
+                </ELEM>
+            </NODE_ATTRIBUTE>
+        </DATA_NODE>
+    </DATA_STRUCTURE>
+</SYSML>

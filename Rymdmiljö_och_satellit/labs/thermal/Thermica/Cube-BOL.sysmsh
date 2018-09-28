@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.7" CONTENTS="MESHING" SAVEDATE="1511432168" SYSTEMA_VERSION="4.8.0">
+    <DATA_STRUCTURE NAME="Cube-BOL.sysmsh" REFSET_ID="{8941a638-e2e7-4e4d-9a96-dae7407e732f}">
+        <DATA_NODE TYPE="MESHING" REFOBJ_ID="2" NAME="Meshing">
+            <DATA_NODE TYPE="VIRTUAL_NODE" REFOBJ_ID="4" NAME="Specific items">
+                <DATA_NODE TYPE="VIRTUAL_CONTAINER_NODE" REFOBJ_ID="5" NAME="Non-Geometrical Nodes">
+                    <DATA_NODE TYPE="VIRTUAL_ITEM_NODE" REFOBJ_ID="18" NAME="Space Node">
+                        <NODE_ATTRIBUTE TYPE="VIRTUAL_ITEM_TYPE" NAME="VIRTUAL ITEM TYPE">
+                            <ELEM TYPE="STRING" STR="SpaceNode"/>
+                        </NODE_ATTRIBUTE>
+                        <NODE_ATTRIBUTE TYPE="MESHING_MULTI_DNLINK_LIST" NAME="REFERENCED OBJECTS">
+                            <ELEM TYPE="MULTI_MESHING_REFLIST" NAME="MESHING_REF_LIST"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="VIRTUAL_CONTAINER_NODE" REFOBJ_ID="6" NAME="Nodal Properties">
+                    <DATA_NODE TYPE="VIRTUAL_CONTAINER_NODE" REFOBJ_ID="7" NAME="Boundaries"/>
+                    <DATA_NODE TYPE="VIRTUAL_CONTAINER_NODE" REFOBJ_ID="8" NAME="Capacitances"/>
+                </DATA_NODE>
+                <DATA_NODE TYPE="VIRTUAL_CONTAINER_NODE" REFOBJ_ID="9" NAME="Powers">
+                    <DATA_NODE TYPE="VIRTUAL_CONTAINER_NODE" REFOBJ_ID="10" NAME="Dissipations"/>
+                    <DATA_NODE TYPE="VIRTUAL_CONTAINER_NODE" REFOBJ_ID="11" NAME="Thermostats"/>
+                    <DATA_NODE TYPE="VIRTUAL_CONTAINER_NODE" REFOBJ_ID="12" NAME="Heaters"/>
+                </DATA_NODE>
+                <DATA_NODE TYPE="VIRTUAL_CONTAINER_NODE" REFOBJ_ID="13" NAME="Couplings">
+                    <DATA_NODE TYPE="VIRTUAL_CONTAINER_NODE" REFOBJ_ID="14" NAME="GL"/>
+                    <DATA_NODE TYPE="VIRTUAL_CONTAINER_NODE" REFOBJ_ID="15" NAME="GR"/>
+                    <DATA_NODE TYPE="VIRTUAL_CONTAINER_NODE" REFOBJ_ID="16" NAME="Surface Contact"/>
+                    <DATA_NODE TYPE="VIRTUAL_CONTAINER_NODE" REFOBJ_ID="17" NAME="Contact Resistance"/>
+                </DATA_NODE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="GEOMETRY_ROOT_NODE" REFOBJ_ID="3" NAME="Geometric meshing">
+                <DATA_NODE TYPE="MESH_OBJECT" REFOBJ_ID="20" NAME="Cube-BOL">
+                    <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="21" NAME="Cube">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="4" NAME="REF" REFSET_ID="{39b01466-4c2a-46ee-b098-5f8e35243099}"/>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="3" NAME="REF" REFSET_ID="{39b01466-4c2a-46ee-b098-5f8e35243099}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="MESHING_PARAMS_ATT" NAME="MESHING PARAMETERS">
+                    <ELEM TYPE="MESHING_PARAMETERS" ID="MESHING_PARAMETERS">
+                        <ELEM TYPE="INTEGER" ID="a" VALUE="1"/>
+                        <ELEM TYPE="INTEGER" ID="b" VALUE="1"/>
+                        <ELEM TYPE="INTEGER" ID="c" VALUE="1"/>
+                        <ELEM TYPE="BOOLEAN" ID="Enable_Ratio" VALUE="false"/>
+                        <ELEM TYPE="STRING" ID="Ratio a" STR=""/>
+                        <ELEM TYPE="STRING" ID="Ratio b" STR=""/>
+                        <ELEM TYPE="STRING" ID="Ratio c" STR=""/>
+                        <ELEM TYPE="BOOLEAN" ID="Disable_Meshing" VALUE="false"/>
+                    </ELEM>
+                </NODE_ATTRIBUTE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="2" NAME="REF" REFSET_ID="{39b01466-4c2a-46ee-b098-5f8e35243099}"/>
+            </DATA_NODE>
+            <NODE_ATTRIBUTE TYPE="MODELREF_ATT" NAME="MODEL">
+                <ELEM FILE_PATH="C:/Users/yj/Documents/Thermica/Cube-BOL.sysmdl" TYPE="FILE_DESCRIPTION" FILE_FORMAT="sysmdl" NAME="MODEL" FILE_RELATIVE_PATH="./Cube-BOL.sysmdl"/>
+            </NODE_ATTRIBUTE>
+            <NODE_ATTRIBUTE TYPE="APP_NAME_ATT" NAME="APPLICATION NAME">
+                <ELEM TYPE="STRING" STR="Thermica"/>
+            </NODE_ATTRIBUTE>
+            <NODE_ATTRIBUTE TYPE="BOOLEANATT" NAME="LABEL_DISP_NAME">
+                <ELEM TYPE="BOOLEAN" NAME="LABEL_DISP_NAME" VALUE="false"/>
+            </NODE_ATTRIBUTE>
+        </DATA_NODE>
+    </DATA_STRUCTURE>
+</SYSML>

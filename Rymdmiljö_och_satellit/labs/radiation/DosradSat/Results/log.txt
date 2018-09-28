@@ -1,0 +1,29 @@
+
+Generation of extended mission file.
+Extended mission file generated.
+> Execution : D:/mingw_compil/WIN/Systema-4.5.0RC/applications//Dosrad-4.5.0RC/MappingWIN.exe -param Mapping.sysprm -mission mapping.sysset -dose test.dose -h5 mapping.map.h5 -log mapping.map.log
+>  
+>  
+>  **************************
+> Mapping Computation
+>  **************************
+> DOSRAD 4.5.0RC11
+ASTRIUM SAS - 2006 - All rights reserved
+Information contact : Systema Team
+Telephone : +33 (0)5 62 19 68 85
+Email : engineering.software@astrium.eads.net
+
+About license :
+Valid license found in license server
+(host: athena, port: 8401). Expires at 31/01/2013
+
+>  Number of active threads : 1 ( / 1 available)
+
+> State  1 : Initialization
+> State  2 : DOSE ray-tracing
+Execution of computation executable "Dosrad - Mapping" completed.
+>  
+> Execution completed on Fri Mar 09 19:30:33 2012
+
+>  **************************
+>  

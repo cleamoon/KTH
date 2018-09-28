@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.6" CONTENTS="PROCESS_PARAMETERS" SAVEDATE="1331317704" SYSTEMA_VERSION="4.5.0RC11">
+    <PROCESS_PARAMETERS PROCESS_NAME="ComputPoint" APP_NAME="Dosrad">
+        <NODE_ATTRIBUTE TYPE="RUN PARAMETERS" NAME="RUN PARAMETERS">
+            <ELEM TYPE="RUN_PARAMETERS" ID="RUN_PARAMETERS">
+                <ELEM TYPE="PROC_CATEGORY" ID="Ray tracing">
+                    <ELEM TYPE="INTEGER" ID="RayNumberByShape" VALUE="10000"/>
+                    <ELEM TYPE="INTEGER" ID="RandomSeed" VALUE="876743"/>
+                    <ELEM TYPE="STRING" ID="VolNORMThicknessChoice" STR="Incoming/Outgoing Minimum Path"/>
+                </ELEM>
+                <ELEM TYPE="PROC_CATEGORY" ID="Point computation">
+                    <ELEM TYPE="STRING" ID="SolidSphere" STR="Active"/>
+                    <ELEM TYPE="STRING" ID="ShellSphere" STR="Active"/>
+                    <ELEM TYPE="STRING" ID="SolidWall" STR="Inactive"/>
+                    <ELEM TYPE="STRING" ID="Slab" STR="Inactive"/>
+                </ELEM>
+            </ELEM>
+        </NODE_ATTRIBUTE>
+        <NODE_ATTRIBUTE TYPE="RUN PARAMETERS" NAME="RUN PARAMETERS">
+            <ELEM TYPE="RUN_PARAMETERS" ID="RUN_PARAMETERS"/>
+        </NODE_ATTRIBUTE>
+    </PROCESS_PARAMETERS>
+</SYSML>

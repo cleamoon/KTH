@@ -1,0 +1,42 @@
+
+#**********************************************#
+#                                              #
+#          Results computed by Dosrad          #
+#                                              #
+#**********************************************#
+
+
+  File : boundingbox.box.out
+  Version :  Dosrad  V.4.5.0  released on February 2011
+  Input files :
+     - Sysset :  boundingbox.sysset
+     - Sysmdl :  C:/GettingStarted/DosradSat/DosradSat.sysmdl
+     - Sysmsh :  C:/GettingStarted/DosradSat/boundingbox.sysmsh
+     - Sysmis :  C:/GettingStarted/DosradSat/boundingbox.sysmis
+     - Dose   :  test.dose
+  Parameters :
+     - Method(s) :
+        - Solid sphere 
+        - Shell sphere 
+     - Number of rays per mesh :  400
+     - NORM for volume method  :  0
+
+
+  Radiation dose received by 6 faces of the 1 boxe(s):
+
+
+ New General truncated sphere bounding box on point (0, 0.9, 0) 
+
+
+                                                    Al. equivalent thickness per face (mm)                   Total dose            Total eq.
+                                                                                                              (rad(Si))          thickness (mm)
+                                        +X          +Y          +Z          -X          -Y          -Z
+
+
+ New General truncated sphere bounding box 
+
+ Solid sphere / slant           :      3.32        1.39        3.37        3.17        5.16        3.37      2.144e+006              2.40
+ Shell sphere / norm            :      1.89        1.17        2.03        1.86        4.23        2.03      1.349e+006              1.75
+ Solid sphere / slant - for sub :      2.80        1.17        2.84        2.68        4.42        2.84      2.144e+006              2.40
+
+

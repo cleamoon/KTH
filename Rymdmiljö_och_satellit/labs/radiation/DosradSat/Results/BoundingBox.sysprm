@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.6" CONTENTS="PROCESS_PARAMETERS" SAVEDATE="1331317775" SYSTEMA_VERSION="4.5.0RC11">
+    <PROCESS_PARAMETERS PROCESS_NAME="BoundingBox" APP_NAME="Dosrad">
+        <NODE_ATTRIBUTE TYPE="RUN PARAMETERS" NAME="RUN PARAMETERS">
+            <ELEM TYPE="RUN_PARAMETERS" ID="RUN_PARAMETERS">
+                <ELEM TYPE="PROC_CATEGORY" ID="Ray tracing">
+                    <ELEM TYPE="STRING" ID="RayBuildingMethod" STR="Per mesh"/>
+                    <ELEM TYPE="INTEGER" ID="RayNumberByShape" VALUE="400"/>
+                    <ELEM TYPE="VALUE" ID="Density" VALUE="50"/>
+                    <ELEM TYPE="INTEGER" ID="MinNbRaysByShape" VALUE="10"/>
+                    <ELEM TYPE="INTEGER" ID="MaxNbRaysByShape" VALUE="15"/>
+                    <ELEM TYPE="STRING" ID="VolNORMThicknessChoice" STR="Incoming/Outgoing Minimum Path"/>
+                </ELEM>
+                <ELEM TYPE="PROC_CATEGORY" ID="Bounding Box computation">
+                    <ELEM TYPE="STRING" ID="SolidSphere" STR="Active"/>
+                    <ELEM TYPE="STRING" ID="ShellSphere" STR="Active"/>
+                    <ELEM TYPE="STRING" ID="SolidWall" STR="Inactive"/>
+                    <ELEM TYPE="STRING" ID="Slab" STR="Inactive"/>
+                </ELEM>
+                <ELEM TYPE="PROC_CATEGORY" ID="Bounding Box outputs">
+                    <ELEM TYPE="STRING" ID="meshData" STR="Active"/>
+                    <ELEM TYPE="STRING" ID="rayData" STR="Active"/>
+                    <ELEM TYPE="STRING" ID="meanThick" STR="Active"/>
+                    <ELEM TYPE="STRING" ID="csvTables" STR="Inactive"/>
+                </ELEM>
+            </ELEM>
+        </NODE_ATTRIBUTE>
+        <NODE_ATTRIBUTE TYPE="RUN PARAMETERS" NAME="RUN PARAMETERS">
+            <ELEM TYPE="RUN_PARAMETERS" ID="RUN_PARAMETERS"/>
+        </NODE_ATTRIBUTE>
+    </PROCESS_PARAMETERS>
+</SYSML>

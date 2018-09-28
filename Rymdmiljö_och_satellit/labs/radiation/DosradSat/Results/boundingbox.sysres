@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.6" CONTENTS="RESULT" SAVEDATE="1331317799" SYSTEMA_VERSION="4.5.0RC11">
+    <RESULT NAME="boundingbox">
+        <RESULT_SET FILE_TYPE="MISSION_SET" FILE_PATH="boundingbox.sysset" TYPE="FILE" FILE_NAME="boundingbox.sysset" FILE_FORMAT="sysset"/>
+        <RESULT_SET FILE_TYPE="HDF5" FILE_PATH="boundingbox.box.h5" TYPE="FILE" FILE_NAME="boundingbox.box.h5" FILE_FORMAT="h5"/>
+        <RESULT_SET FILE_TYPE="TXT" FILE_PATH="boundingbox.box.log" TYPE="FILE" FILE_NAME="boundingbox.box.log" FILE_FORMAT="LOG"/>
+        <RESULT_SET FILE_TYPE="TXT" FILE_PATH="boundingbox.box.out" TYPE="FILE" FILE_NAME="boundingbox.box.out" FILE_FORMAT=""/>
+    </RESULT>
+</SYSML>

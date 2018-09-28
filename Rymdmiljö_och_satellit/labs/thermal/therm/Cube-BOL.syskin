@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.7" CONTENTS="KINEMATICS" SAVEDATE="1511437419" SYSTEMA_VERSION="4.8.0">
+    <DATA_STRUCTURE NAME="Cube-BOL.syskin" REFSET_ID="{18803ad4-c285-41c9-bdff-f254994c3559}">
+        <DATA_NODE TYPE="KINEMATICS" REFOBJ_ID="2" NAME="Kinematics">
+            <NODE_ATTRIBUTE TYPE="PHASES" NAME="PHASES">
+                <ELEM DEFAULT="Default phase" TYPE="PHASES">
+                    <ELEM TYPE="STRING" NAME="Default phase" STR="Default"/>
+                </ELEM>
+            </NODE_ATTRIBUTE>
+            <NODE_ATTRIBUTE TYPE="LAW_ATT" NAME="POINTING LAW_%P_Default">
+                <ELEM LAWTYPE="2 pointing vectors laws" TYPE="KINE_LAW_ELEM" NAME="Multiple laws">
+                    <ELEM LAWTYPE="Planet" TYPE="KINE_LAW_ELEM" NAME="Planet">
+                        <ELEM X="0" Y="0" Z="-1" TYPE="VECTOR" NAME="Pointing vector"/>
+                        <ELEM TYPE="STRING" NAME="Choose the pointed planet" STR="Earth"/>
+                    </ELEM>
+                    <ELEM LAWTYPE="Orbit velocity vector" TYPE="KINE_LAW_ELEM" NAME="Orbit velocity vector">
+                        <ELEM X="0" Y="-1" Z="0" TYPE="VECTOR" NAME="Pointing vector"/>
+                    </ELEM>
+                </ELEM>
+            </NODE_ATTRIBUTE>
+        </DATA_NODE>
+    </DATA_STRUCTURE>
+</SYSML>

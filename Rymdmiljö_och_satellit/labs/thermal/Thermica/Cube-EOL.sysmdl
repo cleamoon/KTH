@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.7" CONTENTS="MODEL" SAVEDATE="1511422059" SYSTEMA_VERSION="4.8.0">
+    <DATA_STRUCTURE NAME="Cube-EOL.sysmdl" REFSET_ID="{39b01466-4c2a-46ee-b098-5f8e35243099}">
+        <DATA_NODE TYPE="MODEL" REFOBJ_ID="2" NAME="Model">
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="3" NAME="Cube-BOL">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="4" NAME="Cube">
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="BOX_6_4P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="6 faces box">
+                            <ELEM X="0" Y="0" Z="0" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="1" Y="0" Z="0" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="0" Y="1" Z="0" TYPE="POINT" NAME="Point 3"/>
+                            <ELEM X="0" Y="0" Z="1" TYPE="POINT" NAME="Point 4"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+            </DATA_NODE>
+        </DATA_NODE>
+    </DATA_STRUCTURE>
+</SYSML>

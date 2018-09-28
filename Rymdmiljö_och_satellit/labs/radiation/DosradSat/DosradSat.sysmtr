@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.5" CONTENTS="MATERIAL" SAVEDATE="1318577656" SYSTEMA_VERSION="4.4.2" >
+    <DATA_STRUCTURE NAME="Imported Material Database : DosradBulk.sysmat" REFSET_ID="{b1829088-8b50-4b51-84cd-9fe5380f30de}" >
+        <DATA_NODE TYPE="MATERIAL" REFOBJ_ID="1" NAME="Material database" >
+            <DATA_NODE TYPE="MATERIALDATA" REFOBJ_ID="2" NAME="Optic" >
+                <NODE_ATTRIBUTE TYPE="MATERIAL_CATEG" NAME="MATERIAL_CATEG_Dosrad_Phys_Prop" >
+                    <PROP_CATEGORY ID="Phys_Prop" NAME="Physical properties" >
+                        <ELEM TYPE="VALUE" ID="Density" VALUE="3851" />
+                    </PROP_CATEGORY>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MATERIALDATA" REFOBJ_ID="3" NAME="Aluminium" >
+                <NODE_ATTRIBUTE TYPE="MATERIAL_CATEG" NAME="MATERIAL_CATEG_Dosrad_Phys_Prop" >
+                    <PROP_CATEGORY ID="Phys_Prop" NAME="Physical properties" >
+                        <ELEM TYPE="VALUE" ID="Density" VALUE="2770" />
+                    </PROP_CATEGORY>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MATERIALDATA" REFOBJ_ID="4" NAME="Radiator" >
+                <NODE_ATTRIBUTE TYPE="MATERIAL_CATEG" NAME="MATERIAL_CATEG_Dosrad_Phys_Prop" >
+                    <PROP_CATEGORY ID="Phys_Prop" NAME="Physical properties" >
+                        <ELEM TYPE="VALUE" ID="Density" VALUE="287" />
+                    </PROP_CATEGORY>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MATERIALDATA" REFOBJ_ID="5" NAME="MLI" >
+                <NODE_ATTRIBUTE TYPE="MATERIAL_CATEG" NAME="MATERIAL_CATEG_Dosrad_Phys_Prop" >
+                    <PROP_CATEGORY ID="Phys_Prop" NAME="Physical properties" >
+                        <ELEM TYPE="VALUE" ID="Density" VALUE="1700" />
+                    </PROP_CATEGORY>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MATERIALDATA" REFOBJ_ID="6" NAME="HC" >
+                <NODE_ATTRIBUTE TYPE="MATERIAL_CATEG" NAME="MATERIAL_CATEG_Dosrad_Phys_Prop" >
+                    <PROP_CATEGORY ID="Phys_Prop" NAME="Physical properties" >
+                        <ELEM TYPE="VALUE" ID="Density" VALUE="50" />
+                    </PROP_CATEGORY>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+        </DATA_NODE>
+    </DATA_STRUCTURE>
+</SYSML>

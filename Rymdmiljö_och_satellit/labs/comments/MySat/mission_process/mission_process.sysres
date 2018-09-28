@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.7" CONTENTS="RESULT" SAVEDATE="1511166157" SYSTEMA_VERSION="4.8.0">
+    <RESULT NAME="mission_process">
+        <RESULT_SET FILE_TYPE="MISSION_SET" FILE_PATH="C:/Users/yj/Desktop/MySat/mission_process/mission.sysset" TYPE="FILE" FILE_NAME="mission.sysset" FILE_FORMAT="sysset"/>
+        <RESULT_SET FILE_TYPE="MISSION_DATA" FILE_PATH="C:/Users/yj/Desktop/MySat/mission_process/mission.html" TYPE="FILE" FILE_NAME="mission.html" FILE_FORMAT="html"/>
+        <RESULT_SET FILE_TYPE="HDF5" FILE_PATH="C:/Users/yj/Desktop/MySat/mission_process/process.map.h5" TYPE="FILE" FILE_NAME="process.map.h5" FILE_FORMAT="h5"/>
+        <RESULT_SET FILE_TYPE="TXT" FILE_PATH="C:/Users/yj/Desktop/MySat/mission_process/process.map.log" TYPE="FILE" FILE_NAME="process.map.log" FILE_FORMAT="LOG"/>
+    </RESULT>
+</SYSML>

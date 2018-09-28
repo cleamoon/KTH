@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.7" CONTENTS="MISSION" SAVEDATE="1511190926" SYSTEMA_VERSION="4.8.0">
+    <DATA_STRUCTURE NAME="Bio_Mission.sysmis" REFSET_ID="{3778fa69-01f2-479c-b75a-7f1b9f8e2610}">
+        <DATA_NODE TYPE="MISSION" REFOBJ_ID="2" NAME="Mission">
+            <DATA_NODE TYPE="GENERIC_NODE" REFOBJ_ID="3" NAME="Sequences time items"/>
+            <DATA_NODE TYPE="GENERIC_NODE" REFOBJ_ID="4" NAME="Computation time items"/>
+            <DATA_NODE TYPE="GENERIC_NODE" REFOBJ_ID="5" NAME="Custom time items"/>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="6" NAME="Platform">
+                <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="7" NAME="Ext">
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="8" NAME="-Ys wall">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="11" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="9" NAME="+Ys wall">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="13" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="10" NAME="-Zs wall">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="14" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="11" NAME="+Zs wall">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="15" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="12" NAME="Bottom plate">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="16" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="5" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                </DATA_NODE>
+                <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="13" NAME="Equipment">
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="14" NAME="IRF Instrument">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="15" NAME="+X Wall">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="23" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="16" NAME="-X Wall">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="24" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="17" NAME="+Y Wall">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="25" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="18" NAME="-Y Wall">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="26" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="19" NAME="+Z Wall">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="27" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="20" NAME="-Z Wall">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="28" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="7" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="21" NAME="Propulsion tank">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="22" NAME="Tank cylinder">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="21" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="23" NAME="+X disc">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="35" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="24" NAME="Tank bottom plate">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="36" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="8" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="25" NAME="Biological instrument">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="26" NAME="+X Wall">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="29" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="27" NAME="+Y Wall">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="30" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="28" NAME="-Y Wall">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="31" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="29" NAME="-X Wall">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="32" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="30" NAME="-Z Wall">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="33" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="31" NAME="+Z Wall">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="34" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="9" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="32" NAME="Battery">
+                        <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="33" NAME="Battery 1">
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="34" NAME="Battery cylinder">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="38" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="35" NAME="Battery base">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="39" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="36" NAME="Battery top">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="40" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="37" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="37" NAME="Battery 2">
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="38" NAME="Battery cylinder">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="54" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="39" NAME="Battery base">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="55" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="40" NAME="Battery top">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="56" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="53" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="41" NAME="Battery 3">
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="42" NAME="Battery cylinder">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="58" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="43" NAME="Battery base">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="59" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="44" NAME="Battery top">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="60" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="57" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="45" NAME="Battery 4">
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="46" NAME="Battery cylinder">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="62" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="47" NAME="Battery base">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="63" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="48" NAME="Battery top">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="64" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="61" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="10" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="49" NAME="Equipment Heart">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="17" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="53" NAME="CUBES">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="77" NAME="Board">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="91" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="78" NAME="CUBE 1">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="92" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="87" NAME="CUBE 2">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="101" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="88" NAME="CUBE 3">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="102" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="67" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="6" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="3" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="50" NAME="Solar Array">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="51" NAME="+Z panel">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="65" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                </DATA_NODE>
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="52" NAME="-Z panel">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="66" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="4" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+            </DATA_NODE>
+            <NODE_ATTRIBUTE TYPE="MODELREF_ATT" NAME="MODEL">
+                <ELEM FILE_PATH="C:/Users/yj/Documents/MIST/MISTmodel_cubes.sysmdl" TYPE="FILE_DESCRIPTION" FILE_FORMAT="sysmdl" NAME="MODEL" FILE_RELATIVE_PATH="./MISTmodel_cubes.sysmdl"/>
+            </NODE_ATTRIBUTE>
+            <NODE_ATTRIBUTE TYPE="MESHINGREF_ATT" NAME="MESHING">
+                <ELEM FILE_PATH="C:/Users/yj/Documents/MIST/Bio_Meshing.sysmsh" TYPE="FILE_DESCRIPTION" FILE_FORMAT="sysmsh" NAME="MESHING" FILE_RELATIVE_PATH="./Bio_Meshing.sysmsh"/>
+            </NODE_ATTRIBUTE>
+            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="2" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+        </DATA_NODE>
+    </DATA_STRUCTURE>
+</SYSML>

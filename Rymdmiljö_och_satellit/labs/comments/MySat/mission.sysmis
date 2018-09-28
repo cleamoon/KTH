@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.7" CONTENTS="MISSION" SAVEDATE="1511166129" SYSTEMA_VERSION="4.8.0">
+    <DATA_STRUCTURE NAME="mission.sysmis" REFSET_ID="{465f9098-5945-4458-bf50-a3f1e6204e4a}">
+        <DATA_NODE TYPE="MISSION" REFOBJ_ID="2" NAME="Mission">
+            <DATA_NODE TYPE="GENERIC_NODE" REFOBJ_ID="3" NAME="Sequences time items"/>
+            <DATA_NODE TYPE="GENERIC_NODE" REFOBJ_ID="4" NAME="Computation time items"/>
+            <DATA_NODE TYPE="GENERIC_NODE" REFOBJ_ID="5" NAME="Custom time items"/>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="6" NAME="Platform">
+                <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="7" NAME="Radiators">
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="8" NAME="R +Ys">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="9" NAME="RAD">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="21" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="146" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="10" NAME="R +Zs">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="11" NAME="RAD">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="81" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="147" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="12" NAME="R -Ys">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="13" NAME="RAD">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="97" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="148" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="14" NAME="R -Zs">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="15" NAME="RAD">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="129" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="149" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="16" NAME="R +Xs">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="17" NAME="REC1">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="15" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="145" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="20" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                </DATA_NODE>
+                <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="18" NAME="Equipements">
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="19" NAME="Equipment heart">
+                        <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="20" NAME="Eq +Ys">
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="21" NAME="New General truncated sphere">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="75" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="152" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="22" NAME="Eq +Zs">
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="23" NAME="New General truncated sphere">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="92" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="153" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="24" NAME="Eq -Ys">
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="25" NAME="New General truncated sphere">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="108" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="154" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="26" NAME="Eq -Zs">
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="27" NAME="New General truncated sphere">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="140" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="155" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="28" NAME="Battery +Xs">
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="29" NAME="New General truncated sphere">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="65" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="151" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="26" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="30" NAME="Equipment box">
+                        <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="31" NAME="Box +Ys">
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="32" NAME="New 5 faces box">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="78" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="156" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="33" NAME="Box +Zs">
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="34" NAME="New 5 faces box">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="94" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="157" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="35" NAME="Box -Ys">
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="36" NAME="New 5 faces box">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="110" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="158" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="37" NAME="Box -Zs">
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="38" NAME="New 5 faces box">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="142" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="159" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="76" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="150" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                </DATA_NODE>
+                <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="39" NAME="MLI ext">
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="40" NAME="+Ys Wall">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="41" NAME="Interactive Rectangle">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="66" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="42" NAME="Interactive Rectangle (2)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="68" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="43" NAME="Interactive Rectangle (3)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="69" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="44" NAME="Interactive Rectangle (4)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="70" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="45" NAME="Interactive Rectangle (5)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="71" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="46" NAME="Interactive Rectangle (6)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="72" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="47" NAME="Interactive Rectangle (7)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="73" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="48" NAME="Interactive Rectangle (8)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="74" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="163" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="49" NAME="+Zs Wall">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="50" NAME="Interactive Rectangle">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="83" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="51" NAME="Interactive Rectangle (2)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="84" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="52" NAME="Interactive Rectangle (3)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="85" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="53" NAME="Interactive Rectangle (4)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="86" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="54" NAME="Interactive Rectangle (5)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="87" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="55" NAME="Interactive Rectangle (6)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="88" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="56" NAME="Interactive Rectangle (7)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="89" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="57" NAME="Interactive Rectangle (8)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="90" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="164" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="58" NAME="-Ys Wall">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="59" NAME="Interactive Rectangle">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="99" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="60" NAME="Interactive Rectangle (2)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="100" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="61" NAME="Interactive Rectangle (3)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="101" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="62" NAME="Interactive Rectangle (4)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="102" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="63" NAME="Interactive Rectangle (5)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="103" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="64" NAME="Interactive Rectangle (6)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="104" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="65" NAME="Interactive Rectangle (7)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="105" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="66" NAME="Interactive Rectangle (8)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="106" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="165" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="67" NAME="-Zs Wall">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="68" NAME="Interactive Rectangle">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="131" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="69" NAME="Interactive Rectangle (2)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="132" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="70" NAME="Interactive Rectangle (3)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="133" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="71" NAME="Interactive Rectangle (4)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="134" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="72" NAME="Interactive Rectangle (5)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="135" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="73" NAME="Interactive Rectangle (6)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="136" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="74" NAME="Interactive Rectangle (7)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="137" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="75" NAME="Interactive Rectangle (8)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="138" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="166" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="76" NAME="+Xs Wall">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="77" NAME="Interactive Rectangle">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="56" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="78" NAME="Interactive Rectangle (2)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="57" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="79" NAME="Interactive Rectangle (3)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="58" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="80" NAME="Interactive Rectangle (4)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="59" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="81" NAME="Interactive Rectangle (5)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="60" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="82" NAME="Interactive Rectangle (6)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="61" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="83" NAME="Interactive Rectangle (7)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="62" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="84" NAME="Interactive Rectangle (8)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="63" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="85" NAME="MLI Battery">
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="86" NAME="REC1">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="10" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="87" NAME="REC2">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="11" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="88" NAME="REC3">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="12" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="89" NAME="REC4">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="13" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="9" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="161" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="90" NAME="-Xs Wall">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="162" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="6" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                </DATA_NODE>
+                <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="91" NAME="HC int">
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="92" NAME="+Ys Wall">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="93" NAME="Interactive Rectangle">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="899" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="94" NAME="Interactive Rectangle (2)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="900" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="95" NAME="Interactive Rectangle (3)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="901" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="96" NAME="Interactive Rectangle (4)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="902" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="97" NAME="Interactive Rectangle (5)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="903" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="98" NAME="Interactive Rectangle (6)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="904" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="99" NAME="Interactive Rectangle (7)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="905" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="100" NAME="Interactive Rectangle (8)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="906" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="898" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="101" NAME="+Zs Wall">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="102" NAME="Interactive Rectangle">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="908" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="103" NAME="Interactive Rectangle (2)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="909" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="104" NAME="Interactive Rectangle (3)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="910" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="105" NAME="Interactive Rectangle (4)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="911" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="106" NAME="Interactive Rectangle (5)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="912" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="107" NAME="Interactive Rectangle (6)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="913" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="108" NAME="Interactive Rectangle (7)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="914" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="109" NAME="Interactive Rectangle (8)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="915" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="907" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="110" NAME="-Ys Wall">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="111" NAME="Interactive Rectangle">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="890" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="112" NAME="Interactive Rectangle (2)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="891" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="113" NAME="Interactive Rectangle (3)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="892" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="114" NAME="Interactive Rectangle (4)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="893" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="115" NAME="Interactive Rectangle (5)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="894" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="116" NAME="Interactive Rectangle (6)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="895" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="117" NAME="Interactive Rectangle (7)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="896" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="118" NAME="Interactive Rectangle (8)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="897" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="889" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="119" NAME="-Zs Wall">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="120" NAME="Interactive Rectangle">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="931" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="121" NAME="Interactive Rectangle (2)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="932" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="122" NAME="Interactive Rectangle (3)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="933" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="123" NAME="Interactive Rectangle (4)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="934" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="124" NAME="Interactive Rectangle (5)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="935" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="125" NAME="Interactive Rectangle (6)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="936" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="126" NAME="Interactive Rectangle (7)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="937" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="127" NAME="Interactive Rectangle (8)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="938" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="930" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="128" NAME="+Xs Wall">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="129" NAME="Interactive Rectangle">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="920" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="130" NAME="Interactive Rectangle (2)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="924" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="131" NAME="Interactive Rectangle (3)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="921" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="132" NAME="Interactive Rectangle (4)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="918" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="133" NAME="Interactive Rectangle (5)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="917" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="134" NAME="Interactive Rectangle (6)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="923" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="135" NAME="Interactive Rectangle (7)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="919" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="136" NAME="Interactive Rectangle (8)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="922" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="137" NAME="MLI Battery">
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="138" NAME="REC1">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="926" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="139" NAME="REC2">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="927" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="140" NAME="REC3">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="928" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="141" NAME="REC4">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="929" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="925" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="142" NAME="HC +Xs">
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="143" NAME="INT">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="55" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="167" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="916" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="144" NAME="-Xs Wall">
+                        <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="145" NAME="HC -Xs">
+                            <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="146" NAME="Interactive Rectangle">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="883" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="168" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="939" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="4" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="2" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="147" NAME="Instrument">
+                <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="148" NAME="Passagers">
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="149" NAME="VGT">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="150" NAME="L1266">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="388" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="151" NAME="L1267">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="389" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="387" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="152" NAME="PASTEL">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="153" NAME="L1268">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="391" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="390" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="154" NAME="PASTEC">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="155" NAME="L1269">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="393" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="392" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="156" NAME="SIMULATION PASSAGERS - SUPERISOLATI">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="157" NAME="L1270">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="395" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="158" NAME="L1271">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="396" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="159" NAME="L1272">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="397" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="394" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="386" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                </DATA_NODE>
+                <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="160" NAME="Ins -Y">
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="161" NAME="HRV">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="162" NAME="Interactive Quadrangle">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="820" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="163" NAME="Interactive Rectangle (2)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="824" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="164" NAME="Interactive Rectangle">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="823" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="165" NAME="Interactive Rectangle (3)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="825" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="166" NAME="Interactive Rectangle (4)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="826" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="167" NAME="Interactive Rectangle (5)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="827" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="168" NAME="Interactive Quadrangle (2)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="835" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="169" NAME="Interactive Quadrangle (3)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="833" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="170" NAME="Interactive Triangle">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="830" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="171" NAME="Interactive Triangle (2)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="832" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="172" NAME="Interactive Quadrangle (4)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="831" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="173" NAME="Interactive Quadrangle (5)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="836" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="174" NAME="Interactive Quadrangle (6)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="837" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="175" NAME="Interactive Triangle (3)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="838" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="176" NAME="Interactive Triangle (4)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="839" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="177" NAME="Interactive Quadrangle (7)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="862" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="815" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="178" NAME="Optical">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="179" NAME="New Paraboloid">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="842" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="840" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="841" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                </DATA_NODE>
+                <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="180" NAME="Ins +Y">
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="181" NAME="HRV">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="182" NAME="Interactive Quadrangle">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="865" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="183" NAME="Interactive Rectangle (2)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="866" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="184" NAME="Interactive Rectangle">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="867" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="185" NAME="Interactive Rectangle (3)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="868" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="186" NAME="Interactive Rectangle (4)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="869" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="187" NAME="Interactive Rectangle (5)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="870" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="188" NAME="Interactive Quadrangle (2)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="871" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="189" NAME="Interactive Quadrangle (3)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="872" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="190" NAME="Interactive Triangle">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="873" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="191" NAME="Interactive Triangle (2)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="874" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="192" NAME="Interactive Quadrangle (4)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="875" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="193" NAME="Interactive Quadrangle (5)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="876" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="194" NAME="Interactive Quadrangle (6)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="877" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="195" NAME="Interactive Triangle (3)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="878" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="196" NAME="Interactive Triangle (4)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="879" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="197" NAME="Interactive Quadrangle (7)">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="880" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="864" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="198" NAME="Optical">
+                        <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="199" NAME="New Paraboloid">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="882" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="881" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="863" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="814" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="200" NAME="Solar array">
+                <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="201" NAME="-Y">
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="202" NAME="New Rectangle">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="127" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="203" NAME="New Rectangle (2)">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="128" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="204" NAME="New Rectangle (3)">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="884" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="205" NAME="New Rectangle (4)">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="143" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="126" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                </DATA_NODE>
+                <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="206" NAME="+Y">
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="207" NAME="New Rectangle">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="886" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="208" NAME="New Rectangle (2)">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="887" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="209" NAME="New Rectangle (3)">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="888" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="210" NAME="New Rectangle (4)">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="144" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="885" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="3" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+            </DATA_NODE>
+            <NODE_ATTRIBUTE TYPE="MODELREF_ATT" NAME="MODEL">
+                <ELEM FILE_PATH="C:/Users/yj/Desktop/MySat/MySat.sysmdl" TYPE="FILE_DESCRIPTION" FILE_FORMAT="sysmdl" NAME="MODEL" FILE_RELATIVE_PATH="./MySat.sysmdl"/>
+            </NODE_ATTRIBUTE>
+            <NODE_ATTRIBUTE TYPE="MESHINGREF_ATT" NAME="MESHING">
+                <ELEM FILE_PATH="C:/Users/yj/Desktop/MySat/mapping.sysmsh" TYPE="FILE_DESCRIPTION" FILE_FORMAT="sysmsh" NAME="MESHING" FILE_RELATIVE_PATH="./mapping.sysmsh"/>
+            </NODE_ATTRIBUTE>
+            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="1" NAME="REF" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c"/>
+        </DATA_NODE>
+    </DATA_STRUCTURE>
+</SYSML>

@@ -1,0 +1,42 @@
+
+#**********************************************#
+#                                              #
+#          Results computed by Dosrad          #
+#                                              #
+#**********************************************#
+
+
+  File : computpoint.pt.out
+  Version :  Dosrad  V.4.5.0  released on February 2011
+  Input files :
+     - Sysset :  computpoint.sysset
+     - Sysmdl :  C:/GettingStarted/DosradSat/DosradSat.sysmdl
+     - Sysmsh :  C:/GettingStarted/DosradSat/computpoint.sysmsh
+     - Sysmis :  C:/GettingStarted/DosradSat/computpoint.sysmis
+     - Dose   :  test.dose
+  Parameters :
+     - Method(s) :
+        - Solid sphere / slant 
+        - Shell sphere / norm  
+     - Number of rays per point :  10000
+     - Random seed              :  876743
+     - NORM for volume method   :  0
+
+
+  Radiation dose received at the 1 point(s):
+
+
+ Eq +Ys computation point point coordiantes: (0, 0.9, 0) 
+
+
+                                        Total dose            Total eq.
+                                         (rad(Si))          thickness (mm)
+
+ Eq +Ys computation point 
+
+ Solid sphere / slant                   2.098e+006              2.41
+ Shell sphere / norm                    1.324e+006              1.76
+
+
+
+

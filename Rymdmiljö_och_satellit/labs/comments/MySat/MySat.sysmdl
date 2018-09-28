@@ -1,0 +1,1891 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.6" CONTENTS="MODEL" SAVEDATE="1331317874" SYSTEMA_VERSION="4.5.0RC11">
+    <DATA_STRUCTURE NAME="MySat.sysmdl" REFSET_ID="0eca0790-3b94-11dc-a799-57e35d83697c">
+        <DATA_NODE TYPE="MODEL" REFOBJ_ID="1" NAME="MySat">
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="2" NAME="Platform">
+                <DATA_NODE TYPE="OBJECT" REFOBJ_ID="20" NAME="Radiators">
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="146" NAME="R +Ys">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="21" NAME="RAD">
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="1"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300001" TEXT="1 1 1 1 0 1 1 1 0 "/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300002" TEXT="4 1 2 3 -100004"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300003" TEXT="4 -0.5 -0.5 0 -0.5 0.5 0 0.5 0.5 0 0.5 -0.5 0"/>
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.5" Y="1" Z="-0.5" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="1" Z="0.5" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="1" Z="-0.5" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                            <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                                <CONTENER NAME="Bulk"/>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="147" NAME="R +Zs">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="81" NAME="RAD">
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="1"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300001" TEXT="1 1 1 1 0 1 1 1 0 "/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300002" TEXT="4 1 2 3 -100004"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300003" TEXT="4 -0.5 -0.5 0 -0.5 0.5 0 0.5 0.5 0 0.5 -0.5 0"/>
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.5" Y="0.5" Z="1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="-0.5" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="0.5" Z="1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="148" NAME="R -Ys">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="97" NAME="RAD">
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="1"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300001" TEXT="1 1 1 1 0 1 1 1 0 "/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300002" TEXT="4 1 2 3 -100004"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300003" TEXT="4 -0.5 -0.5 0 -0.5 0.5 0 0.5 0.5 0 0.5 -0.5 0"/>
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.5" Y="-1" Z="0.5" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="-1" Z="-0.5" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="-1" Z="0.5" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="149" NAME="R -Zs">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="129" NAME="RAD">
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="1"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300001" TEXT="1 1 1 1 0 1 1 1 0 "/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300002" TEXT="4 1 2 3 -100004"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300003" TEXT="4 -0.5 -0.5 0 -0.5 0.5 0 0.5 0.5 0 0.5 -0.5 0"/>
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.5" Y="-0.5" Z="-1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="0.5" Z="-1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="-0.5" Z="-1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="145" NAME="R +Xs">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="15" NAME="REC1">
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="1"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300001" TEXT="1 1 1 1 0 1 1 1 0 "/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300002" TEXT="4 1 2 3 -100004"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300003" TEXT="4 0.201 0 0 0.201 0 0.66 0.201 0.66 0.66 0.201 0.66 0"/>
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="1.45" Y="0.3333" Z="-0.3333" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.45" Y="0.3333" Z="0.3333" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="1.45" Y="-0.3333" Z="-0.3333" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="1"/>
+                    <NODE_ATTRIBUTE TYPE="COLOR" NAME="COLOR">
+                        <ELEM G="0" TYPE="COLOR" NAME="COLOR" R="0" B="1"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="200008" TEXT="UNDEF    UNDEF   &#xa;     0     0     0     0     4&#xa;"/>
+                    <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="200030" TEXT="NIDA_alu             SSM_alu_10microns    peinture_noire      &#xa;"/>
+                    <NODE_ATTRIBUTE APPLICATION="ATOMOX" TYPE="SYS_PROP_SYSEXP" NAME="200003" TEXT="OSR  &#xa;0  &#xa;"/>
+                    <NODE_ATTRIBUTE APPLICATION="PERTURB" TYPE="SYS_PROP_SYSEXP" NAME="200026" TEXT="OSR                  peinture             &#xa;293.15  293.15  293.15  293.15  &#xa;"/>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                        <CONTENER NAME="Bulk" INHERITED="FALSE"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="OBJECT" REFOBJ_ID="150" NAME="Equipements">
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="26" NAME="Equipment heart">
+                        <DATA_NODE TYPE="OBJECT" REFOBJ_ID="152" NAME="Eq +Ys">
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="75" NAME="New General truncated sphere">
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="SPHERE_SYSEXP" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="General truncated sphere">
+                                        <ELEM X="0" Y="0.9" Z="0" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="0" Y="1" Z="0" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1.25" Y="0.9" Z="0" TYPE="POINT" NAME="Point 3"/>
+                                        <ELEM L="0.18" TYPE="LENGTH" NAME="Diameter"/>
+                                        <ELEM L="-0.09" TYPE="LENGTH" NAME="Height 1"/>
+                                        <ELEM L="0.09" TYPE="LENGTH" NAME="Height 2"/>
+                                        <ELEM ANGLE="0" TYPE="ANGLE" NAME="Angle 1"/>
+                                        <ELEM ANGLE="360" TYPE="ANGLE" NAME="Angle 2"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="OBJECT" REFOBJ_ID="153" NAME="Eq +Zs">
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="92" NAME="New General truncated sphere">
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="SPHERE_SYSEXP" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="General truncated sphere">
+                                        <ELEM X="0" Y="0" Z="0.9" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="0" Y="0" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1.25" Y="0" Z="0.9" TYPE="POINT" NAME="Point 3"/>
+                                        <ELEM L="0.18" TYPE="LENGTH" NAME="Diameter"/>
+                                        <ELEM L="-0.09" TYPE="LENGTH" NAME="Height 1"/>
+                                        <ELEM L="0.09" TYPE="LENGTH" NAME="Height 2"/>
+                                        <ELEM ANGLE="0" TYPE="ANGLE" NAME="Angle 1"/>
+                                        <ELEM ANGLE="360" TYPE="ANGLE" NAME="Angle 2"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="OBJECT" REFOBJ_ID="154" NAME="Eq -Ys">
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="108" NAME="New General truncated sphere">
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="SPHERE_SYSEXP" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="General truncated sphere">
+                                        <ELEM X="0" Y="-0.9" Z="0" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="0" Y="-1" Z="0" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1.25" Y="-0.9" Z="0" TYPE="POINT" NAME="Point 3"/>
+                                        <ELEM L="0.18" TYPE="LENGTH" NAME="Diameter"/>
+                                        <ELEM L="-0.09" TYPE="LENGTH" NAME="Height 1"/>
+                                        <ELEM L="0.09" TYPE="LENGTH" NAME="Height 2"/>
+                                        <ELEM ANGLE="0" TYPE="ANGLE" NAME="Angle 1"/>
+                                        <ELEM ANGLE="360" TYPE="ANGLE" NAME="Angle 2"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="OBJECT" REFOBJ_ID="155" NAME="Eq -Zs">
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="140" NAME="New General truncated sphere">
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="SPHERE_SYSEXP" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="General truncated sphere">
+                                        <ELEM X="0" Y="0" Z="-0.9" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="0" Y="0" Z="-1" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1.25" Y="0" Z="-0.9" TYPE="POINT" NAME="Point 3"/>
+                                        <ELEM L="0.18" TYPE="LENGTH" NAME="Diameter"/>
+                                        <ELEM L="-0.09" TYPE="LENGTH" NAME="Height 1"/>
+                                        <ELEM L="0.09" TYPE="LENGTH" NAME="Height 2"/>
+                                        <ELEM ANGLE="0" TYPE="ANGLE" NAME="Angle 1"/>
+                                        <ELEM ANGLE="360" TYPE="ANGLE" NAME="Angle 2"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="OBJECT" REFOBJ_ID="151" NAME="Battery +Xs">
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="65" NAME="New General truncated sphere">
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="SPHERE_SYSEXP" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="General truncated sphere">
+                                        <ELEM X="1.35" Y="0" Z="0" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="1.35" Y="0" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1.45" Y="0" Z="0" TYPE="POINT" NAME="Point 3"/>
+                                        <ELEM L="0.18" TYPE="LENGTH" NAME="Diameter"/>
+                                        <ELEM L="-0.09" TYPE="LENGTH" NAME="Height 1"/>
+                                        <ELEM L="0.09" TYPE="LENGTH" NAME="Height 2"/>
+                                        <ELEM ANGLE="0" TYPE="ANGLE" NAME="Angle 1"/>
+                                        <ELEM ANGLE="360" TYPE="ANGLE" NAME="Angle 2"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="1"/>
+                        <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="200008" TEXT="UNDEF    UNDEF   &#xa;     0     0     0     0     5&#xa;"/>
+                        <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="200030" TEXT="Mater_boitier        peinture_noire       peinture_noire      &#xa;"/>
+                        <NODE_ATTRIBUTE APPLICATION="ATOMOX" TYPE="SYS_PROP_SYSEXP" NAME="200003" TEXT="pein &#xa;0  &#xa;"/>
+                        <NODE_ATTRIBUTE APPLICATION="PERTURB" TYPE="SYS_PROP_SYSEXP" NAME="200026" TEXT="peinture             peinture             &#xa;293.15  293.15  293.15  293.15  &#xa;"/>
+                        <NODE_ATTRIBUTE TYPE="COLOR" NAME="COLOR">
+                            <ELEM G="0.107748005" TYPE="COLOR" NAME="COLOR" R="0.7477477477" B="0.1141809752"/>
+                        </NODE_ATTRIBUTE>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER NAME="Bulk" INHERITED="FALSE"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="76" NAME="Equipment box">
+                        <DATA_NODE TYPE="OBJECT" REFOBJ_ID="156" NAME="Box +Ys">
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="78" NAME="New 5 faces box">
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="BOX_5_4P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="5 faces box">
+                                        <ELEM X="-0.25" Y="1" Z="-0.2" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="0.25" Y="1" Z="-0.2" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="0.25" Y="1" Z="0.2" TYPE="POINT" NAME="Point 3"/>
+                                        <ELEM X="-0.25" Y="0.8" Z="-0.2" TYPE="POINT" NAME="Point 4"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="OBJECT" REFOBJ_ID="157" NAME="Box +Zs">
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="94" NAME="New 5 faces box">
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="BOX_5_4P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="5 faces box">
+                                        <ELEM X="-0.25" Y="0.2" Z="1" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="0.25" Y="0.2" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="0.25" Y="-0.2" Z="1" TYPE="POINT" NAME="Point 3"/>
+                                        <ELEM X="-0.25" Y="0.2" Z="0.8" TYPE="POINT" NAME="Point 4"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="OBJECT" REFOBJ_ID="158" NAME="Box -Ys">
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="110" NAME="New 5 faces box">
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="BOX_5_4P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="5 faces box">
+                                        <ELEM X="-0.25" Y="-1" Z="0.2" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="0.25" Y="-1" Z="0.2" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="0.25" Y="-1" Z="-0.2" TYPE="POINT" NAME="Point 3"/>
+                                        <ELEM X="-0.25" Y="-0.8" Z="0.2" TYPE="POINT" NAME="Point 4"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="OBJECT" REFOBJ_ID="159" NAME="Box -Zs">
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="142" NAME="New 5 faces box">
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="BOX_5_4P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="5 faces box">
+                                        <ELEM X="-0.25" Y="-0.2" Z="-1" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="0.25" Y="-0.2" Z="-1" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="0.25" Y="0.2" Z="-1" TYPE="POINT" NAME="Point 3"/>
+                                        <ELEM X="-0.25" Y="-0.2" Z="-0.8" TYPE="POINT" NAME="Point 4"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="1"/>
+                        <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="200008" TEXT="UNDEF    UNDEF   &#xa;     0     0     0     0     5&#xa;"/>
+                        <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="200030" TEXT="Mater_boitier        peinture_noire       peinture_noire      &#xa;"/>
+                        <NODE_ATTRIBUTE APPLICATION="ATOMOX" TYPE="SYS_PROP_SYSEXP" NAME="200003" TEXT="pein &#xa;0  &#xa;"/>
+                        <NODE_ATTRIBUTE APPLICATION="PERTURB" TYPE="SYS_PROP_SYSEXP" NAME="200026" TEXT="peinture             peinture             &#xa;293.15  293.15  293.15  293.15  &#xa;"/>
+                        <NODE_ATTRIBUTE TYPE="COLOR" NAME="COLOR">
+                            <ELEM G="0.3844092474" TYPE="COLOR" NAME="COLOR" R="0.74" B="0.3168743552"/>
+                        </NODE_ATTRIBUTE>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER NAME="Bulk" INHERITED="FALSE"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="COLOR" NAME="COLOR">
+                        <ELEM G="0.5186620619" TYPE="COLOR" NAME="COLOR" R="0.9009009009" B="0.5419290851"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                        <CONTENER NAME="Bulk" INHERITED="FALSE"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="OBJECT" REFOBJ_ID="6" NAME="MLI ext">
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="163" NAME="+Ys Wall">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="66" NAME="Interactive Rectangle">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.255" Y="1.005" Z="1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="1.005" Z="1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.255" Y="1.005" Z="0.5" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="68" NAME="Interactive Rectangle (2)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.5" Y="1.005" Z="1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="0.5" Y="1.005" Z="1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-0.5" Y="1.005" Z="0.5" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="69" NAME="Interactive Rectangle (3)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.5" Y="1.005" Z="1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.255" Y="1.005" Z="1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="1.005" Z="0.5" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="70" NAME="Interactive Rectangle (4)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.255" Y="1.005" Z="0.5" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="1.005" Z="0.5" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.255" Y="1.005" Z="-0.5" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="71" NAME="Interactive Rectangle (5)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.5" Y="1.005" Z="0.5" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.255" Y="1.005" Z="0.5" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="1.005" Z="-0.5" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="72" NAME="Interactive Rectangle (6)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.255" Y="1.005" Z="-0.5" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="1.005" Z="-0.5" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.255" Y="1.005" Z="-1.005" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="73" NAME="Interactive Rectangle (7)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.5" Y="1.005" Z="-0.5" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="0.5" Y="1.005" Z="-0.5" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-0.5" Y="1.005" Z="-1.005" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="74" NAME="Interactive Rectangle (8)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.5" Y="1.005" Z="-0.5" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.255" Y="1.005" Z="-0.5" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="1.005" Z="-1.005" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER NAME="Bulk"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="164" NAME="+Zs Wall">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="83" NAME="Interactive Rectangle">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.255" Y="-1.005" Z="1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="-1.005" Z="1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.255" Y="-0.5" Z="1.005" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="84" NAME="Interactive Rectangle (2)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.5" Y="-1.005" Z="1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="0.5" Y="-1.005" Z="1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-0.5" Y="-0.5" Z="1.005" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="85" NAME="Interactive Rectangle (3)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.5" Y="-1.005" Z="1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.25" Y="-1.005" Z="1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="-0.5" Z="1.005" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="86" NAME="Interactive Rectangle (4)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.255" Y="-0.5" Z="1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="-0.5" Z="1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.255" Y="0.5" Z="1.005" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="87" NAME="Interactive Rectangle (5)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.5" Y="-0.5" Z="1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.255" Y="-0.5" Z="1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="0.5" Z="1.005" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="88" NAME="Interactive Rectangle (6)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.255" Y="0.5" Z="1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="0.5" Z="1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.255" Y="1.005" Z="1.005" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="89" NAME="Interactive Rectangle (7)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.5" Y="0.5" Z="1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="0.5" Y="0.5" Z="1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-0.5" Y="1.005" Z="1.005" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="90" NAME="Interactive Rectangle (8)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.5" Y="0.5" Z="1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.255" Y="0.5" Z="1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="1.005" Z="1.005" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER NAME="Bulk"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="165" NAME="-Ys Wall">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="99" NAME="Interactive Rectangle">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.255" Y="-1.005" Z="-1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="-1.005" Z="-1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.255" Y="-1.005" Z="-0.5" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="100" NAME="Interactive Rectangle (2)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.5" Y="-1.005" Z="-1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="0.5" Y="-1.005" Z="-1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-0.5" Y="-1.005" Z="-0.5" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="101" NAME="Interactive Rectangle (3)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.5" Y="-1.005" Z="-1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.25" Y="-1.005" Z="-1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="-1.005" Z="-0.5" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="102" NAME="Interactive Rectangle (4)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.255" Y="-1.005" Z="-0.5" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="-1.005" Z="-0.5" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.255" Y="-1.005" Z="0.5" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="103" NAME="Interactive Rectangle (5)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.5" Y="-1.005" Z="-0.5" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.255" Y="-1.005" Z="-0.5" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="-1.005" Z="0.5" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="104" NAME="Interactive Rectangle (6)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.255" Y="-1.005" Z="0.5" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="-1.005" Z="0.5" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.255" Y="-1.005" Z="1.005" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="105" NAME="Interactive Rectangle (7)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.5" Y="-1.005" Z="0.5" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="0.5" Y="-1.005" Z="0.5" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-0.5" Y="-1.005" Z="1.005" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="106" NAME="Interactive Rectangle (8)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.5" Y="-1.005" Z="0.5" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.255" Y="-1.005" Z="0.5" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="-1.005" Z="1.005" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER NAME="Bulk"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="166" NAME="-Zs Wall">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="131" NAME="Interactive Rectangle">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.255" Y="1.005" Z="-1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="1.005" Z="-1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.255" Y="0.5" Z="-1.005" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="132" NAME="Interactive Rectangle (2)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.5" Y="1.005" Z="-1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="0.5" Y="1.005" Z="-1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-0.5" Y="0.5" Z="-1.005" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="133" NAME="Interactive Rectangle (3)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.5" Y="1.005" Z="-1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.255" Y="1.005" Z="-1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="0.5" Z="-1.005" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="134" NAME="Interactive Rectangle (4)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.255" Y="0.5" Z="-1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="0.5" Z="-1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.255" Y="-0.5" Z="-1.005" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="135" NAME="Interactive Rectangle (5)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.5" Y="0.5" Z="-1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.255" Y="0.5" Z="-1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="-0.5" Z="-1.005" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="136" NAME="Interactive Rectangle (6)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.255" Y="-0.5" Z="-1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="-0.5" Z="-1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.255" Y="-1.005" Z="-1.005" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="137" NAME="Interactive Rectangle (7)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.5" Y="-0.5" Z="-1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="0.5" Y="-0.5" Z="-1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-0.5" Y="-1.005" Z="-1.005" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="138" NAME="Interactive Rectangle (8)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.5" Y="-0.5" Z="-1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.255" Y="-0.5" Z="-1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="-1.005" Z="-1.005" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER NAME="Bulk"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="161" NAME="+Xs Wall">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="56" NAME="Interactive Rectangle">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="1.255" Y="1.005" Z="0.338" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.255" Y="1.005" Z="1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="1.255" Y="0.338" Z="0.338" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="57" NAME="Interactive Rectangle (2)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="1.255" Y="0.338" Z="0.338" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.255" Y="0.338" Z="1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="1.255" Y="-0.338" Z="0.338" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="58" NAME="Interactive Rectangle (3)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="1.255" Y="-0.338" Z="0.338" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.255" Y="-0.338" Z="1.005" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="1.255" Y="-1.005" Z="1.005" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="59" NAME="Interactive Rectangle (4)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="1.255" Y="1.005" Z="-0.338" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.255" Y="1.005" Z="0.338" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="1.255" Y="0.338" Z="-0.338" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="60" NAME="Interactive Rectangle (5)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="1.255" Y="-0.338" Z="-0.338" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.255" Y="-0.338" Z="0.338" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="1.255" Y="-1.005" Z="0.338" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="61" NAME="Interactive Rectangle (6)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="1.255" Y="1.005" Z="-1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.255" Y="1.005" Z="-0.338" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="1.255" Y="0.338" Z="-0.338" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="62" NAME="Interactive Rectangle (7)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="1.255" Y="0.338" Z="-1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.255" Y="0.338" Z="-0.338" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="1.255" Y="-0.338" Z="0.338" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="63" NAME="Interactive Rectangle (8)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="1.255" Y="-0.338" Z="-1.005" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.255" Y="-0.338" Z="-0.338" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="1.255" Y="-1.005" Z="-0.338" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="OBJECT" REFOBJ_ID="9" NAME="MLI Battery">
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="10" NAME="REC1">
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="1"/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300001" TEXT="1 1 1 1 0 1 1 1 0 "/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300002" TEXT="4 1 2 3 -100004"/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300003" TEXT="4 0 0 0 0 0.66 0 0.2 0.66 0 0.2 0 0"/>
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                        <ELEM X="1.455" Y="0.338" Z="-0.338" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="1.455" Y="-0.338" Z="-0.338" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1.255" Y="0.338" Z="-0.338" TYPE="POINT" NAME="Point 3"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="11" NAME="REC2">
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="2"/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300001" TEXT="1 1 1 1 0 1 1 1 0 "/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300002" TEXT="4 1 2 3 -100004"/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300003" TEXT="4 0 0.66 0 0 0.66 0.66 0.2 0.66 0.66 0.2 0.66 0"/>
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                        <ELEM X="1.45" Y="-0.338" Z="-0.338" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="1.45" Y="-0.338" Z="0.338" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1.255" Y="-0.338" Z="-0.338" TYPE="POINT" NAME="Point 3"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="12" NAME="REC3">
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="3"/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300001" TEXT="1 1 1 1 0 1 1 1 0 "/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300002" TEXT="4 1 2 3 -100004"/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300003" TEXT="4 0 0.66 0.66 0 0 0.66 0.2 0 0.66 0.2 0.66 0.66"/>
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                        <ELEM X="1.45" Y="-0.338" Z="0.338" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="1.45" Y="0.338" Z="0.338" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1.25" Y="-0.338" Z="0.338" TYPE="POINT" NAME="Point 3"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="13" NAME="REC4">
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="4"/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300001" TEXT="1 1 1 1 0 1 1 1 0 "/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300002" TEXT="4 1 2 3 -100004"/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300003" TEXT="4 0 0 0.66 0 0 0 0.2 0 0 0.2 0 0.66"/>
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                        <ELEM X="1.45" Y="0.338" Z="0.338" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="1.45" Y="0.338" Z="-0.338" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1.25" Y="0.338" Z="0.338" TYPE="POINT" NAME="Point 3"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="1"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="200008" TEXT="UNDEF    UNDEF   &#xa;     0     0     0     0     3&#xa;"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="200030" TEXT="MLI_50microns        MLI_50microns        MLI_50microns       &#xa;"/>
+                            <NODE_ATTRIBUTE APPLICATION="ATOMOX" TYPE="SYS_PROP_SYSEXP" NAME="200003" TEXT="MLI_ &#xa;0  &#xa;"/>
+                            <NODE_ATTRIBUTE APPLICATION="PERTURB" TYPE="SYS_PROP_SYSEXP" NAME="200026" TEXT="MLI_50mi             MLI_50mi             &#xa;293.15  293.15  293.15  293.15  &#xa;"/>
+                            <NODE_ATTRIBUTE TYPE="COLOR" NAME="COLOR">
+                                <ELEM G="0.4" TYPE="COLOR" NAME="COLOR" R="0.4" B="0"/>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER NAME="Bulk"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="162" NAME="-Xs Wall">
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER NAME="Bulk"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="2"/>
+                    <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="200008" TEXT="UNDEF    UNDEF   &#xa;     0     0     0     0     3&#xa;"/>
+                    <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="200030" TEXT="MLI_50microns        MLI_50microns        MLI_50microns       &#xa;"/>
+                    <NODE_ATTRIBUTE APPLICATION="ATOMOX" TYPE="SYS_PROP_SYSEXP" NAME="200003" TEXT="MLI_ &#xa;0  &#xa;"/>
+                    <NODE_ATTRIBUTE APPLICATION="PERTURB" TYPE="SYS_PROP_SYSEXP" NAME="200026" TEXT="MLI_50mi             MLI_50mi             &#xa;293.15  293.15  293.15  293.15  &#xa;"/>
+                    <NODE_ATTRIBUTE TYPE="COLOR" NAME="COLOR">
+                        <ELEM G="0.6" TYPE="COLOR" NAME="COLOR" R="0.6" B="0"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                        <CONTENER NAME="Bulk" INHERITED="FALSE"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="OBJECT" REFOBJ_ID="4" NAME="HC int">
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="898" NAME="+Ys Wall">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="899" NAME="Interactive Rectangle">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.25" Y="1" Z="1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="1" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.25" Y="1" Z="0.5" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="900" NAME="Interactive Rectangle (2)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.5" Y="1" Z="1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="0.5" Y="1" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-0.5" Y="1" Z="0.5" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="901" NAME="Interactive Rectangle (3)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.5" Y="1" Z="1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.25" Y="1" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="1" Z="0.5" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="902" NAME="Interactive Rectangle (4)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.25" Y="1" Z="0.5" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="1" Z="0.5" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.25" Y="1" Z="-0.5" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="903" NAME="Interactive Rectangle (5)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.5" Y="1" Z="0.5" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.25" Y="1" Z="0.5" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="1" Z="-0.5" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="904" NAME="Interactive Rectangle (6)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.25" Y="1" Z="-0.5" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="1" Z="-0.5" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.25" Y="1" Z="-1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="905" NAME="Interactive Rectangle (7)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.5" Y="1" Z="-0.5" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="0.5" Y="1" Z="-0.5" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-0.5" Y="1" Z="-1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="906" NAME="Interactive Rectangle (8)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.5" Y="1" Z="-0.5" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.25" Y="1" Z="-0.5" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="1" Z="-1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER NAME="Bulk"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="907" NAME="+Zs Wall">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="908" NAME="Interactive Rectangle">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.25" Y="-1" Z="1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="-1" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.25" Y="-0.5" Z="1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="909" NAME="Interactive Rectangle (2)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.5" Y="-1" Z="1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="0.5" Y="-1" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-0.5" Y="-0.5" Z="1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="910" NAME="Interactive Rectangle (3)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.5" Y="-1" Z="1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.25" Y="-1" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="-0.5" Z="1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="911" NAME="Interactive Rectangle (4)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.25" Y="-0.5" Z="1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="-0.5" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.25" Y="0.5" Z="1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="912" NAME="Interactive Rectangle (5)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.5" Y="-0.5" Z="1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.25" Y="-0.5" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="0.5" Z="1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="913" NAME="Interactive Rectangle (6)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.25" Y="0.5" Z="1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="0.5" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.25" Y="1" Z="1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="914" NAME="Interactive Rectangle (7)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.5" Y="0.5" Z="1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="0.5" Y="0.5" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-0.5" Y="1" Z="1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="915" NAME="Interactive Rectangle (8)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.5" Y="0.5" Z="1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.25" Y="0.5" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="1" Z="1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER NAME="Bulk"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="889" NAME="-Ys Wall">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="890" NAME="Interactive Rectangle">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.25" Y="-1" Z="-1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="-1" Z="-1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.25" Y="-1" Z="-0.5" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="891" NAME="Interactive Rectangle (2)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.5" Y="-1" Z="-1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="0.5" Y="-1" Z="-1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-0.5" Y="-1" Z="-0.5" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="892" NAME="Interactive Rectangle (3)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.5" Y="-1" Z="-1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.25" Y="-1" Z="-1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="-1" Z="-0.5" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="893" NAME="Interactive Rectangle (4)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.25" Y="-1" Z="-0.5" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="-1" Z="-0.5" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.25" Y="-1" Z="0.5" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="894" NAME="Interactive Rectangle (5)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.5" Y="-1" Z="-0.5" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.25" Y="-1" Z="-0.5" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="-1" Z="0.5" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="895" NAME="Interactive Rectangle (6)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.25" Y="-1" Z="0.5" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="-1" Z="0.5" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.25" Y="-1" Z="1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="896" NAME="Interactive Rectangle (7)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.5" Y="-1" Z="0.5" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="0.5" Y="-1" Z="0.5" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-0.5" Y="-1" Z="1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="897" NAME="Interactive Rectangle (8)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.5" Y="-1" Z="0.5" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.25" Y="-1" Z="0.5" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="-1" Z="1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER NAME="Bulk"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="930" NAME="-Zs Wall">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="931" NAME="Interactive Rectangle">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.25" Y="1" Z="-1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="1" Z="-1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.25" Y="0.5" Z="-1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="932" NAME="Interactive Rectangle (2)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.5" Y="1" Z="-1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="0.5" Y="1" Z="-1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-0.5" Y="0.5" Z="-1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="933" NAME="Interactive Rectangle (3)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.5" Y="1" Z="-1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.25" Y="1" Z="-1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="0.5" Z="-1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="934" NAME="Interactive Rectangle (4)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.25" Y="0.5" Z="-1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="0.5" Z="-1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.25" Y="-0.5" Z="-1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="935" NAME="Interactive Rectangle (5)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.5" Y="0.5" Z="-1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.25" Y="0.5" Z="-1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="-0.5" Z="-1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="936" NAME="Interactive Rectangle (6)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.25" Y="-0.5" Z="-1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.5" Y="-0.5" Z="-1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.25" Y="-1" Z="-1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="937" NAME="Interactive Rectangle (7)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.5" Y="-0.5" Z="-1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="0.5" Y="-0.5" Z="-1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-0.5" Y="-1" Z="-1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="938" NAME="Interactive Rectangle (8)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.5" Y="-0.5" Z="-1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.25" Y="-0.5" Z="-1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.5" Y="-1" Z="-1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER NAME="Bulk"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="916" NAME="+Xs Wall">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="920" NAME="Interactive Rectangle">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="1.25" Y="1" Z="0.3333" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.25" Y="1" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="1.25" Y="0.3333" Z="0.3333" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="924" NAME="Interactive Rectangle (2)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="1.25" Y="0.3333" Z="0.3333" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.25" Y="0.3333" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="1.25" Y="-0.3333" Z="0.3333" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="921" NAME="Interactive Rectangle (3)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="1.25" Y="-0.3333" Z="0.3333" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.25" Y="-0.3333" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="1.25" Y="-1" Z="1" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="918" NAME="Interactive Rectangle (4)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="1.25" Y="1" Z="-0.3333" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.25" Y="1" Z="0.3333" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="1.25" Y="0.3333" Z="-0.3333" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="917" NAME="Interactive Rectangle (5)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="1.25" Y="-0.3333" Z="-0.3333" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.25" Y="-0.3333" Z="0.3333" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="1.25" Y="-1" Z="0.3333" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="923" NAME="Interactive Rectangle (6)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="1.25" Y="1" Z="-1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.25" Y="1" Z="-0.3333" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="1.25" Y="0.3333" Z="-0.3333" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="919" NAME="Interactive Rectangle (7)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="1.25" Y="0.3333" Z="-1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.25" Y="0.3333" Z="-0.3333" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="1.25" Y="-0.3333" Z="-0.3333" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="922" NAME="Interactive Rectangle (8)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="1.25" Y="-0.3333" Z="-1" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1.25" Y="-0.3333" Z="-0.3333" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="1.25" Y="-1" Z="-0.3333" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="OBJECT" REFOBJ_ID="925" NAME="MLI Battery">
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="926" NAME="REC1">
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="1"/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300001" TEXT="1 1 1 1 0 1 1 1 0 "/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300002" TEXT="4 1 2 3 -100004"/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300003" TEXT="4 0 0 0 0 0.66 0 0.2 0.66 0 0.2 0 0"/>
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                        <ELEM X="1.45" Y="0.3333" Z="-0.3333" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="1.45" Y="-0.3333" Z="-0.3333" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1.25" Y="0.3333" Z="-0.3333" TYPE="POINT" NAME="Point 3"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="927" NAME="REC2">
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="2"/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300001" TEXT="1 1 1 1 0 1 1 1 0 "/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300002" TEXT="4 1 2 3 -100004"/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300003" TEXT="4 0 0.66 0 0 0.66 0.66 0.2 0.66 0.66 0.2 0.66 0"/>
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                        <ELEM X="1.45" Y="-0.3333" Z="-0.3333" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="1.45" Y="-0.3333" Z="0.3333" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1.25" Y="-0.3333" Z="-0.3333" TYPE="POINT" NAME="Point 3"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="928" NAME="REC3">
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="3"/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300001" TEXT="1 1 1 1 0 1 1 1 0 "/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300002" TEXT="4 1 2 3 -100004"/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300003" TEXT="4 0 0.66 0.66 0 0 0.66 0.2 0 0.66 0.2 0.66 0.66"/>
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                        <ELEM X="1.45" Y="-0.3333" Z="0.3333" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="1.45" Y="0.3333" Z="0.3333" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1.25" Y="-0.3333" Z="0.3333" TYPE="POINT" NAME="Point 3"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="929" NAME="REC4">
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="4"/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300001" TEXT="1 1 1 1 0 1 1 1 0 "/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300002" TEXT="4 1 2 3 -100004"/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300003" TEXT="4 0 0 0.66 0 0 0 0.2 0 0 0.2 0 0.66"/>
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                        <ELEM X="1.45" Y="0.3333" Z="0.3333" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="1.45" Y="0.3333" Z="-0.3333" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1.25" Y="0.3333" Z="0.3333" TYPE="POINT" NAME="Point 3"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="1"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="200008" TEXT="UNDEF    UNDEF   &#xa;     0     0     0     0     3&#xa;"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="200030" TEXT="MLI_50microns        MLI_50microns        MLI_50microns       &#xa;"/>
+                            <NODE_ATTRIBUTE APPLICATION="ATOMOX" TYPE="SYS_PROP_SYSEXP" NAME="200003" TEXT="MLI_ &#xa;0  &#xa;"/>
+                            <NODE_ATTRIBUTE APPLICATION="PERTURB" TYPE="SYS_PROP_SYSEXP" NAME="200026" TEXT="MLI_50mi             MLI_50mi             &#xa;293.15  293.15  293.15  293.15  &#xa;"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="OBJECT" REFOBJ_ID="167" NAME="HC +Xs">
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="55" NAME="INT">
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="1"/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300001" TEXT="1 1 1 1 0 1 1 1 0 "/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300002" TEXT="4 1 2 3 -100004"/>
+                                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300003" TEXT="4 0.201 0 0 0.201 0 0.66 0.201 0.66 0.66 0.201 0.66 0"/>
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                        <ELEM X="1.25" Y="0.333299994" Z="-0.3332999945" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="1.25" Y="0.333299994" Z="0.326699972" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1.25" Y="-0.3266999722" Z="-0.3332999945" TYPE="POINT" NAME="Point 3"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER NAME="Bulk"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="939" NAME="-Xs Wall">
+                        <DATA_NODE TYPE="OBJECT" REFOBJ_ID="168" NAME="HC -Xs">
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="883" NAME="Interactive Rectangle">
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                        <ELEM X="-1.25" Y="-1" Z="1" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="-1.25" Y="1" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="-1.25" Y="-1" Z="-1" TYPE="POINT" NAME="Point 3"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                                <CONTENER NAME="Bulk"/>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="1"/>
+                    <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="200008" TEXT="UNDEF    UNDEF   &#xa;     0     0     0     0     2&#xa;"/>
+                    <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="200030" TEXT="NIDA_alu             peinture_noire       peinture_noire      &#xa;"/>
+                    <NODE_ATTRIBUTE APPLICATION="ATOMOX" TYPE="SYS_PROP_SYSEXP" NAME="200003" TEXT="pein &#xa;0  &#xa;"/>
+                    <NODE_ATTRIBUTE APPLICATION="PERTURB" TYPE="SYS_PROP_SYSEXP" NAME="200026" TEXT="peinture             peinture             &#xa;293.15  293.15  293.15  293.15  &#xa;"/>
+                    <NODE_ATTRIBUTE TYPE="COLOR" NAME="COLOR">
+                        <ELEM G="0.4864864865" TYPE="COLOR" NAME="COLOR" R="0.1226909107" B="0.3535217031"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                        <CONTENER NAME="Bulk" INHERITED="FALSE"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="1"/>
+                <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="200008" TEXT="UNDEF    UNDEF   &#xa;     0     0     0     0     1&#xa;"/>
+                <NODE_ATTRIBUTE APPLICATION="ATOMOX" TYPE="SYS_PROP_SYSEXP" NAME="200003" TEXT="DEF_ &#xa;0  &#xa;"/>
+                <NODE_ATTRIBUTE APPLICATION="PERTURB" TYPE="SYS_PROP_SYSEXP" NAME="200026" TEXT="UNDEF                UNDEF                &#xa;293.15  293.15  293.15  293.15  &#xa;"/>
+                <NODE_ATTRIBUTE TYPE="COLOR" NAME="COLOR">
+                    <ELEM G="0.8382035356" TYPE="COLOR" NAME="COLOR" R="0.9009009009" B="0.6939769697"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="814" NAME="Instrument">
+                <DATA_NODE TYPE="OBJECT" REFOBJ_ID="386" NAME="Passagers">
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="387" NAME="VGT">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="388" NAME="L1266">
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="1"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300001" TEXT="1 1 -1 -1 888 1 1 1 0 "/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300002" TEXT="4 1 2 3 -100004"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300003" TEXT="4 0 -0.981 -0.29 -0.834 -0.981 -0.542 -0.834 0 -0.542 0 0 -0.29"/>
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.25" Y="-0.981" Z="-0.29" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-1.25" Y="0" Z="-0.29" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.084" Y="-0.981" Z="-0.542" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="389" NAME="L1267">
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="2"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300001" TEXT="1 1 -1 -1 901 1 1 1 0 "/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300002" TEXT="4 1 2 3 -100004"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300003" TEXT="4 -0.834 -0.981 -0.95 -0.834 0 -0.95 -0.834 0 -0.542 -0.834 -0.981 -0.542"/>
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-2.084" Y="-0.981" Z="-0.95" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-2.084" Y="-0.981" Z="-0.542" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.084" Y="0" Z="-0.95" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="1"/>
+                        <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="200008" TEXT="UNDEF    UNDEF   &#xa;     0     0     0     0     7&#xa;"/>
+                        <NODE_ATTRIBUTE APPLICATION="ATOMOX" TYPE="SYS_PROP_SYSEXP" NAME="200003" TEXT="DEF_ &#xa;0  &#xa;"/>
+                        <NODE_ATTRIBUTE APPLICATION="PERTURB" TYPE="SYS_PROP_SYSEXP" NAME="200026" TEXT="UNDEF                UNDEF                &#xa;293.15  293.15  293.15  293.15  &#xa;"/>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER NAME="Bulk"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="390" NAME="PASTEL">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="391" NAME="L1268">
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="1"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300001" TEXT="1 1 -1 -1 902 1 1 1 0 "/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300002" TEXT="4 1 2 3 -100004"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300003" TEXT="4 0 0 -0.29 -0.834 0 -0.542 -0.834 0.981 -0.542 0 0.981 -0.29"/>
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.25" Y="0" Z="-0.29" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-1.25" Y="0.981" Z="-0.29" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.084" Y="0" Z="-0.542" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="2"/>
+                        <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="200008" TEXT="UNDEF    UNDEF   &#xa;     0     0     0     0     7&#xa;"/>
+                        <NODE_ATTRIBUTE APPLICATION="ATOMOX" TYPE="SYS_PROP_SYSEXP" NAME="200003" TEXT="DEF_ &#xa;0  &#xa;"/>
+                        <NODE_ATTRIBUTE APPLICATION="PERTURB" TYPE="SYS_PROP_SYSEXP" NAME="200026" TEXT="UNDEF                UNDEF                &#xa;293.15  293.15  293.15  293.15  &#xa;"/>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER NAME="Bulk"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="392" NAME="PASTEC">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="393" NAME="L1269">
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="1"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300001" TEXT="1 1 -1 -1 903 1 1 1 0 "/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300002" TEXT="4 1 2 3 -100004"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300003" TEXT="4 -0.834 0 -0.95 -0.834 0.981 -0.95 -0.834 0.981 -0.542 -0.834 0 -0.542"/>
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-2.084" Y="0" Z="-0.95" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-2.084" Y="0" Z="-0.542" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.084" Y="0.981" Z="-0.95" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="3"/>
+                        <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="200008" TEXT="UNDEF    UNDEF   &#xa;     0     0     0     0     7&#xa;"/>
+                        <NODE_ATTRIBUTE APPLICATION="ATOMOX" TYPE="SYS_PROP_SYSEXP" NAME="200003" TEXT="DEF_ &#xa;0  &#xa;"/>
+                        <NODE_ATTRIBUTE APPLICATION="PERTURB" TYPE="SYS_PROP_SYSEXP" NAME="200026" TEXT="UNDEF                UNDEF                &#xa;293.15  293.15  293.15  293.15  &#xa;"/>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER NAME="Bulk"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="394" NAME="SIMULATION PASSAGERS - SUPERISOLATI">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="395" NAME="L1270">
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="1"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300001" TEXT="1 1 -1 -1 888 1 1 1 0 "/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300002" TEXT="4 1 2 3 -100004"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300003" TEXT="4 0 0.981 -0.95 -0.834 0.981 -0.95 -0.834 -0.981 -0.95 0 -0.981 -0.95"/>
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-1.25" Y="0.981" Z="-0.95" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-1.25" Y="-0.981" Z="-0.95" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.084" Y="0.981" Z="-0.95" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="396" NAME="L1271">
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="2"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300001" TEXT="1 1 -1 -1 888 1 1 1 0 "/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300002" TEXT="4 1 2 3 -100004"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300003" TEXT="4 -0.834 -0.981 -0.542 0 -0.981 -0.29 0 -0.981 -0.95 -0.834 -0.981 -0.95"/>
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="QUADRANGLE" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Quadrangle">
+                                    <ELEM X="-2.084" Y="-0.981" Z="-0.95" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-1.25" Y="-0.981" Z="-0.95" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.25" Y="-0.981" Z="-0.29" TYPE="POINT" NAME="Point 3"/>
+                                    <ELEM X="-2.084" Y="-0.981" Z="-0.542" TYPE="POINT" NAME="Point 4"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="397" NAME="L1272">
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="3"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300001" TEXT="1 1 -1 -1 888 1 1 1 0 "/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300002" TEXT="4 1 2 3 -100004"/>
+                            <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="300003" TEXT="4 -0.834 0.981 -0.95 0 0.981 -0.95 0 0.981 -0.29 -0.834 0.981 -0.542"/>
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="QUADRANGLE" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Quadrangle">
+                                    <ELEM X="-2.084" Y="0.981" Z="-0.542" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-1.25" Y="0.981" Z="-0.29" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.25" Y="0.981" Z="-0.95" TYPE="POINT" NAME="Point 3"/>
+                                    <ELEM X="-2.084" Y="0.981" Z="-0.95" TYPE="POINT" NAME="Point 4"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="4"/>
+                        <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="200008" TEXT="UNDEF    UNDEF   &#xa;     0     0     0     0     7&#xa;"/>
+                        <NODE_ATTRIBUTE APPLICATION="ATOMOX" TYPE="SYS_PROP_SYSEXP" NAME="200003" TEXT="DEF_ &#xa;0  &#xa;"/>
+                        <NODE_ATTRIBUTE APPLICATION="PERTURB" TYPE="SYS_PROP_SYSEXP" NAME="200026" TEXT="UNDEF                UNDEF                &#xa;293.15  293.15  293.15  293.15  &#xa;"/>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER NAME="Bulk"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="Tag" TEXT="24"/>
+                    <NODE_ATTRIBUTE APPLICATION="MODEL" TYPE="SYS_PROP_SYSEXP" NAME="200008" TEXT="UNDEF    UNDEF   &#xa;     0     0     0     0     7&#xa;"/>
+                    <NODE_ATTRIBUTE APPLICATION="ATOMOX" TYPE="SYS_PROP_SYSEXP" NAME="200003" TEXT="DEF_ &#xa;0  &#xa;"/>
+                    <NODE_ATTRIBUTE APPLICATION="PERTURB" TYPE="SYS_PROP_SYSEXP" NAME="200026" TEXT="UNDEF                UNDEF                &#xa;293.15  293.15  293.15  293.15  &#xa;"/>
+                </DATA_NODE>
+                <DATA_NODE TYPE="OBJECT" REFOBJ_ID="841" NAME="Ins -Y">
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="815" NAME="HRV">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="820" NAME="Interactive Quadrangle">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="QUADRANGLE" REVERSE_NORMAL="true" TYPE="SHAPE" NAME="Quadrangle">
+                                    <ELEM X="-1.25" Y="-0.9670000076" Z="0.8519999981" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-2.674000025" Y="-0.8759999871" Z="0.8489999771" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.674000025" Y="-0.1099999994" Z="0.8489999771" TYPE="POINT" NAME="Point 3"/>
+                                    <ELEM X="-1.25" Y="-0.01899999939" Z="0.8519999981" TYPE="POINT" NAME="Point 4"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="824" NAME="Interactive Rectangle (2)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-3.594000101" Y="-0.8759999871" Z="0.5170000196" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-3.594000101" Y="-0.1099999994" Z="0.5170000196" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-3.313999891" Y="-0.8759999871" Z="0.1340000033" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="823" NAME="Interactive Rectangle">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-2.674000025" Y="-0.8759999871" Z="0.8489999771" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-2.674000025" Y="-0.1099999994" Z="0.8489999771" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-3.594000101" Y="-0.8759999871" Z="0.5170000196" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="825" NAME="Interactive Rectangle (3)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-3.313999891" Y="-0.8759999871" Z="0.1340000033" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-3.313999891" Y="-0.6700000167" Z="0.1340000033" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.427999973" Y="-0.8759999871" Z="-0.3689999878" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="826" NAME="Interactive Rectangle (4)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-3.313999891" Y="-0.3160000145" Z="0.1340000033" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-3.313999891" Y="-0.1099999994" Z="0.1340000033" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.427999973" Y="-0.1099999994" Z="-0.3689999878" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="827" NAME="Interactive Rectangle (5)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-2.427999973" Y="-0.8759999871" Z="-0.3689999878" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-2.427999973" Y="-0.1099999994" Z="-0.3689999878" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.125999928" Y="-0.8759999871" Z="-0.4819999933" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="835" NAME="Interactive Quadrangle (2)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="QUADRANGLE" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Quadrangle">
+                                    <ELEM X="-2.674000025" Y="-0.1099999994" Z="0.8489999771" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-1.25" Y="-0.01899999939" Z="0.8519999981" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.246234417" Y="-0.04500786215" Z="-0.1464897543" TYPE="POINT" NAME="Point 3"/>
+                                    <ELEM X="-2.125999928" Y="-0.1099999994" Z="-0.4819999933" TYPE="POINT" NAME="Point 4"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="833" NAME="Interactive Quadrangle (3)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="QUADRANGLE" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Quadrangle">
+                                    <ELEM X="-3.594000101" Y="-0.1099999994" Z="0.5170000196" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-2.674000025" Y="-0.1099999994" Z="0.8489999771" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.427999973" Y="-0.1099999994" Z="-0.3689999878" TYPE="POINT" NAME="Point 3"/>
+                                    <ELEM X="-3.313999891" Y="-0.1099999994" Z="0.1340000033" TYPE="POINT" NAME="Point 4"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="830" NAME="Interactive Triangle">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="TRIANGLE" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Triangle">
+                                    <ELEM X="-2.674000025" Y="-0.8759999871" Z="0.8489999771" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-2.427999973" Y="-0.8759999871" Z="-0.3689999878" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.125999928" Y="-0.8759999871" Z="-0.4819999933" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="832" NAME="Interactive Triangle (2)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="TRIANGLE" REVERSE_NORMAL="true" TYPE="SHAPE" NAME="Triangle">
+                                    <ELEM X="-2.674000025" Y="-0.1099999994" Z="0.8489999771" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-2.427999973" Y="-0.1099999994" Z="-0.3689999878" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.125999928" Y="-0.1099999994" Z="-0.4819999933" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="831" NAME="Interactive Quadrangle (4)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="QUADRANGLE" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Quadrangle">
+                                    <ELEM X="-2.674000025" Y="-0.8759999871" Z="0.8489999771" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-3.594000101" Y="-0.8759999871" Z="0.5170000196" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-3.313999891" Y="-0.8759999871" Z="0.1340000033" TYPE="POINT" NAME="Point 3"/>
+                                    <ELEM X="-2.427999973" Y="-0.8759999871" Z="-0.3689999878" TYPE="POINT" NAME="Point 4"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="836" NAME="Interactive Quadrangle (5)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="QUADRANGLE" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Quadrangle">
+                                    <ELEM X="-1.246234417" Y="-0.04500786215" Z="-0.1464897543" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-1.246234417" Y="-0.9409921169" Z="-0.1464897543" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.125999928" Y="-0.8759999871" Z="-0.4819999933" TYPE="POINT" NAME="Point 3"/>
+                                    <ELEM X="-2.125999928" Y="-0.1099999994" Z="-0.4819999933" TYPE="POINT" NAME="Point 4"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="837" NAME="Interactive Quadrangle (6)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="QUADRANGLE" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Quadrangle">
+                                    <ELEM X="-2.427999973" Y="-0.6700000167" Z="-0.3689999878" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-2.762000084" Y="-0.6230000257" Z="0.1340000033" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.762000084" Y="-0.3630000055" Z="0.1340000033" TYPE="POINT" NAME="Point 3"/>
+                                    <ELEM X="-2.427999973" Y="-0.3160000145" Z="-0.3689999878" TYPE="POINT" NAME="Point 4"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="838" NAME="Interactive Triangle (3)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="TRIANGLE" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Triangle">
+                                    <ELEM X="-2.762000084" Y="-0.3630000055" Z="0.1340000033" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-3.313999891" Y="-0.3160000145" Z="0.1340000033" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.427999973" Y="-0.3160000145" Z="-0.3689999878" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="839" NAME="Interactive Triangle (4)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="TRIANGLE" REVERSE_NORMAL="true" TYPE="SHAPE" NAME="Triangle">
+                                    <ELEM X="-2.762000084" Y="-0.6230000257" Z="0.1340000033" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-3.313999891" Y="-0.6700000167" Z="0.1340000033" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.427999973" Y="-0.6700000167" Z="-0.3689999878" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="862" NAME="Interactive Quadrangle (7)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="QUADRANGLE" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Quadrangle">
+                                    <ELEM X="-2.674000025" Y="-0.8759999871" Z="0.8489999771" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-2.125999928" Y="-0.8759999871" Z="-0.4819999933" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.246234417" Y="-0.9409921169" Z="-0.1464897543" TYPE="POINT" NAME="Point 3"/>
+                                    <ELEM X="-1.25" Y="-0.9670000076" Z="0.8519999981" TYPE="POINT" NAME="Point 4"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER NAME="Bulk"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="840" NAME="Optical">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="842" NAME="New Paraboloid">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="PARABOLA_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Paraboloid 3 points">
+                                    <ELEM X="-3" Y="-0.5" Z="0.35" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-3" Y="-0.5" Z="0.28" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-3.175" Y="-0.5" Z="0.28" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="COLOR" NAME="COLOR">
+                            <ELEM G="0.3658138429" TYPE="COLOR" NAME="COLOR" R="0.5413870401" B="0.6396396396"/>
+                        </NODE_ATTRIBUTE>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER NAME="Bulk" INHERITED="FALSE"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="OBJECT" REFOBJ_ID="863" NAME="Ins +Y">
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="864" NAME="HRV">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="865" NAME="Interactive Quadrangle">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="QUADRANGLE" REVERSE_NORMAL="true" TYPE="SHAPE" NAME="Quadrangle">
+                                    <ELEM X="-1.25" Y="0.0189999789" Z="0.8519999981" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-2.674000025" Y="0.1099999994" Z="0.8489999771" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.674000025" Y="0.8759999871" Z="0.8489999771" TYPE="POINT" NAME="Point 3"/>
+                                    <ELEM X="-1.25" Y="0.9669999871" Z="0.8519999981" TYPE="POINT" NAME="Point 4"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="866" NAME="Interactive Rectangle (2)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-3.594000101" Y="0.1099999994" Z="0.5170000196" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-3.594000101" Y="0.8759999871" Z="0.5170000196" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-3.313999891" Y="0.1099999994" Z="0.1340000033" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="867" NAME="Interactive Rectangle">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-2.674000025" Y="0.1099999994" Z="0.8489999771" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-2.674000025" Y="0.8759999871" Z="0.8489999771" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-3.594000101" Y="0.1099999994" Z="0.5170000196" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="868" NAME="Interactive Rectangle (3)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-3.313999891" Y="0.1099999994" Z="0.1340000033" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-3.313999891" Y="0.3159999698" Z="0.1340000033" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.427999973" Y="0.1099999994" Z="-0.3689999878" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="869" NAME="Interactive Rectangle (4)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-3.313999891" Y="0.669999972" Z="0.1340000033" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-3.313999891" Y="0.8759999871" Z="0.1340000033" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.427999973" Y="0.8759999871" Z="-0.3689999878" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="870" NAME="Interactive Rectangle (5)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-2.427999973" Y="0.1099999994" Z="-0.3689999878" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-2.427999973" Y="0.8759999871" Z="-0.3689999878" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.125999928" Y="0.1099999994" Z="-0.4819999933" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="871" NAME="Interactive Quadrangle (2)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="QUADRANGLE" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Quadrangle">
+                                    <ELEM X="-2.674000025" Y="0.8759999871" Z="0.8489999771" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-1.25" Y="0.9669999871" Z="0.8519999981" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.246234417" Y="0.9409921244" Z="-0.1464897543" TYPE="POINT" NAME="Point 3"/>
+                                    <ELEM X="-2.125999928" Y="0.8759999871" Z="-0.4819999933" TYPE="POINT" NAME="Point 4"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="872" NAME="Interactive Quadrangle (3)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="QUADRANGLE" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Quadrangle">
+                                    <ELEM X="-3.594000101" Y="0.8759999871" Z="0.5170000196" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-2.674000025" Y="0.8759999871" Z="0.8489999771" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.427999973" Y="0.8759999871" Z="-0.3689999878" TYPE="POINT" NAME="Point 3"/>
+                                    <ELEM X="-3.313999891" Y="0.8759999871" Z="0.1340000033" TYPE="POINT" NAME="Point 4"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="873" NAME="Interactive Triangle">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="TRIANGLE" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Triangle">
+                                    <ELEM X="-2.674000025" Y="0.1099999994" Z="0.8489999771" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-2.427999973" Y="0.1099999994" Z="-0.3689999878" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.125999928" Y="0.1099999994" Z="-0.4819999933" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="874" NAME="Interactive Triangle (2)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="TRIANGLE" REVERSE_NORMAL="true" TYPE="SHAPE" NAME="Triangle">
+                                    <ELEM X="-2.674000025" Y="0.8759999871" Z="0.8489999771" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-2.427999973" Y="0.8759999871" Z="-0.3689999878" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.125999928" Y="0.8759999871" Z="-0.4819999933" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="875" NAME="Interactive Quadrangle (4)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="QUADRANGLE" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Quadrangle">
+                                    <ELEM X="-2.674000025" Y="0.1099999994" Z="0.8489999771" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-3.594000101" Y="0.1099999994" Z="0.5170000196" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-3.313999891" Y="0.1099999994" Z="0.1340000033" TYPE="POINT" NAME="Point 3"/>
+                                    <ELEM X="-2.427999973" Y="0.1099999994" Z="-0.3689999878" TYPE="POINT" NAME="Point 4"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="876" NAME="Interactive Quadrangle (5)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="QUADRANGLE" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Quadrangle">
+                                    <ELEM X="-1.246234417" Y="0.9409921244" Z="-0.1464897543" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-1.246234417" Y="0.0450078696" Z="-0.1464897543" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.125999928" Y="0.1099999994" Z="-0.4819999933" TYPE="POINT" NAME="Point 3"/>
+                                    <ELEM X="-2.125999928" Y="0.8759999871" Z="-0.4819999933" TYPE="POINT" NAME="Point 4"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="877" NAME="Interactive Quadrangle (6)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="QUADRANGLE" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Quadrangle">
+                                    <ELEM X="-2.427999973" Y="0.3159999698" Z="-0.3689999878" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-2.762000084" Y="0.3629999608" Z="0.1340000033" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.762000084" Y="0.622999981" Z="0.1340000033" TYPE="POINT" NAME="Point 3"/>
+                                    <ELEM X="-2.427999973" Y="0.669999972" Z="-0.3689999878" TYPE="POINT" NAME="Point 4"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="878" NAME="Interactive Triangle (3)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="TRIANGLE" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Triangle">
+                                    <ELEM X="-2.762000084" Y="0.622999981" Z="0.1340000033" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-3.313999891" Y="0.669999972" Z="0.1340000033" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.427999973" Y="0.669999972" Z="-0.3689999878" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="879" NAME="Interactive Triangle (4)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="TRIANGLE" REVERSE_NORMAL="true" TYPE="SHAPE" NAME="Triangle">
+                                    <ELEM X="-2.762000084" Y="0.3629999608" Z="0.1340000033" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-3.313999891" Y="0.3159999698" Z="0.1340000033" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-2.427999973" Y="0.3159999698" Z="-0.3689999878" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="880" NAME="Interactive Quadrangle (7)">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="QUADRANGLE" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Quadrangle">
+                                    <ELEM X="-2.674000025" Y="0.1099999994" Z="0.8489999771" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-2.125999928" Y="0.1099999994" Z="-0.4819999933" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-1.246234417" Y="0.04500786957" Z="-0.1464897543" TYPE="POINT" NAME="Point 3"/>
+                                    <ELEM X="-1.25" Y="0.01899997887" Z="0.8519999981" TYPE="POINT" NAME="Point 4"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER NAME="Bulk"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="881" NAME="Optical">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="882" NAME="New Paraboloid">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="PARABOLA_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Paraboloid 3 points">
+                                    <ELEM X="-3" Y="0.4859999865" Z="0.35" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-3" Y="0.4859999865" Z="0.28" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-3.175" Y="0.4859999865" Z="0.28" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="COLOR" NAME="COLOR">
+                            <ELEM G="0.3658138429" TYPE="COLOR" NAME="COLOR" R="0.5413870401" B="0.6396396396"/>
+                        </NODE_ATTRIBUTE>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER NAME="Bulk" INHERITED="FALSE"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                    <CONTENER NAME="Bulk" INHERITED="FALSE">
+                        <ELEM TYPE="STRING" ID="ActivityId" STR="BOTHFACE"/>
+                    </CONTENER>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="3" NAME="Solar array">
+                <DATA_NODE TYPE="OBJECT" REFOBJ_ID="126" NAME="-Y">
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="127" NAME="New Rectangle">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                            <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                <ELEM X="0" Y="-1" Z="1.8" TYPE="POINT" NAME="Point 1"/>
+                                <ELEM X="0" Y="1" Z="1.8" TYPE="POINT" NAME="Point 2"/>
+                                <ELEM X="0" Y="1" Z="4.2" TYPE="POINT" NAME="Point 3"/>
+                            </ELEM>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="128" NAME="New Rectangle (2)">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                            <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                <ELEM X="0" Y="-1" Z="1.8" TYPE="POINT" NAME="Point 1"/>
+                                <ELEM X="0" Y="1" Z="1.8" TYPE="POINT" NAME="Point 2"/>
+                                <ELEM X="0" Y="1" Z="4.2" TYPE="POINT" NAME="Point 3"/>
+                            </ELEM>
+                        </NODE_ATTRIBUTE>
+                        <NODE_ATTRIBUTE TYPE="AXIS" NAME="AXIS">
+                            <ELEM AXISTYPE="TRAROT" TYPE="AXIS" NAME="Translations and rotations">
+                                <ELEM AXISTYPE="TRANSLATION" TYPE="AXIS" NAME="X, Y or Z translation">
+                                    <ELEM TYPE="STRING" NAME="Direction" STR="TRAZ"/>
+                                    <ELEM L="2.6" TYPE="LENGTH" NAME="Distance"/>
+                                </ELEM>
+                            </ELEM>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="884" NAME="New Rectangle (3)">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                            <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                <ELEM X="0" Y="-1" Z="1.8" TYPE="POINT" NAME="Point 1"/>
+                                <ELEM X="0" Y="1" Z="1.8" TYPE="POINT" NAME="Point 2"/>
+                                <ELEM X="0" Y="1" Z="4.2" TYPE="POINT" NAME="Point 3"/>
+                            </ELEM>
+                        </NODE_ATTRIBUTE>
+                        <NODE_ATTRIBUTE TYPE="AXIS" NAME="AXIS">
+                            <ELEM AXISTYPE="TRAROT" TYPE="AXIS" NAME="Translations and rotations">
+                                <ELEM AXISTYPE="TRANSLATION" TYPE="AXIS" NAME="X, Y or Z translation">
+                                    <ELEM TYPE="STRING" NAME="Direction" STR="TRAZ"/>
+                                    <ELEM L="5.2" TYPE="LENGTH" NAME="Distance"/>
+                                </ELEM>
+                            </ELEM>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="143" NAME="New Rectangle (4)">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                            <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                <ELEM X="0" Y="-1" Z="1.8" TYPE="POINT" NAME="Point 1"/>
+                                <ELEM X="0" Y="1" Z="1.8" TYPE="POINT" NAME="Point 2"/>
+                                <ELEM X="0" Y="1" Z="4.2" TYPE="POINT" NAME="Point 3"/>
+                            </ELEM>
+                        </NODE_ATTRIBUTE>
+                        <NODE_ATTRIBUTE TYPE="AXIS" NAME="AXIS">
+                            <ELEM AXISTYPE="TRAROT" TYPE="AXIS" NAME="Translations and rotations">
+                                <ELEM AXISTYPE="TRANSLATION" TYPE="AXIS" NAME="X, Y or Z translation">
+                                    <ELEM TYPE="STRING" NAME="Direction" STR="TRAZ"/>
+                                    <ELEM L="7.8" TYPE="LENGTH" NAME="Distance"/>
+                                </ELEM>
+                            </ELEM>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="AXIS" NAME="AXIS">
+                        <ELEM AXISTYPE="TRANSLATION" TYPE="AXIS" NAME="X, Y or Z translation">
+                            <ELEM TYPE="STRING" NAME="Translation direction" STR="TRAZ"/>
+                            <ELEM L="0.6" TYPE="LENGTH" NAME="Distance"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                        <CONTENER NAME="Bulk"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="OBJECT" REFOBJ_ID="885" NAME="+Y">
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="886" NAME="New Rectangle">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                            <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                <ELEM X="0" Y="-1" Z="1.8" TYPE="POINT" NAME="Point 1"/>
+                                <ELEM X="0" Y="1" Z="1.8" TYPE="POINT" NAME="Point 2"/>
+                                <ELEM X="0" Y="1" Z="4.2" TYPE="POINT" NAME="Point 3"/>
+                            </ELEM>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="887" NAME="New Rectangle (2)">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                            <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                <ELEM X="0" Y="-1" Z="1.8" TYPE="POINT" NAME="Point 1"/>
+                                <ELEM X="0" Y="1" Z="1.8" TYPE="POINT" NAME="Point 2"/>
+                                <ELEM X="0" Y="1" Z="4.2" TYPE="POINT" NAME="Point 3"/>
+                            </ELEM>
+                        </NODE_ATTRIBUTE>
+                        <NODE_ATTRIBUTE TYPE="AXIS" NAME="AXIS">
+                            <ELEM AXISTYPE="TRAROT" TYPE="AXIS" NAME="Translations and rotations">
+                                <ELEM AXISTYPE="TRANSLATION" TYPE="AXIS" NAME="X, Y or Z translation">
+                                    <ELEM TYPE="STRING" NAME="Direction" STR="TRAZ"/>
+                                    <ELEM L="2.6" TYPE="LENGTH" NAME="Distance"/>
+                                </ELEM>
+                            </ELEM>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="888" NAME="New Rectangle (3)">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                            <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                <ELEM X="0" Y="-1" Z="1.8" TYPE="POINT" NAME="Point 1"/>
+                                <ELEM X="0" Y="1" Z="1.8" TYPE="POINT" NAME="Point 2"/>
+                                <ELEM X="0" Y="1" Z="4.2" TYPE="POINT" NAME="Point 3"/>
+                            </ELEM>
+                        </NODE_ATTRIBUTE>
+                        <NODE_ATTRIBUTE TYPE="AXIS" NAME="AXIS">
+                            <ELEM AXISTYPE="TRAROT" TYPE="AXIS" NAME="Translations and rotations">
+                                <ELEM AXISTYPE="TRANSLATION" TYPE="AXIS" NAME="X, Y or Z translation">
+                                    <ELEM TYPE="STRING" NAME="Direction" STR="TRAZ"/>
+                                    <ELEM L="5.2" TYPE="LENGTH" NAME="Distance"/>
+                                </ELEM>
+                            </ELEM>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="144" NAME="New Rectangle (4)">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                            <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                <ELEM X="0" Y="-1" Z="1.8" TYPE="POINT" NAME="Point 1"/>
+                                <ELEM X="0" Y="1" Z="1.8" TYPE="POINT" NAME="Point 2"/>
+                                <ELEM X="0" Y="1" Z="4.2" TYPE="POINT" NAME="Point 3"/>
+                            </ELEM>
+                        </NODE_ATTRIBUTE>
+                        <NODE_ATTRIBUTE TYPE="AXIS" NAME="AXIS">
+                            <ELEM AXISTYPE="TRAROT" TYPE="AXIS" NAME="Translations and rotations">
+                                <ELEM AXISTYPE="TRANSLATION" TYPE="AXIS" NAME="X, Y or Z translation">
+                                    <ELEM TYPE="STRING" NAME="Direction" STR="TRAZ"/>
+                                    <ELEM L="7.8" TYPE="LENGTH" NAME="Distance"/>
+                                </ELEM>
+                            </ELEM>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="AXIS" NAME="AXIS">
+                        <ELEM AXISTYPE="TRAROT" TYPE="AXIS" NAME="Translations and rotations">
+                            <ELEM AXISTYPE="ROTATION" TYPE="AXIS" NAME="X, Y or Z rotation">
+                                <ELEM TYPE="STRING" NAME="Rotation axis" STR="ROTX"/>
+                                <ELEM ANGLE="180" TYPE="ANGLE" NAME="Angle"/>
+                            </ELEM>
+                            <ELEM AXISTYPE="TRANSLATION" TYPE="AXIS" NAME="X, Y or Z translation">
+                                <ELEM TYPE="STRING" NAME="Translation direction" STR="TRAZ"/>
+                                <ELEM L="0.6" TYPE="LENGTH" NAME="Distance"/>
+                            </ELEM>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                        <CONTENER NAME="Bulk"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="COLOR" NAME="COLOR">
+                    <ELEM G="0.4358131224" TYPE="COLOR" NAME="COLOR" R="0.1613287878" B="0.6"/>
+                </NODE_ATTRIBUTE>
+                <NODE_ATTRIBUTE TYPE="AXIS" NAME="AXIS">
+                    <ELEM AXISTYPE="TRAROT" TYPE="AXIS" NAME="Translations and rotations">
+                        <ELEM AXISTYPE="ROTATION" TYPE="AXIS" NAME="X, Y or Z rotation">
+                            <ELEM TYPE="STRING" NAME="Axis" STR="ROTX"/>
+                            <ELEM ANGLE="90" TYPE="ANGLE" NAME="Angle"/>
+                        </ELEM>
+                        <ELEM AXISTYPE="ROTATION" TYPE="AXIS" NAME="X, Y or Z rotation">
+                            <ELEM TYPE="STRING" NAME="Axis" STR="ROTZ"/>
+                            <ELEM ANGLE="90" TYPE="ANGLE" NAME="Angle"/>
+                        </ELEM>
+                    </ELEM>
+                </NODE_ATTRIBUTE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                    <CONTENER NAME="Bulk" INHERITED="FALSE"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <NODE_ATTRIBUTE TYPE="COLOR" NAME="COLOR">
+                <ELEM G="0.6396396396" TYPE="COLOR" NAME="COLOR" R="0.6396396396" B="0.6396396396"/>
+            </NODE_ATTRIBUTE>
+            <NODE_ATTRIBUTE TYPE="MATREF" NAME="MATREF_Dosrad">
+                <ELEM TYPE="MATREF">
+                    <ELEM TYPE="BOOLEAN" ID="EnableMaterialDatabase" NAME="Use default material database" VALUE="false"/>
+                    <ELEM FILE_PATH="C:/GettingStarted/MySat/DosradBulk.sysmtr" TYPE="FILE_DESCRIPTION" ID="MaterialDatabaseFile" FILE_FORMAT="" NAME="Material database" FILE_RELATIVE_PATH="./DosradBulk.sysmtr"/>
+                </ELEM>
+            </NODE_ATTRIBUTE>
+        </DATA_NODE>
+    </DATA_STRUCTURE>
+</SYSML>

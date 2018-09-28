@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.7" CONTENTS="TRAJECTORY" SAVEDATE="1512126001" SYSTEMA_VERSION="4.8.0">
+    <DATA_STRUCTURE NAME="Spot-BOL.systrj" REFSET_ID="{7d737cbf-8e48-4290-ac3c-5de9129d48a9}">
+        <DATA_NODE TYPE="TRAJECTORY_DN" REFOBJ_ID="2" NAME="Trajectory">
+            <DATA_NODE TYPE="GENERIC_NODE" REFOBJ_ID="3" NAME="Arcs">
+                <DATA_NODE TYPE="ARC_DN" REFOBJ_ID="5" NAME="New Sun synchronous">
+                    <NODE_ATTRIBUTE TYPE="INTERVAL_ATT" NAME="INTERVAL">
+                        <ELEM TYPE="SYS_INTERVAL_ELEM">
+                            <ELEM TYPE="DNLINK" REFOBJ_ID="0" REFSET_ID="INVALID" SELF="true"/>
+                            <ELEM TYPE="STRING" NAME="EVENT_IN" STR="EVENT_IN"/>
+                            <ELEM TYPE="DNLINK" REFOBJ_ID="0" REFSET_ID="INVALID" SELF="true"/>
+                            <ELEM TYPE="STRING" NAME="EVENT_OUT" STR="EVENT_OUT"/>
+                            <ELEM TYPE="STRING" STR="Arcs"/>
+                            <ELEM TYPE="STRING" STR="Arc"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="ORBIT_ATT" NAME="ORBIT">
+                        <ELEM ORBITTYPE="Sun synchronous" TYPE="ORBIT_ELEM" NAME="heliosynchrone">
+                            <ELEM TYPE="STRING" NAME="Ascending node definition" STR="Mean solar time"/>
+                            <ELEM TYPE="VALUE" NAME="Ascending node longitude" VALUE="0"/>
+                            <ELEM HOUR="22.5" TYPE="HOUR" NAME="Ascending node solar time"/>
+                            <ELEM TYPE="INTEGER" NAME="n" VALUE="0"/>
+                            <ELEM TYPE="INTEGER" NAME="p" VALUE="0"/>
+                            <ELEM TYPE="INTEGER" NAME="q" VALUE="0"/>
+                            <ELEM TYPE="STRING" NAME="Orbit configuration" STR="ALTITUDE"/>
+                            <ELEM TYPE="VALUE" NAME="Anomaly" VALUE="0"/>
+                            <ELEM TYPE="VALUE" NAME="Altitude" VALUE="830"/>
+                            <ELEM TYPE="DATE" DateTYPE="DATE_WRAPPER" NAME="Time">
+                                <ELEM TYPE="DATE" DateTYPE="SEASON" NAME="Time">
+                                    <ELEM TYPE="STRING" NAME="event" STR="WINTER"/>
+                                    <ELEM TYPE="INTEGER" NAME="year" VALUE="2017"/>
+                                </ELEM>
+                            </ELEM>
+                            <ELEM TYPE="STRING" NAME="Orbit reference" STR="Earth"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="EVENT_ATT" NAME="EVENT_IN">
+                        <ELEM TYPE="EVENT_ELEM">
+                            <ELEM TYPE="DATE" DateTYPE="DATE_WRAPPER" NAME="Start">
+                                <ELEM TYPE="DATE" DateTYPE="SEASON" NAME="Start">
+                                    <ELEM TYPE="STRING" NAME="event" STR="WINTER"/>
+                                    <ELEM TYPE="INTEGER" NAME="year" VALUE="2017"/>
+                                </ELEM>
+                            </ELEM>
+                            <ELEM TYPE="DNLINK" REFOBJ_ID="0" REFSET_ID="INVALID" SELF="true"/>
+                            <ELEM TYPE="STRING" STR="Arcs"/>
+                            <ELEM TYPE="STRING" STR="Arc"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="EVENT_ATT" NAME="EVENT_OUT">
+                        <ELEM TYPE="EVENT_ELEM">
+                            <ELEM TYPE="DATE" DateTYPE="DATE_WRAPPER" NAME="End">
+                                <ELEM TYPE="DATE" DateTYPE="Revolution" NAME="new date out">
+                                    <ELEM TYPE="DNLINK" REFOBJ_ID="0" NAME="Arc reference" REFSET_ID="INVALID" SELF="true"/>
+                                    <ELEM TYPE="VALUE" NAME="Revolution" VALUE="1"/>
+                                </ELEM>
+                            </ELEM>
+                            <ELEM TYPE="DNLINK" REFOBJ_ID="0" REFSET_ID="INVALID" SELF="true"/>
+                            <ELEM TYPE="STRING" STR="Arcs"/>
+                            <ELEM TYPE="STRING" STR="Arc"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+            </DATA_NODE>
+            <NODE_ATTRIBUTE TYPE="TRAJECTORY_ATT" NAME="TRAJECTORY">
+                <ELEM TYPE="TRAJECTORY_ELEM">
+                    <ELEM TYPE="STRING" NAME="PLANET" STR="Earth"/>
+                </ELEM>
+            </NODE_ATTRIBUTE>
+        </DATA_NODE>
+    </DATA_STRUCTURE>
+</SYSML>

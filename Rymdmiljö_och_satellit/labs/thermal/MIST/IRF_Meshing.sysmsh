@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.7" CONTENTS="MESHING" SAVEDATE="1513348326" SYSTEMA_VERSION="4.8.0">
+    <DATA_STRUCTURE NAME="IRF_Meshing.sysmsh" REFSET_ID="{5d440099-cacb-4e48-b69e-eb85384f88a5}">
+        <DATA_NODE TYPE="MESHING" REFOBJ_ID="2" NAME="Meshing">
+            <DATA_NODE TYPE="VIRTUAL_NODE" REFOBJ_ID="4" NAME="Specific items">
+                <DATA_NODE TYPE="VIRTUAL_CONTAINER_NODE" REFOBJ_ID="5" NAME="Computing">
+                    <DATA_NODE TYPE="VIRTUAL_CONTAINER_NODE" REFOBJ_ID="6" NAME="Volumes"/>
+                    <DATA_NODE TYPE="VIRTUAL_CONTAINER_NODE" REFOBJ_ID="7" NAME="Honeycomb"/>
+                </DATA_NODE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="GEOMETRY_ROOT_NODE" REFOBJ_ID="3" NAME="Geometric meshing">
+                <DATA_NODE TYPE="MESH_OBJECT" REFOBJ_ID="9" NAME="Platform">
+                    <DATA_NODE TYPE="MESH_OBJECT" REFOBJ_ID="10" NAME="Ext">
+                        <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="11" NAME="-Ys wall">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="11" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="1275" NAME="-Ys wall shell">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="107" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="12" NAME="+Ys wall">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="13" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="1276" NAME="+Ys wall shell">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="106" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="13" NAME="-Zs wall">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="14" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="1277" NAME="-Zs wall shell">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="104" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="14" NAME="+Zs wall">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="15" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="1278" NAME="+Zs wall shell">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="103" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="15" NAME="Bottom plate">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="16" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="1279" NAME="Bottom plate shell">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="105" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="5" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MESH_OBJECT" REFOBJ_ID="16" NAME="Equipment">
+                        <DATA_NODE TYPE="MESH_OBJECT" REFOBJ_ID="17" NAME="IRF Instrument">
+                            <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="18" NAME="+X Wall">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="23" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="19" NAME="-X Wall">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="24" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="20" NAME="+Y Wall">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="25" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="21" NAME="-Y Wall">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="26" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="22" NAME="+Z Wall">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="27" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="23" NAME="-Z Wall">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="28" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="7" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            <NODE_ATTRIBUTE TYPE="MESHING_PARAMS_ATT" NAME="MESHING PARAMETERS">
+                                <ELEM TYPE="MESHING_PARAMETERS" ID="MESHING_PARAMETERS">
+                                    <ELEM TYPE="INTEGER" ID="a" VALUE="10"/>
+                                    <ELEM TYPE="INTEGER" ID="b" VALUE="20"/>
+                                    <ELEM TYPE="INTEGER" ID="c" VALUE="1"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MESH_OBJECT" REFOBJ_ID="24" NAME="Propulsion tank">
+                            <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="25" NAME="Tank cylinder">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="21" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="26" NAME="+X disc">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="35" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="27" NAME="Tank bottom plate">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="36" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="8" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MESH_OBJECT" REFOBJ_ID="28" NAME="Biological instrument">
+                            <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="29" NAME="+X Wall">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="29" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="30" NAME="+Y Wall">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="30" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="31" NAME="-Y Wall">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="31" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="32" NAME="-X Wall">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="32" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="33" NAME="-Z Wall">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="33" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="34" NAME="+Z Wall">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="34" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="9" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MESH_OBJECT" REFOBJ_ID="35" NAME="Battery">
+                            <DATA_NODE TYPE="MESH_OBJECT" REFOBJ_ID="36" NAME="Battery 1">
+                                <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="37" NAME="Battery cylinder">
+                                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="38" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                                </DATA_NODE>
+                                <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="38" NAME="Battery base">
+                                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="39" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                                </DATA_NODE>
+                                <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="39" NAME="Battery top">
+                                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="40" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                                </DATA_NODE>
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="37" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MESH_OBJECT" REFOBJ_ID="40" NAME="Battery 2">
+                                <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="41" NAME="Battery cylinder">
+                                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="54" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                                </DATA_NODE>
+                                <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="42" NAME="Battery base">
+                                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="55" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                                </DATA_NODE>
+                                <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="43" NAME="Battery top">
+                                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="56" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                                </DATA_NODE>
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="53" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MESH_OBJECT" REFOBJ_ID="44" NAME="Battery 3">
+                                <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="45" NAME="Battery cylinder">
+                                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="58" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                                </DATA_NODE>
+                                <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="46" NAME="Battery base">
+                                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="59" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                                </DATA_NODE>
+                                <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="47" NAME="Battery top">
+                                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="60" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                                </DATA_NODE>
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="57" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MESH_OBJECT" REFOBJ_ID="48" NAME="Battery 4">
+                                <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="49" NAME="Battery cylinder">
+                                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="62" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                                </DATA_NODE>
+                                <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="50" NAME="Battery base">
+                                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="63" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                                </DATA_NODE>
+                                <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="51" NAME="Battery top">
+                                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="64" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                                </DATA_NODE>
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="61" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="10" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="52" NAME="Equipment Heart">
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="17" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="MESH_OBJECT" REFOBJ_ID="1262" NAME="CUBES">
+                            <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="1268" NAME="Board">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="91" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="1269" NAME="CUBE 1">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="92" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="1272" NAME="CUBE 2">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="101" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="1273" NAME="CUBE 3">
+                                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="102" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                            </DATA_NODE>
+                            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="67" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="6" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="3" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                </DATA_NODE>
+                <DATA_NODE TYPE="MESH_OBJECT" REFOBJ_ID="53" NAME="Solar Array">
+                    <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="54" NAME="+Z panel">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="65" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="1280" NAME="+Z panel shell">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="108" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="55" NAME="-Z panel">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="66" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MESHING_SHAPE" REFOBJ_ID="1281" NAME="-Z panel shell">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="109" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="4" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="2" NAME="REF" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}"/>
+            </DATA_NODE>
+            <NODE_ATTRIBUTE TYPE="MODELREF_ATT" NAME="MODEL">
+                <ELEM FILE_PATH="C:/Users/yj/Documents/MIST/MISTmodel_cubes.sysmdl" TYPE="FILE_DESCRIPTION" FILE_FORMAT="sysmdl" NAME="MODEL" FILE_RELATIVE_PATH="./MISTmodel_cubes.sysmdl"/>
+            </NODE_ATTRIBUTE>
+            <NODE_ATTRIBUTE TYPE="APP_NAME_ATT" NAME="APPLICATION NAME">
+                <ELEM TYPE="STRING" STR="Dosrad"/>
+            </NODE_ATTRIBUTE>
+            <NODE_ATTRIBUTE TYPE="BOOLEANATT" NAME="LABEL_DISP_NAME">
+                <ELEM TYPE="BOOLEAN" NAME="LABEL_DISP_NAME" VALUE="false"/>
+            </NODE_ATTRIBUTE>
+        </DATA_NODE>
+    </DATA_STRUCTURE>
+</SYSML>

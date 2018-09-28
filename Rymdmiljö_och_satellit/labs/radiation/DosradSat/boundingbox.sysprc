@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.6" CONTENTS="PROCESSING" SAVEDATE="1331317802" SYSTEMA_VERSION="4.5.0RC11">
+    <DATA_STRUCTURE NAME="boundingbox.sysprc" REFSET_ID="{8388360d-3e25-4127-bc1a-bc2d1da6e674}">
+        <DATA_NODE TYPE="PROCESSING" REFOBJ_ID="4" NAME="New Processing">
+            <DATA_NODE TYPE="PROCESSING" REFOBJ_ID="5" NAME="ProcessesRep">
+                <DATA_NODE TYPE="MISSION_GENE" REFOBJ_ID="14" NAME="Mission">
+                    <NODE_ATTRIBUTE TYPE="APP_NAME_ATT" NAME="APPLICATION NAME">
+                        <ELEM TYPE="STRING" STR="Dosrad"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT0" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="16" NAME="DNLINK" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="CURMISSIONREF_ATT" NAME="EXPORTED MISSION">
+                        <ELEM TYPE="CURMISSIONREF_ELEM">
+                            <ELEM TYPE="STRING" STR="Mission"/>
+                            <ELEM FILE_PATH="" TYPE="FILE_DESCRIPTION" FILE_FORMAT="" FILE_RELATIVE_PATH=""/>
+                            <ELEM FILE_PATH="C:/GettingStarted/DosradSat/boundingbox.sysmis" TYPE="FILE_DESCRIPTION" FILE_FORMAT="" FILE_RELATIVE_PATH="./boundingbox.sysmis"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROCESS_LASTRUN" NAME="PROCESS_LASTRUN">
+                        <ELEM TYPE="VALUE" VALUE="1331317775"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE LASTCHANGE="1331317633" TYPE="PROCESS" REFOBJ_ID="26" NAME="BoundingBox">
+                    <NODE_ATTRIBUTE PROCESS_NAME="BoundingBox" APP_NAME="Dosrad" TYPE="PROCESS_DEF" NAME="PROCESS_DEF"/>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="16" NAME="DNLINK" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN1" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="28" NAME="DNLINK" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT0" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="30" NAME="DNLINK" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT1" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="32" NAME="DNLINK" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT2" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="34" NAME="DNLINK" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT3" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="36" NAME="DNLINK" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="RUN PARAMETERS" NAME="RUN PARAMETERS">
+                        <ELEM TYPE="RUN_PARAMETERS" ID="RUN_PARAMETERS"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROCESS_LASTRUN" NAME="PROCESS_LASTRUN">
+                        <ELEM TYPE="VALUE" VALUE="1331317799"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="PROCESSING" REFOBJ_ID="6" NAME="FilesRep">
+                <DATA_NODE TYPE="FILE" REFOBJ_ID="16" NAME="FILE">
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="14" NAME="DNLINK" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT0" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="26" NAME="DNLINK" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="FILE_DESC_ATT" NAME="FILE">
+                        <ELEM TYPE="STRING" STR="$(mission_name).sysset"/>
+                        <ELEM TYPE="BOOLEAN" NAME="Activated file" VALUE="true"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="FILE" REFOBJ_ID="28" NAME="FILE (2)">
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT0" POSITION="1">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="26" NAME="DNLINK" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="FILE_DESC_ATT" NAME="FILE">
+                        <ELEM FILE_PATH="C:/GettingStarted/DosradSat/test.dose" TYPE="FILE_DESCRIPTION" FILE_FORMAT="DOSE" FILE_RELATIVE_PATH="./test.dose"/>
+                        <ELEM TYPE="BOOLEAN" NAME="Activated file" VALUE="true"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="FILE" REFOBJ_ID="30" NAME="FILE (3)">
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="26" NAME="DNLINK" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="FILE_DESC_ATT" NAME="FILE">
+                        <ELEM TYPE="STRING" STR="$(mission_name).box.h5"/>
+                        <ELEM TYPE="BOOLEAN" NAME="Activated file" VALUE="true"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="FILE" REFOBJ_ID="32" NAME="FILE (4)">
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="1">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="26" NAME="DNLINK" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="FILE_DESC_ATT" NAME="FILE">
+                        <ELEM TYPE="STRING" STR="$(mission_name).rbox.h5"/>
+                        <ELEM TYPE="BOOLEAN" NAME="Activated file" VALUE="false"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="FILE" REFOBJ_ID="34" NAME="FILE (5)">
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="2">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="26" NAME="DNLINK" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="FILE_DESC_ATT" NAME="FILE">
+                        <ELEM TYPE="STRING" STR="$(mission_name).box.log"/>
+                        <ELEM TYPE="BOOLEAN" NAME="Activated file" VALUE="true"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="FILE" REFOBJ_ID="36" NAME="FILE (6)">
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="3">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="26" NAME="DNLINK" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="FILE_DESC_ATT" NAME="FILE">
+                        <ELEM TYPE="STRING" STR="$(mission_name).box.out"/>
+                        <ELEM TYPE="BOOLEAN" NAME="Activated file" VALUE="true"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="PROCESSING" REFOBJ_ID="8" NAME="ResultsRep">
+                <NODE_ATTRIBUTE TYPE="RESULT INFORMATIONS" NAME="RESULT INFORMATIONS">
+                    <ELEM TYPE="RUN_PARAMETERS" ID="RUN_PARAMETERS">
+                        <ELEM TYPE="STRING" ID="ResNameChoice" NAME="Automatic" STR="customResName"/>
+                        <ELEM TYPE="STRING" ID="ResultName" STR="$(mission_name)"/>
+                        <ELEM TYPE="STRING" ID="ResDirChoice" NAME="Default result directory" STR="defResDir"/>
+                        <ELEM DIR_PATH="" TYPE="DIRECTORY" ID="ResultDir"/>
+                        <ELEM TYPE="STRING" ID="subdirOptions" NAME="Yes" STR="noSubDir"/>
+                    </ELEM>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="PROCESSING" REFOBJ_ID="10" NAME="VariableOverload">
+                <NODE_ATTRIBUTE TYPE="VARIABLE OVERLOAD" NAME="VARIABLE_OVERLOAD">
+                    <ELEM TYPE="VAR_OVERLOAD_PARAMS" ID="VAR_OVERLOAD_PARAMS">
+                        <ELEM TYPE="VAR_OVERLOAD_CATEG" ID="Material" NAME="Material"/>
+                        <ELEM TYPE="VAR_OVERLOAD_CATEG" ID="Model" NAME="Model"/>
+                        <ELEM TYPE="VAR_OVERLOAD_CATEG" ID="Meshing" NAME="Meshing"/>
+                        <ELEM TYPE="VAR_OVERLOAD_CATEG" ID="Mission" NAME="Mission"/>
+                        <ELEM TYPE="VAR_OVERLOAD_CATEG" ID="Processing" NAME="Processing"/>
+                    </ELEM>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+        </DATA_NODE>
+    </DATA_STRUCTURE>
+</SYSML>

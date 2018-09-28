@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.7" CONTENTS="MISSION" SAVEDATE="1511438667" SYSTEMA_VERSION="4.8.0">
+    <DATA_STRUCTURE NAME="Cube-BOL.sysmis" REFSET_ID="{e91dac0f-1d85-4250-91e6-e44f0bf979c8}">
+        <DATA_NODE TYPE="MISSION" REFOBJ_ID="2" NAME="Mission">
+            <DATA_NODE TYPE="GENERIC_NODE" REFOBJ_ID="3" NAME="Sequences time items"/>
+            <DATA_NODE TYPE="GENERIC_NODE" REFOBJ_ID="4" NAME="Computation time items">
+                <DATA_NODE TYPE="CUSTOM_EVTSETRULE_NODE" REFOBJ_ID="6" NAME="Computation event rule (1)">
+                    <NODE_ATTRIBUTE TYPE="EVTSETRULE_ATT" NAME="EVTSETRULE">
+                        <ELEM TYPE="CUSTOMEVTSETRULE_ELEM">
+                            <ELEM TYPE="TIMEFREQ_WRAPPER">
+                                <ELEM TYPE="ANOMALYSTEP_FREQ">
+                                    <ELEM TYPE="VALUE" NAME="Anomaly step" VALUE="15"/>
+                                    <ELEM TYPE="BOOLEAN" NAME="Add a last computation point at the interval end" VALUE="true"/>
+                                </ELEM>
+                            </ELEM>
+                            <ELEM TYPE="TIMEZONE_WRAPPER">
+                                <ELEM TYPE="WHOLEMISSION_TIMEZONE"/>
+                            </ELEM>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="CUSTOM_EVTSETRULE_NODE" REFOBJ_ID="7" NAME="Computation event rule (2)">
+                    <NODE_ATTRIBUTE TYPE="EVTSETRULE_ATT" NAME="EVTSETRULE">
+                        <ELEM TYPE="CUSTOMEVTSETRULE_ELEM">
+                            <ELEM TYPE="TIMEFREQ_WRAPPER">
+                                <ELEM TYPE="ECLIPSE_REL_FREQ">
+                                    <ELEM TYPE="STRING" NAME="Selected intervals" STR="Eclipse &amp; penumbra"/>
+                                    <ELEM TYPE="STRING" NAME="Create start or end of selected intervals" STR="Start &amp; end"/>
+                                </ELEM>
+                            </ELEM>
+                            <ELEM TYPE="TIMEZONE_WRAPPER">
+                                <ELEM TYPE="WHOLEMISSION_TIMEZONE"/>
+                            </ELEM>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="GENERIC_NODE" REFOBJ_ID="5" NAME="Custom time items"/>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="8" NAME="Cube-BOL">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="9" NAME="Box">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="4" NAME="REF" REFSET_ID="{20066d38-85dc-41dd-9b11-63515dff9392}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="3" NAME="REF" REFSET_ID="{20066d38-85dc-41dd-9b11-63515dff9392}"/>
+                <NODE_ATTRIBUTE TYPE="KINEBODYLINKATT" NAME="KINEMATICS LINK">
+                    <ELEM TYPE="DNLINK" REFOBJ_ID="2" REFSET_ID="{18803ad4-c285-41c9-bdff-f254994c3559}" SELF="false"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <NODE_ATTRIBUTE TYPE="MODELREF_ATT" NAME="MODEL">
+                <ELEM FILE_PATH="C:/Users/yj/Documents/therm/Cube-BOL.sysmdl" TYPE="FILE_DESCRIPTION" FILE_FORMAT="sysmdl" NAME="MODEL" FILE_RELATIVE_PATH="./Cube-BOL.sysmdl"/>
+            </NODE_ATTRIBUTE>
+            <NODE_ATTRIBUTE TYPE="MESHINGREF_ATT" NAME="MESHING">
+                <ELEM FILE_PATH="C:/Users/yj/Documents/therm/Cube-BOL.sysmsh" TYPE="FILE_DESCRIPTION" FILE_FORMAT="sysmsh" NAME="MESHING" FILE_RELATIVE_PATH="./Cube-BOL.sysmsh"/>
+            </NODE_ATTRIBUTE>
+            <NODE_ATTRIBUTE TYPE="TRAJREF_ATT" NAME="TRAJECTORY">
+                <ELEM FILE_PATH="C:/Users/yj/Documents/therm/Cube-BOL.systrj" TYPE="FILE_DESCRIPTION" FILE_FORMAT="systrj" NAME="TRAJECTORY" FILE_RELATIVE_PATH="./Cube-BOL.systrj"/>
+            </NODE_ATTRIBUTE>
+            <NODE_ATTRIBUTE TYPE="KINEREF_ATT" NAME="KINEMATICS">
+                <ELEM FILE_PATH="C:/Users/yj/Documents/therm/Cube-BOL.syskin" TYPE="FILE_DESCRIPTION" FILE_FORMAT="syskin" NAME="KINEMATICS" FILE_RELATIVE_PATH="./Cube-BOL.syskin"/>
+            </NODE_ATTRIBUTE>
+            <NODE_ATTRIBUTE TYPE="KINEBODYLINKATT" NAME="KINEMATICS LINK">
+                <ELEM TYPE="DNLINK" REFOBJ_ID="2" REFSET_ID="{18803ad4-c285-41c9-bdff-f254994c3559}" SELF="false"/>
+            </NODE_ATTRIBUTE>
+            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="2" NAME="REF" REFSET_ID="{20066d38-85dc-41dd-9b11-63515dff9392}"/>
+        </DATA_NODE>
+    </DATA_STRUCTURE>
+</SYSML>

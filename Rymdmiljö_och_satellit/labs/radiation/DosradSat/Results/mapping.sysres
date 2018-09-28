@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.6" CONTENTS="RESULT" SAVEDATE="1331317835" SYSTEMA_VERSION="4.5.0RC11">
+    <RESULT NAME="mapping">
+        <RESULT_SET FILE_TYPE="MISSION_SET" FILE_PATH="mapping.sysset" TYPE="FILE" FILE_NAME="mapping.sysset" FILE_FORMAT="sysset"/>
+        <RESULT_SET FILE_TYPE="HDF5" FILE_PATH="mapping.map.h5" TYPE="FILE" FILE_NAME="mapping.map.h5" FILE_FORMAT="h5"/>
+        <RESULT_SET FILE_TYPE="TXT" FILE_PATH="mapping.map.log" TYPE="FILE" FILE_NAME="mapping.map.log" FILE_FORMAT="LOG"/>
+    </RESULT>
+</SYSML>

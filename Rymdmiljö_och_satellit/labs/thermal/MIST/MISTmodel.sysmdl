@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.7" CONTENTS="MODEL" SAVEDATE="1513341717" SYSTEMA_VERSION="4.8.0">
+    <DATA_STRUCTURE NAME="MISTmodel.sysmdl" REFSET_ID="{2de52f81-a3fe-4e97-9920-d3256c0da20e}">
+        <DATA_NODE TYPE="MODEL" REFOBJ_ID="2" NAME="MIST">
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="3" NAME="Platform">
+                <DATA_NODE TYPE="OBJECT" REFOBJ_ID="5" NAME="Ext">
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="11" NAME="-Ys wall">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                            <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                <ELEM X="-0.05" Y="-0.05" Z="-0.05" TYPE="POINT" NAME="Point 1"/>
+                                <ELEM X="-0.05" Y="-0.05" Z="0.05" TYPE="POINT" NAME="Point 2"/>
+                                <ELEM X="0.15" Y="-0.05" Z="-0.05" TYPE="POINT" NAME="Point 3"/>
+                            </ELEM>
+                        </NODE_ATTRIBUTE>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER TYPE="SHELL" NAME="Bulk">
+                                <FACE NAME="Alike sides">
+                                    <LAYER NAME="Layer 1">
+                                        <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                            <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.005"/>
+                                        </PROP_CATEGORY>
+                                        <PROP_CATEGORY NAME="Physical properties">
+                                            <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                        </PROP_CATEGORY>
+                                    </LAYER>
+                                </FACE>
+                            </CONTENER>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="13" NAME="+Ys wall">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                            <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                <ELEM X="-0.15" Y="0.05" Z="-0.05" TYPE="POINT" NAME="Point 1"/>
+                                <ELEM X="-0.15" Y="0.05" Z="0.05" TYPE="POINT" NAME="Point 2"/>
+                                <ELEM X="0.15" Y="0.05" Z="0" TYPE="POINT" NAME="Point 3"/>
+                            </ELEM>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="14" NAME="-Zs wall">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                            <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                <ELEM X="-0.15" Y="0.05" Z="-0.05" TYPE="POINT" NAME="Point 1"/>
+                                <ELEM X="-0.15" Y="-0.05" Z="-0.05" TYPE="POINT" NAME="Point 2"/>
+                                <ELEM X="0.15" Y="0" Z="-0.05" TYPE="POINT" NAME="Point 3"/>
+                            </ELEM>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="15" NAME="+Zs wall">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                            <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                <ELEM X="-0.15" Y="0.05" Z="0.05" TYPE="POINT" NAME="Point 1"/>
+                                <ELEM X="-0.15" Y="-0.05" Z="0.05" TYPE="POINT" NAME="Point 2"/>
+                                <ELEM X="0.15" Y="0" Z="0.05" TYPE="POINT" NAME="Point 3"/>
+                            </ELEM>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="16" NAME="Bottom plate">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                            <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                <ELEM X="-0.15" Y="0.05" Z="-0.05" TYPE="POINT" NAME="Point 1"/>
+                                <ELEM X="-0.15" Y="0.05" Z="0.05" TYPE="POINT" NAME="Point 2"/>
+                                <ELEM X="-0.15" Y="-0.05" Z="0" TYPE="POINT" NAME="Point 3"/>
+                            </ELEM>
+                        </NODE_ATTRIBUTE>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER TYPE="SHELL" NAME="Bulk" INHERITED="FALSE">
+                                <FACE NAME="Alike sides">
+                                    <LAYER NAME="Layer 1">
+                                        <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                            <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.001"/>
+                                        </PROP_CATEGORY>
+                                        <PROP_CATEGORY NAME="Physical properties">
+                                            <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                        </PROP_CATEGORY>
+                                    </LAYER>
+                                </FACE>
+                            </CONTENER>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="COLOR" NAME="COLOR">
+                        <ELEM G="0.1" TYPE="COLOR" NAME="COLOR" R="0.6" B="0.1"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                        <CONTENER TYPE="SHELL" NAME="Bulk" INHERITED="FALSE">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                        <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.003"/>
+                                    </PROP_CATEGORY>
+                                    <PROP_CATEGORY NAME="Physical properties">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="OBJECT" REFOBJ_ID="6" NAME="Equipment">
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="7" NAME="IRF Instrument">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="23" NAME="+X Wall">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.07" Y="0.048" Z="-0.048" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.07" Y="0.048" Z="0.048" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-0.07" Y="-0.048" Z="-0.048" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="24" NAME="-X Wall">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.11" Y="0.048" Z="-0.048" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.11" Y="0.048" Z="0.048" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-0.11" Y="-0.048" Z="-0.048" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="25" NAME="+Y Wall">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.07" Y="0.048" Z="-0.048" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.07" Y="0.048" Z="0.048" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-0.11" Y="0.048" Z="-0.048" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="26" NAME="-Y Wall">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.07" Y="-0.048" Z="-0.048" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.07" Y="-0.048" Z="0.048" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-0.11" Y="-0.048" Z="-0.048" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="27" NAME="+Z Wall">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.07" Y="0.048" Z="0.048" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.07" Y="-0.048" Z="0.048" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-0.11" Y="-0.048" Z="0.048" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="28" NAME="-Z Wall">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="-0.07" Y="0.048" Z="-0.048" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="-0.07" Y="-0.048" Z="-0.048" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="-0.11" Y="-0.048" Z="-0.048" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="COLOR" NAME="COLOR">
+                            <ELEM G="1" TYPE="COLOR" NAME="COLOR" R="0" B="0"/>
+                        </NODE_ATTRIBUTE>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER TYPE="SHELL" NAME="Bulk" INHERITED="FALSE">
+                                <FACE NAME="Alike sides">
+                                    <LAYER NAME="Layer 1">
+                                        <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                            <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.002"/>
+                                        </PROP_CATEGORY>
+                                        <PROP_CATEGORY NAME="Physical properties">
+                                            <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                        </PROP_CATEGORY>
+                                    </LAYER>
+                                </FACE>
+                            </CONTENER>
+                            <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="8" NAME="Propulsion tank">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="21" NAME="Tank cylinder">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="CYLINDER_SYSEXP" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="General truncated cylinder">
+                                    <ELEM X="0.15" Y="0" Z="0" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="0.19" Y="0" Z="0" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0" Y="1" Z="0" TYPE="POINT" NAME="Point 3"/>
+                                    <ELEM L="0.08" TYPE="LENGTH" NAME="Diameter"/>
+                                    <ELEM ANGLE="0" TYPE="ANGLE" NAME="Angle 1"/>
+                                    <ELEM ANGLE="360" TYPE="ANGLE" NAME="Angle 2"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="35" NAME="+X disc">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="DISC_SYSEXP" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="General truncated disc">
+                                    <ELEM X="0.19" Y="0" Z="0" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="1" Y="0" Z="0" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0" Y="0.04" Z="0" TYPE="POINT" NAME="Point 3"/>
+                                    <ELEM L="0.08" TYPE="LENGTH" NAME="Diameter 1"/>
+                                    <ELEM L="0" TYPE="LENGTH" NAME="Diameter 2"/>
+                                    <ELEM ANGLE="0" TYPE="ANGLE" NAME="Angle 1"/>
+                                    <ELEM ANGLE="360" TYPE="ANGLE" NAME="Angle 2"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="36" NAME="Tank bottom plate">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.15" Y="0.05" Z="-0.05" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="0.15" Y="0.05" Z="0.05" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.15" Y="-0.05" Z="0" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER TYPE="SHELL" NAME="Bulk" INHERITED="FALSE">
+                                <FACE NAME="Alike sides">
+                                    <LAYER NAME="Layer 1">
+                                        <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                            <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.0015"/>
+                                        </PROP_CATEGORY>
+                                        <PROP_CATEGORY NAME="Physical properties">
+                                            <ELEM TYPE="STRING" NAME="Selected material" STR="TA6V"/>
+                                        </PROP_CATEGORY>
+                                    </LAYER>
+                                </FACE>
+                            </CONTENER>
+                            <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                        </NODE_ATTRIBUTE>
+                        <NODE_ATTRIBUTE TYPE="COLOR" NAME="COLOR">
+                            <ELEM G="1" TYPE="COLOR" NAME="COLOR" R="1" B="0"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="9" NAME="Biological instrument">
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="29" NAME="+X Wall">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.1" Y="0.048" Z="-0.048" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="0.1" Y="0.048" Z="0.048" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.1" Y="-0.048" Z="-0.048" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="30" NAME="+Y Wall">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.1" Y="0.048" Z="-0.048" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="0.1" Y="0.048" Z="0.048" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.08" Y="0.048" Z="-0.048" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="31" NAME="-Y Wall">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.1" Y="-0.048" Z="-0.048" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="0.1" Y="-0.048" Z="0.048" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.08" Y="-0.048" Z="-0.048" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="32" NAME="-X Wall">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.08" Y="0.048" Z="-0.048" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="0.08" Y="0.048" Z="0.048" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.08" Y="-0.048" Z="-0.048" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="33" NAME="-Z Wall">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.1" Y="0.048" Z="-0.048" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="0.1" Y="-0.048" Z="-0.048" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.08" Y="-0.048" Z="-0.048" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="SHAPE" REFOBJ_ID="34" NAME="+Z Wall">
+                            <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                                    <ELEM X="0.1" Y="0.048" Z="0.048" TYPE="POINT" NAME="Point 1"/>
+                                    <ELEM X="0.1" Y="-0.048" Z="0.048" TYPE="POINT" NAME="Point 2"/>
+                                    <ELEM X="0.08" Y="-0.048" Z="0.048" TYPE="POINT" NAME="Point 3"/>
+                                </ELEM>
+                            </NODE_ATTRIBUTE>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="COLOR" NAME="COLOR">
+                            <ELEM G="0.333333333333333" TYPE="COLOR" NAME="COLOR" R="0" B="1"/>
+                        </NODE_ATTRIBUTE>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER TYPE="SHELL" NAME="Bulk" INHERITED="FALSE">
+                                <FACE NAME="Alike sides">
+                                    <LAYER NAME="Layer 1">
+                                        <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                            <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.002"/>
+                                        </PROP_CATEGORY>
+                                        <PROP_CATEGORY NAME="Physical properties">
+                                            <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                        </PROP_CATEGORY>
+                                    </LAYER>
+                                </FACE>
+                            </CONTENER>
+                            <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="OBJECT" REFOBJ_ID="10" NAME="Battery">
+                        <DATA_NODE TYPE="OBJECT" REFOBJ_ID="37" NAME="Battery 1">
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="38" NAME="Battery cylinder">
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="CYLINDER_SYSEXP" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="General truncated cylinder">
+                                        <ELEM X="-0.02" Y="-0.03" Z="-0.04" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="-0.02" Y="-0.03" Z="0.04" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1" Y="0" Z="0" TYPE="POINT" NAME="Point 3"/>
+                                        <ELEM L="0.02" TYPE="LENGTH" NAME="Diameter"/>
+                                        <ELEM ANGLE="0" TYPE="ANGLE" NAME="Angle 1"/>
+                                        <ELEM ANGLE="360" TYPE="ANGLE" NAME="Angle 2"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="39" NAME="Battery base">
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="DISC_SYSEXP" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="General truncated disc">
+                                        <ELEM X="-0.02" Y="-0.03" Z="-0.04" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="0" Y="0" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1" Y="0" Z="0" TYPE="POINT" NAME="Point 3"/>
+                                        <ELEM L="0.02" TYPE="LENGTH" NAME="Diameter 1"/>
+                                        <ELEM L="0" TYPE="LENGTH" NAME="Diameter 2"/>
+                                        <ELEM ANGLE="0" TYPE="ANGLE" NAME="Angle 1"/>
+                                        <ELEM ANGLE="360" TYPE="ANGLE" NAME="Angle 2"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="40" NAME="Battery top">
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="DISC_SYSEXP" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="General truncated disc">
+                                        <ELEM X="-0.02" Y="-0.03" Z="0.04" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="0" Y="0" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1" Y="0" Z="0" TYPE="POINT" NAME="Point 3"/>
+                                        <ELEM L="0.02" TYPE="LENGTH" NAME="Diameter 1"/>
+                                        <ELEM L="0" TYPE="LENGTH" NAME="Diameter 2"/>
+                                        <ELEM ANGLE="0" TYPE="ANGLE" NAME="Angle 1"/>
+                                        <ELEM ANGLE="360" TYPE="ANGLE" NAME="Angle 2"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="OBJECT" REFOBJ_ID="53" NAME="Battery 2">
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="54" NAME="Battery cylinder">
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="CYLINDER_SYSEXP" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="General truncated cylinder">
+                                        <ELEM X="-0.02" Y="-0.01" Z="-0.04" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="-0.02" Y="-0.01" Z="0.04" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1" Y="0" Z="0" TYPE="POINT" NAME="Point 3"/>
+                                        <ELEM L="0.02" TYPE="LENGTH" NAME="Diameter"/>
+                                        <ELEM ANGLE="0" TYPE="ANGLE" NAME="Angle 1"/>
+                                        <ELEM ANGLE="360" TYPE="ANGLE" NAME="Angle 2"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="55" NAME="Battery base">
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="DISC_SYSEXP" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="General truncated disc">
+                                        <ELEM X="-0.02" Y="-0.01" Z="-0.04" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="0" Y="0" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1" Y="0" Z="0" TYPE="POINT" NAME="Point 3"/>
+                                        <ELEM L="0.02" TYPE="LENGTH" NAME="Diameter 1"/>
+                                        <ELEM L="0" TYPE="LENGTH" NAME="Diameter 2"/>
+                                        <ELEM ANGLE="0" TYPE="ANGLE" NAME="Angle 1"/>
+                                        <ELEM ANGLE="360" TYPE="ANGLE" NAME="Angle 2"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="56" NAME="Battery top">
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="DISC_SYSEXP" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="General truncated disc">
+                                        <ELEM X="-0.02" Y="-0.01" Z="0.04" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="0" Y="0" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1" Y="0" Z="0" TYPE="POINT" NAME="Point 3"/>
+                                        <ELEM L="0.02" TYPE="LENGTH" NAME="Diameter 1"/>
+                                        <ELEM L="0" TYPE="LENGTH" NAME="Diameter 2"/>
+                                        <ELEM ANGLE="0" TYPE="ANGLE" NAME="Angle 1"/>
+                                        <ELEM ANGLE="360" TYPE="ANGLE" NAME="Angle 2"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="OBJECT" REFOBJ_ID="57" NAME="Battery 3">
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="58" NAME="Battery cylinder">
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="CYLINDER_SYSEXP" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="General truncated cylinder">
+                                        <ELEM X="-0.02" Y="0.01" Z="-0.04" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="-0.02" Y="0.01" Z="0.04" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1" Y="0" Z="0" TYPE="POINT" NAME="Point 3"/>
+                                        <ELEM L="0.02" TYPE="LENGTH" NAME="Diameter"/>
+                                        <ELEM ANGLE="0" TYPE="ANGLE" NAME="Angle 1"/>
+                                        <ELEM ANGLE="360" TYPE="ANGLE" NAME="Angle 2"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="59" NAME="Battery base">
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="DISC_SYSEXP" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="General truncated disc">
+                                        <ELEM X="-0.02" Y="0.01" Z="-0.04" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="0" Y="0" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1" Y="0" Z="0" TYPE="POINT" NAME="Point 3"/>
+                                        <ELEM L="0.02" TYPE="LENGTH" NAME="Diameter 1"/>
+                                        <ELEM L="0" TYPE="LENGTH" NAME="Diameter 2"/>
+                                        <ELEM ANGLE="0" TYPE="ANGLE" NAME="Angle 1"/>
+                                        <ELEM ANGLE="360" TYPE="ANGLE" NAME="Angle 2"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="60" NAME="Battery top">
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="DISC_SYSEXP" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="General truncated disc">
+                                        <ELEM X="-0.02" Y="0.01" Z="0.04" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="0" Y="0" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1" Y="0" Z="0" TYPE="POINT" NAME="Point 3"/>
+                                        <ELEM L="0.02" TYPE="LENGTH" NAME="Diameter 1"/>
+                                        <ELEM L="0" TYPE="LENGTH" NAME="Diameter 2"/>
+                                        <ELEM ANGLE="0" TYPE="ANGLE" NAME="Angle 1"/>
+                                        <ELEM ANGLE="360" TYPE="ANGLE" NAME="Angle 2"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                        </DATA_NODE>
+                        <DATA_NODE TYPE="OBJECT" REFOBJ_ID="61" NAME="Battery 4">
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="62" NAME="Battery cylinder">
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="CYLINDER_SYSEXP" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="General truncated cylinder">
+                                        <ELEM X="-0.02" Y="0.03" Z="-0.04" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="-0.02" Y="0.03" Z="0.04" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1" Y="0" Z="0" TYPE="POINT" NAME="Point 3"/>
+                                        <ELEM L="0.02" TYPE="LENGTH" NAME="Diameter"/>
+                                        <ELEM ANGLE="0" TYPE="ANGLE" NAME="Angle 1"/>
+                                        <ELEM ANGLE="360" TYPE="ANGLE" NAME="Angle 2"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="63" NAME="Battery base">
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="DISC_SYSEXP" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="General truncated disc">
+                                        <ELEM X="-0.02" Y="0.03" Z="-0.04" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="0" Y="0" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1" Y="0" Z="0" TYPE="POINT" NAME="Point 3"/>
+                                        <ELEM L="0.02" TYPE="LENGTH" NAME="Diameter 1"/>
+                                        <ELEM L="0" TYPE="LENGTH" NAME="Diameter 2"/>
+                                        <ELEM ANGLE="0" TYPE="ANGLE" NAME="Angle 1"/>
+                                        <ELEM ANGLE="360" TYPE="ANGLE" NAME="Angle 2"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                            <DATA_NODE TYPE="SHAPE" REFOBJ_ID="64" NAME="Battery top">
+                                <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                                    <ELEM SHAPETYPE="DISC_SYSEXP" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="General truncated disc">
+                                        <ELEM X="-0.02" Y="0.03" Z="0.04" TYPE="POINT" NAME="Point 1"/>
+                                        <ELEM X="0" Y="0" Z="1" TYPE="POINT" NAME="Point 2"/>
+                                        <ELEM X="1" Y="0" Z="0" TYPE="POINT" NAME="Point 3"/>
+                                        <ELEM L="0.02" TYPE="LENGTH" NAME="Diameter 1"/>
+                                        <ELEM L="0" TYPE="LENGTH" NAME="Diameter 2"/>
+                                        <ELEM ANGLE="0" TYPE="ANGLE" NAME="Angle 1"/>
+                                        <ELEM ANGLE="360" TYPE="ANGLE" NAME="Angle 2"/>
+                                    </ELEM>
+                                </NODE_ATTRIBUTE>
+                            </DATA_NODE>
+                        </DATA_NODE>
+                        <NODE_ATTRIBUTE TYPE="COLOR" NAME="COLOR">
+                            <ELEM G="0" TYPE="COLOR" NAME="COLOR" R="1" B="0.498039215686275"/>
+                        </NODE_ATTRIBUTE>
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER TYPE="SHELL" NAME="Bulk" INHERITED="FALSE">
+                                <FACE NAME="Alike sides">
+                                    <LAYER NAME="Layer 1">
+                                        <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                            <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.006"/>
+                                        </PROP_CATEGORY>
+                                        <PROP_CATEGORY NAME="Physical properties">
+                                            <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 7075"/>
+                                        </PROP_CATEGORY>
+                                    </LAYER>
+                                </FACE>
+                            </CONTENER>
+                            <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="17" NAME="Equipment Heart">
+                        <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                            <CONTENER TYPE="SHELL" NAME="Bulk" INHERITED="FALSE">
+                                <FACE NAME="Alike sides">
+                                    <LAYER NAME="Layer 1">
+                                        <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                            <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.001"/>
+                                        </PROP_CATEGORY>
+                                        <PROP_CATEGORY ID="Phys_Prop" NAME="Physical properties">
+                                            <ELEM TYPE="VALUE" ID="Density" VALUE="4832"/>
+                                        </PROP_CATEGORY>
+                                    </LAYER>
+                                </FACE>
+                            </CONTENER>
+                        </NODE_ATTRIBUTE>
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                            <ELEM SHAPETYPE="SPHERE_SYSEXP" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="General truncated sphere">
+                                <ELEM X="0" Y="0" Z="0" TYPE="POINT" NAME="Point 1"/>
+                                <ELEM X="0" Y="0" Z="2" TYPE="POINT" NAME="Point 2"/>
+                                <ELEM X="1" Y="0" Z="0" TYPE="POINT" NAME="Point 3"/>
+                                <ELEM L="0.004" TYPE="LENGTH" NAME="Diameter"/>
+                                <ELEM L="-0.002" TYPE="LENGTH" NAME="Height 1"/>
+                                <ELEM L="0.002" TYPE="LENGTH" NAME="Height 2"/>
+                                <ELEM ANGLE="0" TYPE="ANGLE" NAME="Angle 1"/>
+                                <ELEM ANGLE="360" TYPE="ANGLE" NAME="Angle 2"/>
+                            </ELEM>
+                        </NODE_ATTRIBUTE>
+                    </DATA_NODE>
+                </DATA_NODE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="4" NAME="Solar Array">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="65" NAME="+Z panel">
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                            <ELEM X="0.15" Y="0.05" Z="0.05" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="0.15" Y="-0.05" Z="0.05" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="0.15" Y="0" Z="0.35" TYPE="POINT" NAME="Point 3"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="66" NAME="-Z panel">
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                            <ELEM X="0.15" Y="0.05" Z="-0.05" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="0.15" Y="-0.05" Z="-0.05" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="0.15" Y="0" Z="-0.35" TYPE="POINT" NAME="Point 3"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="COLOR" NAME="COLOR">
+                    <ELEM G="0.1" TYPE="COLOR" NAME="COLOR" R="0.6" B="0.1"/>
+                </NODE_ATTRIBUTE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Dosrad">
+                    <CONTENER TYPE="SHELL" NAME="Bulk" INHERITED="FALSE">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.003"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+        </DATA_NODE>
+    </DATA_STRUCTURE>
+</SYSML>

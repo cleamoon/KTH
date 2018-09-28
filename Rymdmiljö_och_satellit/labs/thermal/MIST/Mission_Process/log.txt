@@ -1,0 +1,28 @@
+Generation of mission files.
+Mission files generated.
+> Execution : C:/Program Files/Systema-4.8.0/applications//Dosrad-4.8.0/MappingWIN.exe -param Mapping.sysprm -mission Mission.sysset -dose SSO_640.DOSE -h5 Process.map.h5 -log Process.map.log
+>  
+>  
+>  **************************
+> Mapping Computation
+>  **************************
+> DOSRAD 4.8.0 - 64 bits
+AIRBUS Defence and Space SAS - 2015 - All rights reserved
+Information contact : C.THEROUDE
+Telephone : +33 (0)5 62 19 68 85
+Email : engineering.software@airbus.com
+
+About license :
+Valid local license found, expires at 31/12/2099
+(file: C:/Program Files/Systema-4.8.0/licenses\KTH_local_4.8.moslf).
+
+>  Number of active threads : 7 ( / 7 available)
+
+> State  1 : Initialization
+> State  2 : DOSE ray-tracing
+>  
+> Execution completed on Fri Dec 15 15:08:52 2017
+
+>  **************************
+>  
+Execution of computation executable "Dosrad - Mapping" completed.

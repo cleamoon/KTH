@@ -1,0 +1,94 @@
+
+*------------------------------------*
+*                                    *
+*   SYSTEMA V4 APPLICATION LOG FILE  *
+*                                    *
+*------------------------------------*
+
+
+
+              **********
+
+      Bounding Box Computation
+
+
+Execution started on Fri Mar 09 19:29:47 2012
+
+
+
+ Number of active threads : 1 ( / 1 available)
+
+State  1 : Initialization - Loading model                                      Time :  Fri Mar 09 19:29:47 2012
+
+State  2 : Initialization - Loading properties                                 Time :  Fri Mar 09 19:29:48 2012
+
+DUMP BOUNDING BOX PARAMS
+------------------------
+
+ - model name               : boundingbox.sysset
+ - dose curve               : test.dose
+ - space number             : 99999999
+
+ - space divisions          : 10
+
+ (user choice)
+ - solid sphere /slant      : 1
+ - shell / norm             : 1
+ - solid wall / slant       : 0
+ - slab / norm              : 0
+
+ - number of rays           : 400
+ - min rays                 : 0
+ - max rays                 : 0
+ - ray density              : 0.000000E+000
+
+ (computation)
+ - solid sphere /slant      : 1
+ - shell / norm             : 1
+ - solid wall / slant       : 0
+ - slab / norm              : 0
+
+ (outputs)
+ - mesh thickness and dose  : 1
+ - number of rays           : 1
+ - mean thickness per mesh  : 1
+ - result table in csv file : 0 (no csv output , unit : no)
+
+MODEL INFO
+----------
+
+ - nb models       : 1
+ - nb surfaces     : 169
+ - nb meshes       : 0
+ Model names :
+   - 
+
+
+COMPUTING VIRTUAL NODES INFO
+----------------------------
+
+ - nb volumes         : 0
+ - nb honeycomb cores : 0
+
+No volume in the meshing
+
+
+
+No honeycomb cores in the meshing
+
+
+
+State  3 : Ray-tracing - Initialization                                        Time :  Fri Mar 09 19:29:48 2012
+
+State  4 : Ray-tracing - Computation                                           Time :  Fri Mar 09 19:29:49 2012
+
+State  5 : Output file generation                                              Time :  Fri Mar 09 19:29:56 2012
+
+
+
+
+Execution completed on Fri Mar 09 19:29:56 2012
+
+
+
+

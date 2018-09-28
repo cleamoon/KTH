@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.7" CONTENTS="MODEL" SAVEDATE="1511438398" SYSTEMA_VERSION="4.8.0">
+    <DATA_STRUCTURE NAME="Cube-BOL.sysmdl" REFSET_ID="{20066d38-85dc-41dd-9b11-63515dff9392}">
+        <DATA_NODE TYPE="MODEL" REFOBJ_ID="2" NAME="Model">
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="3" NAME="Cube-BOL">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="4" NAME="Box">
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="BOX_6_4P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="6 faces box">
+                            <ELEM X="0" Y="0" Z="0" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="1" Y="0" Z="0" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="0" Y="1" Z="0" TYPE="POINT" NAME="Point 3"/>
+                            <ELEM X="0" Y="0" Z="1" TYPE="POINT" NAME="Point 4"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="SHELL" NAME="Bulk" INHERITED="FALSE">
+                            <ELEM TYPE="STRING" ID="ActivityId" STR="NONEFACE"/>
+                            <ELEM TYPE="STRING" ID="FaceId" STR="NONEFACE"/>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                        <CONTENER TYPE="SHELL" NAME="Coating" INHERITED="FALSE">
+                            <ELEM TYPE="STRING" ID="ActivityId" STR="PLUSFACE"/>
+                            <ELEM TYPE="STRING" ID="FaceId" STR="BOTHFACE"/>
+                            <FACE NAME="Positive side">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Thermo-optical IR">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="SSM"/>
+                                    </PROP_CATEGORY>
+                                    <PROP_CATEGORY NAME="Thermo-optical UV">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="SSM"/>
+                                        <ELEM TYPE="VALUE" ID="Alpha" VALUE="0.19"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                        <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+            </DATA_NODE>
+        </DATA_NODE>
+    </DATA_STRUCTURE>
+</SYSML>

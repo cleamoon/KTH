@@ -1,0 +1,320 @@
+$INFOS
+
+# Spot-ColdCase.usr.nwk
+# --------------------
+#
+# This file contains some data to be modified by the user
+
+
+$LOCALS
+
+
+# Activation flag (1 or 0) of internal radiative couplings
+# (NB. The radiative couplings with space (GR) are not deactivated)
+
+ RAD_INTERNE = 0;
+
+
+#-------------------------------
+# Heaters powers (W)
+#-------------------------------
+
+# +Ys wall heating
+      PR3 = 0.0;
+
+# -Ys wall heating
+      PR4 = 0.0;
+
+# +Zs wall heating
+      PR5 = 0.0;
+
+# -Zs wall heating
+      PR6 = 0.0;
+
+
+
+
+
+$INITIAL
+
+
+#--------------------------------------
+# Declaration of radiators areas
+#--------------------------------------
+
+
+
+# +Ys wall radiator
+      A30 = 0.0
+
+# -Ys wall radiator
+      A40 = 0.0
+
+# +Zs wall radiator
+      A50 = 0.0
+
+# -Zs wall radiator
+      A60 = 0.0
+
+
+#-----------------------------------
+# Equipments capacitances (J/K) 
+#-----------------------------------
+
+# +Ys wall equipment
+      C3 = 0.0
+
+# -Ys wall equipment
+      C4 = 0.0
+
+# +Zs wall equipment
+      C5 = 0.0
+
+# -Zs wall equipment
+      C6 = 0.0
+
+#--------------------------------------
+# Equipment dissipation in cold case (W) 
+#--------------------------------------
+
+# +Ys wall equipment
+      QI3 = 0.0
+
+# -Ys wall equipment
+      QI4 = 0.0
+
+# +Zs wall equipment
+      QI5 = 0.0
+
+# -Zs wall equipment
+      QI6 = 0.0
+
+$CONDUCTORS
+
+#-----------------------------------------------
+# Equipment - radiators conductive couplings
+#-----------------------------------------------
+
+# +Ys wall coupling
+      GL(3,30) = 0.0;
+
+# -Ys wall coupling
+      GL(4,40) = 0.0;
+
+# +Zs wall coupling
+      GL(5,50) = 0.0;
+
+# -Zs wall coupling
+      GL(6,60) = 0.0;
+
+$COMMENTS
+#-------------------------------------------------------------------------
+#
+#    This part must not be modified
+#    ------------------------------
+#
+#-------------------------------------------------------------------------
+
+$NODES
+
+#  fictive node : instant total heaters power
+   X  100 = 'Puissance totale rechauffeurs'; 
+# 
+#  fictive node : instant total platform power
+   X  200 = 'Puissance totale plateforme';
+
+
+
+
+$CONDUCTORS
+
+# Wall / MLI conductive couplings (initialisation)
+GL(31,35) = 0.0;
+GL(41,45) = 0.0;
+GL(51,55) = 0.0;
+GL(61,65) = 0.0;
+GL(11,15) = 0.05 * 6.5;
+
+# Wall / radiators conductive couplings
+GL(30,35) = 1.0;
+GL(40,45) = 1.0;
+GL(50,55) = 1.0;
+GL(60,65) = 1.0;
+
+
+$LOCALS
+
+   $REAL
+      # Total area of one wall (m2)
+      AIRE_TOT = 6.5;
+
+      # Radiator surface capacitance
+      CAPA_RAD = 5.9667E+03;
+
+      # Nida wall surface capacitance
+      CAPA_NIDA = 5.4244E+03;
+
+      # MLI surface capacitance
+      CAPA_MLI = 5.4545E+01;
+
+
+
+
+$VARIABLES
+
+   $INTEGER
+      # heaters status 
+      ISTA1  = 0; 
+      ISTA3  = 0; 
+      ISTA4  = 0; 
+      ISTA5  = 0; 
+      ISTA6  = 0;
+
+
+
+
+$INITIAL
+
+# Nida walls areas
+      A35 = AIRE_TOT - A30
+      A45 = AIRE_TOT - A40
+      A55 = AIRE_TOT - A50
+      A65 = AIRE_TOT - A60
+
+# MLI areas
+      A31 = AIRE_TOT - A30
+      A41 = AIRE_TOT - A40
+      A51 = AIRE_TOT - A50
+      A61 = AIRE_TOT - A60
+
+# Radiators capacitances
+      C30 = CAPA_RAD * A30
+      C40 = CAPA_RAD * A40
+      C50 = CAPA_RAD * A50
+      C60 = CAPA_RAD * A60
+
+# Nida wall capacitances
+      C35 = CAPA_NIDA * A35
+      C45 = CAPA_NIDA * A45
+      C55 = CAPA_NIDA * A55
+      C65 = CAPA_NIDA * A65
+
+# MLI capacitances
+      C31 = CAPA_MLI * A31
+      C41 = CAPA_MLI * A41
+      C51 = CAPA_MLI * A51
+      C61 = CAPA_MLI * A61
+
+# Nida wall / MLI couplings
+      GL(31,35) = 0.05 * (AIRE_TOT - A30)
+      GL(41,45) = 0.05 * (AIRE_TOT - A40)
+      GL(51,55) = 0.05 * (AIRE_TOT - A50)
+      GL(61,65) = 0.05 * (AIRE_TOT - A60)
+
+# Radiators / space couplings
+      GR(30,99999999) = GR(30,99999999) * A30
+      GR(40,99999999) = GR(40,99999999) * A40
+      GR(50,99999999) = GR(50,99999999) * A50
+      GR(60,99999999) = GR(60,99999999) * A60
+
+# Space / MLI couplings
+      GR(31,99999999) = GR(31,99999999) * (AIRE_TOT - A30) / (AIRE_TOT - 1.0)
+      GR(41,99999999) = GR(41,99999999) * (AIRE_TOT - A40) / (AIRE_TOT - 1.0)
+      GR(51,99999999) = GR(51,99999999) * (AIRE_TOT - A50) / (AIRE_TOT - 1.0)
+      GR(61,99999999) = GR(61,99999999) * (AIRE_TOT - A60) / (AIRE_TOT - 1.0)
+
+# Activation / deactivation of internal radiative couplings
+      IF(RAD_INTERNE.EQ.0) THEN
+        DO I=1,FLG(4)
+          GRFLG(I) = 'X'
+        ENDDO
+        DO I=1,FLG(1)
+          IF(NNUM(I).EQ.99999999) THEN
+            PCSP_I = PCSP(I)
+            NCP = PCS(PCSP_I)
+            DO WHILE(NCP.GT.0)
+              CPL = PCS(PCSP_I+1)
+              PCSP_I = PCSP_I+2
+              NCP = PCS(PCSP_I)
+            ENDDO
+            PCSP_I = PCSP_I+2
+            NCP = PCS(PCSP_I)
+            DO WHILE(NCP.GT.0)
+              CPL = PCS(PCSP_I+1)
+              GRFLG(CPL) = 'A'
+              PCSP_I = PCSP_I + 2
+              NCP = PCS(PCSP_I)
+            ENDDO
+          ENDIF
+        ENDDO
+      ENDIF
+
+
+
+
+
+$VTIME
+
+# Scaling of fluxes as a function of radiators areas
+
+# Radiators solar fluxes
+      QS30 = QS30 * A30
+      QS40 = QS40 * A40
+      QS50 = QS50 * A50
+      QS60 = QS60 * A60
+      
+# MLI solar fluxes
+      QS31 = QS31 * (AIRE_TOT - A30) / (AIRE_TOT - 1.0)
+      QS41 = QS41 * (AIRE_TOT - A40) / (AIRE_TOT - 1.0)
+      QS51 = QS51 * (AIRE_TOT - A50) / (AIRE_TOT - 1.0)
+      QS61 = QS61 * (AIRE_TOT - A60) / (AIRE_TOT - 1.0)
+      
+# Radiators albedo fluxes
+      QA30 = QA30 * A30
+      QA40 = QA40 * A40
+      QA50 = QA50 * A50
+      QA60 = QA60 * A60
+      
+# MLI albedo fluxes
+      QA31 = QA31 * (AIRE_TOT - A30) / (AIRE_TOT - 1.0)
+      QA41 = QA41 * (AIRE_TOT - A40) / (AIRE_TOT - 1.0)
+      QA51 = QA51 * (AIRE_TOT - A50) / (AIRE_TOT - 1.0)
+      QA61 = QA61 * (AIRE_TOT - A60) / (AIRE_TOT - 1.0)
+      
+# Radiators planet fluxes
+      QE30 = QE30 * A30
+      QE40 = QE40 * A40
+      QE50 = QE50 * A50
+      QE60 = QE60 * A60
+      
+# MLI planet fluxes
+      QE31 = QE31 * (AIRE_TOT - A30) / (AIRE_TOT - 1.0)
+      QE41 = QE41 * (AIRE_TOT - A40) / (AIRE_TOT - 1.0)
+      QE51 = QE51 * (AIRE_TOT - A50) / (AIRE_TOT - 1.0)
+      QE61 = QE61 * (AIRE_TOT - A60) / (AIRE_TOT - 1.0)
+
+
+
+
+
+$VRESULT
+
+# Management of heating by thermostates
+      CALL THRMST(T3,-5.D+00,-10.D+00,ISTA3) 
+      QR3=ISTA3*PR3 
+      
+      CALL THRMST(T4,-5.D+00,-10.D+00,ISTA4) 
+      QR4=ISTA4*PR4 
+      
+      CALL THRMST(T5,-5.D+00,-10.D+00,ISTA5) 
+      QR5=ISTA5*PR5 
+      
+      CALL THRMST(T6,-5.D+00,-10.D+00,ISTA6) 
+      QR6=ISTA6*PR6 
+
+# Instant total heaters power
+      QR100 = QR3 + QR4 + QR5 + QR6
+
+# Instant total platform power
+      QR200 = QI3 + QI4 + QI5 + QI6 + QR100
+

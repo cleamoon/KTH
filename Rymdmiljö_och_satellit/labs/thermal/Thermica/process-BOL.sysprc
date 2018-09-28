@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.7" CONTENTS="PROCESSING" SAVEDATE="1511435876" SYSTEMA_VERSION="4.8.0">
+    <DATA_STRUCTURE NAME="process-BOL.sysprc" REFSET_ID="{d29d6c98-c795-4105-a89e-af0ca2c5c543}">
+        <DATA_NODE TYPE="PROCESSING" REFOBJ_ID="2" NAME="New Processing">
+            <DATA_NODE TYPE="PROCESSING" REFOBJ_ID="3" NAME="ProcessesRep">
+                <DATA_NODE LASTCHANGE="1511434637" TYPE="MISSION_GENE" REFOBJ_ID="10" NAME="Mission">
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT0" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="12" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT1" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="14" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="CURMISSIONREF_ATT" NAME="EXPORTED MISSION">
+                        <ELEM TYPE="CURMISSIONREF_ELEM">
+                            <ELEM TYPE="STRING" STR="Mission"/>
+                            <ELEM FILE_PATH="" TYPE="FILE_DESCRIPTION" FILE_FORMAT="" FILE_RELATIVE_PATH=""/>
+                            <ELEM FILE_PATH="C:/Users/yj/Documents/Thermica/mission-BOL.sysmis" TYPE="FILE_DESCRIPTION" FILE_FORMAT="sysmis" FILE_RELATIVE_PATH="./mission-BOL.sysmis"/>
+                            <ELEM FILE_PATH="" TYPE="FILE_DESCRIPTION" FILE_FORMAT="" FILE_RELATIVE_PATH=""/>
+                            <ELEM TYPE="STRING" STR="Default"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROCESS_LASTRUN" NAME="PROCESS_LASTRUN">
+                        <ELEM TYPE="VALUE" VALUE="1511435871"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE LASTCHANGE="1511435425" TYPE="PROCESS" REFOBJ_ID="16" NAME="Radiation">
+                    <NODE_ATTRIBUTE PROCESS_NAME="Radiation" APP_NAME="Thermica" TYPE="PROCESS_DEF" NAME="PROCESS_DEF"/>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="12" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT0" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="18" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT1" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="20" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT2" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="22" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT3" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="24" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT4" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="26" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT5" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="28" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT6" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="30" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="RUN PARAMETERS" NAME="RUN PARAMETERS">
+                        <ELEM TYPE="RUN_PARAMETERS" ID="RUN_PARAMETERS"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROCESS_LASTRUN" NAME="PROCESS_LASTRUN">
+                        <ELEM TYPE="VALUE" VALUE="1511435442"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE LASTCHANGE="1511435425" TYPE="PROCESS" REFOBJ_ID="32" NAME="Solar_Flux">
+                    <NODE_ATTRIBUTE PROCESS_NAME="Solar_Flux" APP_NAME="Thermica" TYPE="PROCESS_DEF" NAME="PROCESS_DEF"/>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="1">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="12" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT0" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="36" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT1" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="38" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT2" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="40" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT3" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="42" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN1" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="20" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="RUN PARAMETERS" NAME="RUN PARAMETERS">
+                        <ELEM TYPE="RUN_PARAMETERS" ID="RUN_PARAMETERS"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROCESS_LASTRUN" NAME="PROCESS_LASTRUN">
+                        <ELEM TYPE="VALUE" VALUE="1511435454"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE LASTCHANGE="1511435425" TYPE="PROCESS" REFOBJ_ID="44" NAME="Planet_Fluxes">
+                    <NODE_ATTRIBUTE PROCESS_NAME="Planet_Fluxes" APP_NAME="Thermica" TYPE="PROCESS_DEF" NAME="PROCESS_DEF"/>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN2" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="48" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT0" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="50" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT1" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="52" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT2" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="54" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="2">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="12" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN1" POSITION="1">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="20" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="RUN PARAMETERS" NAME="RUN PARAMETERS">
+                        <ELEM TYPE="RUN_PARAMETERS" ID="RUN_PARAMETERS"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROCESS_LASTRUN" NAME="PROCESS_LASTRUN">
+                        <ELEM TYPE="VALUE" VALUE="1511435449"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="PROCESSING" REFOBJ_ID="4" NAME="FilesRep">
+                <DATA_NODE TYPE="FILE" REFOBJ_ID="12" NAME="FILE">
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="10" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT0" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="0" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT1" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="0" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT2" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="0" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="FILE_DESC_ATT" NAME="FILE">
+                        <ELEM TYPE="STRING" STR="$(mission_name).sysset"/>
+                        <ELEM TYPE="BOOLEAN" NAME="Activated file" VALUE="true"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="FILE" REFOBJ_ID="14" NAME="FILE (1)">
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="1">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="10" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="FILE_DESC_ATT" NAME="FILE">
+                        <ELEM TYPE="STRING" STR="$(mission_name).html"/>
+                        <ELEM TYPE="BOOLEAN" NAME="Activated file" VALUE="true"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="FILE" REFOBJ_ID="18" NAME="FILE (2)">
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="16" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="FILE_DESC_ATT" NAME="FILE">
+                        <ELEM TYPE="STRING" STR="$(mission_name).rad.h5"/>
+                        <ELEM TYPE="BOOLEAN" NAME="Activated file" VALUE="true"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="FILE" REFOBJ_ID="20" NAME="FILE (3)">
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="1">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="16" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT0" POSITION="1">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="32" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT1" POSITION="1">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="44" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="FILE_DESC_ATT" NAME="FILE">
+                        <ELEM TYPE="STRING" STR="$(mission_name).box.h5"/>
+                        <ELEM TYPE="BOOLEAN" NAME="Activated file" VALUE="true"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="FILE" REFOBJ_ID="22" NAME="FILE (4)">
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="2">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="16" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="FILE_DESC_ATT" NAME="FILE">
+                        <ELEM TYPE="STRING" STR="$(mission_name).rrt.h5"/>
+                        <ELEM TYPE="BOOLEAN" NAME="Activated file" VALUE="false"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="FILE" REFOBJ_ID="24" NAME="FILE (5)">
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="3">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="16" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="FILE_DESC_ATT" NAME="FILE">
+                        <ELEM TYPE="STRING" STR="$(mission_name).rad.log"/>
+                        <ELEM TYPE="BOOLEAN" NAME="Activated file" VALUE="true"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="FILE" REFOBJ_ID="26" NAME="FILE (6)">
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="4">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="16" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="FILE_DESC_ATT" NAME="FILE">
+                        <ELEM TYPE="STRING" STR="$(mission_name).gb.txt"/>
+                        <ELEM TYPE="BOOLEAN" NAME="Activated file" VALUE="true"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="FILE" REFOBJ_ID="28" NAME="FILE (7)">
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="5">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="16" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="FILE_DESC_ATT" NAME="FILE">
+                        <ELEM TYPE="STRING" STR="$(mission_name).gv.nwk"/>
+                        <ELEM TYPE="BOOLEAN" NAME="Activated file" VALUE="false"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="FILE" REFOBJ_ID="30" NAME="FILE (8)">
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="6">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="16" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="FILE_DESC_ATT" NAME="FILE">
+                        <ELEM TYPE="STRING" STR="$(mission_name).gr.nwk"/>
+                        <ELEM TYPE="BOOLEAN" NAME="Activated file" VALUE="true"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="FILE" REFOBJ_ID="36" NAME="FILE (10)">
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="32" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="FILE_DESC_ATT" NAME="FILE">
+                        <ELEM TYPE="STRING" STR="$(mission_name).srt.h5"/>
+                        <ELEM TYPE="BOOLEAN" NAME="Activated file" VALUE="false"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="FILE" REFOBJ_ID="38" NAME="FILE (11)">
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="1">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="32" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="FILE_DESC_ATT" NAME="FILE">
+                        <ELEM TYPE="STRING" STR="$(mission_name).sf.h5"/>
+                        <ELEM TYPE="BOOLEAN" NAME="Activated file" VALUE="true"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="FILE" REFOBJ_ID="40" NAME="FILE (12)">
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="2">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="32" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="FILE_DESC_ATT" NAME="FILE">
+                        <ELEM TYPE="STRING" STR="$(mission_name).sf.log"/>
+                        <ELEM TYPE="BOOLEAN" NAME="Activated file" VALUE="true"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="FILE" REFOBJ_ID="42" NAME="FILE (13)">
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="3">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="32" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="FILE_DESC_ATT" NAME="FILE">
+                        <ELEM TYPE="STRING" STR="$(mission_name).sf.nwk"/>
+                        <ELEM TYPE="BOOLEAN" NAME="Activated file" VALUE="true"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="FILE" REFOBJ_ID="48" NAME="FILE (15)">
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="OUT0" POSITION="2">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="44" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="FILE_DESC_ATT" NAME="FILE">
+                        <ELEM FILE_PATH="C:/Users/yj/Documents/Thermica/planets.maps" TYPE="FILE_DESCRIPTION" FILE_FORMAT="maps" FILE_RELATIVE_PATH="./planets.maps"/>
+                        <ELEM TYPE="BOOLEAN" NAME="Activated file" VALUE="false"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="FILE" REFOBJ_ID="50" NAME="FILE (16)">
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="0">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="44" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="FILE_DESC_ATT" NAME="FILE">
+                        <ELEM TYPE="STRING" STR="$(mission_name).pf.h5"/>
+                        <ELEM TYPE="BOOLEAN" NAME="Activated file" VALUE="true"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="FILE" REFOBJ_ID="52" NAME="FILE (17)">
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="1">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="44" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="FILE_DESC_ATT" NAME="FILE">
+                        <ELEM TYPE="STRING" STR="$(mission_name).pf.log"/>
+                        <ELEM TYPE="BOOLEAN" NAME="Activated file" VALUE="true"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="FILE" REFOBJ_ID="54" NAME="FILE (18)">
+                    <NODE_ATTRIBUTE TYPE="DIAGNODE_REF" NAME="IN0" POSITION="2">
+                        <ELEM TYPE="DNLINK" REFOBJ_ID="44" REFSET_ID="" SELF="false"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="FILE_DESC_ATT" NAME="FILE">
+                        <ELEM TYPE="STRING" STR="$(mission_name).pf.nwk"/>
+                        <ELEM TYPE="BOOLEAN" NAME="Activated file" VALUE="true"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+            </DATA_NODE>
+            <DATA_NODE LASTCHANGE="1511423823" TYPE="PROCESSING" REFOBJ_ID="6" NAME="ResultsRep">
+                <NODE_ATTRIBUTE TYPE="RESULT INFORMATIONS" NAME="RESULT INFORMATIONS">
+                    <ELEM TYPE="RUN_PARAMETERS" ID="RUN_PARAMETERS">
+                        <ELEM TYPE="STRING" ID="ResNameChoice" NAME="Automatic" STR="defResName"/>
+                        <ELEM TYPE="STRING" ID="ResultName" STR="$(mission_name)_$(diagram_name)"/>
+                        <ELEM TYPE="STRING" ID="ResDirChoice" NAME="Mission directory" STR="missionResDir"/>
+                        <ELEM DIR_PATH="" TYPE="DIRECTORY" ID="ResultDir"/>
+                        <ELEM TYPE="STRING" ID="subdirOptions" NAME="Yes" STR="subDirResName"/>
+                    </ELEM>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="PROCESSING" REFOBJ_ID="8" NAME="VariableOverload">
+                <NODE_ATTRIBUTE TYPE="VARIABLE OVERLOAD" NAME="VARIABLE_OVERLOAD">
+                    <ELEM TYPE="VAR_OVERLOAD_PARAMS" ID="VAR_OVERLOAD_PARAMS">
+                        <ELEM TYPE="VAR_OVERLOAD_CATEG" ID="Material" NAME="Material"/>
+                        <ELEM TYPE="VAR_OVERLOAD_CATEG" ID="Model" NAME="Model"/>
+                        <ELEM TYPE="VAR_OVERLOAD_CATEG" ID="Meshing" NAME="Meshing"/>
+                        <ELEM TYPE="VAR_OVERLOAD_CATEG" ID="Trajectory" NAME="Trajectory"/>
+                        <ELEM TYPE="VAR_OVERLOAD_CATEG" ID="Kinematics" NAME="Kinematics"/>
+                        <ELEM TYPE="VAR_OVERLOAD_CATEG" ID="Mission" NAME="Mission"/>
+                        <ELEM TYPE="VAR_OVERLOAD_CATEG" ID="Processing" NAME="Processing"/>
+                    </ELEM>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+        </DATA_NODE>
+    </DATA_STRUCTURE>
+</SYSML>
